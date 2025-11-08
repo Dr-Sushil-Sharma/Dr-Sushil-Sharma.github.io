@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://dr-sushil-sharma.github.io//sitemap.xml
+Sitemap: https://dr-sushil-sharma.github.io/sitemap.xml

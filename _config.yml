@@ -2,18 +2,18 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Dr. Sushil Sharma - Portfolio
+title: "Hi, I'm Sushil"
 first_name: Sushil
 middle_name:
 last_name: Sharma
 contact_note: >
-  Email is the fastest way to reach me, but feel free to use any of the links below.
+  Email is the fastest way to reach me. Quantum entanglement is still in beta.
 
 description: >
   Experimental particle physicist working in J-PET research group.
 
 footer_text: >
-  © {{ site.time | date: "%Y" }} Dr. Sushil Sharma. All rights reserved.
+  © Dr. Sushil Sharma. All rights reserved.
 
 keywords: particle-physics, J-PET, positronium, spallation, Monte-Carlo, PET-imaging
 
@@ -22,7 +22,7 @@ icon:
 
 url: https://dr-sushil-sharma.github.io
 baseurl: ""
-last_updated: true # set to true if you want to display last updated in the footer
+last_updated: false # set to true if you want to display last updated in the footer
 impressum_path: false # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
 back_to_top: true # set to false to disable the back to top button
 

@@ -3,17 +3,16 @@ layout: about
 title: About
 permalink: /
 subtitle: >
-  <strong>J-PET Collaboration</strong> – Department of Experimental Particle Physics and Applications  
-  <br><em>Jagiellonian University, Kraków, Poland</em>
 
 profile:
   align: right
-  image: prof_pic.jpg # put your photo in assets/img/prof_pic.jpg
+  image: prof_pic.jpg
   image_circular: true
   more_info: >
-    <p>Institute of Physics</p>
+    <p>JPET Collaboration</p>
+    <p>Department of Experimental Particle Physics and Applications</p>
     <p>Łojasiewicza 11</p>
-    <p>30-348 Kraków, Poland</p>
+    <p>Jagiellonian University, Kraków, Poland</p>
 
 selected_papers: true
 social: true
@@ -29,20 +28,17 @@ latest_posts:
   limit: 3
 ---
 
-## Biography
+I'm a particle physicist with a decade of work on positron physics, nuclear reactions, and medical imaging. Currently, I'm focused on the **J-PET** project – developing the first total-body PET scanner based on plastic scintillators. The system costs less than crystal-based alternatives, achieves longer axial coverage, and enables **positronium imaging** in living tissue. We're measuring quantum states inside the human body.
 
-I am an **experimental particle physicist** working on the **J-PET** (Jagiellonian-PET) project – a novel total-body PET scanner built from plastic scintillators. My research bridges **nuclear reaction modeling** (spallation, fusion, non-equilibrium processes) and **medical imaging** (positronium imaging, quantum-entanglement studies, proton-therapy range monitoring).
+My work began with modeling nuclear reactions – spallation, fusion, and non-equilibrium processes in GeV proton-nucleus collisions. I defended my PhD in 2016 under **Prof. Bogusław Kamys** with a thesis titled **"Validation of Spallation Models"**, testing Monte Carlo transport codes against experimental data from p+Al, p+Ag, and p+Au systems. Since then, I've co-authored **over 70 publications** across nuclear physics and medical imaging, working between Kraków, CERN (AEgIS collaboration), and other research facilities.
 
-I defended my PhD in 2016 at Jagiellonian University under the supervision of **Prof. Bogusław Kamys** with the thesis **“Validation of Spallation Models”**. Since then I have contributed to more than **70 publications**, many in collaboration with the J-PET team, CERN (AEgIS), and other international groups.
+### Current research directions
 
-### Research interests
+- **Positronium imaging**: Mapping formation and decay of positronium in tissue to probe microstructure and molecular environment
+- **Fundamental symmetries in PET**: Testing CPT invariance and time-reversal symmetry using entangled photon pairs from positron annihilation
+- **Scintillator instrumentation**: Long-strip plastic detectors with multi-threshold readout and time-of-flight reconstruction
 
-- **Positronium imaging** and lifetime spectroscopy
-- **Total-body PET** with plastic scintillators (J-PET)
-- **Monte-Carlo simulations** (GATE, GEANT4, toy MC)
-- **Spallation & nuclear-reaction models** (p+Al, p+Ag, p+Au at GeV energies)
-- **Quantum tests** – photon entanglement, CPT & time-reversal symmetry
-- **Proton-therapy range verification** and **neutron-based detection** (SABAT)
+I spend considerable time in GATE and GEANT4 simulations, but the most satisfying moments come from seeing experimental data confirm what the models predicted – or, better yet, finding something unexpected.
 
 ---
 
@@ -50,7 +46,7 @@ I defended my PhD in 2016 at Jagiellonian University under the supervision of **
 
 {: .no_toc}
 
-_(The list below is automatically populated from `_news/` – just drop markdown files there.)_
+_(Updated from `_news/` directory.)_
 
 ---
 
@@ -58,11 +54,12 @@ _(The list below is automatically populated from `_news/` – just drop markdown
 
 {: .no_toc}
 
-_(Populated from `_posts/` – keep writing!)_
+_(Written between experiments and data analysis sessions.)_
 
 ---
 
-_“Physics is like sex: sure, it may give some practical results, but that’s not why we do it.”_ – **Richard Feynman**  
-_(My motto: **Measure first, model later.**)_
+> "Measure twice, simulate once."  
+>  
+> "Physics is like sex: sure, it may give some practical results, but that's not why we do it." – **Richard Feynman**
 
 ---

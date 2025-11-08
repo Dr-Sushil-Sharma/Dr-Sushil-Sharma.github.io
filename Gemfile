@@ -36,3 +36,7 @@ group :other_plugins do
     # gem 'unicode_utils' -- should be already installed by jekyll
     # gem 'webrick' -- should be already installed by jekyll
 end
+
+# ---- WINDOWS / RUBY 3+ / LIVERELOAD ------------------------
+gem "webrick"          # Server (Ruby 3+ requirement)
+gem "wdm", "~> 0.2.0"  # Latest version for Ruby 3.4+ support

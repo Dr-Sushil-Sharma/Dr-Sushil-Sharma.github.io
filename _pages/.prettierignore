@@ -1,0 +1,9 @@
+_site/
+node_modules/
+vendor/
+assets/img/*
+*.png
+*.jpg
+*.jpeg
+*.pdf
+_bibliography/*

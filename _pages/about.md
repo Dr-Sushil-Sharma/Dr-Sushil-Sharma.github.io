@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: right
-  image: prof_pic.jpg          # put your photo in assets/img/prof_pic.jpg
+  image: prof_pic.jpg # put your photo in assets/img/prof_pic.jpg
   image_circular: true
   more_info: >
     <p>Institute of Physics</p>
@@ -36,30 +36,33 @@ I am an **experimental particle physicist** working on the **J-PET** (Jagielloni
 I defended my PhD in 2016 at Jagiellonian University under the supervision of **Prof. Bogusław Kamys** with the thesis **“Validation of Spallation Models”**. Since then I have contributed to more than **70 publications**, many in collaboration with the J-PET team, CERN (AEgIS), and other international groups.
 
 ### Research interests
-- **Positronium imaging** and lifetime spectroscopy  
-- **Total-body PET** with plastic scintillators (J-PET)  
-- **Monte-Carlo simulations** (GATE, GEANT4, toy MC)  
-- **Spallation & nuclear-reaction models** (p+Al, p+Ag, p+Au at GeV energies)  
-- **Quantum tests** – photon entanglement, CPT & time-reversal symmetry  
+
+- **Positronium imaging** and lifetime spectroscopy
+- **Total-body PET** with plastic scintillators (J-PET)
+- **Monte-Carlo simulations** (GATE, GEANT4, toy MC)
+- **Spallation & nuclear-reaction models** (p+Al, p+Ag, p+Au at GeV energies)
+- **Quantum tests** – photon entanglement, CPT & time-reversal symmetry
 - **Proton-therapy range verification** and **neutron-based detection** (SABAT)
 
 ---
 
 ## News & Announcements
+
 {: .no_toc}
 
-*(The list below is automatically populated from `_news/` – just drop markdown files there.)*
+_(The list below is automatically populated from `_news/` – just drop markdown files there.)_
 
 ---
 
 ## Latest Blog Posts
+
 {: .no_toc}
 
-*(Populated from `_posts/` – keep writing!)*
+_(Populated from `_posts/` – keep writing!)_
 
 ---
 
-*“Physics is like sex: sure, it may give some practical results, but that’s not why we do it.”* – **Richard Feynman**  
-*(My motto: **Measure first, model later.**)*
+_“Physics is like sex: sure, it may give some practical results, but that’s not why we do it.”_ – **Richard Feynman**  
+_(My motto: **Measure first, model later.**)_
 
 ---

@@ -4,20 +4,20 @@
 
 title: Dr. Sushil Sharma - Portfolio
 first_name: Sushil
-middle_name: 
+middle_name:
 last_name: Sharma
 contact_note: >
   Email is the fastest way to reach me, but feel free to use any of the links below.
 
 description: >
-  Experimental particle physicist working in J-PET research group. 
+  Experimental particle physicist working in J-PET research group.
 
 footer_text: >
   © {{ site.time | date: "%Y" }} Dr. Sushil Sharma. All rights reserved.
 
 keywords: particle-physics, J-PET, positronium, spallation, Monte-Carlo, PET-imaging
 
-lang: en 
+lang: en
 icon: particle
 
 url: https://dr-sushil-sharma.github.io

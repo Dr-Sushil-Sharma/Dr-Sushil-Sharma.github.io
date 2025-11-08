@@ -18,7 +18,7 @@ footer_text: >
 keywords: particle-physics, J-PET, positronium, spallation, Monte-Carlo, PET-imaging
 
 lang: en
-icon: particle
+icon:
 
 url: https://dr-sushil-sharma.github.io
 baseurl: ""

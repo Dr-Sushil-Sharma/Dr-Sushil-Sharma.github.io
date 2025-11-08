@@ -58,8 +58,8 @@ _(Written between experiments and data analysis sessions.)_
 
 ---
 
-> "Measure twice, simulate once."  
->  
+> "Measure twice, simulate once."
+>
 > "Physics is like sex: sure, it may give some practical results, but that's not why we do it." – **Richard Feynman**
 
 ---

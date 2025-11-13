@@ -5,14 +5,8 @@
       "correspondence": "Via Sommarive 14, Trento 38123, Italy",
       "permanent": "House number 1141, Huda, Panipat 132103, India"
     },
-    "phones": [
-      "(+48)503670303",
-      "(+39)3483445825"
-    ],
-    "emails": [
-      "sushil.sharma@tifpa.infn.it",
-      "sushil.sharma.uj@gmail.com"
-    ]
+    "phones": ["(+48)503670303", "(+39)3483445825"],
+    "emails": ["sushil.sharma@tifpa.infn.it", "sushil.sharma.uj@gmail.com"]
   },
   "academic_background": [
     {
@@ -73,35 +67,11 @@
     "detectors": "Working experiences with scintillation, silicon detectors. Extensive experiences in working with Germanium detectors."
   },
   "softwares_and_programming": {
-    "programming_languages": [
-      "C/C++ (intermediate level)",
-      "PYTHON (intermediate level)"
-    ],
-    "scripting_languages": [
-      "SHELL"
-    ],
-    "analysis_packages": [
-      "ROOT",
-      "GEANT4",
-      "SRIM",
-      "TRIM",
-      "PACE3",
-      "PACE4",
-      "CCFULL",
-      "LAMPS (Data Acquisition and Analysis Package)"
-    ],
-    "application_packages": [
-      "XMGRACE",
-      "GNUPLOT",
-      "SIGMA PLOT",
-      "G3DATA",
-      "GIMP"
-    ],
-    "operating_systems": [
-      "DOS",
-      "MICROSOFT WINDOWS",
-      "LINUX / UNIX"
-    ]
+    "programming_languages": ["C/C++ (intermediate level)", "PYTHON (intermediate level)"],
+    "scripting_languages": ["SHELL"],
+    "analysis_packages": ["ROOT", "GEANT4", "SRIM", "TRIM", "PACE3", "PACE4", "CCFULL", "LAMPS (Data Acquisition and Analysis Package)"],
+    "application_packages": ["XMGRACE", "GNUPLOT", "SIGMA PLOT", "G3DATA", "GIMP"],
+    "operating_systems": ["DOS", "MICROSOFT WINDOWS", "LINUX / UNIX"]
   },
   "awards_and_achievements": [
     "INFN Fellowship for non-italian citizens 2019/2020, INFN, Italy.",
@@ -962,7 +932,7 @@
     }
   ],
   "signature": {
-    "place": "Krakow",
+    "place": "Krakow , Poland",
     "date": "May 21, 2021"
   }
 }

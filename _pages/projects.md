@@ -182,6 +182,32 @@ nav_order: 6
     </div>
   </div>
 
+  <div class="row mt-5 justify-content-center">
+    <div class="col-12 text-center mb-3">
+        <h4 class="font-weight-bold">Project Team</h4>
+    </div>
+    <div class="col-md-6">
+        <div class="card border-0 shadow-sm feature-card">
+            <div class="card-body p-3">
+                <div class="d-flex align-items-center">
+                    <img src="{{ '/assets/img/Piyush.jpg' | relative_url }}" 
+                         alt="Piyush Pandey" 
+                         class="rounded-circle mr-3" 
+                         style="width: 80px; height: 80px; object-fit: cover; border: 2px solid var(--global-theme-color, #007bff);">
+                    <div>
+                        <h5 class="mb-0 font-weight-bold">Piyush Pandey</h5>
+                        <span class="badge badge-light border mt-1">PhD Student (2024)</span>
+                        <p class="small text-muted mt-2 mb-0">
+                            Focus: Simulation & detector construction.<br>
+                            Co-supervised by Dr. S. Sharma.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
 </div>
 
 <hr class="my-5">

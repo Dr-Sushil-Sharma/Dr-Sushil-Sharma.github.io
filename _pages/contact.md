@@ -58,16 +58,17 @@ nav_order: 9
 
     <div class="col-md-7">
         <div class="map-container h-100">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.146602066228!2d19.90325431571683!3d50.04603997942152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b62b703668f%3A0x62955543666d6d84!2sFaculty%20of%20Physics%2C%20Astronomy%20and%20Applied%20Computer%20Science%20Jagiellonian%20University!5e0!3m2!1sen!2spl!4v1677685000000!5m2!1sen!2spl" 
-                width="100%" 
-                height="100%" 
-                style="border:0; min-height: 350px; border-radius: 8px;" 
-                allowfullscreen="" 
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.146602066228!2d19.90325431571683!3d50.04603997942152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b62b703668f%3A0x62955543666d6d84!2sFaculty%20of%20Physics%2C%20Astronomy%20and%20Applied%20Computer%20Science%20Jagiellonian%20University!5e0!3m2!1sen!2spl!4v1677685000000!5m2!1sen!2spl"
+                width="100%"
+                height="100%"
+                style="border:0; min-height: 350px; border-radius: 8px;"
+                allowfullscreen=""
                 loading="lazy">
             </iframe>
         </div>
     </div>
+
 </div>
 
 <hr>

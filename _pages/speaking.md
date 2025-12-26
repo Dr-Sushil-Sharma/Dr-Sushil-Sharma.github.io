@@ -107,6 +107,7 @@ nav_order: 5
         </div>
 
     </div>
+
   </div>
 
   <div class="tab-pane fade" id="invited" role="tabpanel" aria-labelledby="invited-tab">
@@ -197,6 +198,7 @@ nav_order: 5
         </div>
 
     </div>
+
   </div>
 
   <div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
@@ -298,6 +300,7 @@ nav_order: 5
         </div>
 
     </div>
+
   </div>
 
 </div>

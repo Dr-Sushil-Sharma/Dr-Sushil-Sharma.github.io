@@ -120,6 +120,7 @@ nav_order: 6
         </div>
       </div>
     </div>
+
   </div>
 
   <hr class="my-5">
@@ -156,6 +157,7 @@ nav_order: 6
         </p>
       </div>
     </div>
+
   </div>
 
   <div class="row mt-5">

@@ -113,7 +113,7 @@ nav_order: 2
             </div>
             <p class="card-text">Investigating the properties and interactions of elementary particles, with a focus on positronium and discrete symmetries.</p>
             <div class="mt-3 text-center">
-                
+
             </div>
         </div>
     </div>
@@ -131,7 +131,7 @@ nav_order: 2
             </div>
             <p class="card-text">Studying the processes and products of spallation reactions, including the validation of theoretical models against experimental data.</p>
             <div class="mt-3 text-center">
-                
+
             </div>
         </div>
     </div>
@@ -149,7 +149,7 @@ nav_order: 2
             </div>
             <p class="card-text">Exploring the dynamics of nuclear reactions, including complete and incomplete fusion processes at energies near the Coulomb barrier.</p>
              <div class="mt-3 text-center">
-                
+
 
 [Image of nuclear fusion vs fission]
 
@@ -171,6 +171,7 @@ nav_order: 2
             <p class="card-text">Investigating the structure of atomic nuclei and the properties of high-spin states.</p>
         </div>
     </div>
+
 </div>
 
 <hr>

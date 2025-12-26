@@ -221,6 +221,7 @@ nav_order: 8
     <img src="{{ '/assets/img/Personal/10.jpg' | relative_url }}" onclick="openFocus(this.src)" alt="">
 
     <p>Neha & Mikkad</p>
+
   </div>
   <div id="ground"></div>
   

@@ -23,22 +23,22 @@ layout: default
       </div>
       <div class="col-md-5">
         {% if page.profile %}
-            {% if page.profile.image %}
-              {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-              {% if page.profile.image_circular %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-              {% else %}
-                {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
-              {% endif %}
-              {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=page.profile.image cache_bust=true %}
+          {% if page.profile.image %}
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% if page.profile.image_circular %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% else %}
+              {% assign profile_image_class = 'img-fluid z-depth-1 rounded' %}
             {% endif %}
-            {% if page.profile.address %}
-              <div class="address-container">
-                <div class="address">
-                  {{ page.profile.address }}
-                </div>
+            {% include figure.liquid loading="eager" path=profile_image_path class=profile_image_class alt=page.profile.image cache_bust=true %}
+          {% endif %}
+          {% if page.profile.address %}
+            <div class="address-container">
+              <div class="address">
+                {{ page.profile.address }}
               </div>
-            {% endif %}
+            </div>
+          {% endif %}
         {% endif %}
       </div>
     </div>

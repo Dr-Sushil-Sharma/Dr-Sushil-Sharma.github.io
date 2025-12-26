@@ -64,7 +64,7 @@ nav_order: 1
             <a href="https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en" target="_blank" class="text-muted mx-2" title="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
             <a href="https://www.linkedin.com/in/sushil-sharma-b68472b1/" target="_blank" class="text-muted mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
         </div>
-        
+
         <div class="mt-4">
             <a href="https://koza.if.uj.edu.pl/staff/ssharma" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
                 View University Profile
@@ -74,7 +74,7 @@ nav_order: 1
 
     <div class="col-md-8">
         <h1 class="hello-title">Hello, I'm <span style="font-style: italic;">Sushil Sharma</span>.</h1>
-        
+
         <div class="bio-text text-justify">
             <p>
                 I am an experimental particle physicist dedicated to advancing our understanding of fundamental physics through innovative instrumentation and precise data analysis.
@@ -87,6 +87,7 @@ nav_order: 1
             </p>
         </div>
     </div>
+
 </div>
 
 <hr class="my-5">

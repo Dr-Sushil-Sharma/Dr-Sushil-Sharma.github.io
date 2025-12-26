@@ -1,65 +1,414 @@
 ---
-layout: about
-title: About
+layout: page
+title: ""
 permalink: /
-subtitle: >
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: true
-  more_info: >
-    <p>JPET Collaboration</p>
-    <p>Department of Experimental Particle Physics and Applications</p>
-    <p>Łojasiewicza 11</p>
-    <p>Jagiellonian University, Kraków, Poland</p>
-
-selected_papers: true
-social: true
-
-announcements:
-  enabled: true
-  scrollable: true
-  limit: 5
-
-latest_posts:
-  enabled: true
-  scrollable: true
-  limit: 3
+description: Assistant Professor at <a href='https://koza.if.uj.edu.pl/'>Jagiellonian University</a>.
+nav: true
+nav_order: 1
 ---
 
-I'm a particle physicist with a decade of work on positron physics, nuclear reactions, and medical imaging. Currently, I'm focused on the **J-PET** project – developing the first total-body PET scanner based on plastic scintillators. The system costs less than crystal-based alternatives, achieves longer axial coverage, and enables **positronium imaging** in living tissue. We're measuring quantum states inside the human body.
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 
-My work began with modeling nuclear reactions – spallation, fusion, and non-equilibrium processes in GeV proton-nucleus collisions. I defended my PhD in 2016 under **Prof. Bogusław Kamys** with a thesis titled **"Validation of Spallation Models"**, testing Monte Carlo transport codes against experimental data from p+Al, p+Ag, and p+Au systems. Since then, I've co-authored **over 70 publications** across nuclear physics and medical imaging, working between Kraków, CERN (AEgIS collaboration), and other research facilities.
+<style>
+/* Hide default theme headers */
+.post-header, .page-header, .page-title { display: none !important; }
 
-### Current research directions
+/* Custom Title Style - Reduced size */
+.hello-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* Reduced from 3rem */
+    font-weight: 700;
+    color: var(--global-theme-color);
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+}
 
-- **Positronium imaging**: Mapping formation and decay of positronium in tissue to probe microstructure and molecular environment
-- **Fundamental symmetries in PET**: Testing CPT invariance and time-reversal symmetry using entangled photon pairs from positron annihilation
-- **Scintillator instrumentation**: Long-strip plastic detectors with multi-threshold readout and time-of-flight reconstruction
+/* Bio Text Styling - More natural reading size */
+.bio-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem; /* Reduced from 1.25rem */
+    line-height: 1.6;  /* Reduced from 1.8 */
+    font-weight: 400;  /* Standard weight for better readability */
+    color: #4a4a4a;
+}
 
-I spend considerable time in GATE and GEANT4 simulations, but the most satisfying moments come from seeing experimental data confirm what the models predicted – or, better yet, finding something unexpected.
+/* Dark mode adjustment */
+@media (prefers-color-scheme: dark) {
+    .bio-text { color: #d0d0d0; }
+    .profile-img-container img { border-color: #444 !important; }
+}
 
----
+/* Profile Image */
+.profile-img-container img {
+    border: 4px solid #fff;
+}
+</style>
 
-## News & Announcements
+<div class="row mt-4 align-items-center">
+    
+    <div class="col-md-4 text-center">
+        <div class="profile-img-container mb-3">
+            <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Sushil Sharma" class="img-fluid rounded-circle shadow-sm" style="max-width: 220px;">
+        </div>
 
-{: .no_toc}
+        <div class="text-muted small mt-2">
+            <div class="font-weight-bold" style="font-size: 1rem;">Dept. of Experimental Particle Physics</div>
+            <div>Jagiellonian University</div>
+            <div>Kraków, Poland</div>
+        </div>
 
-_(Updated from `_news/` directory.)_
+        <div class="social-icons mt-4">
+            <a href="mailto:sushil.sharma@uj.edu.pl" class="text-muted mx-2" title="Email"><i class="fas fa-envelope fa-2x"></i></a>
+            <a href="https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en" target="_blank" class="text-muted mx-2" title="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
+            <a href="https://www.linkedin.com/in/sushil-sharma-b68472b1/" target="_blank" class="text-muted mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        
+        <div class="mt-4">
+            <a href="https://koza.if.uj.edu.pl/staff/ssharma" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
+                View University Profile
+            </a>
+        </div>
+    </div>
 
----
+    <div class="col-md-8">
+        <h1 class="hello-title">Hello, I'm <span style="font-style: italic;">Sushil Sharma</span>.</h1>
+        
+        <div class="bio-text text-justify">
+            <p>
+                I am an experimental particle physicist dedicated to advancing our understanding of fundamental physics through innovative instrumentation and precise data analysis.
+            </p>
+            <p>
+                Currently, I serve as an <strong>Assistant Professor</strong> at the Department of Experimental Particle Physics and Applications at <a href="https://www.uj.edu.pl" target="_blank">Jagiellonian University</a>. My academic journey is built on a foundation of rigorous research, holding a Ph.D. with distinction in Nuclear Physics from Jagiellonian University, followed by impactful postdoctoral fellowships at the University of Warsaw and TIFPA, INFN in Trento, Italy.
+            </p>
+            <p>
+                My work focuses on the realization of nuclear physics experiments, computer-based raw data analysis, and the model description of observables. I am particularly passionate about developing new technologies for particle detection.
+            </p>
+        </div>
+    </div>
+</div>
 
-## Latest Blog Posts
+<hr class="my-5">
 
-{: .no_toc}
+<div class="row">
+    <div class="col-12">
+        <h3 class="mb-4 text-center font-weight-bold">Research Focus</h3>
+    </div>
+</div>
 
-_(Written between experiments and data analysis sessions.)_
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-heartbeat fa-2x"></i></div>
+            <h5 class="interest-title">Medical Physics</h5>
+            <p class="interest-text">Positron Emission Tomography (PET) & Medical Imaging</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-atom fa-2x"></i></div>
+            <h5 class="interest-title">Particle Physics</h5>
+            <p class="interest-text">Fundamental interactions and particle properties</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-bomb fa-2x"></i></div>
+            <h5 class="interest-title">Spallation Physics</h5>
+            <p class="interest-text">Reaction dynamics and model validation</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-radiation fa-2x"></i></div>
+            <h5 class="interest-title">Nuclear Reactions</h5>
+            <p class="interest-text">Fusion, fission, and reaction mechanisms</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-layer-group fa-2x"></i></div>
+            <h5 class="interest-title">Nuclear Structure</h5>
+            <p class="interest-text">Properties of atomic nuclei and high-spin states</p>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-microchip fa-2x"></i></div>
+            <h5 class="interest-title">Instrumentation</h5>
+            <p class="interest-text">New hardware/software techniques in particle detection</p>
+        </div>
+    </div>
+</div>
 
----
+<style>
+.interest-card {
+    background: #ffffff;
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-color: var(--global-theme-color, #007bff);
+}
+.icon-wrapper {
+    margin-bottom: 1rem;
+    color: #6c757d;
+    transition: color 0.3s ease;
+}
+.interest-card:hover .icon-wrapper {
+    color: var(--global-theme-color, #007bff);
+}
+.interest-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.interest-text {
+    font-size: 0.9rem;
+    color: #666;
+}
 
-> "Measure twice, simulate once."
->
-> "Physics is like sex: sure, it may give some practical results, but that's not why we do it." – **Richard Feynman**
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .interest-card {
+        background: #2b2b2b;
+        border-color: #444;
+    }
+    .interest-card:hover {
+        background: #323232;
+    }
+    .interest-title { color: #f0f0f0; }
+    .interest-text { color: #aaa; }
+    .icon-wrapper { color: #888; }
+    .interest-card:hover .icon-wrapper { color: var(--global-theme-color, #66b0ff); }
+}
+</style>
 
----
+<hr class="my-5">
+
+<div class="canvas-container mt-3">
+    <canvas id="physicsCanvas"></canvas>
+    <div class="canvas-overlay">
+        <h2>The Positronium Field</h2>
+        <p>Simulating particle dynamics in real-time.</p>
+    </div>
+</div>
+
+<style>
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%); /* Deep space look */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.canvas-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    pointer-events: none; /* Let clicks pass through to canvas */
+    font-family: 'Roboto', sans-serif;
+}
+
+.canvas-overlay h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.canvas-overlay p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+</style>
+
+<script>
+const canvas = document.getElementById('physicsCanvas');
+const ctx = canvas.getContext('2d');
+
+let particles = [];
+const particleCount = 120; // Number of particles
+let hue = 0;
+
+// Mouse interaction object
+const mouse = {
+    x: undefined,
+    y: undefined,
+    radius: 150 // Radius of interaction
+}
+
+// Resize canvas to fit container
+function resizeCanvas() {
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
+}
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); // Init
+
+// Track mouse movement
+canvas.addEventListener('mousemove', function(event) {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = event.clientX - rect.left;
+    mouse.y = event.clientY - rect.top;
+});
+
+// Reset mouse when leaving canvas
+canvas.addEventListener('mouseleave', function() {
+    mouse.x = undefined;
+    mouse.y = undefined;
+});
+
+// CLICK TO EXPLODE (Annihilation)
+canvas.addEventListener('click', function() {
+    particles.forEach(p => {
+        // Calculate distance from mouse
+        let dx = p.x - mouse.x;
+        let dy = p.y - mouse.y;
+        let distance = Math.sqrt(dx*dx + dy*dy);
+        
+        if (distance < 200) {
+            // Explosive force
+            let forceDirectionX = dx / distance;
+            let forceDirectionY = dy / distance;
+            let force = 40; // Explosion power
+            p.speedX += forceDirectionX * force;
+            p.speedY += forceDirectionY * force;
+            p.color = '#ffffff'; // Flash white
+        }
+    });
+});
+
+// Particle Class
+class Particle {
+    constructor() {
+        this.x = Math.random() * canvas.width;
+        this.y = Math.random() * canvas.height;
+        this.size = Math.random() * 3 + 1;
+        this.speedX = Math.random() * 3 - 1.5;
+        this.speedY = Math.random() * 3 - 1.5;
+        this.color = 'hsl(' + Math.random() * 360 + ', 100%, 50%)'; // Rainbow start
+        this.baseColor = this.color;
+    }
+
+    update() {
+        // Physics: Movement
+        this.x += this.speedX;
+        this.y += this.speedY;
+
+        // Physics: Wall Collision (Bounce)
+        if (this.x > canvas.width || this.x < 0) this.speedX = -this.speedX;
+        if (this.y > canvas.height || this.y < 0) this.speedY = -this.speedY;
+
+        // Physics: Mouse Attraction (Gravity)
+        if (mouse.x != undefined) {
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < mouse.radius) {
+                const forceDirectionX = dx / distance;
+                const forceDirectionY = dy / distance;
+                const force = (mouse.radius - distance) / mouse.radius;
+                const directionX = forceDirectionX * force * 0.6; // Attraction strength
+                const directionY = forceDirectionY * force * 0.6;
+                
+                this.speedX += directionX;
+                this.speedY += directionY;
+                
+                // Color shift based on energy/speed
+                this.color = '#00e5ff'; // Cyan when active
+            } else {
+                // Return to normal speed (friction)
+                this.speedX *= 0.98; 
+                this.speedY *= 0.98;
+                // Min speed check
+                if(Math.abs(this.speedX) < 0.5) this.speedX = Math.random() * 2 - 1;
+                if(Math.abs(this.speedY) < 0.5) this.speedY = Math.random() * 2 - 1;
+                
+                this.color = 'rgba(100, 200, 255, 0.7)'; // Base idle color
+            }
+        }
+    }
+
+    draw() {
+        ctx.fillStyle = this.color;
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+// Create Particle Swarm
+function init() {
+    particles = [];
+    for (let i = 0; i < particleCount; i++) {
+        particles.push(new Particle());
+    }
+}
+
+// Animation Loop
+function animate() {
+    // Semi-transparent clear for "Trail" effect
+    ctx.fillStyle = 'rgba(20, 20, 30, 0.2)'; 
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+    for (let i = 0; i < particles.length; i++) {
+        particles[i].update();
+        particles[i].draw();
+        
+        // Connect nearby particles (The "Field" effect)
+        for (let j = i; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            
+            if (distance < 100) {
+                ctx.beginPath();
+                // Color line based on mouse proximity
+                if (mouse.x != undefined) {
+                     // Check distance to mouse for glowing lines
+                     let dMouse = Math.sqrt((particles[i].x - mouse.x)**2 + (particles[i].y - mouse.y)**2);
+                     if(dMouse < 150) {
+                         ctx.strokeStyle = 'rgba(0, 229, 255, ' + (1 - distance/100) + ')';
+                         ctx.lineWidth = 1;
+                     } else {
+                         ctx.strokeStyle = 'rgba(100, 100, 100, ' + (0.2 - distance/500) + ')';
+                         ctx.lineWidth = 0.5;
+                     }
+                } else {
+                    ctx.strokeStyle = 'rgba(100, 100, 100, 0.1)';
+                    ctx.lineWidth = 0.2;
+                }
+                
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.stroke();
+            }
+        }
+    }
+    requestAnimationFrame(animate);
+}
+
+init();
+animate();
+</script>

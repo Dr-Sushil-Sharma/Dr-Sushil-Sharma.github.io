@@ -18,12 +18,10 @@ body {
 }
 
 body.fixed-top-nav {
-  // Add some padding for the nav-bar.
   padding-top: 56px;
 }
 
 body.sticky-bottom-footer {
-  // Remove padding below footer.
   padding-bottom: 0;
 }
 
@@ -31,14 +29,35 @@ body.sticky-bottom-footer {
   max-width: $max-content-width;
 }
 
-// Profile
-.profile {
-  img {
-    width: 100%;
-  }
+.post-header {
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
-// TODO: redefine content layout.
+.col-md-5 img {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 0.5rem;
+}
+
+.address {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  text-align: left;
+}
+
+.address-container i {
+  color: var(--global-theme-color);
+}
 
 /******************************************************************************
  * Publications

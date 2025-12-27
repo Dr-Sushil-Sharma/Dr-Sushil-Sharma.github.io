@@ -78,7 +78,7 @@ nav_order: 6
 <div class="row mb-4">
     <div class="col-12 text-center">
         <h3 class="font-weight-bold">PhD Mentorship</h3>
-        <p class="text-muted">The growing family of researchers I have the privilege to co-supervise.</p>
+        <p class="text-muted">The growing family of researchers I have the privilege to co-supervise as an auxiliary supervisor.</p>
     </div>
 </div>
 

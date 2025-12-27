@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://dr-sushil-sharma.github.io/sitemap.xml

@@ -45,9 +45,14 @@ nav_order: 6
                 <p class="card-text text-muted">
                     From first scripts to confident programming. Emphasizes hands-on experience using Jupyter Notebooks and real-world physics examples.
                 </p>
-                <a href="https://github.com/Official-Satyam-Tiwari/PythonCourseForBeginners" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
-                    <i class="fab fa-github"></i> View Materials
-                </a>
+                <div class="d-flex mt-3">
+                    <a href="{{ '/teaching/python/' | relative_url }}" class="btn btn-sm btn-primary mr-2">
+                        <i class="fas fa-graduation-cap"></i> Enter Course
+                    </a>
+                    <a href="https://github.com/Official-Satyam-Tiwari/PythonCourseForBeginners" target="_blank" class="btn btn-sm btn-outline-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

@@ -173,10 +173,10 @@ nav_order: 6
         <div class="student-card alumni">
             <div class="pin"></div>
             <div class="student-img-wrapper">
-                <img src="{{ '/assets/img/Sahil.jpg' | relative_url }}" alt="Sahil Upadhyay" onerror="this.src='https://ui-avatars.com/api/?name=Sahil+Upadhyay&background=random'">
+                <img src="{{ '/assets/img/Sahil.jpg' | relative_url }}" alt="Udai Singh" onerror="this.src='https://ui-avatars.com/api/?name=Sahil+Upadhyay&background=random'">
             </div>
             <div class="student-info">
-                <h5>Sahil Upadhyay</h5>
+                <h5>Udai Singh</h5>
                 <span class="badge badge-secondary">2017 - 2021</span>
                 <p>PhD Completed</p>
             </div>

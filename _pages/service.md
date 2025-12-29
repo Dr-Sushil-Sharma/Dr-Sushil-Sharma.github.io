@@ -7,6 +7,8 @@ nav: true
 nav_order: 7
 ---
 
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
 <div class="row mb-4">
     <div class="col-sm-12">
         <p class="lead">
@@ -32,6 +34,87 @@ nav_order: 7
                     View Editorial Board <i class="fas fa-external-link-alt ml-1"></i>
                 </a>
             </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-12">
+        <h3 class="mb-4"><i class="fas fa-trophy mr-2"></i> Awards, Grants & Honors</h3>
+        
+        <div class="service-list">
+
+            <div class="service-card featured-award">
+                <div class="service-year">2024</div>
+                <div class="service-content">
+                    <h5 class="service-title">Principal Investigator (SONATA BIS 13)</h5>
+                    <p class="service-text">Awarded by the National Science Center (NCN), Poland.</p>
+                    <p class="service-meta"><i class="fas fa-clock mr-1"></i> 2024 - 2028</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2024</div>
+                <div class="service-content">
+                    <h5 class="service-title">Individual Award of the Rector (2nd Degree)</h5>
+                    <p class="service-text">Jagiellonian University award for scientific achievements in research on positronium atoms.</p>
+                    <p class="service-meta"><i class="fas fa-award mr-1"></i> Scientific Achievement</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2023</div>
+                <div class="service-content">
+                    <h5 class="service-title">Team Award of the Rector (3rd Degree)</h5>
+                    <p class="service-text">Jagiellonian University award for organizational achievements.</p>
+                    <p class="service-meta"><i class="fas fa-users mr-1"></i> Organizational Achievement</p>
+                </div>
+            </div>
+
+            <div class="service-card featured-award">
+                <div class="service-year">2022</div>
+                <div class="service-content">
+                    <h5 class="service-title">Team Award of the Rector (1st Degree)</h5>
+                    <p class="service-text">Jagiellonian University award for outstanding scientific achievements by the team.</p>
+                    <p class="service-meta"><i class="fas fa-star mr-1"></i> Scientific Achievement</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2022</div>
+                <div class="service-content">
+                    <h5 class="service-title">Winner of Miniatura 6 Grant</h5>
+                    <p class="service-text">Research grant awarded by the National Science Center (NCN), Poland.</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2019</div>
+                <div class="service-content">
+                    <h5 class="service-title">INFN Fellowship</h5>
+                    <p class="service-text">Prestigious fellowship for non-Italian citizens at INFN-TIFPA, Italy.</p>
+                    <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Trento, Italy</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2015</div>
+                <div class="service-content">
+                    <h5 class="service-title">PhD Thesis Distinction</h5>
+                    <p class="service-text">Awarded for the thesis titled "Validation of spallation models".</p>
+                    <p class="service-meta"><i class="fas fa-graduation-cap mr-1"></i> Academic Excellence</p>
+                </div>
+            </div>
+
+            <div class="service-card award-card">
+                <div class="service-year">2011</div>
+                <div class="service-content">
+                    <h5 class="service-title">International PhD Scholarship (MPD)</h5>
+                    <p class="service-text">Foundation for Polish Science (FNP) program co-financed by the EU European Regional Development Fund.</p>
+                    <p class="service-meta"><i class="fas fa-clock mr-1"></i> 2011 - 2015</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
@@ -80,16 +163,6 @@ nav_order: 7
 
         </div>
     </div>
-
-</div>
-
-<div class="row mt-5">
-    <div class="col-12">
-        <h3 class="mb-4 text-muted"><i class="fas fa-hands-helping mr-2"></i> Outreach</h3>
-        <div class="alert alert-light border" role="alert">
-            <i class="fas fa-info-circle mr-2"></i> Outreach and community engagement activities will be updated soon.
-        </div>
-    </div>
 </div>
 
 <style>
@@ -110,10 +183,25 @@ nav_order: 7
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
     border-color: var(--global-theme-color, #007bff);
 }
+
+/* Green Featured (Editorial) */
 .service-card.featured-service {
     border-left: 5px solid #28a745;
     background: #f8fff9;
 }
+
+/* Gold Featured (Awards) */
+.service-card.featured-award {
+    border-left: 5px solid #ffc107;
+    background: #fffff0;
+}
+.service-card.award-card {
+    border-left: 5px solid #dee2e6;
+}
+.service-card.award-card:hover {
+    border-color: #ffc107;
+}
+
 .service-icon { padding-right: 1.5rem; color: #28a745; }
 .service-subtitle { font-size: 1rem; color: #6c757d; margin-bottom: 0.5rem; }
 
@@ -133,6 +221,8 @@ nav_order: 7
     .service-card { background: #2b2b2b; border-color: #444; }
     .service-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
     .service-card.featured-service { background: #232b23; border-left-color: #28a745; }
+    .service-card.featured-award { background: #333022; border-left-color: #ffc107; }
+    .service-card.award-card { border-left-color: #555; }
     .service-title { color: #f1f1f1; }
     .service-text { color: #d1d1d1; }
     .service-subtitle { color: #adb5bd; }
@@ -156,256 +246,137 @@ nav_order: 7
 <hr class="my-5">
 
 <div class="row">
-    <div class="col-12 text-center">
-        <h3 class="mb-2 font-weight-bold">Service Topology</h3>
-        <p class="text-muted small">
-            <i class="fas fa-project-diagram"></i> <strong>Drag</strong> the nodes to explore the network of my academic contributions.
-        </p>
+    <div class="col-12 text-center mb-4">
+        <h3 class="mb-2 font-weight-bold" style="font-family: 'Orbitron', sans-serif;">Impact at a Glance</h3>
+        <p class="text-muted small">Quantifying contributions to the field.</p>
     </div>
 </div>
 
-<div class="network-container mt-3">
-    <canvas id="networkCanvas"></canvas>
-    <div class="network-overlay">
-        <h2>Collaboration Graph</h2>
-        <p>Connecting community & science.</p>
+<div class="impact-container" id="impact-section">
+    <div class="row">
+        <div class="col-md-3 col-6 mb-4">
+            <div class="impact-card">
+                <div class="impact-icon text-primary"><i class="fas fa-hourglass-half"></i></div>
+                <div class="impact-number" data-target="14">0</div>
+                <div class="impact-label">Years of Service</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+            <div class="impact-card">
+                <div class="impact-icon text-warning"><i class="fas fa-trophy"></i></div>
+                <div class="impact-number" data-target="8">0</div>
+                <div class="impact-label">Awards & Grants</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+            <div class="impact-card">
+                <div class="impact-icon text-info"><i class="fas fa-users"></i></div>
+                <div class="impact-number" data-target="5">0</div>
+                <div class="impact-label">Org. Committees</div>
+            </div>
+        </div>
+        <div class="col-md-3 col-6 mb-4">
+            <div class="impact-card">
+                <div class="impact-icon text-success"><i class="fas fa-check-circle"></i></div>
+                <div class="impact-number" data-target="100">0</div>
+                <div class="impact-label">Reviews & Edits +%</div>
+            </div>
+        </div>
     </div>
 </div>
 
 <style>
-.network-container {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background: #111;
+/* === Impact Section Styling === */
+.impact-container {
+    padding: 2rem 0;
+}
+.impact-card {
+    background: #fff;
+    border: 1px solid #e9ecef;
     border-radius: 12px;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    position: relative;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    border: 1px solid #333;
 }
-canvas { display: block; width: 100%; height: 100%; cursor: grab; }
-canvas:active { cursor: grabbing; }
+.impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.impact-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+.impact-number {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.impact-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #6c757d;
+}
 
-.network-overlay {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: rgba(255, 255, 255, 0.6);
-    pointer-events: none;
-    font-family: 'Roboto', sans-serif;
-}
-.network-overlay h2 {
-    font-size: 1.5rem; margin: 0; font-weight: 700;
-    text-transform: uppercase; letter-spacing: 2px; color: #fff;
+/* Dark Mode for Impact Section */
+@media (prefers-color-scheme: dark) {
+    .impact-card {
+        background: #2b2b2b;
+        border-color: #444;
+    }
+    .impact-number { color: #f8f9fa; }
+    .impact-label { color: #adb5bd; }
 }
 </style>
 
 <script>
-const canvas = document.getElementById('networkCanvas');
-const ctx = canvas.getContext('2d');
+// === ANIMATED COUNTER SCRIPT ===
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll('.impact-number');
+    const speed = 200; // The lower the slower
 
-let width, height;
+    const animateCounters = () => {
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText;
+                
+                // Calculate increment step
+                const inc = target / speed * 5; // adjust speed multiplier
 
-// --- CONFIGURATION ---
-// Define the nodes of your network
-const nodes = [
-    { id: 0, label: "Me", type: "core", r: 35 },
-    { id: 1, label: "EJNMMI Physics", type: "journal", r: 25 },
-    { id: 2, label: "Springer", type: "journal", r: 20 },
-    { id: 3, label: "Jagiellonian Univ.", type: "inst", r: 25 },
-    { id: 4, label: "Krakow", type: "loc", r: 15 },
-    { id: 5, label: "Jagiellonian Symp.", type: "conf", r: 22 },
-    { id: 6, label: "DAE Symposium", type: "conf", r: 22 },
-    { id: 7, label: "Nuclear Physics", type: "field", r: 18 },
-    { id: 8, label: "Meson Workshop", type: "conf", r: 20 },
-    { id: 9, label: "Applied Nuclear", type: "conf", r: 20 },
-];
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + inc);
+                    setTimeout(updateCount, 20);
+                } else {
+                    counter.innerText = target;
+                    // Add "+" if specifically requested via data attribute or class
+                    if(target === 100) counter.innerText = "100%"; // Specific logic for percentage if needed
+                }
+            };
+            updateCount();
+        });
+    };
 
-// Define connections (links)
-const links = [
-    { source: 0, target: 1 }, // Me -> EJNMMI
-    { source: 1, target: 2 }, // EJNMMI -> Springer
-    { source: 0, target: 3 }, // Me -> Jagiellonian
-    { source: 3, target: 4 }, // Jagiellonian -> Krakow
-    { source: 0, target: 5 }, // Me -> Jag Symposium
-    { source: 5, target: 3 }, // Jag Symp -> Jagiellonian
-    { source: 0, target: 6 }, // Me -> DAE
-    { source: 5, target: 7 }, // Jag Symp -> Nuclear Phys
-    { source: 6, target: 7 }, // DAE -> Nuclear Phys
-    { source: 0, target: 8 }, // Me -> Meson
-    { source: 0, target: 9 }, // Me -> Applied Nuclear
-    { source: 8, target: 4 }, // Meson -> Krakow
-    { source: 9, target: 4 }, // Applied -> Krakow
-];
+    // Trigger animation when section is in view
+    let options = { threshold: 0.5 };
+    let observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounters();
+                observer.unobserve(entry.target);
+            }
+        });
+    }, options);
 
-// Color Palette
-const colors = {
-    core: "#ffc107",   // Gold
-    journal: "#28a745", // Green
-    inst: "#007bff",   // Blue
-    conf: "#e83e8c",   // Pink
-    loc: "#6c757d",    // Gray
-    field: "#17a2b8"   // Cyan
-};
-
-// Physics Variables
-let simulationParticles = [];
-const repulsion = 1000;
-const springLength = 100;
-const friction = 0.9;
-
-function resize() {
-    width = canvas.parentElement.clientWidth;
-    height = canvas.parentElement.clientHeight;
-    canvas.width = width;
-    canvas.height = height;
-}
-window.addEventListener('resize', resize);
-resize();
-
-// Initialize Particles positions
-nodes.forEach(node => {
-    node.x = width/2 + (Math.random() - 0.5) * 50;
-    node.y = height/2 + (Math.random() - 0.5) * 50;
-    node.vx = 0;
-    node.vy = 0;
+    const section = document.getElementById('impact-section');
+    if(section) observer.observe(section);
 });
-
-// Mouse Interaction
-let draggedNode = null;
-let mouseX = 0;
-let mouseY = 0;
-
-canvas.addEventListener('mousedown', e => {
-    const rect = canvas.getBoundingClientRect();
-    mouseX = e.clientX - rect.left;
-    mouseY = e.clientY - rect.top;
-    
-    // Find clicked node
-    for(let node of nodes) {
-        const dx = mouseX - node.x;
-        const dy = mouseY - node.y;
-        if(Math.sqrt(dx*dx + dy*dy) < node.r) {
-            draggedNode = node;
-            break;
-        }
-    }
-});
-
-canvas.addEventListener('mousemove', e => {
-    const rect = canvas.getBoundingClientRect();
-    mouseX = e.clientX - rect.left;
-    mouseY = e.clientY - rect.top;
-});
-
-canvas.addEventListener('mouseup', () => { draggedNode = null; });
-canvas.addEventListener('mouseleave', () => { draggedNode = null; });
-
-function updatePhysics() {
-    // 1. Repulsion (Nodes push apart)
-    for (let i = 0; i < nodes.length; i++) {
-        for (let j = i + 1; j < nodes.length; j++) {
-            let dx = nodes[j].x - nodes[i].x;
-            let dy = nodes[j].y - nodes[i].y;
-            let dist = Math.sqrt(dx*dx + dy*dy);
-            if (dist === 0) dist = 0.1;
-
-            const force = repulsion / (dist * dist);
-            const fx = (dx / dist) * force;
-            const fy = (dy / dist) * force;
-
-            nodes[i].vx -= fx;
-            nodes[i].vy -= fy;
-            nodes[j].vx += fx;
-            nodes[j].vy += fy;
-        }
-    }
-
-    // 2. Spring (Links pull together)
-    links.forEach(link => {
-        const u = nodes[link.source];
-        const v = nodes[link.target];
-        
-        let dx = v.x - u.x;
-        let dy = v.y - u.y;
-        let dist = Math.sqrt(dx*dx + dy*dy);
-        if (dist === 0) dist = 0.1;
-
-        const displacement = dist - springLength;
-        const force = displacement * 0.05; // Spring constant
-        
-        const fx = (dx / dist) * force;
-        const fy = (dy / dist) * force;
-
-        u.vx += fx;
-        u.vy += fy;
-        v.vx -= fx;
-        v.vy -= fy;
-    });
-
-    // 3. Center Gravity (Keep whole blob in middle)
-    nodes.forEach(node => {
-        const dx = (width/2) - node.x;
-        const dy = (height/2) - node.y;
-        node.vx += dx * 0.005;
-        node.vy += dy * 0.005;
-    });
-
-    // 4. Update Position & Mouse Drag
-    nodes.forEach(node => {
-        if (node === draggedNode) {
-            node.x = mouseX;
-            node.y = mouseY;
-            node.vx = 0;
-            node.vy = 0;
-        } else {
-            node.x += node.vx;
-            node.y += node.vy;
-            node.vx *= friction;
-            node.vy *= friction;
-        }
-    });
-}
-
-function draw() {
-    ctx.clearRect(0, 0, width, height);
-
-    // Draw Links
-    ctx.strokeStyle = "rgba(255,255,255,0.2)";
-    ctx.lineWidth = 1.5;
-    links.forEach(link => {
-        const u = nodes[link.source];
-        const v = nodes[link.target];
-        ctx.beginPath();
-        ctx.moveTo(u.x, u.y);
-        ctx.lineTo(v.x, v.y);
-        ctx.stroke();
-    });
-
-    // Draw Nodes
-    nodes.forEach(node => {
-        // Circle
-        ctx.beginPath();
-        ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
-        ctx.fillStyle = colors[node.type] || "#fff";
-        ctx.fill();
-        
-        // Border
-        ctx.strokeStyle = "#fff";
-        ctx.lineWidth = 2;
-        ctx.stroke();
-
-        // Label
-        ctx.fillStyle = "#fff";
-        ctx.font = "bold 12px Arial";
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText(node.label, node.x, node.y + node.r + 15);
-    });
-
-    updatePhysics();
-    requestAnimationFrame(draw);
-}
-
-draw();
 </script>

@@ -175,31 +175,6 @@ nav_order: 2
 
 <hr>
 
-<h3 class="mb-4 mt-4">Selected Past Projects</h3>
-
-<div class="card mt-3 p-3 hoverable research-card" style="border-left: 5px solid #007bff;">
-    <div class="row no-gutters">
-        <div class="col-md-12">
-            <div class="card-body">
-                <h5 class="card-title font-weight-bold">Characteristics of Clover Detector</h5>
-                <h6 class="card-subtitle mb-3 text-muted">
-                    <span class="badge badge-light border"><i class="far fa-calendar-alt"></i> 2008</span>
-                    <span class="badge badge-light border ml-2"><i class="fas fa-university"></i> Inter University Accelerator Centre, New Delhi</span>
-                </h6>
-                <p class="card-text">
-                    During my final year of master's studies, I conducted a project focused on characterizing a Clover Detector. This work was performed at the Inter University Accelerator Centre in New Delhi, India.
-                </p>
-                <p class="card-text small text-muted border-top pt-2 mt-3">
-                    <strong>Guide:</strong> Dr. Rakesh Kumar, Scientist-F, GDA/INGA group.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<br>
-<hr>
-
 <h3 class="mb-4 mt-4">Discovery Timeline</h3>
 Visualizing the trajectory of my research.
 <br>

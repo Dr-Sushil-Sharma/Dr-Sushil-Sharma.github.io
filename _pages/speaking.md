@@ -18,41 +18,25 @@ nav_order: 5
 </div>
 
 <div id="speakingCarousel" class="carousel slide mb-5 shadow-lg rounded-lg overflow-hidden" data-ride="carousel">
+  
   <ol class="carousel-indicators">
-    <li data-target="#speakingCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#speakingCarousel" data-slide-to="1"></li>
-    <li data-target="#speakingCarousel" data-slide-to="2"></li>
-    <li data-target="#speakingCarousel" data-slide-to="3"></li>
-    <li data-target="#speakingCarousel" data-slide-to="4"></li>
-    <li data-target="#speakingCarousel" data-slide-to="5"></li>
-    <li data-target="#speakingCarousel" data-slide-to="6"></li>
+    {% for i in (1..22) %}
+      <li data-target="#speakingCarousel" data-slide-to="{{ i | minus: 1 }}" class="{% if forloop.first %}active{% endif %}"></li>
+    {% endfor %}
   </ol>
 
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="{{ '/assets/img/PhotosFB/1.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 1">
-      <div class="carousel-caption d-none d-md-block">
-        <p class="carousel-text-bg">Engaging with the scientific community</p>
+    {% for i in (1..22) %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{{ '/assets/img/PhotosFB/' | append: i | append: '.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement {{ i }}">
+        
+        {% if forloop.first %}
+          <div class="carousel-caption d-none d-md-block">
+            <p class="carousel-text-bg">Engaging with the scientific community</p>
+          </div>
+        {% endif %}
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/2.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 2">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/3.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 3">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/4.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 4">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/5.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 5">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/6.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 6">
-    </div>
-    <div class="carousel-item">
-      <img src="{{ '/assets/img/PhotosFB/7.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement 7">
-    </div>
+    {% endfor %}
   </div>
 
   <a class="carousel-control-prev" href="#speakingCarousel" role="button" data-slide="prev">
@@ -63,6 +47,7 @@ nav_order: 5
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+
 </div>
 
 <ul class="nav nav-pills mb-4 justify-content-center" id="speaking-tabs" role="tablist">

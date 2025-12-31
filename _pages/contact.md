@@ -37,7 +37,7 @@ nav_order: 9
                 </div>
                 <div class="contact-text">
                     <span class="label">Office Location</span>
-                    <span class="value">Room: F-1-29</span>
+                    <span class="value">Room: B-2-23</span>
                     <span class="value text-muted small">Dept. of Experimental Particle Physics</span>
                     <span class="value text-muted small">Jagiellonian University</span>
                 </div>

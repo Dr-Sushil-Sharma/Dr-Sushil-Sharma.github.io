@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /service/
-title: Service
-description: My contributions to the academic community through committee work, reviewing, and outreach.
+title: Accomplishments
+description: My accomplishments in the Academia.
 nav: true
 nav_order: 7
 ---
@@ -35,6 +35,23 @@ nav_order: 7
                 </a>
             </div>
         </div>
+
+        <div class="service-card">
+            <div class="service-icon">
+                <i class="fas fa-glasses fa-2x"></i>
+            </div>
+            <div class="service-content">
+                <h5 class="service-title">Peer Reviewer / Referee</h5>
+                <p class="service-text">Regular reviewer for high-impact scientific journals including:</p>
+                <ul class="mb-0 pl-3 text-muted" style="font-size: 0.95rem;">
+                    <li>Physica Medica</li>
+                    <li>Nuclear Instruments & Methods in Physics Research</li>
+                    <li>Nuclear Engineering and Technology</li>
+                    <li>EJNMMI Physics</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -124,6 +141,42 @@ nav_order: 7
         <h3 class="mb-4"><i class="fas fa-users-cog mr-2"></i> Organizing Committees</h3>
         
         <div class="service-list">
+
+            <div class="service-card">
+                <div class="service-year">2025</div>
+                <div class="service-content">
+                    <h5 class="service-title">Co-chair</h5>
+                    <p class="service-text">2nd Symposium on New Trends in Nuclear and Medical Physics</p>
+                    <p class="service-meta"><a href="https://indico.koza.if.uj.edu.pl/event/18/" target="_blank"><i class="fas fa-link mr-1"></i> View Event</a></p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-year">2024</div>
+                <div class="service-content">
+                    <h5 class="service-title">Scientific Secretary</h5>
+                    <p class="service-text">5th Jagiellonian Symposium on Advances in Particle Physics and Medicine (JS:2024)</p>
+                    <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Collegium Novodvorscianum, Krakow (June 29 – July 7)</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-year">2023</div>
+                <div class="service-content">
+                    <h5 class="service-title">Co-chair</h5>
+                    <p class="service-text">Symposium on New Trends in Nuclear and Medical Physics</p>
+                    <p class="service-meta"><a href="https://indico.koza.if.uj.edu.pl/event/12/" target="_blank"><i class="fas fa-link mr-1"></i> View Event</a></p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-year">2022</div>
+                <div class="service-content">
+                    <h5 class="service-title">Co-organizer</h5>
+                    <p class="service-text">4th Jagiellonian Symposium on Advances in Particle Physics and Medicine</p>
+                    <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Collegium Maius & Novodvorscianum, Krakow</p>
+                </div>
+            </div>
             
             <div class="service-card">
                 <div class="service-year">2019</div>
@@ -139,15 +192,6 @@ nav_order: 7
                 <div class="service-content">
                     <h5 class="service-title">Co-organizer</h5>
                     <p class="service-text">II Symposium on Applied Nuclear Physics and Innovative Technologies</p>
-                    <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Krakow, Poland</p>
-                </div>
-            </div>
-
-            <div class="service-card">
-                <div class="service-year">2014</div>
-                <div class="service-content">
-                    <h5 class="service-title">Co-organizer</h5>
-                    <p class="service-text">13th International Workshop on Meson Production, Properties and Interaction</p>
                     <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Krakow, Poland</p>
                 </div>
             </div>
@@ -271,7 +315,7 @@ nav_order: 7
         <div class="col-md-3 col-6 mb-4">
             <div class="impact-card">
                 <div class="impact-icon text-info"><i class="fas fa-users"></i></div>
-                <div class="impact-number" data-target="5">0</div>
+                <div class="impact-number" data-target="9">0</div>
                 <div class="impact-label">Org. Committees</div>
             </div>
         </div>

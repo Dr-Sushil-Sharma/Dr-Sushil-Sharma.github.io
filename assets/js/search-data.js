@@ -51,9 +51,9 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/teaching/";
           },
-        },{id: "nav-service",
-          title: "Service",
-          description: "My contributions to the academic community through committee work, reviewing, and outreach.",
+        },{id: "nav-accomplishments",
+          title: "Accomplishments",
+          description: "My accomplishments in the Academia.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/service/";

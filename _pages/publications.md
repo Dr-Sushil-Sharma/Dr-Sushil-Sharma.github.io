@@ -733,6 +733,70 @@ nav_order: 4
             </div>
         </div>
 
+        <div class="publication-card article" data-year="2013">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">Complete Fusion in <sup>7</sup>Li + <sup>144,152</sup>Sm Reactions</h5>
+                <p class="pub-authors">P. K. Rath, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Phys. Rev. C 88 (2013) 044617</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2013">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">High Spin States in <sup>135</sup>La</h5>
+                <p class="pub-authors">Ritika Garg, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Phys. Rev. C 87 (2013) 034317</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2012">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">A High Speed Digital Data Acquisition System for the Indian National Gamma Array at Tata Institute of Fundamental Research</h5>
+                <p class="pub-authors">R. Palit, S. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Nucl. Instrum. Methods Phys. Res. A 680 (2012) 90</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2012">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">Fusion Reaction Studies for the <sup>6</sup>Li + <sup>90</sup>Zr System at Near-Barrier Energies</h5>
+                <p class="pub-authors">H. Kumawat, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Phys. Rev. C 86 (2012) 024607</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2011">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">Complete and Incomplete Fusion in <sup>9</sup>Be + <sup>124</sup>Sn System</h5>
+                <p class="pub-authors">V. V. Parkar, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Proc. Radiochim. Acta 1 (2011) 131</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2011">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">Structural Change of the Unique-Parity Π h<sub>11/2</sub> ⊗ h<sub>11/2</sub> Configuration in <sup>134</sup>Cs</h5>
+                <p class="pub-authors">H. Pai, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Phys. Rev. C 84 (2011) 041301(R)</span></div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2010">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">Fusion Cross Sections for the <sup>9</sup>Be + <sup>124</sup>Sn Reaction at Energies Near the Coulomb Barrier</h5>
+                <p class="pub-authors">V. V. Parkar, Sushil K. Sharma, et al.</p>
+                <div class="pub-meta"><span class="journal-name">Phys. Rev. C 82 (2010) 054601</span></div>
+            </div>
+        </div>
+
+
     </div><h3 class="section-title mt-5" id="proceedings"><i class="fas fa-users text-warning mr-2"></i> Conference Proceedings</h3>
     <hr class="mb-4">
     

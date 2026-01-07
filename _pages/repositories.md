@@ -199,7 +199,7 @@ nav_order: 8
             "Physics explains the universe, but my family gives it meaning."
         </p>
         <p class="mt-3" style="font-size: 1.2rem;">
-            Dedicated to my beloved wife <span class="highlight-name">Neha</span> and our wonderful daughter <span class="highlight-name">Mikkad</span>.
+            Dedicated to my beloved wife <span class="highlight-name">Neha</span> and our wonderful daughter <span class="highlight-name">Ananya (Alicia)</span>.
         </p>
     </div>
 </div>

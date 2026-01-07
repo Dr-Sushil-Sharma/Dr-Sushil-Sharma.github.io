@@ -102,6 +102,155 @@ nav_order: 4
 }
 </style>
 
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div class="row mb-3">
+    <div class="col-md-4 mb-2">
+        <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">Total Citations</h6>
+            <div class="h2 font-weight-bold mb-0" style="color: #ffc107;">2,758</div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-2">
+        <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">h-index</h6>
+            <div class="h2 font-weight-bold mb-0" style="color: #28a745;">24</div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-2">
+        <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">i10-index</h6>
+            <div class="h2 font-weight-bold mb-0" style="color: #17a2b8;">41</div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-5">
+    <div class="col-12">
+        <div class="p-3 shadow-sm rounded" style="background-color: #1e1e1e; position: relative; height:450px; width:100%; border: 1px solid #333;">
+            <canvas id="impactChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // --- CITATION DATA ---
+    const yearStats = {
+        2012: 20,
+        2013: 33,
+        2014: 49,
+        2015: 50,
+        2016: 65,
+        2017: 115,
+        2018: 144,
+        2019: 207,
+        2020: 322,
+        2021: 226,
+        2022: 336,
+        2023: 393,
+        2024: 425,
+        2025: 326,
+        2026: 11
+    };
+
+    // Get Today's Date for the Label
+    const today = new Date();
+    const dateString = today.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }); // e.g. "07 Jan"
+
+    const labels = Object.keys(yearStats).sort((a, b) => a - b).map(year => {
+        if (year === '2026') return `2026`;
+        return year;
+    });
+
+    const dataCites = Object.keys(yearStats).sort((a, b) => a - b).map(year => yearStats[year]);
+
+    // Setup Chart Context
+    const ctx = document.getElementById('impactChart').getContext('2d');
+
+    // Create a "Glow" Gradient
+    let gradient = ctx.createLinearGradient(0, 0, 0, 400);
+    gradient.addColorStop(0, 'rgba(255, 193, 7, 0.6)'); 
+    gradient.addColorStop(1, 'rgba(255, 193, 7, 0.0)'); 
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Citations',
+                data: dataCites,
+                borderColor: '#ffc107',
+                backgroundColor: gradient,
+                borderWidth: 3,
+                pointBackgroundColor: '#1e1e1e',
+                pointBorderColor: '#ffc107',
+                pointRadius: 6,
+                pointHoverRadius: 8,
+                fill: true,
+                tension: 0.4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            
+            // --- CONFIGURATION FOR OLDER CHART.JS VERSIONS (v2) ---
+            legend: { display: false },
+            title: { 
+                display: true, 
+                text: 'Citations per Year', 
+                fontColor: '#f0f0f0', 
+                fontSize: 18 
+            },
+            tooltips: {
+                mode: 'index',
+                intersect: false,
+                backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                titleFontColor: '#000',
+                bodyFontColor: '#000'
+            },
+            
+            // --- CONFIGURATION FOR NEWER CHART.JS VERSIONS (v3/v4) ---
+            plugins: {
+                legend: { display: false },
+                title: {
+                    display: true,
+                    text: 'Citations per year',
+                    color: '#f0f0f0',
+                    font: { size: 18, weight: '600', family: 'sans-serif' },
+                    padding: { bottom: 20 }
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(255, 255, 255, 0.9)',
+                    titleColor: '#000',
+                    bodyColor: '#000',
+                    padding: 12,
+                    displayColors: false,
+                    callbacks: {
+                        label: function(context) {
+                            return context.parsed.y + ' Citations';
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    grid: { display: false },
+                    ticks: { color: '#aaaaaa' }
+                },
+                y: {
+                    beginAtZero: true,
+                    grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                    ticks: { color: '#aaaaaa' }
+                }
+            }
+        }
+    });
+});
+</script>
+
 <div class="row mb-4">
     <div class="col-md-12">
         <div class="search-wrapper">

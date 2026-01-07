@@ -13,86 +13,175 @@ nav_order: 1
 
 <style>
 /* --- GLOBAL PAGE STYLES --- */
-/* Hide default theme headers */
 .post-header, .page-header, .page-title { display: none !important; }
 
 /* Custom Title Style */
 .hello-title {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 700;
     color: var(--global-theme-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     letter-spacing: -0.5px;
 }
 
-/* Bio Text Styling */
+/* --- PROFILE CARD STYLES (Dark Theme) --- */
+.profile-card {
+    background: linear-gradient(135deg, #2b323c 0%, #1a1c20 100%);
+    border-radius: 16px;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    /* Ensure height matches bio roughly or sits nicely */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Subtle decorative circle in background */
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: -50px; left: -50px;
+    width: 150px; height: 150px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.profile-img-container img {
+    border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.profile-img-container img:hover {
+    transform: scale(1.03);
+    border-color: var(--global-theme-color, #007bff);
+}
+
+.profile-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.profile-dept {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
+
+/* --- BIO SECTION STYLES --- */
+.bio-container {
+    background: linear-gradient(to right, #ffffff, #f9f9fa);
+    border-left: 5px solid var(--global-theme-color);
+    padding: 2rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    height: 100%; /* Match height */
+}
+
 .bio-text {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: 1.15rem;
+    line-height: 1.7;
     font-weight: 400;
     color: #4a4a4a;
 }
 
-/* Profile Image */
-.profile-img-container img {
-    border: 4px solid #fff;
-    transition: transform 0.3s ease;
+/* --- CONTACT BAR (Bottom) --- */
+.contact-bar-icon {
+    color: #555;
+    transition: all 0.2s ease;
 }
-.profile-img-container img:hover {
-    transform: scale(1.05);
+.contact-bar-icon:hover {
+    color: var(--global-theme-color, #007bff);
+    transform: translateY(-3px);
 }
 
 /* Dark mode adjustment */
 @media (prefers-color-scheme: dark) {
     .bio-text { color: #d0d0d0; }
-    .profile-img-container img { border-color: #444 !important; }
+    .bio-container { background: #252525; border-left-color: #66b0ff; box-shadow: none; }
+    .contact-bar-icon { color: #aaa; }
+    .contact-bar-icon:hover { color: #fff; }
 }
 </style>
 
-<div class="row mt-4 align-items-center">
+<div class="row mt-5 mb-4 align-items-stretch">
     
-    <div class="col-md-4 text-center">
-        <div class="profile-img-container mb-3">
-            <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Sushil Sharma" class="img-fluid rounded-circle shadow-sm" style="max-width: 220px;">
-        </div>
+    <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="profile-card mx-auto text-center">
+            
+            <div class="profile-img-container mb-4">
+                <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Sushil Sharma" class="img-fluid rounded-circle" style="max-width: 190px;">
+            </div>
 
-        <div class="text-muted small mt-2">
-            <div class="font-weight-bold" style="font-size: 1rem;">Dept. of Experimental Particle Physics</div>
-            <div>Jagiellonian University</div>
-            <div>Kraków, Poland</div>
-        </div>
+            <div>
+                <div class="profile-role">Assistant Professor</div>
+                <div class="small text-uppercase tracking-wider mb-3" style="letter-spacing: 1px; font-size: 0.75rem; opacity: 0.7;">(Research and Academics)</div>
+                
+                <div class="profile-dept">
+                    Institute of Physics<br>
+                    Faculty of Physics, Astronomy and<br>Applied Computer Science
+                </div>
 
-        <div class="social-icons mt-4">
-            <a href="mailto:sushil.sharma@uj.edu.pl" class="text-muted mx-2" title="Email"><i class="fas fa-envelope fa-2x"></i></a>
-            <a href="https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en" target="_blank" class="text-muted mx-2" title="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
-            <a href="https://www.linkedin.com/in/sushil-sharma-b68472b1/" target="_blank" class="text-muted mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
-        </div>
+                <div class="mt-2 font-weight-bold" style="color: #fff;">Jagiellonian University</div>
+                <div class="small" style="color: rgba(255,255,255,0.6);">Kraków, Poland</div>
+            </div>
 
-        <div class="mt-4">
-            <a href="https://koza.if.uj.edu.pl/staff/ssharma" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
-                View University Profile
-            </a>
-        </div>
-    </div>
-
-    <div class="col-md-8">
-        <h1 class="hello-title">Hello, I'm <span style="font-style: italic;">Sushil Sharma</span>.</h1>
-
-        <div class="bio-text text-justify">
-            <p>
-                I am an experimental particle physicist dedicated to advancing our understanding of fundamental physics through innovative instrumentation and precise data analysis.
-            </p>
-            <p>
-                Currently, I serve as an <strong>Assistant Professor</strong> at the Department of Experimental Particle Physics and Applications at <a href="https://www.uj.edu.pl" target="_blank">Jagiellonian University</a>. My academic journey is built on a foundation of rigorous research, holding a Ph.D. with distinction in Nuclear Physics from Jagiellonian University, followed by impactful postdoctoral fellowships at the University of Warsaw and TIFPA, INFN in Trento, Italy.
-            </p>
-            <p>
-                My work focuses on the realization of nuclear physics experiments, computer-based raw data analysis, and the model description of observables. I am particularly passionate about developing new technologies for particle detection.
-            </p>
         </div>
     </div>
 
+    <div class="col-lg-8">
+        <div class="d-flex flex-column h-100 justify-content-center">
+            <h1 class="hello-title pl-3">Hello, I'm <span style="font-style: italic;">Sushil Sharma</span>.</h1>
+            
+            <div class="bio-container mt-3">
+                <div class="bio-text text-justify">
+                    <p>
+                        I am an experimental nuclear physicist at Jagiellonian University in Krakow, working on detector instrumentation and data analysis for precision studies at the interface of fundamental physics and medical imaging.
+                    </p>
+                    <p class="mb-0">
+                        My research focuses on <strong>positronium physics</strong> and <strong>plastic-scintillator PET technology (J-PET)</strong>, including photon-polarization measurements for discrete symmetry tests and quantum-correlation studies, as well as the application of modular detection concepts for new experiments in antimatter physics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mb-5">
+    <div class="col-12 text-center">
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            
+            <div class="mx-4 my-2">
+                <a href="mailto:sushil.sharma@uj.edu.pl" class="contact-bar-icon mx-3" title="Email"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en" target="_blank" class="contact-bar-icon mx-3" title="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
+                <a href="https://www.linkedin.com/in/sushil-sharma-b68472b1/" target="_blank" class="contact-bar-icon mx-3" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+
+            <div class="d-none d-md-block border-left mx-3" style="height: 40px; border-color: #ddd;"></div>
+
+            <div class="mx-4 my-2">
+                <a href="https://koza.if.uj.edu.pl/staff/ssharma" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
+                    View University Profile
+                </a>
+            </div>
+
+        </div>
+    </div>
 </div>
 
 <hr class="my-5">
@@ -104,48 +193,53 @@ nav_order: 1
 </div>
 
 <div class="row">
-    <div class="col-md-4 mb-4">
+    <a href="https://koza.if.uj.edu.pl/aegis/" target="_blank" class="col-md-4 mb-4 text-decoration-none">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-atom fa-2x"></i></div>
+            <h5 class="interest-title">Antimatter Physics</h5>
+            <p class="interest-text">Positronium, antiproton, antihydrogen</p>
+        </div>
+    </a>
+
+    <a href="https://koza.if.uj.edu.pl/publications/pet" target="_blank" class="col-md-4 mb-4 text-decoration-none">
         <div class="interest-card h-100">
             <div class="icon-wrapper"><i class="fas fa-heartbeat fa-2x"></i></div>
             <h5 class="interest-title">Medical Physics</h5>
             <p class="interest-text">Positron Emission Tomography (PET) & Medical Imaging</p>
         </div>
-    </div>
+    </a>
+
     <div class="col-md-4 mb-4">
         <div class="interest-card h-100">
-            <div class="icon-wrapper"><i class="fas fa-atom fa-2x"></i></div>
-            <h5 class="interest-title">Particle Physics</h5>
-            <p class="interest-text">Fundamental interactions and particle properties</p>
+            <div class="icon-wrapper"><i class="fas fa-project-diagram fa-2x"></i></div>
+            <h5 class="interest-title">Fundamental Physics</h5>
+            <p class="interest-text">Test on discrete symmetries, Quantum entanglement, decay rates</p>
         </div>
     </div>
-    <div class="col-md-4 mb-4">
-        <div class="interest-card h-100">
-            <div class="icon-wrapper"><i class="fas fa-bomb fa-2x"></i></div>
-            <h5 class="interest-title">Spallation Physics</h5>
-            <p class="interest-text">Reaction dynamics and model validation</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="interest-card h-100">
-            <div class="icon-wrapper"><i class="fas fa-radiation fa-2x"></i></div>
-            <h5 class="interest-title">Nuclear Reactions</h5>
-            <p class="interest-text">Fusion, fission, and reaction mechanisms</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
-        <div class="interest-card h-100">
-            <div class="icon-wrapper"><i class="fas fa-layer-group fa-2x"></i></div>
-            <h5 class="interest-title">Nuclear Structure</h5>
-            <p class="interest-text">Properties of atomic nuclei and high-spin states</p>
-        </div>
-    </div>
-    <div class="col-md-4 mb-4">
+
+    <a href="https://koza.if.uj.edu.pl/publications/pet" target="_blank" class="col-md-4 mb-4 text-decoration-none">
         <div class="interest-card h-100">
             <div class="icon-wrapper"><i class="fas fa-microchip fa-2x"></i></div>
             <h5 class="interest-title">Instrumentation</h5>
             <p class="interest-text">New hardware/software techniques in particle detection</p>
         </div>
-    </div>
+    </a>
+
+    <a href="https://koza.if.uj.edu.pl/spallation/" target="_blank" class="col-md-4 mb-4 text-decoration-none">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-bomb fa-2x"></i></div>
+            <h5 class="interest-title">Spallation Physics</h5>
+            <p class="interest-text">Reaction dynamics and model validation</p>
+        </div>
+    </a>
+
+    <a href="{{ '/publications/' | relative_url }}" class="col-md-4 mb-4 text-decoration-none">
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="fas fa-layer-group fa-2x"></i></div>
+            <h5 class="interest-title">Nuclear Structure & Reactions</h5>
+            <p class="interest-text">Fusion, fission, high-spin states and reaction mechanisms</p>
+        </div>
+    </a>
 </div>
 
 <style>
@@ -157,6 +251,7 @@ nav_order: 1
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    color: #333; /* Ensure text color is dark for links */
 }
 .interest-card:hover {
     transform: translateY(-5px);
@@ -169,12 +264,12 @@ nav_order: 1
     transition: color 0.3s ease;
 }
 .interest-card:hover .icon-wrapper { color: var(--global-theme-color, #007bff); }
-.interest-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.interest-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: inherit; }
 .interest-text { font-size: 0.9rem; color: #666; }
 
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
-    .interest-card { background: #2b2b2b; border-color: #444; }
+    .interest-card { background: #2b2b2b; border-color: #444; color: #f0f0f0; }
     .interest-card:hover { background: #323232; }
     .interest-title { color: #f0f0f0; }
     .interest-text { color: #aaa; }
@@ -187,14 +282,184 @@ nav_order: 1
 
 <div class="row mb-4">
     <div class="col-12 text-center">
-        <h3 class="font-weight-bold">Recent Research</h3>
-        <p class="text-muted">Latest selected contributions.</p>
+        <h3 class="font-weight-bold">Selected Highlights</h3>
+        <p class="text-muted">Key publications and contributions.</p>
     </div>
 </div>
 
-<div id="recent-pubs-container" class="recent-pubs-wrapper">
-    <div class="text-center py-5">
-        <i class="fas fa-spinner fa-spin fa-2x text-muted"></i>
+<div class="row">
+    <div class="col-12">
+        
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Discrete%20symmetries%20tested%20at%2010%E2%88%924%20precision%20using%20linear%20polarization%20of%20photons%20from%20positronium%20annihilations" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Discrete symmetries tested at 10<sup>-4</sup> precision using linear polarization of photons from positronium annihilations</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">P. Moskal,.., S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Nature Communications 15, 78 (2024)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2024</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Efficiency%20determination%20of%20J-PET%3A%20first%20plastic%20scintillators-based%20PET%20scanner" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Efficiency determination of J-PET: first plastic scintillators-based PET scanner</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">S. Sharma et al.</div>
+                        <span class="pub-journal-badge">EJNMMI Physics 10, 28 (2023)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2023</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Forward%20emission%20of%20positronium%20from%20nanochanneled%20silicon%20membranes" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Forward emission of positronium from nanochanneled silicon membranes</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">S. Mariazzi,..,S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Phys. Rev. B (2022)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2022</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Positronium%20imaging%20with%20the%20novel%20multiphoton%20PET%20scanner" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Positronium imaging with the novel multiphoton PET scanner</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">P. Moskal,..,S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Science Advances 7(42) (2021)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2021</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Testing%20CPT%20symmetry%20in%20ortho-positronium%20decays%20with%20positronium%20annihilation%20tomography" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Testing CPT symmetry in ortho-positronium decays with positronium annihilation tomography</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">P. Moskal,..,S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Nature Communications 12(1) (2021)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2021</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Estimating%20relationship%20between%20the%20Time%20Over%20Threshold%20and%20energy%20loss%20by%20photons%20in%20plastic%20scintillators%20used%20in%20the%20J-PET%20scanner" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Estimating relationship between the Time Over Threshold and energy loss by photons in plastic scintillators used in the J-PET scanner</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">S. Sharma et al.</div>
+                        <span class="pub-journal-badge">EJNMMI Phys 7, 39 (2020)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2020</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Monte%20Carlo%20N-Particle%20simulations%20of%20an%20underwater%20chemical%20threats%20detection%20system%20using%20neutron%20activation%20analysis" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Monte Carlo N-Particle simulations of an underwater chemical threats detection system using neutron activation analysis</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">P. Sibczynski,.., S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Journal of Instrumentation 14 (2019)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2019</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Feasibility%20studies%20of%20the%20polarization%20of%20photons%20beyond%20the%20optical%20wavelength%20regime%20with%20the%20J-PET%20detector" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Feasibility studies of the polarization of photons beyond the optical wavelength regime with the J-PET detector</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">P. Moskal,..,S. Sharma et al.</div>
+                        <span class="pub-journal-badge">Eur. Phys. J. C 78, 970 (2018)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2018</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Ranking%20and%20validation%20of%20spallation%20models%20for%20isotopic%20production%20cross%20sections%20of%20heavy%20residua" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Ranking and validation of spallation models for isotopic production cross sections of heavy residua</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">Sushil K. Sharma, B. Kamys, et al.</div>
+                        <span class="pub-journal-badge">Eur. Phys. J. A 53, 150 (2017)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2017</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q=Ranking%20and%20validation%20of%20the%20spallation%20models%20for%20description%20of%20intermediate%20mass%20fragment%20emission%20from%20p%2BAg%20collisions%20at%20480%20MeV%20incident%20proton%20beam%20energy" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">Ranking and validation of the spallation models for description of intermediate mass fragment emission from p+Ag collisions</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">Sushil K. Sharma, B. Kamys, et al.</div>
+                        <span class="pub-journal-badge">Eur. Phys. J. A 52, 171 (2016)</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">2016</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
 
@@ -325,72 +590,6 @@ nav_order: 1
     .pub-card-full:hover .btn-read { background: #fff; color: #000; }
 }
 </style>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    // 1. Fetch Publications
-    fetch("{{ '/publications/' | relative_url }}")
-        .then(response => response.text())
-        .then(html => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-            const articles = doc.querySelectorAll('.publication-card.article');
-            const limit = 5; // Show top 5 articles
-            const container = document.getElementById('recent-pubs-container');
-            
-            container.innerHTML = ""; // Clear loader
-
-            if(articles.length === 0) {
-                container.innerHTML = '<div class="text-muted text-center p-4">No recent publications found.</div>';
-                return;
-            }
-
-            for (let i = 0; i < Math.min(articles.length, limit); i++) {
-                const sourceCard = articles[i];
-                
-                // Get inner HTML for title (preserves formatting if any)
-                const titleHTML = sourceCard.querySelector('.pub-title').innerHTML;
-                // Get raw text for search
-                const rawTitle = sourceCard.querySelector('.pub-title').innerText.trim();
-                
-                const authors = sourceCard.querySelector('.pub-authors').innerText;
-                const displayAuthors = authors.length > 80 ? authors.substring(0, 80) + "..." : authors;
-                
-                const journal = sourceCard.querySelector('.journal-name').innerText;
-                const year = sourceCard.getAttribute('data-year');
-
-                // --- GOOGLE SCHOLAR TRICK ---
-                // Instead of looking for a direct link, we generate a search URL
-                const link = "https://scholar.google.com/scholar?q=" + encodeURIComponent(rawTitle);
-
-                // Build Full Width Card
-                const cardHTML = `
-                    <div class="pub-card-full">
-                        <a href="${link}" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
-                        <div class="pub-card-content">
-                            <div class="pub-info">
-                                <div class="pub-card-title">${titleHTML}</div>
-                                <div class="pub-card-meta">
-                                    <div class="pub-author-list">${displayAuthors}</div>
-                                    <span class="pub-journal-badge">${journal}</span>
-                                </div>
-                            </div>
-                            <div class="pub-actions">
-                                <div class="pub-year">${year}</div>
-                                <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                container.innerHTML += cardHTML;
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            document.getElementById('recent-pubs-container').innerHTML = '<div class="text-danger text-center">Unable to load publications.</div>';
-        });
-});
-</script>
 
 <hr class="my-5">
 

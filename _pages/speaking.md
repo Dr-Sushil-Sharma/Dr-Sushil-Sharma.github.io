@@ -58,12 +58,12 @@ nav_order: 5
   </li>
   <li class="nav-item">
     <a class="nav-link" id="invited-tab" data-toggle="pill" href="#invited" role="tab" aria-controls="invited" aria-selected="false">
-        <i class="fas fa-user-tie"></i> Invited Talks
+        <i class="fas fa-user-tie"></i> Talks & Seminars
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" id="conference-tab" data-toggle="pill" href="#conference" role="tab" aria-controls="conference" aria-selected="false">
-        <i class="fas fa-users"></i> Conferences
+        <i class="fas fa-users"></i> Posters
     </a>
   </li>
   <li class="nav-item">
@@ -114,6 +114,7 @@ nav_order: 5
 
   <div class="tab-pane fade" id="invited" role="tabpanel" aria-labelledby="invited-tab">
     <div class="talk-list">
+        
         <div class="talk-card">
             <div class="talk-year">2025</div>
             <div class="talk-details">
@@ -235,6 +236,97 @@ nav_order: 5
         </div>
 
         <div class="talk-card">
+            <div class="talk-year">2023</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Improving the experimental precision of ortho-positronium decay rate</h5>
+                <p class="talk-event">Hot Topic Talk: POSMOL 2023</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Univ. Notre Dame, USA</span>
+                    <span><i class="far fa-calendar-alt"></i> Aug 3-6</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2023</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Test for Non-Relativistic QED in decays of positronium atoms</h5>
+                <p class="talk-event">Oral Presentation: 17th Int. Workshop on Meson Physics</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
+                    <span><i class="far fa-calendar-alt"></i> June 22-27</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2023</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Feasibility studies for Imaging e+e- annihilations</h5>
+                <p class="talk-event">Oral Presentation: SORMA 2023</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Univ. Michigan, Ann Arbor, USA</span>
+                    <span><i class="far fa-calendar-alt"></i> May 22-25</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2023</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Inertial sensing measurements on the positronium beam</h5>
+                <p class="talk-event">Oral Presentation: Applications of radiation detection techniques</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
+                    <span><i class="far fa-calendar-alt"></i> May 8-12</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-year">2022</div>
+            <div class="talk-details">
+                <h5 class="talk-title">J-PET detection modules based on plastic scintillators</h5>
+                <p class="talk-event">Oral Presentation: Int. Workshops on Radiation Imaging Detectors</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Riva del Garda, Italy</span>
+                    <span><i class="far fa-calendar-alt"></i> June 26-30</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2022</div>
+            <div class="talk-details">
+                <h5 class="talk-title">J-PET tomograph for discrete symmetries studies</h5>
+                <p class="talk-event">Oral Presentation: BEACH 2022</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
+                    <span><i class="far fa-calendar-alt"></i> June 5-11</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-year">2021</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Modular J-PET applications in medical and particle physics</h5>
+                <p class="talk-event">Oral Presentation: Conf. on Technology and Instrumentation in Particle Physics</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Triumf, Canada (Online)</span>
+                    <span><i class="far fa-calendar-alt"></i> May 24−28</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="talk-card">
+            <div class="talk-year">2020</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Decay rate of o-Ps atoms in J-PET</h5>
+                <p class="talk-event">Oral Presentation: Workshop on Exotic atomic and nuclear matter</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
+                    <span><i class="far fa-calendar-alt"></i> Sep 29−30</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
             <div class="talk-year">2020</div>
             <div class="talk-details">
                 <h5 class="talk-title">Recent trends in Nuclear and Medical physics</h5>
@@ -256,6 +348,7 @@ nav_order: 5
                 </div>
             </div>
         </div>
+
         <div class="talk-card">
             <div class="talk-year">2019</div>
             <div class="talk-details">
@@ -270,6 +363,28 @@ nav_order: 5
         <div class="talk-card">
             <div class="talk-year">2019</div>
             <div class="talk-details">
+                <h5 class="talk-title">Efficiency determination of JPET detector</h5>
+                <p class="talk-event">Oral Presentation: Is Quantum Theory exact?</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
+                    <span><i class="far fa-calendar-alt"></i> Sep 23−27</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2019</div>
+            <div class="talk-details">
+                <h5 class="talk-title">TOT method for disentanglement of photons</h5>
+                <p class="talk-event">Oral Presentation: 15th Intl. Workshop on Slow Positron Beam Techniques</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Prague, Czech Republic</span>
+                    <span><i class="far fa-calendar-alt"></i> Sep 02−06</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2019</div>
+            <div class="talk-details">
                 <h5 class="talk-title">Positronium atom: tests on discrete symmetries</h5>
                 <p class="talk-event">Invited Seminar at IIT Ropar</p>
                 <div class="talk-meta">
@@ -278,6 +393,7 @@ nav_order: 5
                 </div>
             </div>
         </div>
+
         <div class="talk-card">
             <div class="talk-year">2018</div>
             <div class="talk-details">
@@ -286,6 +402,17 @@ nav_order: 5
                 <div class="talk-meta">
                     <span><i class="fas fa-map-marker-alt"></i> ECT*, Trento, Italy</span>
                     <span><i class="far fa-calendar-alt"></i> Oct 08−12</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2018</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Polarization of gamma photons from positronium</h5>
+                <p class="talk-event">Oral Presentation: 18th Int. Conf. on Positron Annihilation</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Orlando, USA</span>
+                    <span><i class="far fa-calendar-alt"></i> Aug 19-24</span>
                 </div>
             </div>
         </div>
@@ -311,125 +438,35 @@ nav_order: 5
                 </div>
             </div>
         </div>
+
+        <div class="talk-card">
+            <div class="talk-year">2015</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Validation of spallation models</h5>
+                <p class="talk-event">Oral Presentation: Jagiellonian Symposium on Fundamental Physics</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
+                    <span><i class="far fa-calendar-alt"></i> June 07−13</span>
+                </div>
+            </div>
+        </div>
+        <div class="talk-card">
+            <div class="talk-year">2014</div>
+            <div class="talk-details">
+                <h5 class="talk-title">Proton induced spallation reaction</h5>
+                <p class="talk-event">Oral Presentation: II Symposium on Applied Nuclear Physics</p>
+                <div class="talk-meta">
+                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
+                    <span><i class="far fa-calendar-alt"></i> Sep 24−27</span>
+                </div>
+            </div>
+        </div>
+
     </div>
   </div>
 
   <div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
     <div class="talk-list">
-        <div class="talk-card">
-            <div class="talk-year">2023</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Improving the experimental precision of ortho-positronium decay rate</h5>
-                <p class="talk-event">Hot Topic Talk: POSMOL 2023</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Univ. Notre Dame, USA</span>
-                    <span><i class="far fa-calendar-alt"></i> Aug 3-6</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2023</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Test for Non-Relativistic QED in decays of positronium atoms</h5>
-                <p class="talk-event">Oral: 17th Int. Workshop on Meson Physics</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
-                    <span><i class="far fa-calendar-alt"></i> June 22-27</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2023</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Feasibility studies for Imaging e+e- annihilations</h5>
-                <p class="talk-event">Oral: SORMA 2023</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Univ. Michigan, Ann Arbor, USA</span>
-                    <span><i class="far fa-calendar-alt"></i> May 22-25</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2023</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Inertial sensing measurements on the positronium beam</h5>
-                <p class="talk-event">Oral: Applications of radiation detection techniques</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
-                    <span><i class="far fa-calendar-alt"></i> May 8-12</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="talk-card">
-            <div class="talk-year">2022</div>
-            <div class="talk-details">
-                <h5 class="talk-title">J-PET detection modules based on plastic scintillators</h5>
-                <p class="talk-event">Oral: Int. Workshops on Radiation Imaging Detectors</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Riva del Garda, Italy</span>
-                    <span><i class="far fa-calendar-alt"></i> June 26-30</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2022</div>
-            <div class="talk-details">
-                <h5 class="talk-title">J-PET tomograph for discrete symmetries studies</h5>
-                <p class="talk-event">Oral: BEACH 2022</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
-                    <span><i class="far fa-calendar-alt"></i> June 5-11</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="talk-card">
-            <div class="talk-year">2021</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Modular J-PET applications in medical and particle physics</h5>
-                <p class="talk-event">Oral: Conf. on Technology and Instrumentation in Particle Physics</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Triumf, Canada (Online)</span>
-                    <span><i class="far fa-calendar-alt"></i> May 24−28</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="talk-card">
-            <div class="talk-year">2020</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Decay rate of o-Ps atoms in J-PET</h5>
-                <p class="talk-event">Oral: Workshop on Exotic atomic and nuclear matter</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
-                    <span><i class="far fa-calendar-alt"></i> Sep 29−30</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="talk-card">
-            <div class="talk-year">2019</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Efficiency determination of JPET detector</h5>
-                <p class="talk-event">Oral: Is Quantum Theory exact?</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> INFN Frascati, Italy</span>
-                    <span><i class="far fa-calendar-alt"></i> Sep 23−27</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2019</div>
-            <div class="talk-details">
-                <h5 class="talk-title">TOT method for disentanglement of photons</h5>
-                <p class="talk-event">Oral: 15th Intl. Workshop on Slow Positron Beam Techniques</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Prague, Czech Republic</span>
-                    <span><i class="far fa-calendar-alt"></i> Sep 02−06</span>
-                </div>
-            </div>
-        </div>
         <div class="talk-card">
             <div class="talk-year">2019</div>
             <div class="talk-details">
@@ -437,18 +474,6 @@ nav_order: 5
                 <p class="talk-event">Poster: FNP IIIrd Interdisciplinary Congress meeting</p>
                 <div class="talk-meta">
                     <span><i class="fas fa-map-marker-alt"></i> Warsaw, Poland</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="talk-card">
-            <div class="talk-year">2018</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Polarization of gamma photons from positronium</h5>
-                <p class="talk-event">Oral: 18th Int. Conf. on Positron Annihilation</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Orlando, USA</span>
-                    <span><i class="far fa-calendar-alt"></i> Aug 19-24</span>
                 </div>
             </div>
         </div>
@@ -497,28 +522,6 @@ nav_order: 5
             </div>
         </div>
 
-        <div class="talk-card">
-            <div class="talk-year">2015</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Validation of spallation models</h5>
-                <p class="talk-event">Oral: Jagiellonian Symposium on Fundamental Physics</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
-                    <span><i class="far fa-calendar-alt"></i> June 07−13</span>
-                </div>
-            </div>
-        </div>
-        <div class="talk-card">
-            <div class="talk-year">2014</div>
-            <div class="talk-details">
-                <h5 class="talk-title">Proton induced spallation reaction</h5>
-                <p class="talk-event">Oral: II Symposium on Applied Nuclear Physics</p>
-                <div class="talk-meta">
-                    <span><i class="fas fa-map-marker-alt"></i> Krakow, Poland</span>
-                    <span><i class="far fa-calendar-alt"></i> Sep 24−27</span>
-                </div>
-            </div>
-        </div>
         <div class="talk-card">
             <div class="talk-year">2013</div>
             <div class="talk-details">

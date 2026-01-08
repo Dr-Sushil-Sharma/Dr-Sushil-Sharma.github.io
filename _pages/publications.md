@@ -275,6 +275,26 @@ document.addEventListener("DOMContentLoaded", function() {
     
     <div class="group-articles">
 
+        <div class="publication-card article" data-year="2026">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
+                <h5 class="pub-title">
+                    <a href="#" target="_blank">
+                        Exploring Maximum Likelihood and Bayesian Approaches for Two-Dimensional Image Restoration: A Machine Learning Perspective
+                    </a>
+                </h5>
+                <p class="pub-authors">
+                    K. Topolnicki, S. Sharma, Yu. Volkotrub, M. Das
+                </p>
+                <div class="pub-meta">
+                    <span class="journal-name">
+                        Computer Physics Communications 319 (2026) 109913
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
         <div class="publication-card article" data-year="2025">
             <div class="pub-badge"></div>
             <div class="pub-content">

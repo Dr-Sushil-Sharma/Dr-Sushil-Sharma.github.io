@@ -614,7 +614,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, "text/html");
             const articles = doc.querySelectorAll('.publication-card.article');
-            const limit = 5; // Show top 5 articles
+            const limit = 10; // Show top 5 articles
             const container = document.getElementById('recent-pubs-container');
             
             container.innerHTML = ""; // Clear loader

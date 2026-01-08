@@ -17,7 +17,7 @@ nav_order: 5
     </div>
 </div>
 
-<div id="speakingCarousel" class="carousel slide mb-5 shadow-lg rounded-lg overflow-hidden" data-ride="carousel">
+<div id="speakingCarousel" class="carousel slide mb-5 shadow-lg rounded-lg overflow-hidden" data-ride="carousel"> 
   
   <ol class="carousel-indicators">
     {% for i in (1..22) %}

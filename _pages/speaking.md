@@ -16,21 +16,22 @@ nav_order: 5
         </p>
     </div>
 </div>
-
-<div id="speakingCarousel" class="carousel slide mb-5 shadow-lg rounded-lg overflow-hidden" data-ride="carousel"> 
+<div id="speakingCarousel" class="carousel slide mb-5 shadow-lg rounded-lg overflow-hidden" data-ride="carousel">
   
   <ol class="carousel-indicators">
+    {% assign slide_idx = 0 %}
     {% for i in (1..22) %}
-      <li data-target="#speakingCarousel" data-slide-to="{{ i | minus: 1 }}" class="{% if forloop.first %}active{% endif %}"></li>
+      {% if i == 8 %}{% continue %}{% endif %} <li data-target="#speakingCarousel" data-slide-to="{{ slide_idx }}" class="{% if slide_idx == 0 %}active{% endif %}"></li>
+      {% assign slide_idx = slide_idx | plus: 1 %}
     {% endfor %}
   </ol>
 
   <div class="carousel-inner">
     {% for i in (1..22) %}
-      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+      {% if i == 8 %}{% continue %}{% endif %} <div class="carousel-item {% if i == 1 %}active{% endif %}">
         <img src="{{ '/assets/img/PhotosFB/' | append: i | append: '.jpg' | relative_url }}" class="d-block w-100 carousel-img" alt="Speaking Engagement {{ i }}">
         
-        {% if forloop.first %}
+        {% if i == 1 %}
           <div class="carousel-caption d-none d-md-block">
             <p class="carousel-text-bg">Engaging with the scientific community</p>
           </div>

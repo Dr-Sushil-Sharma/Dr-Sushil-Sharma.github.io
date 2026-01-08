@@ -36,7 +36,6 @@ nav_order: 1
     position: relative;
     overflow: hidden;
     border: 1px solid rgba(255,255,255,0.05);
-    /* Ensure height matches bio roughly or sits nicely */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -88,7 +87,7 @@ nav_order: 1
     padding: 2rem;
     border-radius: 0 8px 8px 0;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-    height: 100%; /* Match height */
+    height: 100%;
 }
 
 .bio-text {
@@ -251,7 +250,7 @@ nav_order: 1
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    color: #333; /* Ensure text color is dark for links */
+    color: #333;
 }
 .interest-card:hover {
     transform: translateY(-5px);
@@ -463,6 +462,21 @@ nav_order: 1
     </div>
 </div>
 
+<hr class="my-5">
+
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h3 class="font-weight-bold">Recent Articles</h3>
+        <p class="text-muted">Latest publications fetched from the database.</p>
+    </div>
+</div>
+
+<div id="recent-pubs-container" class="recent-pubs-wrapper">
+    <div class="text-center py-5">
+        <i class="fas fa-spinner fa-spin fa-2x text-muted"></i>
+    </div>
+</div>
+
 <div class="row mt-2 mb-5">
     <div class="col-12 text-center">
         <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-light rounded-pill px-4">
@@ -590,6 +604,72 @@ nav_order: 1
     .pub-card-full:hover .btn-read { background: #fff; color: #000; }
 }
 </style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Fetch Publications
+    fetch("{{ '/publications/' | relative_url }}")
+        .then(response => response.text())
+        .then(html => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+            const articles = doc.querySelectorAll('.publication-card.article');
+            const limit = 5; // Show top 5 articles
+            const container = document.getElementById('recent-pubs-container');
+            
+            container.innerHTML = ""; // Clear loader
+
+            if(articles.length === 0) {
+                container.innerHTML = '<div class="text-muted text-center p-4">No recent publications found.</div>';
+                return;
+            }
+
+            for (let i = 0; i < Math.min(articles.length, limit); i++) {
+                const sourceCard = articles[i];
+                
+                // Get inner HTML for title (preserves formatting if any)
+                const titleHTML = sourceCard.querySelector('.pub-title').innerHTML;
+                // Get raw text for search
+                const rawTitle = sourceCard.querySelector('.pub-title').innerText.trim();
+                
+                const authors = sourceCard.querySelector('.pub-authors').innerText;
+                const displayAuthors = authors.length > 80 ? authors.substring(0, 80) + "..." : authors;
+                
+                const journal = sourceCard.querySelector('.journal-name').innerText;
+                const year = sourceCard.getAttribute('data-year');
+
+                // --- GOOGLE SCHOLAR TRICK ---
+                // Instead of looking for a direct link, we generate a search URL
+                const link = "https://scholar.google.com/scholar?q=" + encodeURIComponent(rawTitle);
+
+                // Build Full Width Card
+                const cardHTML = `
+                    <div class="pub-card-full">
+                        <a href="${link}" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+                        <div class="pub-card-content">
+                            <div class="pub-info">
+                                <div class="pub-card-title">${titleHTML}</div>
+                                <div class="pub-card-meta">
+                                    <div class="pub-author-list">${displayAuthors}</div>
+                                    <span class="pub-journal-badge">${journal}</span>
+                                </div>
+                            </div>
+                            <div class="pub-actions">
+                                <div class="pub-year">${year}</div>
+                                <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.innerHTML += cardHTML;
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            document.getElementById('recent-pubs-container').innerHTML = '<div class="text-danger text-center">Unable to load publications.</div>';
+        });
+});
+</script>
 
 <hr class="my-5">
 

@@ -6,6 +6,8 @@ description: "From Zero to Hero: A comprehensive guide to Python programming for
 nav: false
 ---
 
+<div id="protected-content" style="display:none;">
+
 <style>
   .post-header { display: none !important; }
 </style>
@@ -306,4 +308,19 @@ function typeLine() {
 
 // Start animation when page loads
 setTimeout(typeLine, 1000);
+</script>
+
+</div>
+
+<script>
+  function checkPassword() {
+    var password = prompt("Please enter the password to access this page:", "");
+    if (password === "Sharma2026") { 
+      document.getElementById("protected-content").style.display = "block";
+    } else {
+      alert("Incorrect password! Contact: sushil.sharma@uj.edu.pl");
+      window.location.href = "/"; 
+    }
+  }
+  checkPassword();
 </script>

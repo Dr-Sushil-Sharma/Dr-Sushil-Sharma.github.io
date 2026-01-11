@@ -491,6 +491,25 @@ document.addEventListener("DOMContentLoaded", function() {
         <div class="publication-card article" data-year="2023">
             <div class="pub-badge"></div>
             <div class="pub-content">
+                <h5 class="pub-title">
+                    <a href="https://doi.org/10.1134/S1547477123040635" target="_blank">
+                        Systematic Study of Gamma Decay Hindrance Factors
+                    </a>
+                </h5>
+                <p class="pub-authors">
+                    Y.P. Singh... S. Sharma, et al.
+                </p>
+                <div class="pub-meta">
+                    <span class="journal-name">
+                        Phys. Part. Nuclei Lett. 20 (2023) 577–582
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <div class="publication-card article" data-year="2023">
+            <div class="pub-badge"></div>
+            <div class="pub-content">
                 <h5 class="pub-title">Influence of Collectivity on Reduced Hindrance Factor of isomers in Tantalum and Hafnium Isotopes</h5>
                 <p class="pub-authors">Y.P. Singh... S. Sharma, et al.</p>
                 <div class="pub-meta"><span class="journal-name">Acta Phys. Pol. B 54 (2023)</span></div>

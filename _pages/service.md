@@ -53,6 +53,7 @@ nav_order: 7
         </div>
 
     </div>
+
 </div>
 
 <div class="row mb-5">
@@ -134,6 +135,7 @@ nav_order: 7
 
         </div>
     </div>
+
 </div>
 
 <div class="row">
@@ -177,7 +179,7 @@ nav_order: 7
                     <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> Collegium Maius & Novodvorscianum, Krakow</p>
                 </div>
             </div>
-            
+
             <div class="service-card">
                 <div class="service-year">2019</div>
                 <div class="service-content">
@@ -207,6 +209,7 @@ nav_order: 7
 
         </div>
     </div>
+
 </div>
 
 <style>

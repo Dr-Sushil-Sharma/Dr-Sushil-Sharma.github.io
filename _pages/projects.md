@@ -102,12 +102,12 @@ nav_order: 6
     <span class="sub-category-label"><i class="fas fa-angle-right"></i> Positronium Physics</span>
 
     <div class="project-container mb-5 p-3" style="border-left: 3px solid var(--global-theme-color, #007bff);">
-        
+
         <div class="row mb-5 align-items-center">
             <div class="col-md-12">
             <h2 class="font-weight-bold gradient-text">Gravitational Behavior of Positronium</h2>
             <p class="lead mt-2">Probing the fundamental interaction between matter and antimatter.</p>
-            
+
             <div class="mt-3">
                 <span class="badge badge-pill badge-light border p-2 mr-2">
                 <i class="fas fa-fingerprint text-muted mr-1"></i> 2023/50/E/ST2/00574
@@ -179,7 +179,7 @@ nav_order: 6
                 <div class="phase-icon"><i class="fas fa-wave-square fa-2x text-primary"></i></div>
                 <h4 class="text-primary">Phase I: Interferometry</h4>
                 <p class="text-justify">
-                In the first phase, Ps atoms will be created in the <strong>PsICO positron beam</strong> at AML. We employ laser cooling and excitation to a metastable Rydberg state, extending the lifetime significantly. 
+                In the first phase, Ps atoms will be created in the <strong>PsICO positron beam</strong> at AML. We employ laser cooling and excitation to a metastable Rydberg state, extending the lifetime significantly.
                 </p>
                 <p class="text-justify">
                 A deflectometer/interferometer system consisting of <strong>three equally spaced gratings</strong> will measure the inertial forces. The first two gratings create a fringe pattern on the third. This pattern is scanned with sub-nanometer accuracy using a piezo nanopositioning system. By comparing annihilation probabilities on the stopper versus the grating, we determine the strength of the gravitational force.
@@ -232,9 +232,9 @@ nav_order: 6
                 <div class="card border-0 shadow-sm feature-card">
                     <div class="card-body p-3">
                         <div class="d-flex align-items-center">
-                            <img src="{{ '/assets/img/Piyush.jpg' | relative_url }}" 
-                                alt="Piyush Pandey" 
-                                class="rounded-circle mr-3" 
+                            <img src="{{ '/assets/img/Piyush.jpg' | relative_url }}"
+                                alt="Piyush Pandey"
+                                class="rounded-circle mr-3"
                                 style="width: 80px; height: 80px; object-fit: cover; border: 2px solid var(--global-theme-color, #007bff);">
                             <div>
                                 <h5 class="mb-0 font-weight-bold">Piyush Pandey</h5>
@@ -263,7 +263,7 @@ nav_order: 6
 
         <div class="sim-wrapper mt-3">
             <canvas id="simCanvas"></canvas>
-            
+
             <div class="sim-hud">
                 <div class="hud-item">
                     <span class="hud-label">Beam Status</span>
@@ -314,7 +314,7 @@ nav_order: 6
 
 
     <h2 class="category-header"><i class="fas fa-microchip mr-2 text-info"></i> J-PET</h2>
-    
+
     <div class="coming-soon-card mb-5">
         <i class="fas fa-pencil-ruler fa-2x mb-3"></i>
         <h5>Content in Preparation</h5>

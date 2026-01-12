@@ -464,6 +464,7 @@ nav_order: 5
         </div>
 
     </div>
+
   </div>
 
   <div class="tab-pane fade" id="conference" role="tabpanel" aria-labelledby="conference-tab">
@@ -547,6 +548,7 @@ nav_order: 5
         </div>
 
     </div>
+
   </div>
 
   <div class="tab-pane fade" id="visits" role="tabpanel" aria-labelledby="visits-tab">

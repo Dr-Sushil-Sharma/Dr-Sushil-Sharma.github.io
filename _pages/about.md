@@ -174,7 +174,7 @@ nav_order: 1
             <div class="d-none d-md-block border-left mx-3" style="height: 40px; border-color: #ddd;"></div>
 
             <div class="mx-4 my-2">
-                <a href="https://koza.if.uj.edu.pl/staff/ssharma" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
+                <a href="https://if.uj.edu.pl/en_GB/pracownicy/wizytowka-pracownika?id=86" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
                     View University Profile
                 </a>
             </div>

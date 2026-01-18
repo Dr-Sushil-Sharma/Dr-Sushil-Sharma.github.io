@@ -272,7 +272,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     <h3 class="section-title" id="articles"><i class="fas fa-book-open text-primary mr-2"></i> Journal Articles</h3>
     <hr class="mb-4">
-    
+
     <div class="group-articles">
 
         <div class="publication-card article" data-year="2026">
@@ -987,9 +987,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     </div><h3 class="section-title mt-5" id="proceedings"><i class="fas fa-users text-warning mr-2"></i> Conference Proceedings</h3>
     <hr class="mb-4">
-    
+
     <div class="group-proceedings">
-        
+
         <div class="publication-card proceeding" data-year="2025">
             <div class="pub-badge"></div>
             <div class="pub-content">
@@ -1133,10 +1133,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 <div class="pub-meta"><span class="journal-name">Acta Phys. Polon. Supp. 6 (2013)</span></div>
             </div>
         </div>
-    
+
     </div><h3 class="section-title mt-5" id="posters"><i class="fas fa-image text-info mr-2"></i> Posters</h3>
     <hr class="mb-4">
-    
+
     <div class="group-posters">
 
         <div class="publication-card poster" data-year="2024">
@@ -1383,6 +1383,7 @@ document.addEventListener("DOMContentLoaded", function() {
         </div>
 
     </div></div>
+
 <style>
     /* --- CSS FOR ADVANCED FEATURES --- */
     

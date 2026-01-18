@@ -73,13 +73,14 @@ nav: false
         </div>
 
         <button class="login-btn" onclick="verifyPassword()">Unlock Course Materials</button>
-        
+
         <div id="errorMsg" class="error-msg">
             <strong>Incorrect Password.</strong><br>
-            Please contact:<br> 
+            Please contact:<br>
             <a href="mailto:sushil.sharma@uj.edu.pl" class="contact-link">sushil.sharma@uj.edu.pl</a>
         </div>
     </div>
+
 </div>
 
 <div id="protected-content" style="display:none;">
@@ -91,7 +92,7 @@ nav: false
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <h1 class="display-4 font-weight-bold gradient-text">Python for Beginners</h1>
                 <p class="lead text-muted mt-3">
-                    A structured journey from "Hello World" to scientific computing. 
+                    A structured journey from "Hello World" to scientific computing.
                     Access lectures, code snippets, and solutions directly from the repository.
                 </p>
                 <div class="mt-4">
@@ -125,7 +126,7 @@ nav: false
             <h3 class="font-weight-bold">Course Materials</h3>
             <p class="text-muted">Everything you need to succeed.</p>
         </div>
-        
+
         <div class="col-md-4 mb-3">
             <div class="resource-card shadow-sm">
                 <div class="res-icon bg-light-primary text-primary"><i class="fas fa-file-pdf"></i></div>
@@ -163,9 +164,9 @@ nav: false
     <div class="row" id="syllabus">
         <div class="col-12">
             <h3 class="font-weight-bold mb-4">Course Syllabus</h3>
-            
+
             <div class="timeline">
-                
+
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content shadow-sm">

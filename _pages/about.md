@@ -129,7 +129,7 @@ nav_order: 1
             <div>
                 <div class="profile-role">Assistant Professor</div>
                 <div class="small text-uppercase tracking-wider mb-3" style="letter-spacing: 1px; font-size: 0.75rem; opacity: 0.7;">(Research and Academics)</div>
-                
+
                 <div class="profile-dept">
                     Institute of Physics<br>
                     Faculty of Physics, Astronomy and<br>Applied Computer Science
@@ -145,7 +145,7 @@ nav_order: 1
     <div class="col-lg-8">
         <div class="d-flex flex-column h-100 justify-content-center">
             <h1 class="hello-title pl-3">Hello, I'm <span style="font-style: italic;">Sushil Sharma</span>.</h1>
-            
+
             <div class="bio-container mt-3">
                 <div class="bio-text text-justify">
                     <p>
@@ -181,6 +181,7 @@ nav_order: 1
 
         </div>
     </div>
+
 </div>
 
 <hr class="my-5">
@@ -239,6 +240,7 @@ nav_order: 1
             <p class="interest-text">Fusion, fission, high-spin states and reaction mechanisms</p>
         </div>
     </a>
+
 </div>
 
 <style>
@@ -460,6 +462,7 @@ nav_order: 1
         </div>
 
     </div>
+
 </div>
 
 <hr class="my-5">

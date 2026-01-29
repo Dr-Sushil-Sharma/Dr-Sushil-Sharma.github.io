@@ -27,7 +27,7 @@
   font-weight: 400;
 }
 
-@use "sass:string";
+
 
 @each $name, $icon in $fa-brand-icons {
   .#{$fa-css-prefix}-#{$name} {

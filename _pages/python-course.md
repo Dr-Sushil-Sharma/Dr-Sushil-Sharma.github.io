@@ -155,9 +155,9 @@ nav: false
     <div id="lectures" class="mb-5">
         <h3 class="font-weight-bold mb-4"><i class="fas fa-chalkboard-teacher mr-2 text-primary"></i>Lecture Materials</h3>
         <p class="text-muted mb-4">Click on any lecture to expand details. All materials available as PDF downloads.</p>
-        
+
         <div class="accordion" id="lecturesAccordion">
-            
+
             <!-- Lecture 01 -->
             <div class="lecture-card mb-3">
                 <div class="lecture-header" data-toggle="collapse" data-target="#lec01">
@@ -197,8 +197,8 @@ nav: false
                             </div>
                         </div>
                         <p class="text-muted small mt-2"><strong>Key Concepts:</strong> Interpreted vs Compiled languages, Interactive programming, OOP fundamentals</p>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank" class="mr-2">W3Schools Intro</a>
                             <a href="https://realpython.com/installing-python/" target="_blank" class="mr-2">Real Python Installation</a>
                         </div>
@@ -246,8 +246,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://www.w3schools.com/python/python_strings.asp" target="_blank" class="mr-2">W3Schools Strings</a>
                             <a href="https://realpython.com/python-data-types/" target="_blank" class="mr-2">Real Python Data Types</a>
                         </div>
@@ -293,8 +293,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://www.hackerrank.com/challenges/py-if-else/problem" target="_blank" class="mr-2">HackerRank If-Else</a>
                             <a href="https://realpython.com/python-conditional-statements/" target="_blank" class="mr-2">Real Python Flow Control</a>
                         </div>
@@ -340,8 +340,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://www.hackerrank.com/challenges/write-a-function/problem" target="_blank" class="mr-2">HackerRank Functions</a>
                             <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank" class="mr-2">W3Schools Functions</a>
                         </div>
@@ -387,8 +387,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://realpython.com/read-write-files-python/" target="_blank" class="mr-2">Real Python File I/O</a>
                             <a href="https://www.w3schools.com/python/python_modules.asp" target="_blank" class="mr-2">W3Schools Modules</a>
                         </div>
@@ -434,8 +434,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://www.w3schools.com/python/python_try_except.asp" target="_blank" class="mr-2">W3Schools Try/Except</a>
                             <a href="https://realpython.com/python-exceptions/" target="_blank" class="mr-2">Real Python Exceptions</a>
                         </div>
@@ -481,8 +481,8 @@ nav: false
                                 <p class="small">Data visualization</p>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://realpython.com/numpy-tutorial/" target="_blank" class="mr-2">Real Python NumPy</a>
                             <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html" target="_blank" class="mr-2">Pandas Documentation</a>
                         </div>
@@ -530,8 +530,8 @@ nav: false
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-3 small border-top pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                        <div class="mt-3 small pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
                             <a href="https://realpython.com/python3-object-oriented-programming/" target="_blank" class="mr-2">Real Python OOP</a>
                             <a href="https://realpython.com/python-statistics/" target="_blank" class="mr-2">Real Python Statistics</a>
                         </div>
@@ -548,9 +548,9 @@ nav: false
     <div id="tutorials" class="mb-5">
         <h3 class="font-weight-bold mb-4"><i class="fas fa-laptop-code mr-2 text-success"></i>Tutorial Materials <span class="badge badge-success ml-2">Solutions Included</span></h3>
         <p class="text-muted mb-4">Hands-on practice with solved examples. Run notebooks in Google Colab or Jupyter.</p>
-        
+
         <div class="row">
-            
+
             <!-- Tutorial 01 -->
             <div class="col-12 mb-4">
                 <div class="tutorial-card">
@@ -816,7 +816,7 @@ nav: false
         <div class="how-to-use-box mt-5">
             <h5 class="font-weight-bold mb-4"><i class="fab fa-google mr-2"></i>Quick Access Buttons</h5>
             <p class="text-muted mb-4">Each tutorial has two action buttons:</p>
-            
+
             <div class="colab-steps">
                 <div class="colab-step">
                     <div class="colab-step-number" style="background: linear-gradient(135deg, #F9AB00, #E37400);"><i class="fab fa-google"></i></div>
@@ -825,7 +825,7 @@ nav: false
                         <p>Opens the notebook in Google Colab. <strong>Important:</strong> Click <em>File → Save a copy in Drive</em> to save your work!</p>
                     </div>
                 </div>
-                
+
                 <div class="colab-step">
                     <div class="colab-step-number" style="background: linear-gradient(135deg, #28a745, #20c997);"><i class="fas fa-download"></i></div>
                     <div class="colab-step-content">
@@ -834,7 +834,7 @@ nav: false
                     </div>
                 </div>
             </div>
-            
+
             <div class="colab-tip mt-4">
                 <i class="fas fa-exclamation-triangle mr-2" style="color: #F9AB00;"></i>
                 <strong>Remember:</strong> When using Colab, always save a copy to your Google Drive to keep your progress!
@@ -849,11 +849,11 @@ nav: false
     <div class="mb-5">
         <h3 class="font-weight-bold mb-4"><i class="fas fa-road mr-2 text-info"></i>Learning Path</h3>
         <p class="text-muted mb-4">Follow this journey from beginner to advanced Python programming</p>
-        
+
         <div class="learning-journey">
-            
+
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-hand-paper"></i></div>
+                <div class="step-icon-wrapper">1</div>
                 <div class="step-content">
                     <h5 class="step-title">Introduction to Python</h5>
                     <div class="step-materials">
@@ -876,7 +876,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-shapes"></i></div>
+                <div class="step-icon-wrapper">2</div>
                 <div class="step-content">
                     <h5 class="step-title">Data Types & Strings</h5>
                     <div class="step-materials">
@@ -899,7 +899,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-sync"></i></div>
+                <div class="step-icon-wrapper">3</div>
                 <div class="step-content">
                     <h5 class="step-title">Flow Control</h5>
                     <div class="step-materials">
@@ -922,7 +922,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-cogs"></i></div>
+                <div class="step-icon-wrapper">4</div>
                 <div class="step-content">
                     <h5 class="step-title">Functions</h5>
                     <div class="step-materials">
@@ -945,7 +945,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-folder-open"></i></div>
+                <div class="step-icon-wrapper">5</div>
                 <div class="step-content">
                     <h5 class="step-title">File Handling & Modules</h5>
                     <div class="step-materials">
@@ -968,7 +968,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-bug"></i></div>
+                <div class="step-icon-wrapper">6</div>
                 <div class="step-content">
                     <h5 class="step-title">Error Handling</h5>
                     <div class="step-materials">
@@ -991,7 +991,7 @@ nav: false
             </div>
 
             <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper"><i class="fas fa-chart-bar"></i></div>
+                <div class="step-icon-wrapper">7</div>
                 <div class="step-content">
                     <h5 class="step-title">Data Science Libraries</h5>
                     <div class="step-materials">
@@ -1014,7 +1014,7 @@ nav: false
             </div>
 
             <div class="journey-step final" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper" style="border-color: #28a745; color: #28a745;"><i class="fas fa-cubes"></i></div>
+                <div class="step-icon-wrapper" style="border-color: #28a745; color: #28a745;">8</div>
                 <div class="step-content">
                     <h5 class="step-title">OOP & Statistics</h5>
                     <div class="step-materials">
@@ -1234,7 +1234,7 @@ nav: false
     .tutorial-card.featured:hover {
         box-shadow: 0 15px 40px rgba(220, 53, 69, 0.15);
     }
-    
+
     /* Left Section - Number */
     .tutorial-header {
         display: flex;
@@ -1269,7 +1269,7 @@ nav: false
         letter-spacing: 0.5px;
         border: none !important;
     }
-    
+
     /* Center Section - Content */
     .tutorial-content {
         flex: 1;
@@ -1303,7 +1303,7 @@ nav: false
         background: rgba(220, 53, 69, 0.1);
         border-left-color: #dc3545;
     }
-    
+
     /* Right Section - Footer/Buttons */
     .tutorial-footer {
         display: flex;
@@ -1319,7 +1319,7 @@ nav: false
     .tutorial-card.featured .tutorial-footer {
         background: rgba(220, 53, 69, 0.03);
     }
-    
+
     /* Mobile Responsive for Tutorial Cards */
     @media (max-width: 768px) {
         .tutorial-card {
@@ -1633,6 +1633,8 @@ nav: false
         justify-content: center;
         margin-right: 25px;
         font-size: 1.5rem;
+        font-weight: 800;
+        font-family: 'Poppins', sans-serif;
         color: #007bff;
         z-index: 2;
         transition: 0.3s;
@@ -1643,15 +1645,8 @@ nav: false
         color: white;
         transform: scale(1.1);
     }
-    /* Specific Icon Animations */
-    .journey-step:hover .fa-hand-paper { animation: wave 1s infinite; }
-    .journey-step:hover .fa-shapes { animation: float 2s infinite ease-in-out; }
-    .journey-step:hover .fa-sync { animation: spin-slow 3s linear infinite; }
-    .journey-step:hover .fa-cogs { animation: spin-slow 4s linear infinite; }
-    .journey-step:hover .fa-folder-open { animation: float 1.5s infinite; }
-    .journey-step:hover .fa-bug { animation: shake 0.5s infinite; color: #dc3545; }
-    .journey-step:hover .fa-chart-bar { animation: float 2s infinite; }
-    .journey-step:hover .fa-cubes { animation: stack-up 0.5s forwards; }
+    /* Specific Icon Animations - Removed for Numbers */
+    /* .journey-step:hover .fa-hand-paper { animation: wave 1s infinite; } */
 
     .step-content { flex: 1; }
     .step-title {
@@ -1689,9 +1684,9 @@ nav: false
     @media (prefers-color-scheme: dark) {
         .terminal-window { box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .lecture-card, .tutorial-card { background: #2b2b2b; border-color: #444; }
-        .tutorial-card.featured { 
-            background: linear-gradient(135deg, #2b2b2b 0%, #3a2a2a 100%); 
-            border-color: #dc3545; 
+        .tutorial-card.featured {
+            background: linear-gradient(135deg, #2b2b2b 0%, #3a2a2a 100%);
+            border-color: #dc3545;
         }
         .tutorial-card.featured:hover {
             box-shadow: 0 10px 30px rgba(220, 53, 69, 0.2);
@@ -1714,11 +1709,11 @@ nav: false
         .journey-step { background: #2b2b2b; border-color: #444; }
         .journey-step:hover { border-color: #007bff; box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2); }
         .journey-step.final { background: linear-gradient(135deg, #2b2b2b 0%, #1a3a20 100%); border-color: #28a745; }
-        
+
         /* FIX: Reset gradient text in dark mode for visibility */
-        .step-title { 
-            background: none !important; 
-            -webkit-text-fill-color: #fff !important; 
+        .step-title {
+            background: none !important;
+            -webkit-text-fill-color: #fff !important;
             color: #fff !important;
         }
         .journey-step:hover .step-title {
@@ -1730,10 +1725,10 @@ nav: false
         .step-topics { color: #aaa; }
         .material-tag.lecture { background: rgba(0, 123, 255, 0.2); }
         .material-tag.tutorial { background: rgba(40, 167, 69, 0.2); }
-        
+
         /* Details Dark Mode */
         .step-details { border-top-color: #444; color: #bbb; }
-        
+
         /* How to Use Colab Dark Mode */
         .how-to-use-box { background: linear-gradient(135deg, #1a2530 0%, #2a3540 100%); border-color: #4285f4; }
         .how-to-use-box h5 { color: #7aafff; }
@@ -1762,7 +1757,7 @@ nav: false
         color: var(--global-theme-color, #007bff);
     }
     @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
-    
+
     /* --- PYTHON GAME STYLES --- */
     .game-section { margin-top: 60px; margin-bottom: 40px; }
     .game-terminal {
@@ -1787,7 +1782,7 @@ nav: false
     .game-dot { height: 12px; width: 12px; border-radius: 50%; margin-right: 8px; }
     .dot-red { background: #ff5f56; } .dot-yellow { background: #ffbd2e; } .dot-green { background: #27c93f; }
     .game-title { color: #ccc; font-size: 0.9rem; margin-left: 10px; }
-    
+
     .game-content { padding: 30px; position: relative; }
     .code-display {
         background: #000;
@@ -1801,7 +1796,7 @@ nav: false
         box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
     }
     .keyword { color: #569cd6; } .string { color: #ce9178; } .function { color: #dcdcaa; } .number { color: #b5cea8; } .comment { color: #6a9955; }
-    
+
     .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
     .game-btn {
         background: #2d2d2d;
@@ -1818,7 +1813,7 @@ nav: false
     .game-btn:hover { background: #3d3d3d; border-color: #666; transform: translateY(-2px); }
     .game-btn.correct { background: #155724; border-color: #28a745; color: #fff; }
     .game-btn.wrong { background: #721c24; border-color: #dc3545; color: #fff; animation: shake 0.4s; }
-    
+
     .game-footer {
         display: flex;
         justify-content: space-between;
@@ -1828,7 +1823,7 @@ nav: false
         border-top: 1px solid #333;
     }
     .score-display { color: #ffd700; font-weight: bold; }
-    
+
     .game-overlay {
         position: absolute; top: 0; left: 0; right: 0; bottom: 0;
         background: rgba(30,30,30,0.95);
@@ -1838,9 +1833,9 @@ nav: false
         text-align: center;
     }
     .hidden { display: none !important; }
-    
+
     @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
-    
+
     .game-input {
         background: transparent;
         border: none;
@@ -1857,7 +1852,7 @@ nav: false
         border-bottom-color: #00d2ff;
         box-shadow: 0 5px 15px rgba(0, 210, 255, 0.1);
     }
-    @media (max-width: 576px) { 
+    @media (max-width: 576px) {
         .options-grid { grid-template-columns: 1fr; }
         .game-input { width: 100%; box-sizing: border-box; }
         .game-header { font-size: 0.8rem; }
@@ -1897,14 +1892,14 @@ nav: false
 
     // Scroll to section when clicking journey steps
     function scrollToSection(sectionId) {
-        // Ensure ID has # prefix for specific selector if needed, 
-        // but getElementById doesn't need it. 
+        // Ensure ID has # prefix for specific selector if needed,
+        // but getElementById doesn't need it.
         // However, for jQuery collapse we usually target the ID.
-        
+
         // 1. Expand the target lecture
         // The ID passed (e.g. 'lec01') is the ID of the collapsible div
         $('#' + sectionId).collapse('show');
-        
+
         // 2. Scroll to the card
         const element = document.getElementById(sectionId);
         if (element) {
@@ -1914,7 +1909,7 @@ nav: false
                 $('html, body').animate({
                     scrollTop: $(card).offset().top - 100
                 }, 800);
-                
+
                 // Highlight effect
                 card.style.transition = "0.3s";
                 card.style.transform = 'scale(1.02)';
@@ -1939,7 +1934,7 @@ nav: false
             <h4 class="font-weight-bold" style="color: #333;">🐍 Python Output Challenge</h4>
             <p class="text-muted">Can you predict the output of these code snippets?</p>
         </div>
-        
+
         <div class="game-terminal">
             <div class="game-header">
                 <div class="game-dot dot-red"></div>
@@ -1947,7 +1942,7 @@ nav: false
                 <div class="game-dot dot-green"></div>
                 <div class="game-title">user@python-course:~/challenges$ python3 quiz.py</div>
             </div>
-            
+
             <div class="game-content" id="game-ui">
                 <div class="text-center py-5">
                     <h5 class="text-white mb-4">Choose Your Challenge</h5>
@@ -1964,7 +1959,7 @@ nav: false
                     </div>
                 </div>
             </div>
-            
+
             <!-- Hidden Result Overlay -->
             <div id="game-overlay" class="game-overlay hidden">
                 <h3 class="text-white mb-3" id="final-message">Game Over!</h3>
@@ -1983,7 +1978,7 @@ nav: false
         // Lec 01: Intro
         { code: "print(type(5.0))", options: ["&lt;class 'int'&gt;", "&lt;class 'float'&gt;", "&lt;class 'str'&gt;"], answer: 1, note: "5.0 is a floating-point number." },
         { code: "print('Hello' + ' ' + 'World')", options: ["Hello World", "Hello+World", "Error"], answer: 0, note: "String concatenation joins strings together." },
-        
+
         // Lec 02: Data Types
         { code: "x = [1, 2, 3]\nx.append(4)\nprint(x[-1])", options: ["3", "4", "Error"], answer: 1, note: "append(4) adds 4 to the end. Index -1 gives the last element." },
         { code: "d = {'a': 1, 'b': 2}\nprint(d.get('c', 3))", options: ["None", "Error", "3"], answer: 2, note: "get() returns the default value (3) if the key 'c' is missing." },
@@ -2043,7 +2038,7 @@ nav: false
         currentLevel = level;
         currentQ = 0;
         score = 0;
-        
+
         let title = "";
         if (level === 1) {
             gameQuestions = [...level1Questions].sort(() => 0.5 - Math.random()).slice(0, 8);
@@ -2056,7 +2051,7 @@ nav: false
             gameQuestions = [...level3Questions].sort(() => 0.5 - Math.random()).slice(0, 5);
             title = "user@python-course:~/challenges$ python3 level3_hard_mode.py";
         }
-        
+
         document.querySelector('.game-title').textContent = title;
         document.getElementById('game-overlay').classList.add('hidden');
         loadQuestion();
@@ -2067,12 +2062,12 @@ nav: false
             endGame();
             return;
         }
-        
+
         const q = gameQuestions[currentQ];
         const ui = document.getElementById('game-ui');
-        
+
         let contentHtml = '';
-        
+
         if (currentLevel === 1) {
              contentHtml = `
                 <div class="code-display"><span class="keyword">print</span>(<span class="string">output</span>)</div>
@@ -2104,9 +2099,9 @@ nav: false
             ${contentHtml}
             <div id="feedback-area" class="mt-3 text-center" style="height: 24px;"></div>
         `;
-        
+
         ui.innerHTML = html;
-        
+
         if (currentLevel === 1) {
             typeCode(q.code, ui.querySelector('.code-display'));
         } else if (currentLevel === 2) {
@@ -2117,7 +2112,7 @@ nav: false
             focusInput();
         }
     }
-    
+
     function getInputHtml() {
         return `
             <div class="mt-4 text-center">
@@ -2127,14 +2122,14 @@ nav: false
             </div>
         `;
     }
-    
+
     function focusInput() {
         setTimeout(() => {
             const input = document.getElementById('game-input');
             if(input) input.focus();
         }, 500);
     }
-    
+
     function typeText(text, element) {
         element.textContent = '';
         let i = 0;
@@ -2147,12 +2142,12 @@ nav: false
         }
         type();
     }
-    
+
     function typeCode(text, element, isL2 = false) {
         element.innerHTML = ''; // Start empty
         let i = 0;
         const speed = 15;
-        
+
         function type() {
             if (i < text.length) {
                 element.textContent += text.charAt(i);
@@ -2161,10 +2156,10 @@ nav: false
             } else {
                 // Syntax highlighting
                 let formatted = element.textContent;
-                
+
                 // Hide keywords to protect
                 formatted = formatted.replace(/\bclass\b/g, '##KW_CLASS##');
-                
+
                 formatted = formatted
                     .replace(/\bprint\b/g, '<span class="function">print</span>')
                     .replace(/\bdef\b/g, '<span class="keyword">def</span>')
@@ -2175,9 +2170,9 @@ nav: false
                     .replace(/(___)/g, '<span class="text-warning font-weight-bold">___</span>') // Highlight blank
                     .replace(/('[^']*')/g, '<span class="string">$1</span>')
                     .replace(/(\b\d+\b)/g, '<span class="number">$1</span>');
-                
+
                 formatted = formatted.replace(/##KW_CLASS##/g, '<span class="keyword">class</span>');
-                
+
                 element.innerHTML = formatted;
             }
         }
@@ -2189,9 +2184,9 @@ nav: false
         const q = gameQuestions[currentQ];
         const buttons = document.querySelectorAll('.game-btn');
         const feedback = document.getElementById('feedback-area');
-        
+
         buttons.forEach(b => b.onclick = null);
-        
+
         if (selected === q.answer) {
             btn.classList.add('correct');
             feedback.innerHTML = `<span class="text-success small">${q.note}</span>`;
@@ -2202,13 +2197,13 @@ nav: false
              buttons[q.answer].classList.add('correct');
             feedback.innerHTML = `<span class="text-danger small">Oops! ${q.note}</span>`;
         }
-        
+
         setTimeout(() => {
             currentQ++;
             loadQuestion();
         }, 2200);
     }
-    
+
     // Level 2 Check
     // Level 2 & 3 Check (Input)
     function checkAnswerInput() {
@@ -2217,12 +2212,12 @@ nav: false
         const q = gameQuestions[currentQ];
         const feedback = document.getElementById('feedback-area');
         const btn = document.querySelector('.btn-success'); // Check button
-        
+
         if (!val) return;
-        
+
         input.disabled = true;
         btn.disabled = true;
-        
+
         // Flexible validation logic:
         // Some answers might be numbers, some text. Lowercase comparison works for most.
         if (val === q.answer.toString().toLowerCase()) {
@@ -2235,13 +2230,13 @@ nav: false
             input.style.color = "#dc3545";
             feedback.innerHTML = `<span class="text-danger small">Wrong! Answer: ${q.answer}. ${q.note}</span>`;
         }
-        
+
         setTimeout(() => {
             currentQ++;
             loadQuestion();
         }, 2200);
     }
-    
+
     function handleEnter(e) {
         if (e.key === 'Enter') checkAnswerInput();
     }
@@ -2250,12 +2245,12 @@ nav: false
         const overlay = document.getElementById('game-overlay');
         const scoreEl = document.getElementById('final-score');
         const msg = document.getElementById('final-message');
-        
+
         scoreEl.textContent = `${score}/${gameQuestions.length}`;
-        
+
         // Dynamic Buttons
         let buttonsHtml = '';
-        
+
         if (currentLevel === 1) {
             if (score >= 5) { // Unlock Level 2
                  msg.innerHTML = "🏆 Level 1 Complete!";
@@ -2308,7 +2303,7 @@ nav: false
                  `;
             }
         }
-        
+
         // Update overlay buttons
         const container = overlay.querySelector('.d-flex');
         if (container) {
@@ -2319,16 +2314,16 @@ nav: false
              div.innerHTML = buttonsHtml;
              overlay.appendChild(div);
         }
-        
+
         overlay.classList.remove('hidden');
     }
-    
+
     function showMenu() {
         const ui = document.getElementById('game-ui');
         const overlay = document.getElementById('game-overlay');
-        
+
         overlay.classList.add('hidden');
-        
+
         ui.innerHTML = `
             <div class="text-center py-5">
                 <h5 class="text-white mb-4">Choose Your Challenge</h5>

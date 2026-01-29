@@ -26,8 +26,10 @@
   font-weight: 400;
 }
 
+@use "sass:string";
+
 @each $name, $icon in $fa-brand-icons {
   .#{$fa-css-prefix}-#{$name} {
-    #{$fa-icon-property}: unquote("\"#{ $icon }\"");
+    #{$fa-icon-property}: string.unquote("\"#{ $icon }\"");
   }
 }

@@ -197,6 +197,11 @@ nav: false
                             </div>
                         </div>
                         <p class="text-muted small mt-2"><strong>Key Concepts:</strong> Interpreted vs Compiled languages, Interactive programming, OOP fundamentals</p>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank" class="mr-2">W3Schools Intro</a>
+                            <a href="https://realpython.com/installing-python/" target="_blank" class="mr-2">Real Python Installation</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -241,6 +246,11 @@ nav: false
                                 </ul>
                             </div>
                         </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://www.w3schools.com/python/python_strings.asp" target="_blank" class="mr-2">W3Schools Strings</a>
+                            <a href="https://realpython.com/python-data-types/" target="_blank" class="mr-2">Real Python Data Types</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,6 +292,11 @@ nav: false
                                     <li><i class="fas fa-check text-success mr-2"></i>range(), enumerate(), zip()</li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://www.hackerrank.com/challenges/py-if-else/problem" target="_blank" class="mr-2">HackerRank If-Else</a>
+                            <a href="https://realpython.com/python-conditional-statements/" target="_blank" class="mr-2">Real Python Flow Control</a>
                         </div>
                     </div>
                 </div>
@@ -325,6 +340,11 @@ nav: false
                                 </ul>
                             </div>
                         </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://www.hackerrank.com/challenges/write-a-function/problem" target="_blank" class="mr-2">HackerRank Functions</a>
+                            <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank" class="mr-2">W3Schools Functions</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -366,6 +386,11 @@ nav: false
                                     <li><i class="fas fa-check text-success mr-2"></i>PIP Package Manager</li>
                                 </ul>
                             </div>
+                        </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://realpython.com/read-write-files-python/" target="_blank" class="mr-2">Real Python File I/O</a>
+                            <a href="https://www.w3schools.com/python/python_modules.asp" target="_blank" class="mr-2">W3Schools Modules</a>
                         </div>
                     </div>
                 </div>
@@ -409,6 +434,11 @@ nav: false
                                 </ul>
                             </div>
                         </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://www.w3schools.com/python/python_try_except.asp" target="_blank" class="mr-2">W3Schools Try/Except</a>
+                            <a href="https://realpython.com/python-exceptions/" target="_blank" class="mr-2">Real Python Exceptions</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -450,6 +480,11 @@ nav: false
                                 <h6 class="text-warning"><i class="fas fa-chart-line mr-1"></i> Matplotlib</h6>
                                 <p class="small">Data visualization</p>
                             </div>
+                        </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://realpython.com/numpy-tutorial/" target="_blank" class="mr-2">Real Python NumPy</a>
+                            <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html" target="_blank" class="mr-2">Pandas Documentation</a>
                         </div>
                     </div>
                 </div>
@@ -495,6 +530,11 @@ nav: false
                                 </ul>
                             </div>
                         </div>
+                        <div class="mt-3 small border-top pt-2">
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong> 
+                            <a href="https://realpython.com/python3-object-oriented-programming/" target="_blank" class="mr-2">Real Python OOP</a>
+                            <a href="https://realpython.com/python-statistics/" target="_blank" class="mr-2">Real Python Statistics</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -522,6 +562,10 @@ nav: false
                         <h5 class="tutorial-title">Getting Started</h5>
                         <p class="tutorial-desc">IDE Setup, Google Colab, Markdown Basics</p>
                         <span class="format-badge pdf"><i class="fas fa-file-pdf"></i> PDF</span>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Markdown Guide</a>
+                             <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> VS Code Setup</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <div class="btn-group-viewer">
@@ -549,6 +593,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> Secret Agent Generator, Palindrome Detector</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://codingbat.com/python/String-1" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> CodingBat Strings</a>
+                             <a href="https://www.hackerrank.com/challenges/string-validators/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Strings</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -556,9 +604,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-02.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-02.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-02.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -580,6 +626,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> split(), find(), union(), intersection()</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://www.geeksforgeeks.org/python-lists/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG Lists</a>
+                             <a href="https://www.hackerrank.com/challenges/py-introduction-to-sets/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Sets</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -587,9 +637,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-03.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-03.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-03.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -611,6 +659,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> Vowel Counter, Find Largest, Common Elements</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://codingbat.com/python/Logic-2" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> CodingBat Logic</a>
+                             <a href="https://www.hackerrank.com/challenges/python-loops/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Loops</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -618,9 +670,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-04.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-04.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-04.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -642,6 +692,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> Max of Three, Sum, Multiply, Reverse</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://realpython.com/python-kwargs-and-args/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python *args</a>
+                             <a href="https://www.geeksforgeeks.org/recursion-in-python/" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG Recursion</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -649,9 +703,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-05.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-05.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-05.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -673,6 +725,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> File Handling, Slicing, Subplots</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://realpython.com/python-modules-packages/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python Modules</a>
+                             <a href="https://matplotlib.org/stable/tutorials/pyplot.html" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> Matplotlib Guide</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -680,9 +736,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-06.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-06.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-06.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -704,6 +758,10 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> Broadcasting, Data Filtering, Figure Customization</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://www.kaggle.com/learn/pandas" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Kaggle Pandas</a>
+                             <a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> NumPy Quickstart</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
@@ -711,9 +769,7 @@ nav: false
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-07.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
                             </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-07.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
-                            </button>
+
                             <a href="/assets/Python_Page/Tutorials/Tut-07.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
                             </a>
@@ -735,15 +791,16 @@ nav: false
                         <div class="practice-problems">
                             <small><i class="fas fa-puzzle-piece mr-1"></i> Blueprints, Methods, Object Behavior</small>
                         </div>
+                        <div class="practice-links mt-2 small">
+                             <a href="https://realpython.com/inheritance-composition-python/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python Inheritance</a>
+                             <a href="https://www.geeksforgeeks.org/python-oops-concepts/" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG OOP Concepts</a>
+                        </div>
                     </div>
                     <div class="tutorial-footer">
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
                         <div class="btn-group-viewer">
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-08.ipynb');" title="Open in Colab">
                                 <i class="fab fa-google"></i> Colab
-                            </button>
-                            <button class="btn btn-sm btn-nbviewer btn-viewer" onclick="openInNbviewer('/assets/Python_Page/Tutorials/Tut-08.ipynb');" title="View in nbviewer">
-                                <i class="fas fa-eye"></i> View
                             </button>
                             <a href="/assets/Python_Page/Tutorials/Tut-08.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
@@ -758,22 +815,14 @@ nav: false
         <!-- HOW TO USE SECTION -->
         <div class="how-to-use-box mt-5">
             <h5 class="font-weight-bold mb-4"><i class="fab fa-google mr-2"></i>Quick Access Buttons</h5>
-            <p class="text-muted mb-4">Each tutorial has three action buttons:</p>
+            <p class="text-muted mb-4">Each tutorial has two action buttons:</p>
             
             <div class="colab-steps">
                 <div class="colab-step">
                     <div class="colab-step-number" style="background: linear-gradient(135deg, #F9AB00, #E37400);"><i class="fab fa-google"></i></div>
                     <div class="colab-step-content">
                         <h6><i class="fab fa-google mr-2" style="color: #F9AB00;"></i>Open in Colab</h6>
-                        <p>Opens the notebook directly in Google Colab - run code instantly in the cloud!</p>
-                    </div>
-                </div>
-                
-                <div class="colab-step">
-                    <div class="colab-step-number" style="background: linear-gradient(135deg, #F37626, #E24A28);"><i class="fas fa-eye"></i></div>
-                    <div class="colab-step-content">
-                        <h6><i class="fas fa-eye mr-2" style="color: #F37626;"></i>View in nbviewer</h6>
-                        <p>Preview the notebook contents without downloading or running any code.</p>
+                        <p>Opens the notebook in Google Colab. <strong>Important:</strong> Click <em>File → Save a copy in Drive</em> to save your work!</p>
                     </div>
                 </div>
                 
@@ -787,8 +836,8 @@ nav: false
             </div>
             
             <div class="colab-tip mt-4">
-                <i class="fas fa-lightbulb mr-2"></i>
-                <strong>Tip:</strong> For lectures, click <strong>View</strong> to read PDFs directly in your browser!
+                <i class="fas fa-exclamation-triangle mr-2" style="color: #F9AB00;"></i>
+                <strong>Remember:</strong> When using Colab, always save a copy to your Google Drive to keep your progress!
             </div>
         </div>
 
@@ -803,8 +852,8 @@ nav: false
         
         <div class="learning-journey">
             
-            <div class="journey-step" onclick="scrollToSection('lec01')">
-                <div class="step-number">1</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-hand-paper"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Introduction to Python</h5>
                     <div class="step-materials">
@@ -812,12 +861,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-01</span>
                     </div>
                     <p class="step-topics">Programming basics, Environment setup, Hello World</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Python Syntax & Comments</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Variables & Assignment</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Input & Output</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec01')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec02')">
-                <div class="step-number">2</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-shapes"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Data Types & Strings</h5>
                     <div class="step-materials">
@@ -825,12 +884,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-02</span>
                     </div>
                     <p class="step-topics">Variables, Numbers, Strings, Lists, Dictionaries</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>String Slicing & Methods</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>List operations (append, pop)</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Dictionary keys & values</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec02')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec03')">
-                <div class="step-number">3</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-sync"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Flow Control</h5>
                     <div class="step-materials">
@@ -838,12 +907,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-03</span>
                     </div>
                     <p class="step-topics">If/Else, For Loops, While Loops</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Conditional Logic</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Iterating with Loops</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Break & Continue</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec03')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec04')">
-                <div class="step-number">4</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-cogs"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Functions</h5>
                     <div class="step-materials">
@@ -851,12 +930,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-04</span>
                     </div>
                     <p class="step-topics">Defining functions, Parameters, Return values</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Defining Functions (def)</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Arguments & Return Values</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Scope & Lifetime</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec04')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec05')">
-                <div class="step-number">5</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-folder-open"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">File Handling & Modules</h5>
                     <div class="step-materials">
@@ -864,12 +953,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-05</span>
                     </div>
                     <p class="step-topics">Read/Write files, Context managers, PIP</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Reading & Writing Files</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Context Managers (with)</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Importing Modules</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec05')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec06')">
-                <div class="step-number">6</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-bug"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Error Handling</h5>
                     <div class="step-materials">
@@ -877,12 +976,22 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-06</span>
                     </div>
                     <p class="step-topics">Try/Except, Debugging, Custom exceptions</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Try, Except, Finally</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Debugging Strategies</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Raising Exceptions</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec06')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step" onclick="scrollToSection('lec07')">
-                <div class="step-number">7</div>
+            <div class="journey-step" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper"><i class="fas fa-chart-bar"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">Data Science Libraries</h5>
                     <div class="step-materials">
@@ -890,22 +999,43 @@ nav: false
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-07</span>
                     </div>
                     <p class="step-topics">NumPy, Pandas, Matplotlib</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>NumPy Arrays</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Pandas DataFrames</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Matplotlib Plotting</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec07')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
 
-            <div class="journey-step final" onclick="scrollToSection('lec08')">
-                <div class="step-number"><i class="fas fa-trophy"></i></div>
+            <div class="journey-step final" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper" style="border-color: #28a745; color: #28a745;"><i class="fas fa-cubes"></i></div>
                 <div class="step-content">
                     <h5 class="step-title">OOP & Statistics</h5>
                     <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-08</span>
+                         <span class="material-tag lecture" style="background: rgba(40,167,69,0.1); color:#28a745;"><i class="fas fa-chalkboard-teacher"></i> Lec-08</span>
                         <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-08</span>
                     </div>
-                    <p class="step-topics">Classes, Inheritance, Mean, Variance</p>
+                    <p class="step-topics">Classes, Inheritance, Statistics</p>
+                    <div class="step-details">
+                         <ul class="fa-ul small mb-2">
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Classes & Objects</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Inheritance & Polymorphism</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Basic Statistics</li>
+                        </ul>
+                        <div class="text-right">
+                            <button class="btn btn-sm btn-outline-success rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec08')">Go to Materials</button>
+                        </div>
+                    </div>
                 </div>
-                <div class="step-complete"><i class="fas fa-flag-checkered"></i></div>
+                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
+
 
         </div>
     </div>
@@ -1113,7 +1243,9 @@ nav: false
         justify-content: center;
         padding: 25px 30px;
         background: linear-gradient(135deg, #28a745, #20c997);
-        min-width: 100px;
+        width: 120px;
+        min-width: 120px;
+        max-width: 120px;
         gap: 10px;
     }
     .tutorial-card.featured .tutorial-header {
@@ -1130,11 +1262,12 @@ nav: false
         font-size: 0.65rem;
         padding: 4px 10px;
         border-radius: 20px;
-        background: rgba(255,255,255,0.25);
-        color: white;
+        background: rgba(255,255,255,0.25) !important;
+        color: white !important;
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        border: none !important;
     }
     
     /* Center Section - Content */
@@ -1158,16 +1291,16 @@ nav: false
         line-height: 1.4;
     }
     .practice-problems {
-        background: linear-gradient(135deg, #f0f9ff 0%, #e8f5e9 100%);
+        background: rgba(40, 167, 69, 0.1);
         padding: 8px 14px;
         border-radius: 8px;
-        color: #555;
+        color: inherit;
         font-size: 0.8rem;
         display: inline-block;
         border-left: 3px solid #28a745;
     }
     .tutorial-card.featured .practice-problems {
-        background: linear-gradient(135deg, #fff5f5 0%, #fce4ec 100%);
+        background: rgba(220, 53, 69, 0.1);
         border-left-color: #dc3545;
     }
     
@@ -1445,85 +1578,111 @@ nav: false
         border-color: #28a745;
         box-shadow: 0 8px 25px rgba(40, 167, 69, 0.2);
     }
-    .step-number {
-        width: 50px;
-        height: 50px;
-        min-width: 50px;
+    /* --- LEARNING PATH ANIMATIONS --- */
+    @keyframes wave { 0% { transform: rotate(0deg); } 20% { transform: rotate(-15deg); } 40% { transform: rotate(10deg); } 60% { transform: rotate(-5deg); } 100% { transform: rotate(0deg); } }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+    @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7); } 70% { box-shadow: 0 0 0 10px rgba(40, 167, 69, 0); } 100% { box-shadow: 0 0 0 0 rgba(40, 167, 69, 0); } }
+    @keyframes spin-slow { 100% { transform: rotate(360deg); } }
+    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-3px); } 75% { transform: translateX(3px); } }
+    @keyframes grow-bar { 0% { height: 0; } 100% { height: 100%; } }
+    @keyframes stack-up { 0% { transform: translateY(10px); opacity: 0; } 100% { transform: translateY(0); opacity: 1; } }
+
+    /* --- TIMELINE STYLES --- */
+    .learning-journey {
+        position: relative;
+        padding: 20px 0;
+    }
+    .learning-journey::before {
+        content: '';
+        position: absolute;
+        left: 29px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: rgba(0,0,0,0.1);
+        z-index: 0;
+    }
+    .journey-step {
+        display: flex;
+        align-items: center;
+        background: #fff;
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 16px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .journey-step:hover {
+        transform: translateY(-5px) scale(1.01);
+        box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+        border-color: var(--global-theme-color, #007bff);
+    }
+    .step-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
         border-radius: 50%;
-        background: linear-gradient(135deg, #007bff, #00d2ff);
-        color: white;
+        background: white;
+        border: 3px solid #007bff;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-weight: 700;
-        font-size: 1.3rem;
-        margin-right: 20px;
+        margin-right: 25px;
+        font-size: 1.5rem;
+        color: #007bff;
+        z-index: 2;
+        transition: 0.3s;
+        box-shadow: 0 5px 15px rgba(0,123,255,0.2);
     }
-    .journey-step.final .step-number {
-        background: linear-gradient(135deg, #28a745, #20c997);
+    .journey-step:hover .step-icon-wrapper {
+        background: #007bff;
+        color: white;
+        transform: scale(1.1);
     }
-    .step-content {
-        flex: 1;
-    }
+    /* Specific Icon Animations */
+    .journey-step:hover .fa-hand-paper { animation: wave 1s infinite; }
+    .journey-step:hover .fa-shapes { animation: float 2s infinite ease-in-out; }
+    .journey-step:hover .fa-sync { animation: spin-slow 3s linear infinite; }
+    .journey-step:hover .fa-cogs { animation: spin-slow 4s linear infinite; }
+    .journey-step:hover .fa-folder-open { animation: float 1.5s infinite; }
+    .journey-step:hover .fa-bug { animation: shake 0.5s infinite; color: #dc3545; }
+    .journey-step:hover .fa-chart-bar { animation: float 2s infinite; }
+    .journey-step:hover .fa-cubes { animation: stack-up 0.5s forwards; }
+
+    .step-content { flex: 1; }
     .step-title {
         font-weight: 700;
         margin-bottom: 8px;
-        color: #333;
+        background: linear-gradient(90deg, #333, #555);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.15rem;
     }
-    .step-materials {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 8px;
-        margin-bottom: 8px;
+    .journey-step:hover .step-title {
+        background: linear-gradient(90deg, #007bff, #00d2ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
-    .material-tag {
-        font-size: 0.75rem;
-        padding: 4px 10px;
-        border-radius: 20px;
-        font-weight: 600;
-    }
-    .material-tag.lecture {
-        background: rgba(0, 123, 255, 0.1);
-        color: #007bff;
-    }
-    .material-tag.tutorial {
-        background: rgba(40, 167, 69, 0.1);
-        color: #28a745;
-    }
-    .step-topics {
-        margin: 0;
-        font-size: 0.85rem;
-        color: #666;
-    }
-    .step-arrow, .step-complete {
+    .step-arrow {
+        color: #ddd;
         font-size: 1.2rem;
-        color: #ccc;
-        margin-left: 15px;
         transition: 0.3s;
     }
     .journey-step:hover .step-arrow {
-        color: var(--global-theme-color, #007bff);
+        color: #007bff;
         transform: translateX(5px);
     }
-    .step-complete {
-        color: #28a745;
-    }
 
+    /* Mobile Timeline */
     @media (max-width: 576px) {
-        .journey-step {
-            padding: 15px;
-        }
-        .step-number {
-            width: 40px;
-            height: 40px;
-            min-width: 40px;
-            font-size: 1rem;
-            margin-right: 12px;
-        }
-        .step-materials {
-            flex-direction: column;
-            gap: 5px;
-        }
+        .learning-journey::before { left: 20px; }
+        .journey-step { padding: 15px; flex-direction: row; }
+        .step-icon-wrapper { width: 40px; height: 40px; min-width: 40px; font-size: 1rem; margin-right: 15px; border-width: 2px; }
+        .step-title { font-size: 1rem; }
     }
 
     /* Dark Mode */
@@ -1555,10 +1714,26 @@ nav: false
         .journey-step { background: #2b2b2b; border-color: #444; }
         .journey-step:hover { border-color: #007bff; box-shadow: 0 8px 25px rgba(0, 123, 255, 0.2); }
         .journey-step.final { background: linear-gradient(135deg, #2b2b2b 0%, #1a3a20 100%); border-color: #28a745; }
-        .step-title { color: #fff; }
+        
+        /* FIX: Reset gradient text in dark mode for visibility */
+        .step-title { 
+            background: none !important; 
+            -webkit-text-fill-color: #fff !important; 
+            color: #fff !important;
+        }
+        .journey-step:hover .step-title {
+             background: linear-gradient(90deg, #007bff, #00d2ff) !important;
+             -webkit-background-clip: text !important;
+             -webkit-text-fill-color: transparent !important;
+        }
+
         .step-topics { color: #aaa; }
         .material-tag.lecture { background: rgba(0, 123, 255, 0.2); }
         .material-tag.tutorial { background: rgba(40, 167, 69, 0.2); }
+        
+        /* Details Dark Mode */
+        .step-details { border-top-color: #444; color: #bbb; }
+        
         /* How to Use Colab Dark Mode */
         .how-to-use-box { background: linear-gradient(135deg, #1a2530 0%, #2a3540 100%); border-color: #4285f4; }
         .how-to-use-box h5 { color: #7aafff; }
@@ -1567,6 +1742,125 @@ nav: false
         .colab-step-content p { color: #bbb; }
         .colab-step-content code { background: #3a3a3a; color: #ddd; }
         .colab-tip { background: #3a3520; color: #ddd; }
+    }
+
+    /* Expandable Details Styles */
+    .step-details {
+        display: none;
+        margin-top: 15px;
+        padding-top: 15px;
+        border-top: 1px dashed #eee;
+        color: #555;
+        font-size: 0.9rem;
+        animation: fadeIn 0.4s ease-in-out;
+    }
+    .journey-step.active .step-details {
+        display: block;
+    }
+    .journey-step.active .step-arrow {
+        transform: rotate(90deg);
+        color: var(--global-theme-color, #007bff);
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    
+    /* --- PYTHON GAME STYLES --- */
+    .game-section { margin-top: 60px; margin-bottom: 40px; }
+    .game-terminal {
+        background: #1e1e1e;
+        border-radius: 12px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+        overflow: hidden;
+        border: 1px solid #333;
+        font-family: 'Consolas', 'Monaco', monospace;
+        max-width: 800px;
+        width: 95%; /* Responsive width */
+        margin: 0 auto;
+        position: relative; /* Contain absolute overlay */
+    }
+    .game-header {
+        background: #252526;
+        padding: 10px 15px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #333;
+    }
+    .game-dot { height: 12px; width: 12px; border-radius: 50%; margin-right: 8px; }
+    .dot-red { background: #ff5f56; } .dot-yellow { background: #ffbd2e; } .dot-green { background: #27c93f; }
+    .game-title { color: #ccc; font-size: 0.9rem; margin-left: 10px; }
+    
+    .game-content { padding: 30px; position: relative; }
+    .code-display {
+        background: #000;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #007bff;
+        color: #d4d4d4;
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        white-space: pre-wrap;
+        box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    }
+    .keyword { color: #569cd6; } .string { color: #ce9178; } .function { color: #dcdcaa; } .number { color: #b5cea8; } .comment { color: #6a9955; }
+    
+    .options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+    .game-btn {
+        background: #2d2d2d;
+        border: 1px solid #444;
+        color: #ddd;
+        padding: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.2s;
+        text-align: left;
+        font-family: inherit;
+        font-size: 1rem;
+    }
+    .game-btn:hover { background: #3d3d3d; border-color: #666; transform: translateY(-2px); }
+    .game-btn.correct { background: #155724; border-color: #28a745; color: #fff; }
+    .game-btn.wrong { background: #721c24; border-color: #dc3545; color: #fff; animation: shake 0.4s; }
+    
+    .game-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+        padding-top: 20px;
+        border-top: 1px solid #333;
+    }
+    .score-display { color: #ffd700; font-weight: bold; }
+    
+    .game-overlay {
+        position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(30,30,30,0.95);
+        display: flex; flex-direction: column;
+        align-items: center; justify-content: center;
+        z-index: 10;
+        text-align: center;
+    }
+    .hidden { display: none !important; }
+    
+    @keyframes shake { 0%, 100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
+    
+    .game-input {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #555;
+        color: #00d2ff;
+        font-family: 'Consolas', monospace;
+        font-size: 1.2rem;
+        width: 200px;
+        text-align: center;
+        outline: none;
+        transition: 0.3s;
+    }
+    .game-input:focus {
+        border-bottom-color: #00d2ff;
+        box-shadow: 0 5px 15px rgba(0, 210, 255, 0.1);
+    }
+    @media (max-width: 576px) { 
+        .options-grid { grid-template-columns: 1fr; }
+        .game-input { width: 100%; box-sizing: border-box; }
+        .game-header { font-size: 0.8rem; }
     }
     </style>
 
@@ -1603,17 +1897,469 @@ nav: false
 
     // Scroll to section when clicking journey steps
     function scrollToSection(sectionId) {
+        // Ensure ID has # prefix for specific selector if needed, 
+        // but getElementById doesn't need it. 
+        // However, for jQuery collapse we usually target the ID.
+        
+        // 1. Expand the target lecture
+        // The ID passed (e.g. 'lec01') is the ID of the collapsible div
+        $('#' + sectionId).collapse('show');
+        
+        // 2. Scroll to the card
         const element = document.getElementById(sectionId);
         if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            // Briefly highlight the card
-            element.parentElement.style.transform = 'scale(1.02)';
-            element.parentElement.style.boxShadow = '0 10px 40px rgba(0, 123, 255, 0.3)';
-            setTimeout(() => {
-                element.parentElement.style.transform = '';
-                element.parentElement.style.boxShadow = '';
-            }, 1000);
+            // Find the parent card to scroll to header
+            const card = element.closest('.lecture-card');
+            if (card) {
+                $('html, body').animate({
+                    scrollTop: $(card).offset().top - 100
+                }, 800);
+                
+                // Highlight effect
+                card.style.transition = "0.3s";
+                card.style.transform = 'scale(1.02)';
+                card.style.boxShadow = '0 10px 40px rgba(0, 123, 255, 0.3)';
+                setTimeout(() => {
+                    card.style.transform = 'scale(1)';
+                    card.style.boxShadow = '';
+                }, 1000);
+            }
         }
+    }
+
+    function toggleStep(element) {
+        // Toggle the active state of the clicked step
+        element.classList.toggle('active');
+    }
+    </script>
+
+    <!-- PYTHON OUTPUT CHALLENGE GAME -->
+    <div class="game-section">
+        <div class="text-center mb-4">
+            <h4 class="font-weight-bold" style="color: #333;">🐍 Python Output Challenge</h4>
+            <p class="text-muted">Can you predict the output of these code snippets?</p>
+        </div>
+        
+        <div class="game-terminal">
+            <div class="game-header">
+                <div class="game-dot dot-red"></div>
+                <div class="game-dot dot-yellow"></div>
+                <div class="game-dot dot-green"></div>
+                <div class="game-title">user@python-course:~/challenges$ python3 quiz.py</div>
+            </div>
+            
+            <div class="game-content" id="game-ui">
+                <div class="text-center py-5">
+                    <h5 class="text-white mb-4">Choose Your Challenge</h5>
+                    <div class="d-flex flex-column align-items-center">
+                        <button class="btn btn-primary px-4 py-2 m-2" style="width: 280px;" onclick="startGame(1)">
+                            <i class="fas fa-terminal mr-2"></i> Level 1: Predict Output
+                        </button>
+                        <button class="btn btn-outline-info px-4 py-2 m-2" style="width: 280px;" onclick="startGame(2)">
+                            <i class="fas fa-code mr-2"></i> Level 2: Code Master
+                        </button>
+                        <button class="btn btn-outline-danger px-4 py-2 m-2" style="width: 280px;" onclick="startGame(3)">
+                            <i class="fas fa-skull mr-2"></i> Level 3: Problem Solving
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hidden Result Overlay -->
+            <div id="game-overlay" class="game-overlay hidden">
+                <h3 class="text-white mb-3" id="final-message">Game Over!</h3>
+                <div class="score-display display-4 mb-4" id="final-score">0/5</div>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-outline-light mr-3" onclick="startGame()"><i class="fas fa-redo mr-2"></i>Play Again</button>
+                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()"><i class="fas fa-share-alt mr-2"></i>Share Result</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Expanded Question Bank (2 per Lecture Topic)
+    const level1Questions = [
+        // Lec 01: Intro
+        { code: "print(type(5.0))", options: ["&lt;class 'int'&gt;", "&lt;class 'float'&gt;", "&lt;class 'str'&gt;"], answer: 1, note: "5.0 is a floating-point number." },
+        { code: "print('Hello' + ' ' + 'World')", options: ["Hello World", "Hello+World", "Error"], answer: 0, note: "String concatenation joins strings together." },
+        
+        // Lec 02: Data Types
+        { code: "x = [1, 2, 3]\nx.append(4)\nprint(x[-1])", options: ["3", "4", "Error"], answer: 1, note: "append(4) adds 4 to the end. Index -1 gives the last element." },
+        { code: "d = {'a': 1, 'b': 2}\nprint(d.get('c', 3))", options: ["None", "Error", "3"], answer: 2, note: "get() returns the default value (3) if the key 'c' is missing." },
+
+        // Lec 03: Flow Control
+        { code: "for i in range(2, 5):\n    print(i, end='')", options: ["2345", "234", "345"], answer: 1, note: "range(2, 5) goes from 2 up to (but not including) 5." },
+        { code: "x = 5\nwhile x > 3:\n    x -= 1\nprint(x)", options: ["3", "2", "4"], answer: 0, note: "The loop stops when x is 3 (3 > 3 is False)." },
+
+        // Lec 04: Functions
+        { code: "def add(a, b=10):\n    return a + b\nprint(add(5))", options: ["5", "15", "Error"], answer: 1, note: "b uses default value 10. 5 + 10 = 15." },
+        { code: "x = 10\ndef func():\n    global x\n    x = 20\nfunc()\nprint(x)", options: ["10", "20", "Error"], answer: 1, note: "'global' keyword allows modifying the global variable x." },
+
+        // Lec 05: Files
+        { code: "with open('f.txt', 'w') as f:\n    f.write('Hi')\n# Is file closed?", options: ["Yes", "No", "Error"], answer: 0, note: "The 'with' statement automatically closes the file." },
+        { code: "import math\nprint(math.floor(3.9))", options: ["3", "4", "3.9"], answer: 0, note: "floor() rounds down to the nearest integer." },
+
+        // Lec 06: Errors
+        { code: "try:\n    print(1/0)\nexcept:\n    print('A')\nfinally:\n    print('B')", options: ["A", "B", "A B"], answer: 2, note: "Finally block always runs, even after an exception." },
+        { code: "raise ValueError('X')", options: ["Prints X", "Crash: ValueError", "Ignores it"], answer: 1, note: "The 'raise' keyword manually triggers an exception." },
+
+        // Lec 07: Data Science
+        { code: "import numpy as np\na = np.array([1, 2])\nprint(a * 2)", options: ["[1, 2, 1, 2]", "[2, 4]", "Error"], answer: 1, note: "NumPy arrays perform element-wise multiplication." },
+        { code: "# Pandas\ndf.loc[0, 'Age']", options: ["Row 0, Col 'Age'", "Row 'Age', Col 0", "Error"], answer: 0, note: ".loc uses label-based indexing (Row, Col)." },
+
+        // Lec 08: OOP
+        { code: "class Dog:\n    def bark(self):\n        return 'Woof'\nprint(Dog().bark())", options: ["Woof", "None", "Error"], answer: 0, note: "Instance method called on a new object." },
+        { code: "class A: pass\nclass B(A): pass\nprint(issubclass(B, A))", options: ["True", "False", "Error"], answer: 0, note: "B inherits from A, so it is a subclass." }
+    ];
+
+    const level2Questions = [
+        { code: "___(mylist)", answer: "len", note: "len() returns the length of a list." },
+        { code: "___ my_func():", answer: "def", note: "def is used to define a function." },
+        { code: "for x ___ mylist:", answer: "in", note: "The 'in' keyword iterates through a sequence." },
+        { code: "x = ___(5.5) # Cast to integer", answer: "int", note: "int() casts a float to an integer." },
+        { code: "with open('f.txt', '___') as f: # Write mode", answer: "w", note: "'w' opens a file for writing." },
+        { code: "___ math", answer: "import", note: "import is used to include modules." },
+        { code: "if x > 5:\n    print('Big')\n___:\n    print('Small')", answer: "else", note: "else handles the false case of an if statement." },
+        { code: "class Dog(___): # Inherit from Animal", answer: "animal", note: "Parent class goes in parentheses." }
+    ];
+
+    const level3Questions = [
+        { code: "What is the result of: 2 ** 3", answer: "8", note: "2 to the power of 3 is 8." },
+        { code: "What is len('Hello')?", answer: "5", note: "The string 'Hello' has 5 characters." },
+        { code: "Result of: 10 % 3", answer: "1", note: "The modulus operator % returns the remainder (1)." },
+        { code: "Output of: 'A' * 3", answer: "AAA", note: "Multiplying a string repeats it." },
+        { code: "Sum of list: [1, 2, 3]", answer: "6", note: "1 + 2 + 3 = 6." },
+        { code: "Value of: bool(0)", answer: "False", note: "0 evaluates to False in Boolean logic." },
+        { code: "Index of 'b' in ['a', 'b', 'c']", answer: "1", note: "List indices start at 0, so 'b' is at index 1." }
+    ];
+
+    let gameQuestions = [];
+    let currentQ = 0;
+    let score = 0;
+    let currentLevel = 1;
+
+    function startGame(level = 1) {
+        currentLevel = level;
+        currentQ = 0;
+        score = 0;
+        
+        let title = "";
+        if (level === 1) {
+            gameQuestions = [...level1Questions].sort(() => 0.5 - Math.random()).slice(0, 8);
+            title = "user@python-course:~/challenges$ python3 level1.py";
+        } else if (level === 2) {
+            gameQuestions = [...level2Questions].sort(() => 0.5 - Math.random()).slice(0, 5);
+            title = "user@python-course:~/challenges$ python3 level2.py";
+        } else {
+            // Level 3
+            gameQuestions = [...level3Questions].sort(() => 0.5 - Math.random()).slice(0, 5);
+            title = "user@python-course:~/challenges$ python3 level3_hard_mode.py";
+        }
+        
+        document.querySelector('.game-title').textContent = title;
+        document.getElementById('game-overlay').classList.add('hidden');
+        loadQuestion();
+    }
+
+    function loadQuestion() {
+        if (currentQ >= gameQuestions.length) {
+            endGame();
+            return;
+        }
+        
+        const q = gameQuestions[currentQ];
+        const ui = document.getElementById('game-ui');
+        
+        let contentHtml = '';
+        
+        if (currentLevel === 1) {
+             contentHtml = `
+                <div class="code-display"><span class="keyword">print</span>(<span class="string">output</span>)</div>
+                <div class="options-grid">
+                    ${q.options.map((opt, i) => `<button class="game-btn" onclick="checkAnswer(${i}, this)">${opt}</button>`).join('')}
+                </div>
+            `;
+        } else if (currentLevel === 2) {
+            contentHtml = `
+                <div class="code-display" id="l2-code"></div>
+                ${getInputHtml()}
+            `;
+        } else {
+            // Level 3: Text Problem
+            contentHtml = `
+                <div class="mb-4 p-4" style="background: #2d2d2d; border-radius: 8px; border-left: 4px solid #dc3545;">
+                    <h5 class="text-light mb-0"><i class="fas fa-question-circle mr-2"></i>Problem:</h5>
+                    <div class="mt-2 text-monospace text-white h5" id="l3-text"></div>
+                </div>
+                ${getInputHtml()}
+            `;
+        }
+
+        let html = `
+            <div class="d-flex justify-content-between text-muted mb-2 small">
+                <span>Level ${currentLevel} | Q ${currentQ + 1}/${gameQuestions.length}</span>
+                <span>Score: ${score}</span>
+            </div>
+            ${contentHtml}
+            <div id="feedback-area" class="mt-3 text-center" style="height: 24px;"></div>
+        `;
+        
+        ui.innerHTML = html;
+        
+        if (currentLevel === 1) {
+            typeCode(q.code, ui.querySelector('.code-display'));
+        } else if (currentLevel === 2) {
+            typeCode(q.code, ui.querySelector('#l2-code'), true);
+            focusInput();
+        } else {
+            typeText(q.code, ui.querySelector('#l3-text'));
+            focusInput();
+        }
+    }
+    
+    function getInputHtml() {
+        return `
+            <div class="mt-4 text-center">
+                <input type="text" id="game-input" class="game-input" placeholder="Type answer..." autocomplete="off" onkeypress="handleEnter(event)">
+                <button class="btn btn-success ml-2" onclick="checkAnswerInput()">Check <i class="fas fa-check"></i></button>
+                <div class="small text-muted mt-2">Type your answer and press Enter</div>
+            </div>
+        `;
+    }
+    
+    function focusInput() {
+        setTimeout(() => {
+            const input = document.getElementById('game-input');
+            if(input) input.focus();
+        }, 500);
+    }
+    
+    function typeText(text, element) {
+        element.textContent = '';
+        let i = 0;
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, 20);
+            }
+        }
+        type();
+    }
+    
+    function typeCode(text, element, isL2 = false) {
+        element.innerHTML = ''; // Start empty
+        let i = 0;
+        const speed = 15;
+        
+        function type() {
+            if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            } else {
+                // Syntax highlighting
+                let formatted = element.textContent;
+                
+                // Hide keywords to protect
+                formatted = formatted.replace(/\bclass\b/g, '##KW_CLASS##');
+                
+                formatted = formatted
+                    .replace(/\bprint\b/g, '<span class="function">print</span>')
+                    .replace(/\bdef\b/g, '<span class="keyword">def</span>')
+                    .replace(/\breturn\b/g, '<span class="keyword">return</span>')
+                    .replace(/\bimport\b/g, '<span class="keyword">import</span>')
+                    .replace(/\bif\b/g, '<span class="keyword">if</span>')
+                    .replace(/\belse\b/g, '<span class="keyword">else</span>')
+                    .replace(/(___)/g, '<span class="text-warning font-weight-bold">___</span>') // Highlight blank
+                    .replace(/('[^']*')/g, '<span class="string">$1</span>')
+                    .replace(/(\b\d+\b)/g, '<span class="number">$1</span>');
+                
+                formatted = formatted.replace(/##KW_CLASS##/g, '<span class="keyword">class</span>');
+                
+                element.innerHTML = formatted;
+            }
+        }
+        type();
+    }
+
+    // Level 1 Check
+    function checkAnswer(selected, btn) {
+        const q = gameQuestions[currentQ];
+        const buttons = document.querySelectorAll('.game-btn');
+        const feedback = document.getElementById('feedback-area');
+        
+        buttons.forEach(b => b.onclick = null);
+        
+        if (selected === q.answer) {
+            btn.classList.add('correct');
+            feedback.innerHTML = `<span class="text-success small">${q.note}</span>`;
+            score++;
+        } else {
+            btn.classList.add('wrong');
+            // Find correct button
+             buttons[q.answer].classList.add('correct');
+            feedback.innerHTML = `<span class="text-danger small">Oops! ${q.note}</span>`;
+        }
+        
+        setTimeout(() => {
+            currentQ++;
+            loadQuestion();
+        }, 2200);
+    }
+    
+    // Level 2 Check
+    // Level 2 & 3 Check (Input)
+    function checkAnswerInput() {
+        const input = document.getElementById('game-input');
+        const val = input.value.trim().toLowerCase();
+        const q = gameQuestions[currentQ];
+        const feedback = document.getElementById('feedback-area');
+        const btn = document.querySelector('.btn-success'); // Check button
+        
+        if (!val) return;
+        
+        input.disabled = true;
+        btn.disabled = true;
+        
+        // Flexible validation logic:
+        // Some answers might be numbers, some text. Lowercase comparison works for most.
+        if (val === q.answer.toString().toLowerCase()) {
+            input.style.borderColor = "#28a745";
+            input.style.color = "#28a745";
+            feedback.innerHTML = `<span class="text-success small">Correct! ${q.note}</span>`;
+            score++;
+        } else {
+            input.style.borderColor = "#dc3545";
+            input.style.color = "#dc3545";
+            feedback.innerHTML = `<span class="text-danger small">Wrong! Answer: ${q.answer}. ${q.note}</span>`;
+        }
+        
+        setTimeout(() => {
+            currentQ++;
+            loadQuestion();
+        }, 2200);
+    }
+    
+    function handleEnter(e) {
+        if (e.key === 'Enter') checkAnswerInput();
+    }
+
+    function endGame() {
+        const overlay = document.getElementById('game-overlay');
+        const scoreEl = document.getElementById('final-score');
+        const msg = document.getElementById('final-message');
+        
+        scoreEl.textContent = `${score}/${gameQuestions.length}`;
+        
+        // Dynamic Buttons
+        let buttonsHtml = '';
+        
+        if (currentLevel === 1) {
+            if (score >= 5) { // Unlock Level 2
+                 msg.innerHTML = "🏆 Level 1 Complete!";
+                 msg.style.color = "#28a745";
+                 buttonsHtml = `
+                    <button class="btn btn-warning mr-2" onclick="startGame(2)">Level 2 <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-outline-light mr-2" onclick="showMenu()">Menu</button>
+                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()"><i class="fas fa-share-alt"></i></button>
+                 `;
+            } else {
+                msg.innerHTML = "👾 Try Again!";
+                msg.style.color = "#ffc107";
+                buttonsHtml = `
+                    <button class="btn btn-outline-light mr-2" onclick="startGame(1)"><i class="fas fa-redo"></i> Retry</button>
+                    <button class="btn btn-outline-light" onclick="showMenu()">Menu</button>
+                 `;
+            }
+        } else if (currentLevel === 2) {
+             if (score >= 3) { // Level 2 Win -> Unlock L3
+                 msg.innerHTML = "👑 CODE MASTER!";
+                 msg.style.color = "#00d2ff";
+                 buttonsHtml = `
+                    <button class="btn btn-danger mr-2" onclick="startGame(3)">Level 3 <i class="fas fa-skull"></i></button>
+                    <button class="btn btn-outline-light mr-2" onclick="showMenu()">Menu</button>
+                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()">Share</button>
+                 `;
+             } else {
+                 msg.innerHTML = "🐛 Keep Formatting...";
+                 msg.style.color = "#dc3545";
+                 buttonsHtml = `
+                    <button class="btn btn-outline-light mr-2" onclick="startGame(2)">Retry L2</button>
+                    <button class="btn btn-outline-light" onclick="showMenu()">Menu</button>
+                 `;
+             }
+        } else {
+            // Level 3 Win
+            if (score >= 3) {
+                 msg.innerHTML = "🔥 PYTHON LEGEND! 🔥";
+                 msg.style.color = "#dc3545"; // Red for Hard Mode
+                 buttonsHtml = `
+                    <button class="btn btn-outline-light mr-2" onclick="showMenu()">Menu</button>
+                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()">Share Victory</button>
+                 `;
+            } else {
+                 msg.innerHTML = "💀 So Close...";
+                 msg.style.color = "#666";
+                 buttonsHtml = `
+                    <button class="btn btn-outline-light mr-2" onclick="startGame(3)">Retry L3</button>
+                    <button class="btn btn-outline-light" onclick="showMenu()">Menu</button>
+                 `;
+            }
+        }
+        
+        // Update overlay buttons
+        const container = overlay.querySelector('.d-flex');
+        if (container) {
+            container.innerHTML = buttonsHtml;
+        } else {
+             const div = document.createElement('div');
+             div.className = "d-flex justify-content-center";
+             div.innerHTML = buttonsHtml;
+             overlay.appendChild(div);
+        }
+        
+        overlay.classList.remove('hidden');
+    }
+    
+    function showMenu() {
+        const ui = document.getElementById('game-ui');
+        const overlay = document.getElementById('game-overlay');
+        
+        overlay.classList.add('hidden');
+        
+        ui.innerHTML = `
+            <div class="text-center py-5">
+                <h5 class="text-white mb-4">Choose Your Challenge</h5>
+                <div class="d-flex flex-column align-items-center">
+                    <button class="btn btn-primary px-4 py-2 m-2" style="width: 280px;" onclick="startGame(1)">
+                        <i class="fas fa-terminal mr-2"></i> Level 1: Predict Output
+                    </button>
+                    <button class="btn btn-outline-info px-4 py-2 m-2" style="width: 280px;" onclick="startGame(2)">
+                        <i class="fas fa-code mr-2"></i> Level 2: Code Master
+                    </button>
+                    <button class="btn btn-outline-danger px-4 py-2 m-2" style="width: 280px;" onclick="startGame(3)">
+                        <i class="fas fa-skull mr-2"></i> Level 3: Problem Solving
+                    </button>
+                </div>
+            </div>
+        `;
+    }
+
+
+    function shareResult() {
+        const text = `I just scored ${score}/${gameQuestions.length} on Python Challenge Level ${currentLevel}! 🐍 Can you beat me?`;
+        navigator.clipboard.writeText(text).then(() => {
+            const btn = document.getElementById('share-btn');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+            btn.classList.replace('btn-primary', 'btn-success');
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.classList.replace('btn-success', 'btn-primary');
+            }, 2000);
+        });
     }
     </script>
 
@@ -1657,37 +2403,37 @@ nav: false
     }
   }
 
-  // PDF Viewer Modal Functions
-  function openPdfViewer(pdfUrl, title) {
-    document.getElementById('pdfViewerTitle').textContent = title;
-    document.getElementById('pdfFrame').src = pdfUrl;
-    document.getElementById('pdfViewerModal').style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-  }
+    // PDF Viewer Modal Functions
+    function openPdfViewer(pdfUrl, title) {
+        document.getElementById('pdfViewerTitle').textContent = title;
+        document.getElementById('pdfFrame').src = pdfUrl;
+        document.getElementById('pdfViewerModal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
 
-  function closePdfViewer() {
-    document.getElementById('pdfViewerModal').style.display = 'none';
-    document.getElementById('pdfFrame').src = '';
-    document.body.style.overflow = 'auto';
-  }
+    function closePdfViewer() {
+        document.getElementById('pdfViewerModal').style.display = 'none';
+        document.getElementById('pdfFrame').src = '';
+        document.body.style.overflow = 'auto';
+    }
 
-  // Close modal on escape key
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closePdfViewer();
-  });
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closePdfViewer();
+    });
 
-  // Open in Google Colab
-  function openInColab(notebookPath) {
-    const repoUrl = 'https://github.com/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main';
-    const colabUrl = `https://colab.research.google.com/github/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main${notebookPath}`;
-    window.open(colabUrl, '_blank');
-  }
+    // Open in Google Colab
+    function openInColab(notebookPath) {
+        const repoUrl = 'https://github.com/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main';
+        const colabUrl = `https://colab.research.google.com/github/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main${notebookPath}`;
+        window.open(colabUrl, '_blank');
+    }
 
-  // Open in nbviewer
-  function openInNbviewer(notebookPath) {
-    const nbviewerUrl = `https://nbviewer.org/github/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main${notebookPath}`;
-    window.open(nbviewerUrl, '_blank');
-  }
+    // Open in nbviewer
+    function openInNbviewer(notebookPath) {
+        const nbviewerUrl = `https://nbviewer.org/github/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main${notebookPath}`;
+        window.open(nbviewerUrl, '_blank');
+    }
 </script>
 
 <!-- PDF Viewer Modal -->

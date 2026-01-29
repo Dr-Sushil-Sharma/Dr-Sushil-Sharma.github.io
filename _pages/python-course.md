@@ -862,10 +862,10 @@ nav: false
                     </div>
                     <p class="step-topics">Programming basics, Environment setup, Hello World</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Python Syntax & Comments</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Variables & Assignment</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Input & Output</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Python Syntax & Comments</li>
+                            <li>Variables & Assignment</li>
+                            <li>Input & Output</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec01')">Go to Materials</button>
@@ -885,10 +885,10 @@ nav: false
                     </div>
                     <p class="step-topics">Variables, Numbers, Strings, Lists, Dictionaries</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>String Slicing & Methods</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>List operations (append, pop)</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Dictionary keys & values</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>String Slicing & Methods</li>
+                            <li>List operations (append, pop)</li>
+                            <li>Dictionary keys & values</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec02')">Go to Materials</button>
@@ -908,10 +908,10 @@ nav: false
                     </div>
                     <p class="step-topics">If/Else, For Loops, While Loops</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Conditional Logic</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Iterating with Loops</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Break & Continue</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Conditional Logic</li>
+                            <li>Iterating with Loops</li>
+                            <li>Break & Continue</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec03')">Go to Materials</button>
@@ -931,10 +931,10 @@ nav: false
                     </div>
                     <p class="step-topics">Defining functions, Parameters, Return values</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Defining Functions (def)</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Arguments & Return Values</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Scope & Lifetime</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Defining Functions (def)</li>
+                            <li>Arguments & Return Values</li>
+                            <li>Scope & Lifetime</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec04')">Go to Materials</button>
@@ -954,10 +954,10 @@ nav: false
                     </div>
                     <p class="step-topics">Read/Write files, Context managers, PIP</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Reading & Writing Files</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Context Managers (with)</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Importing Modules</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Reading & Writing Files</li>
+                            <li>Context Managers (with)</li>
+                            <li>Importing Modules</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec05')">Go to Materials</button>
@@ -977,10 +977,10 @@ nav: false
                     </div>
                     <p class="step-topics">Try/Except, Debugging, Custom exceptions</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Try, Except, Finally</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Debugging Strategies</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Raising Exceptions</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Try, Except, Finally</li>
+                            <li>Debugging Strategies</li>
+                            <li>Raising Exceptions</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec06')">Go to Materials</button>
@@ -1000,10 +1000,10 @@ nav: false
                     </div>
                     <p class="step-topics">NumPy, Pandas, Matplotlib</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>NumPy Arrays</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Pandas DataFrames</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Matplotlib Plotting</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>NumPy Arrays</li>
+                            <li>Pandas DataFrames</li>
+                            <li>Matplotlib Plotting</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec07')">Go to Materials</button>
@@ -1023,10 +1023,10 @@ nav: false
                     </div>
                     <p class="step-topics">Classes, Inheritance, Statistics</p>
                     <div class="step-details">
-                         <ul class="fa-ul small mb-2">
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Classes & Objects</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Inheritance & Polymorphism</li>
-                            <li><span class="fa-li"><i class="fas fa-check text-success"></i></span>Basic Statistics</li>
+                         <ul class="small mb-2 ml-3">
+                            <li>Classes & Objects</li>
+                            <li>Inheritance & Polymorphism</li>
+                            <li>Basic Statistics</li>
                         </ul>
                         <div class="text-right">
                             <button class="btn btn-sm btn-outline-success rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec08')">Go to Materials</button>

@@ -123,6 +123,449 @@ nav: false
       -webkit-text-fill-color: transparent;
       font-weight: 700;
   }
+  
+  /* Flag Animation */
+  .flag-icon {
+      height: 18px; /* Fixed height for image */
+      width: auto;
+      margin-left: 10px;
+      display: inline-block;
+      vertical-align: middle; /* Align with text */
+      opacity: 0;
+      transform: scale(0) rotate(-20deg); /* Add slight rotation for style */
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      border-radius: 2px;
+      animation: popIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards; /* Bouncy effect */
+  }
+  
+  @keyframes popIn {
+      to { opacity: 1; transform: scale(1) rotate(0deg); }
+  }
+  
+  /* Time Display */
+  .smart-divider {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 1px;
+      height: 18px;
+      margin: 0 12px;
+      display: inline-block;
+      vertical-align: middle;
+      opacity: 0;
+      animation: fadeIn 0.5s 0.2s forwards;
+  }
+  
+  .time-display {
+      font-family: 'Fira Code', monospace; /* Tech feel for numbers */
+      font-size: 0.9em;
+      color: #aaa;
+      vertical-align: middle;
+      opacity: 0;
+      animation: fadeIn 0.5s 0.4s forwards;
+  }
+  
+  @keyframes fadeIn { to { opacity: 1; } }
+  
+  /* Particle Background */
+  #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0; /* Behind everything but interactive */
+      background-color: #0b0b0b; /* Deep dark bg */
+      pointer-events: auto; /* Enable interactivity */
+  }
+  #particles-js canvas {
+      display: block;
+      vertical-align: bottom;
+      z-index: 0;
+      pointer-events: auto; /* Canvas catches hover for particles */
+  }
+  /* Content sits above particles and catches clicks */
+  #protected-content {
+      position: relative;
+      z-index: 2;
+  }
+  
+  /* Ensure Login Overlay is on top */
+  #login-overlay {
+      z-index: 1000;
+      position: fixed;
+      /* existing styles implied... */
+  }
+  /* Interactive Terminal */
+  .terminal-input-line { display: flex; align-items: center; }
+  .terminal-prompt { color: #00ff88; margin-right: 8px; font-weight: bold; }
+  .terminal-input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-family: 'Fira Code', monospace; /* Tech feel */
+      width: 100%;
+      outline: none;
+      width: 100%;
+      outline: none;
+      font-size: 0.95rem;
+  }
+  .terminal-window {
+      min-height: 350px; /* Symmetry: Matches text block height */
+      display: flex;
+      flex-direction: column;
+  }
+  .terminal-body {
+      flex: 1;
+      overflow-y: auto;
+  }
+  
+  /* Hide Top Menu for App-like experience */
+  /* Hide Top Menu for App-like experience */
+  /* Targeting multiple possible classes for Jekyll/Minimal Mistakes themes */
+  .masthead, 
+  .site-header, 
+  .greedy-nav, 
+  .site-nav, 
+  nav, 
+  header, 
+  .visible-links, 
+  .hidden-links-container,
+  #site-nav,
+  #site-header {
+      display: none !important;
+      visibility: hidden !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      margin: 0 !important;
+  }
+  
+  /* Avatar Removed */
+
+
+  /* Mobile Responsiveness & Polish */
+  @media (max-width: 768px) {
+      .course-header {
+          text-align: center !important;
+      }
+      .terminal-window {
+          min-height: 280px !important;
+          margin-top: 20px;
+      }
+      .terminal-input-line {
+          font-size: 0.85rem;
+      }
+      .display-4 {
+          font-size: 2rem; /* Smaller title on mobile */
+      }
+      .lead {
+          font-size: 0.95rem !important;
+      }
+      .btn {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+      }
+      .lecture-card, .tutorial-card {
+          margin-bottom: 15px;
+      }
+      .smart-welcome {
+          font-size: 0.85rem;
+          padding: 10px 18px;
+      }
+      /* Better mobile padding */
+      .container {
+          padding-left: 15px;
+          padding-right: 15px;
+      }
+  }
+  
+  /* === WOW EFFECTS === */
+  
+  /* Card Lift Effect */
+  .lecture-card, .tutorial-card, .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .lecture-card:hover, .tutorial-card:hover, .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Button Glow on Hover */
+  .btn-primary {
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+  }
+  .btn-primary:hover {
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
+      transform: translateY(-2px);
+  }
+  .btn-success, .btn-outline-success {
+      transition: all 0.3s ease;
+  }
+  .btn-success:hover, .btn-outline-success:hover {
+      box-shadow: 0 0 20px rgba(40, 167, 69, 0.5);
+      transform: translateY(-2px);
+  }
+  
+  /* Section Headers with Gradient Underline */
+  h3.h4 {
+      position: relative;
+      display: inline-block;
+  }
+  h3.h4::after {
+      content: '';
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #00ff88, #00b8ff);
+      border-radius: 2px;
+  }
+  
+  /* Lecture Number Glow */
+  .lecture-number {
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+  }
+  
+  /* Smooth Scroll Reveal Animation */
+  .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .reveal-on-scroll.revealed {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+  /* Badge Hover Effect */
+  .badge {
+      transition: all 0.2s ease;
+  }
+  .badge:hover {
+      transform: scale(1.05);
+  }
+  
+  /* === ADDITIONAL WOW EFFECTS === */
+  
+  /* Icon Spin on Hover */
+  .fa-eye:hover, .fa-download:hover, .fa-play:hover, .fa-rocket:hover {
+      animation: iconSpin 0.5s ease;
+  }
+  @keyframes iconSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+  }
+  
+  /* Link Shimmer Effect */
+  a:not(.btn) {
+      position: relative;
+      transition: all 0.3s ease;
+  }
+  a:not(.btn):hover {
+      color: #00ff88 !important;
+      text-shadow: 0 0 8px rgba(0, 255, 136, 0.4);
+  }
+  
+  /* Floating Animation for Stat Cards */
+  .stat-card {
+      animation: floatSubtle 6s ease-in-out infinite;
+  }
+  .stat-card:nth-child(2) { animation-delay: -2s; }
+  .stat-card:nth-child(3) { animation-delay: -4s; }
+  @keyframes floatSubtle {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+  }
+  
+  /* Terminal Glow Effect */
+  .terminal-window {
+      transition: box-shadow 0.3s ease;
+  }
+  .terminal-window:hover {
+      box-shadow: 0 0 40px rgba(0, 255, 136, 0.2), 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Animated Gradient Border on Focus */
+  .terminal-input:focus {
+      background: linear-gradient(90deg, rgba(0,255,136,0.1), rgba(0,184,255,0.1));
+      border-radius: 4px;
+  }
+  
+  /* Staggered List Item Animation */
+  .topic-list-detailed li {
+      opacity: 0;
+      animation: fadeInUp 0.4s ease forwards;
+  }
+  .topic-list-detailed li:nth-child(1) { animation-delay: 0.1s; }
+  .topic-list-detailed li:nth-child(2) { animation-delay: 0.2s; }
+  .topic-list-detailed li:nth-child(3) { animation-delay: 0.3s; }
+  .topic-list-detailed li:nth-child(4) { animation-delay: 0.4s; }
+  .topic-list-detailed li:nth-child(5) { animation-delay: 0.5s; }
+  @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Checkmark Bounce on Load */
+  .fa-check {
+      animation: checkBounce 0.6s ease;
+  }
+  @keyframes checkBounce {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+  }
+  
+  /* Lecture Header Shimmer on Hover */
+  .lecture-header {
+      position: relative;
+      overflow: hidden;
+  }
+  .lecture-header::before {
+      content: '';
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+      transition: left 0.5s ease;
+  }
+  .lecture-header:hover::before {
+      left: 100%;
+  }
+  
+  /* Cursor Blink for Terminal */
+  .terminal-prompt::after {
+      content: '▊';
+      animation: blink 1s step-end infinite;
+      margin-left: 2px;
+      color: #00ff88;
+  }
+  @keyframes blink {
+      0%, 50% { opacity: 1; }
+      51%, 100% { opacity: 0; }
+  }
+  
+  /* Rainbow Border on Login Box */
+  .login-box {
+      position: relative;
+  }
+  .login-box::before {
+      content: '';
+      position: absolute;
+      top: -2px; left: -2px; right: -2px; bottom: -2px;
+      background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0, #7b68ee, #ff0080);
+      background-size: 400% 400%;
+      border-radius: 14px;
+      z-index: -1;
+      animation: rainbowBorder 3s ease infinite;
+  }
+  @keyframes rainbowBorder {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+
+  /* Location Glow Effect */
+  .location-line {
+      transition: all 0.3s ease;
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 20px;
+  }
+  .location-line:hover {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(0, 184, 255, 0.2);
+  }
+  
+  /* Pulse Glow Effect for Title */
+  .pulse-glow {
+      animation: pulseGlow 2s ease-in-out infinite;
+  }
+  @keyframes pulseGlow {
+      0%, 100% { text-shadow: 0 0 10px rgba(0, 255, 136, 0.3); }
+      50% { text-shadow: 0 0 25px rgba(0, 255, 136, 0.6), 0 0 40px rgba(0, 255, 136, 0.3); }
+  }
+
+  /* FIXED BACKGROUNDS */
+  #particles-js {
+      position: fixed !important;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 0;
+  }
+  #snake-cursor {
+      position: fixed !important;
+      top: 0; left: 0; width: 100%; height: 100%;
+      z-index: 9999;
+      pointer-events: none;
+  }
+</style>
+
+<style>
+/* Video Modal */
+.video-modal {
+    display: none; position: fixed; z-index: 10001;
+    left: 0; top: 0; width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.95); backdrop-filter: blur(5px);
+}
+.video-modal-content {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 80%; max-width: 900px; background: #000;
+    box-shadow: 0 0 30px rgba(0, 255, 136, 0.2); border-radius: 8px; overflow: hidden;
+}
+.video-container {
+    position: relative; padding-bottom: 56.25%; /* 16:9 */
+    height: 0; overflow: hidden;
+}
+.video-container iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
+}
+.close-video {
+    position: absolute; top: -40px; right: 0;
+    color: #fff; font-size: 30px; font-weight: bold; cursor: pointer;
+    transition: color 0.3s;
+}
+.close-video:hover { color: #ff5f56; }
+
+/* Course Section */
+.course-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none; background: #1e1e1e; overflow: hidden;
+}
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+.course-thumb-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 for thumbnail */
+}
+.course-thumb {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.course-card:hover .course-thumb { transform: scale(1.05); }
+.play-overlay {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transition: opacity 0.3s;
+}
+.course-card:hover .play-overlay { opacity: 1; }
+.play-icon-lg {
+    color: #fff; font-size: 3rem;
+    text-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.duration-badge {
+    position: absolute; bottom: 8px; right: 8px;
+    background: rgba(0,0,0,0.8); color: #fff;
+    padding: 2px 6px; border-radius: 4px;
+    font-size: 0.8rem; font-weight: bold;
+}
 </style>
 
 <div id="login-overlay">
@@ -151,39 +594,109 @@ nav: false
 
 </div>
 
+<!-- Particle Background Container -->
+<div id="particles-js"></div>
+<!-- Particles.js CDN - MUST be outside protected content to load -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+// Initialize Interactive Particles on page load
+document.addEventListener("DOMContentLoaded", function() {
+    if(typeof particlesJS !== 'undefined') {
+        particlesJS("particles-js", {
+            "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00ff88" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.5, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#00ff88",
+                    "opacity": 0.2,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2,
+                    "direction": "none",
+                    "random": true,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false
+                }
+            },
+            "interactivity": {
+                "detect_on": "window",
+                "events": {
+                    "onhover": { "enable": true, "mode": "repulse" },
+                    "onclick": { "enable": true, "mode": "push" },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 200, "line_linked": { "opacity": 0.6 } },
+                    "bubble": { "distance": 250, "size": 6, "duration": 2, "opacity": 0.8 },
+                    "repulse": { "distance": 150, "duration": 0.4 },
+                    "push": { "particles_nb": 4 }
+                }
+            },
+            "retina_detect": true
+        });
+    }
+});
+</script>
+<!-- Global Snake Cursor Container -->
+<div id="snake-cursor" style="pointer-events: none; position: fixed; top:0; left:0; width:100%; height:100%; overflow:hidden; z-index:9999; display:none;"></div>
+
 <div id="protected-content" style="display:none;">
 
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Particles.js loaded outside protected-content -->
 
     <!-- HEADER SECTION -->
     <div class="course-header mb-5">
         <div class="row align-items-center">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <h1 class="display-4 font-weight-bold gradient-text">Python for Beginners</h1>
-                <p class="lead text-muted mt-3">
-                    A structured journey from "Hello World" to scientific computing with NumPy, Pandas, and OOP.
+            
+            <!-- Left Column: Compact Text (Col-5) -->
+            <div class="col-md-5 mb-4 mb-md-0 text-center text-md-left" style="position: relative;">
+                
+                <h1 class="display-4 font-weight-bold gradient-text mb-2" id="hacker-title" data-value="Python for Beginners">Python for Beginners</h1>
+                <p class="lead text-muted mb-3" style="font-size: 1.1rem;">
+                    From "Hello World" to Data Science. A structured journey into the world of Python.
                 </p>
-                <div class="course-meta mt-3">
-                    <p class="mb-1"><i class="fas fa-user-tie mr-2 text-primary"></i><strong>Instructor:</strong> Dr. S. Sharma, Assistant Professor</p>
-                    <p class="mb-1"><i class="fas fa-user-graduate mr-2 text-success"></i><strong>TA:</strong> Satyam Tiwari, PhD Student</p>
-                    <p class="mb-0"><i class="fas fa-university mr-2 text-info"></i><strong>Jagiellonian University</strong> — Dept. of Theory of Nuclear Systems</p>
+                <div class="course-meta mb-4">
+                    <div class="mb-2"><i class="fas fa-user-tie mr-2 text-primary" style="width:20px;"></i><strong class="premium-gold">Dr. Sushil Sharma</strong></div>
+                    <div class="mb-2"><i class="fas fa-user-graduate mr-2 text-success" style="width:20px;"></i><strong>Satyam Tiwari</strong></div>
+                    <div class="mb-0 d-flex align-items-center justify-content-center justify-content-md-start">
+                        <i class="fas fa-university mr-2 text-info"></i>
+                        <strong>Jagiellonian University, Krakow</strong>
+                    </div>
                 </div>
-                <div class="mt-4">
-                    <a href="#lectures" class="btn btn-primary btn-lg px-4 mr-2 rounded-pill shadow-sm">View Lectures</a>
-                    <a href="#tutorials" class="btn btn-outline-success btn-lg px-4 rounded-pill">Tutorials</a>
+                <div>
+                    <a href="#lectures" class="btn btn-primary px-4 mr-2 rounded-pill shadow-sm">View Lectures</a>
+                    <a href="#tutorials" class="btn btn-outline-success px-4 rounded-pill">Tutorials</a>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="terminal-window shadow-lg">
+            
+            <!-- Right Column: Terminal (Col-7, Balanced) -->
+            <div class="col-md-7">
+                <div class="terminal-window shadow-lg" onclick="document.getElementById('term-input').focus()">
                     <div class="terminal-bar">
                         <div class="dot red"></div>
                         <div class="dot yellow"></div>
                         <div class="dot green"></div>
-                        <span class="terminal-title">python3 — interactive</span>
+                        <span class="terminal-title">python3 — interactive shell</span>
                     </div>
-                    <div class="terminal-body">
-                        <div id="typewriter-code"></div>
-                        <span class="cursor">_</span>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-output" id="terminal-output">
+                            <span class="text-muted"># Interactive Python Shell v3.10</span><br>
+                            <span class="text-muted"># Type 'help' for commands</span><br>
+                            <!-- Auto-type will happen here -->
+                        </div>
+                        <div class="terminal-input-line">
+                            <span class="terminal-prompt">>>></span>
+                            <input type="text" id="term-input" class="terminal-input" autocomplete="off" spellcheck="false">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -951,6 +1464,7 @@ nav: false
                             <li>Input & Output</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('_uQrJ0TkZlc')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec01')">Go to Materials</button>
                         </div>
                     </div>
@@ -974,6 +1488,7 @@ nav: false
                             <li>Dictionary keys & values</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('k9TUPpGqYTo')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec02')">Go to Materials</button>
                         </div>
                     </div>
@@ -997,6 +1512,7 @@ nav: false
                             <li>Break & Continue</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('6iF8Xb7Z3wQ')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec03')">Go to Materials</button>
                         </div>
                     </div>
@@ -1020,6 +1536,7 @@ nav: false
                             <li>Scope & Lifetime</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('9Os0o3wzS_I')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec04')">Go to Materials</button>
                         </div>
                     </div>
@@ -1043,6 +1560,7 @@ nav: false
                             <li>Importing Modules</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('Uh2ebFW8OYM')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec05')">Go to Materials</button>
                         </div>
                     </div>
@@ -1066,6 +1584,7 @@ nav: false
                             <li>Raising Exceptions</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('NIWwJbo-9_8')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec06')">Go to Materials</button>
                         </div>
                     </div>
@@ -1089,6 +1608,7 @@ nav: false
                             <li>Matplotlib Plotting</li>
                         </ul>
                         <div class="text-right">
+                             <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('LHBE6Q9XlzI')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec07')">Go to Materials</button>
                         </div>
                     </div>
@@ -1112,6 +1632,7 @@ nav: false
                             <li>Basic Statistics</li>
                         </ul>
                         <div class="text-right">
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('ZDa-Z5JzLYM')"><i class="fab fa-youtube"></i> Watch</button>
                             <button class="btn btn-sm btn-outline-success rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec08')">Go to Materials</button>
                         </div>
                     </div>
@@ -1123,6 +1644,60 @@ nav: false
         </div>
     </div>
 
+    <hr class="my-5">
+
+    <!-- RECOMMENDED YOUTUBE COURSES -->
+    <div class="mb-5">
+        <h3 class="font-weight-bold mb-4 text-center"><i class="fab fa-youtube mr-2 text-danger"></i>Recommended YouTube Courses</h3>
+        <p class="text-muted text-center mb-5">Sleep through the lectures? No worries. Binge-watch these top-rated courses and become a pro overnight. (Popcorn not included).</p>
+        
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card course-card h-100" onclick="window.open('https://www.youtube.com/watch?v=kqtD5dpn9C8', '_blank')" style="cursor: pointer;">
+                    <div class="course-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/kqtD5dpn9C8/maxresdefault.jpg" class="course-thumb" alt="Mosh Python">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
+                        <div class="duration-badge">1h 00m</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="font-weight-bold text-white mb-2">Python for Beginners</h5>
+                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> Programming with Mosh</p>
+                        <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> 1h 00m</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card h-100" onclick="window.open('https://www.youtube.com/watch?v=rfscVS0vtbw', '_blank')" style="cursor: pointer;">
+                    <div class="course-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/rfscVS0vtbw/maxresdefault.jpg" class="course-thumb" alt="FreeCodeCamp">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
+                        <div class="duration-badge">4h 26m</div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="font-weight-bold text-white mb-2">Learn Python - Full Course</h5>
+                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> freeCodeCamp.org</p>
+                         <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> 4h 26m</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card course-card h-100">
+                    <div class="course-thumb-wrapper">
+                        <img src="https://img.youtube.com/vi/YYXdXT2l-Gg/maxresdefault.jpg" class="course-thumb" alt="Corey Schafer">
+                        <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
+                        <div class="duration-badge">Series</div>
+                         <a href="https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiFrjAZpH" target="_blank" class="stretched-link"></a>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="font-weight-bold text-white mb-2">Python Beginner Series</h5>
+                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> Corey Schafer</p>
+                         <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> Multi-Part Series</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <hr class="my-5">
 
     <!-- RESOURCES -->
@@ -1172,12 +1747,32 @@ nav: false
     </div>
 
     <style>
-    /* Gradient Text */
+    /* Gradient Text with Flow Animation */
     .gradient-text {
-        background: -webkit-linear-gradient(45deg, #007bff, #00d2ff);
+        background: linear-gradient(-45deg, #00ff88, #00b8ff, #00ff88);
+        background-size: 200% auto;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: gradientFlow 5s ease infinite;
     }
+    
+    @keyframes gradientFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+    
+    /* Premium Gold Text */
+    .premium-gold {
+        background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+        background-size: 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: shine 3s linear infinite;
+        font-weight: 800;
+        text-shadow: 0 0 10px rgba(191, 149, 63, 0.2);
+    }
+    @keyframes shine { to { background-position: 200% center; } }
 
     /* Course Meta */
     .course-meta p {
@@ -2441,7 +3036,7 @@ nav: false
     }
     </script>
 
-</div>
+
 
 <script>
   function verifyPassword() {
@@ -2457,7 +3052,8 @@ nav: false
     if (enteredHash === correctHash) { 
       document.getElementById("login-overlay").style.display = "none";
       document.getElementById("protected-content").style.display = "block";
-      setTimeout(typeLine, 500);
+      
+
     } else {
       errorMsg.style.display = "block";
       var box = document.querySelector(".login-box");
@@ -2560,6 +3156,7 @@ nav: false
             .then(data => {
                 const city = data.city || "the World";
                 const country = data.country_name || "";
+                const countryCode = data.country_code || ""; // e.g. "FR"
                 
                 // Get time of day
                 const hour = new Date().getHours();
@@ -2570,24 +3167,44 @@ nav: false
                 
                 if(welcomeContainer) {
                     // 1. Set Structure (Pill Design)
-                    welcomeContainer.style.display = "inline-flex"; // Ensure flex for pill alignment
+                    welcomeContainer.style.display = "inline-flex"; 
                     welcomeContainer.innerHTML = `
                         <div class="live-dot"></div>
                         <span id="welcome-text-1" class="welcome-highlight"></span>
                         <span id="welcome-location" class="location-text"></span>
+                        <span id="welcome-flag"></span>
+                        <span id="welcome-divider" class="smart-divider" style="display:none;"></span>
+                        <span id="welcome-time" class="time-display" style="display:none;"></span>
                     `;
                     
                     const spanText = document.getElementById('welcome-text-1');
                     const spanLocation = document.getElementById('welcome-location');
+                    const spanFlag = document.getElementById('welcome-flag');
+                    const spanDivider = document.getElementById('welcome-divider');
+                    const spanTime = document.getElementById('welcome-time');
                     
                     // 2. Typewriter Logic
-                    // We type: "Good Evening! Accessing course from " -> then "Paris, France"
-                    
                     const text1 = `${greeting}! Accessing from `;
                     const text2 = `${city}, ${country}`;
                     
                     typeText(spanText, text1, 30, () => {
-                        typeText(spanLocation, text2, 50, null);
+                        typeText(spanLocation, text2, 50, () => {
+                             // 3. Pop the Flag (Image)
+                             if(countryCode) {
+                                 const img = document.createElement('img');
+                                 img.src = `https://flagcdn.com/24x18/${countryCode.toLowerCase()}.png`;
+                                 img.className = "flag-icon";
+                                 img.alt = country;
+                                 spanFlag.appendChild(img);
+                             }
+                             
+                             // 4. Show Time after a brief delay
+                             setTimeout(() => {
+                                 spanDivider.style.display = "inline-block";
+                                 spanTime.style.display = "inline-block";
+                                 startTime(spanTime);
+                             }, 500);
+                        });
                     });
                 }
             })
@@ -2607,8 +3224,297 @@ nav: false
             }
             type();
         }
+        
+        function startTime(element) {
+            function update() {
+                const now = new Date();
+                const timeString = now.toLocaleTimeString([], { hour12: false });
+                element.innerHTML = timeString;
+            }
+            update(); // Immediate
+            setInterval(update, 1000); // Loop
+        }
+    });
+
+    /* --- PARTICLES.JS CONFIG --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        if(document.getElementById('particles-js')) {
+            particlesJS("particles-js", {
+              "particles": {
+                "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+                "color": { "value": "#00ff88" }, /* Theme Green */
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.3, "random": true },
+                "size": { "value": 3, "random": true },
+                "line_linked": {
+                  "enable": true,
+                  "distance": 150,
+                  "color": "#00ff88",
+                  "opacity": 0.2, /* Subtle links */
+                  "width": 1
+                },
+                "move": {
+                  "enable": true,
+                  "speed": 2,
+                  "direction": "none",
+                  "random": false,
+                  "straight": false,
+                  "out_mode": "out",
+                  "bounce": false,
+                  "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 }
+                }
+              },
+              "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                  "onhover": { "enable": true, "mode": "grab" }, /* Connected lines on hover */
+                  "onclick": { "enable": true, "mode": "push" },
+                  "resize": true
+                },
+                "modes": {
+                  "grab": { "distance": 140, "line_linked": { "opacity": 0.6 } },
+                  "push": { "particles_nb": 4 }
+                }
+              },
+              "retina_detect": true
+            });
+        }
+    });
+    
+    /* --- CONFETTI LOGIC REMOVED --- */
+    function triggerConfetti() {
+        // Disabled
+    }
+
+    /* --- PLAYABLE TERMINAL LOGIC --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        const input = document.getElementById("term-input");
+        const output = document.getElementById("terminal-output");
+        if(input) {
+            input.addEventListener("keydown", function(e) {
+                if(e.key === "Enter") {
+                    const command = input.value.trim();
+                    processCommand(command);
+                    input.value = "";
+                    body.scrollTop = body.scrollHeight; // Auto scroll
+                }
+            });
+            
+            // Auto-Type Welcome Message
+            setTimeout(() => {
+                const welcomeCmd = 'print("Welcome to the Python Course! 🐍")';
+                let i = 0;
+                input.focus();
+                
+                function typeWelcome() {
+                    if (i < welcomeCmd.length) {
+                        input.value += welcomeCmd.charAt(i);
+                        i++;
+                        setTimeout(typeWelcome, 50); // Typing speed
+                    } else {
+                        // Press Enter automatically
+                        setTimeout(() => {
+                            processCommand(welcomeCmd); // Execute logic
+                            input.value = ""; // Clear input
+                            body.scrollTop = body.scrollHeight;
+                        }, 600);
+                    }
+                }
+                typeWelcome();
+            }, 1000); // Wait 1s before starting
+        }
+
+        function processCommand(cmd) {
+            if(!cmd) return;
+            const lowerCmd = cmd.toLowerCase().trim();
+            let response = "";
+
+            if (lowerCmd === "help") {
+                response = "Commands: <span class='text-info'>print</span>, <span class='text-info'>date</span>, <span class='text-info'>clear</span>, <span class='text-info'>whoami</span>, <span class='text-info'>import python</span>";
+            } else if (lowerCmd === "clear") {
+                output.innerHTML = "";
+                return;
+            } else if (lowerCmd === "date") {
+                response = new Date().toString();
+            } else if (lowerCmd === "whoami") {
+                response = "guest_user@python_course";
+            } else if (lowerCmd === "import python") {
+                response = "<span class='text-warning'>🐍 You have summoned the Python spirit!</span>";
+            } else if (cmd.includes("print(")) {
+                 // Relaxed print parser
+                 const start = cmd.indexOf("print(") + 6;
+                 const end = cmd.lastIndexOf(")");
+                 if(end > start) {
+                     let content = cmd.substring(start, end);
+                     content = content.replace(/^["']|["']$/g, '');
+                     response = `<span class="text-success">${escapeHtml(content)}</span>`;
+                 } else {
+                     response = "<span class='text-danger'>SyntaxError: invalid syntax</span>";
+                 }
+            } else if (cmd === "") {
+                response = "";
+            } else {
+                 response = `<span class='text-danger'>Command not found: ${escapeHtml(cmd)}</span>`;
+            }
+
+            if(response) {
+                const line = document.createElement("div");
+                line.innerHTML = `<span class="terminal-prompt">>>></span> ${escapeHtml(cmd)}<br>${response}`;
+                output.appendChild(line);
+            } else {
+                 const line = document.createElement("div");
+                 line.innerHTML = `<span class="terminal-prompt">>>></span> ${escapeHtml(cmd)}`;
+                 output.appendChild(line);
+            }
+            
+            const body = document.getElementById("terminal-body");
+            if(body) body.scrollTop = body.scrollHeight;
+        }
+        
+        function escapeHtml(text) {
+            return text
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#039;");
+        }
+    });
+
+    /* --- TYPEWRITER + PULSE GLOW EFFECT --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        const h1 = document.getElementById("hacker-title");
+        if(!h1) return;
+        
+        const fullText = h1.dataset.value || h1.innerText;
+        let charIndex = 0;
+        h1.textContent = "";
+        h1.style.borderRight = "3px solid #00ff88"; // Cursor
+        
+        // Typewriter effect
+        function typeWriter() {
+            if(charIndex < fullText.length) {
+                h1.textContent += fullText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 80 + Math.random() * 40); // Humanized typing
+            } else {
+                // Remove cursor after typing complete
+                setTimeout(() => {
+                    h1.style.borderRight = "none";
+                    h1.classList.add("pulse-glow"); // Add soft pulse
+                }, 500);
+            }
+        }
+        
+        // Start with a delay for dramatic effect
+        setTimeout(typeWriter, 800);
+    });
+    // Add snake cursor container if missing
+    document.addEventListener("DOMContentLoaded", function() {
+        if(!document.getElementById("snake-cursor")) {
+            const div = document.createElement("div");
+            div.id = "snake-cursor";
+            document.body.appendChild(div);
+        }
+    });
+        
+    /* --- SNAKE CURSOR --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        const snakeContainer = document.getElementById("snake-cursor");
+        if(snakeContainer) {
+            snakeContainer.style.display = "block";
+            const segmentCount = 20; // Longer snake (was 12)
+            const segments = [];
+            
+            // Create segments
+            for(let i=0; i<segmentCount; i++) {
+                const dot = document.createElement("div");
+                dot.style.position = "absolute";
+                dot.style.width = (14 - i*0.6) + "px"; // Thicker head, longer taper
+                dot.style.height = (14 - i*0.6) + "px";
+                dot.style.borderRadius = "50%";
+                dot.style.backgroundColor = (i===0) ? "#00ff88" : `rgba(0, 255, 136, ${0.9 - i*0.04})`; 
+                dot.style.boxShadow = (i===0) ? "0 0 15px #00ff88" : "none"; // Glowier head
+                dot.style.pointerEvents = "none";
+                dot.style.zIndex = "9999"; // Top layer
+                dot.style.transform = "translate(-50%, -50%)"; // Center on cursor
+                snakeContainer.appendChild(dot);
+                segments.push({ el: dot, x: 0, y: 0 });
+            }
+
+            let mouseX = 0, mouseY = 0;
+            // Track mouse globally
+            document.addEventListener("mousemove", (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+            });
+            
+            // Fade logic for window leave
+            document.addEventListener("mouseout", (e) => {
+                 if (!e.relatedTarget && !e.toElement) { // Real exit
+                    segments.forEach(seg => seg.el.style.opacity = "0");
+                 }
+            });
+            document.addEventListener("mouseover", () => {
+                segments.forEach(seg => seg.el.style.opacity = "1");
+            });
+
+            function animateSnake() {
+                let prevX = mouseX;
+                let prevY = mouseY;
+                
+                segments.forEach((seg, index) => {
+                    // Tighter delay for smoother curve
+                    const delay = index === 0 ? 0.15 : 0.2; 
+                    
+                    seg.x += (prevX - seg.x) * delay;
+                    seg.y += (prevY - seg.y) * delay;
+                    
+                    seg.el.style.left = seg.x + "px";
+                    seg.el.style.top = seg.y + "px";
+                    
+                    prevX = seg.x;
+                    prevY = seg.y;
+                });
+                
+                requestAnimationFrame(animateSnake);
+            }
+            animateSnake();
+        }
     });
 </script>
+
+<script>
+// Video Modal Logic
+function openVideo(videoId) {
+    const modal = document.getElementById("videoModal");
+    const frame = document.getElementById("videoFrame");
+    frame.src = "https://www.youtube.com/embed/" + videoId + "?autoplay=1&rel=0";
+    modal.style.display = "block";
+}
+
+function closeVideoModal() {
+    const modal = document.getElementById("videoModal");
+    const frame = document.getElementById("videoFrame");
+    modal.style.display = "none";
+    frame.src = "";
+}
+
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") closeVideoModal();
+});
+</script>
+
+
+<!-- Video Viewer Modal -->
+<div id="videoModal" class="video-modal" onclick="closeVideoModal()">
+    <div class="video-modal-content" onclick="event.stopPropagation()">
+        <span class="close-video" onclick="closeVideoModal()">&times;</span>
+        <div class="video-container">
+            <iframe id="videoFrame" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
 
 <!-- PDF Viewer Modal -->
 <div id="pdfViewerModal" class="pdf-viewer-modal">

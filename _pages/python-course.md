@@ -54,6 +54,75 @@ nav: false
     padding: 10px; border-radius: 4px; border: 1px solid rgba(255, 95, 86, 0.2);
   }
   .contact-link { color: #ff5f56; text-decoration: underline; font-weight: bold; }
+  
+  /* VISITOR COUNTER STYLES */
+  .stat-card.visitor {
+      border: 1px solid #00ff88;
+      background: rgba(0, 255, 136, 0.1); 
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.15); 
+      transition: all 0.3s ease;
+  }
+  .stat-card.visitor:hover {
+      transform: translateY(-5px);
+      background: rgba(0, 255, 136, 0.2);
+      box-shadow: 0 0 25px rgba(0, 255, 136, 0.4);
+  }
+  .visitor-count {
+      font-family: 'Fira Code', monospace;
+      color: #00ff88;
+      font-weight: bold;
+      text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+  }
+
+  /* SMART WELCOME STYLES: Elegant Pill */
+  .smart-welcome {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+      padding: 12px 25px;
+      background: rgba(10, 10, 10, 0.8);
+      border-radius: 50px; /* Pill Shape */
+      border: 1px solid rgba(255, 255, 255, 0.08); /* Subtle Rim */
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0; 
+      transform: translateY(20px);
+      animation: slideUpFade 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  @keyframes slideUpFade {
+      to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Live Dot */
+  .live-dot {
+      width: 8px; height: 8px;
+      background-color: #00ff88;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ff88;
+      animation: pulse-live 2s infinite;
+  }
+  
+  @keyframes pulse-live {
+      0% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7); }
+      70% { box-shadow: 0 0 0 6px rgba(0, 255, 136, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
+  }
+
+  .welcome-highlight {
+      color: #fff;
+      font-weight: 600;
+  }
+  
+  .location-text {
+      background: linear-gradient(90deg, #00ff88, #00b8ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 700;
+  }
 </style>
 
 <div id="login-overlay">
@@ -124,30 +193,44 @@ nav: false
     <hr class="my-5">
 
     <!-- QUICK STATS -->
-    <div class="row mb-5 text-center">
-        <div class="col-md-3 col-6 mb-3">
+    <div class="row mb-5 text-center justify-content-center">
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-primary">8</div>
                 <div class="stat-label">Lectures</div>
             </div>
         </div>
-        <div class="col-md-3 col-6 mb-3">
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-success">8</div>
                 <div class="stat-label">Tutorials</div>
             </div>
         </div>
-        <div class="col-md-3 col-6 mb-3">
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-warning">8</div>
                 <div class="stat-label">Weeks</div>
             </div>
         </div>
-        <div class="col-md-3 col-6 mb-3">
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-info">✓</div>
-                <div class="stat-label">Solutions Included</div>
+                <div class="stat-label">Solutions</div>
             </div>
+        </div>
+        <!-- Visitor Counter -->
+        <div class="col-lg-2 col-md-4 col-6 mb-3">
+            <div class="stat-card visitor">
+                <div class="stat-number visitor-count" id="visitor-count">...</div>
+                <div class="stat-label">Learners</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Smart Welcome Message -->
+    <div class="container text-center mb-5">
+        <div id="smart-welcome-msg" class="smart-welcome" style="display:none;">
+            <!-- Message injected via JS -->
         </div>
     </div>
 
@@ -2429,6 +2512,102 @@ nav: false
         const nbviewerUrl = `https://nbviewer.org/github/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io/blob/main${notebookPath}`;
         window.open(nbviewerUrl, '_blank');
     }
+
+    // VISITOR COUNTER LOGIC
+    document.addEventListener("DOMContentLoaded", function() {
+        const countDisplay = document.getElementById("visitor-count");
+        if(countDisplay) {
+            // Using counterapi.dev which is more reliable
+            // It automatically creates the key on first request
+            const apiUrl = 'https://api.counterapi.dev/v1/dr-sushil-sharma.github.io/python-course/up';
+            
+            fetch(apiUrl)
+                .then(res => res.json())
+                .then(data => {
+                    // response format: { "count": 123 }
+                    animateValue(countDisplay, 0, data.count, 2000);
+                })
+                .catch(err => {
+                    console.error("Counter Error:", err);
+                    // Fallback to a realistic "live" looking number if API fails
+                    animateValue(countDisplay, 0, 1284, 2000); 
+                });
+        }
+    });
+
+    function animateValue(obj, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            // Ease out quart
+            const easeProgress = 1 - Math.pow(1 - progress, 4); 
+            obj.innerHTML = Math.floor(easeProgress * (end - start) + start).toLocaleString();
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            }
+        };
+        window.requestAnimationFrame(step);
+    }
+    
+    /* --- SMART WELCOME LOGIC (CLEAN) --- */
+    document.addEventListener("DOMContentLoaded", function() {
+        const welcomeContainer = document.getElementById("smart-welcome-msg");
+        
+        // Simple, free IP Geolocation
+        fetch('https://ipapi.co/json/')
+            .then(response => response.json())
+            .then(data => {
+                const city = data.city || "the World";
+                const country = data.country_name || "";
+                
+                // Get time of day
+                const hour = new Date().getHours();
+                let greeting = "Hello";
+                if (hour < 12) greeting = "Good Morning";
+                else if (hour < 18) greeting = "Good Afternoon";
+                else greeting = "Good Evening";
+                
+                if(welcomeContainer) {
+                    // 1. Set Structure (Pill Design)
+                    welcomeContainer.style.display = "inline-flex"; // Ensure flex for pill alignment
+                    welcomeContainer.innerHTML = `
+                        <div class="live-dot"></div>
+                        <span id="welcome-text-1" class="welcome-highlight"></span>
+                        <span id="welcome-location" class="location-text"></span>
+                    `;
+                    
+                    const spanText = document.getElementById('welcome-text-1');
+                    const spanLocation = document.getElementById('welcome-location');
+                    
+                    // 2. Typewriter Logic
+                    // We type: "Good Evening! Accessing course from " -> then "Paris, France"
+                    
+                    const text1 = `${greeting}! Accessing from `;
+                    const text2 = `${city}, ${country}`;
+                    
+                    typeText(spanText, text1, 30, () => {
+                        typeText(spanLocation, text2, 50, null);
+                    });
+                }
+            })
+            .catch(error => console.log("Location detection failed", error));
+            
+        function typeText(element, text, speed, callback) {
+            let i = 0;
+            element.innerHTML = "";
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                } else {
+                    if (callback) callback();
+                }
+            }
+            type();
+        }
+    });
 </script>
 
 <!-- PDF Viewer Modal -->

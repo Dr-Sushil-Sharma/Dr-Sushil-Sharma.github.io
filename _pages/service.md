@@ -36,19 +36,128 @@ nav_order: 7
             </div>
         </div>
 
-        <div class="service-card">
+        <div class="service-card featured-service">
+            <div class="service-icon">
+                <i class="fas fa-edit fa-2x"></i>
+            </div>
+            <div class="service-content">
+                <h5 class="service-title">Guest Editor</h5>
+                <div class="guest-editor-list">
+                    <!-- Item 1 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-book-open"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Proceedings of the 4th Jagiellonian Symposium on Advances in Particle Physics and Medicine</h6>
+                            <p class="ge-journal">Acta Physica Polonica A 142 (2022)</p>
+                            <a href="http://przyrbwn.icm.edu.pl/APP/SPIS/a142-3.html" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-atom"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">4th Jagiellonian Symposium on Advances in Particle Physics and Medicine</h6>
+                            <p class="ge-journal">Acta Physica Polonica B 15 (2022)</p>
+                            <a href="https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=15&N=4" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-capsules"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Symposium on New Trends in Nuclear and Medical Physics</h6>
+                            <p class="ge-journal">Acta Physica Polonica B 17 (2024)</p>
+                            <a href="https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=17&N=1" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-microscope"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">5th Jagiellonian Symposium on Advances in Particle Physics and Medicine</h6>
+                            <p class="ge-journal">Acta Physica Polonica B 17 (2024)</p>
+                            <a href="https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=17&N=7" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-file-alt"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Proceedings of the 5th Jagiellonian Symposium on Advances in Particle Physics and Medicine</h6>
+                            <p class="ge-journal">Acta Physica Polonica A 146, 5 (2024)</p>
+                            <a href="http://przyrbwn.icm.edu.pl/APP/SPIS/a146-5.html" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-radiation"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Proceedings of the 2nd Symposium on New Trends in Nuclear and Medical Physics</h6>
+                            <p class="ge-journal">Acta Physica Polonica A 148, 6 (2025)</p>
+                            <a href="https://appol.ifpan.edu.pl/index.php/appa/issue/view/39" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-card featured-service">
             <div class="service-icon">
                 <i class="fas fa-glasses fa-2x"></i>
             </div>
             <div class="service-content">
                 <h5 class="service-title">Peer Reviewer / Referee</h5>
                 <p class="service-text">Regular reviewer for high-impact scientific journals including:</p>
-                <ul class="mb-0 pl-3 text-muted" style="font-size: 0.95rem;">
-                    <li>Physica Medica</li>
-                    <li>Nuclear Instruments & Methods in Physics Research</li>
-                    <li>Nuclear Engineering and Technology</li>
-                    <li>EJNMMI Physics</li>
-                </ul>
+                <div class="guest-editor-list">
+                    <!-- Item 1 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Physica Medica</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Nuclear Instruments & Methods in Physics Research</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Nuclear Engineering and Technology</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">EJNMMI Physics</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Scientific Reports</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    <!-- Item 6 -->
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">Physics Letters B</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -213,81 +322,153 @@ nav_order: 7
 </div>
 
 <style>
-/* === Card Styling === */
+/* === Card Styling (Dark Theme) === */
 .service-card {
     display: flex;
     flex-direction: row;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background: #1e1e1e; /* Dark background */
+    border: 1px solid #333;
     border-radius: 8px;
     transition: transform 0.2s, box-shadow 0.2s;
     align-items: center;
+    color: #f0f0f0;
 }
 .service-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     border-color: var(--global-theme-color, #007bff);
 }
 
-/* Green Featured (Editorial) */
+/* Featured Service (Green Accent) */
 .service-card.featured-service {
     border-left: 5px solid #28a745;
-    background: #f8fff9;
+    background: #1e1e1e; /* Keep dark */
 }
 
-/* Gold Featured (Awards) */
+/* Featured Award (Gold Accent) */
 .service-card.featured-award {
     border-left: 5px solid #ffc107;
-    background: #fffff0;
+    background: #1e1e1e; /* Keep dark */
 }
 .service-card.award-card {
-    border-left: 5px solid #dee2e6;
+    border-left: 5px solid #555;
 }
 .service-card.award-card:hover {
     border-color: #ffc107;
 }
 
 .service-icon { padding-right: 1.5rem; color: #28a745; }
-.service-subtitle { font-size: 1rem; color: #6c757d; margin-bottom: 0.5rem; }
+.service-subtitle { font-size: 1rem; color: #aaa; margin-bottom: 0.5rem; }
 
 /* === Committee List Styling === */
 .service-year {
-    font-size: 1.5rem; font-weight: 700; color: #495057;
-    padding-right: 1.5rem; border-right: 2px solid #f1f1f1;
+    font-size: 1.5rem; font-weight: 700; color: #ccc;
+    padding-right: 1.5rem; border-right: 2px solid #333;
     min-width: 90px; text-align: right; align-self: flex-start;
 }
 .service-content { padding-left: 1.5rem; flex: 1; }
-.service-title { font-weight: 700; color: #212529; margin-bottom: 0.3rem; }
-.service-text { margin-bottom: 0.3rem; font-size: 1rem; color: #333; }
+.service-title { font-weight: 700; color: #fff; margin-bottom: 0.3rem; }
+.service-text { margin-bottom: 0.3rem; font-size: 1rem; color: #d1d1d1; }
 .service-meta { font-size: 0.85rem; color: #888; margin-bottom: 0; }
+.service-meta a { color: #5dd67a; }
 
-/* === Dark Mode Support === */
-@media (prefers-color-scheme: dark) {
-    .service-card { background: #2b2b2b; border-color: #444; }
-    .service-card:hover { box-shadow: 0 5px 15px rgba(0,0,0,0.3); }
-    .service-card.featured-service { background: #232b23; border-left-color: #28a745; }
-    .service-card.featured-award { background: #333022; border-left-color: #ffc107; }
-    .service-card.award-card { border-left-color: #555; }
-    .service-title { color: #f1f1f1; }
-    .service-text { color: #d1d1d1; }
-    .service-subtitle { color: #adb5bd; }
-    .service-year { color: #ced4da; border-right-color: #444; }
-    .alert-light { background-color: #333; border-color: #444; color: #ccc; }
+/* === Guest Editor / Reviewer List Styling === */
+.guest-editor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.guest-editor-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    background: #2d2d2d; /* Slightly lighter than card */
+    border-radius: 8px;
+    border: 1px solid #444;
+    transition: all 0.2s ease;
+}
+.guest-editor-item:hover {
+    background: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transform: translateX(5px);
+    border-color: #28a745;
+}
+.ge-icon {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background: #1e2621;
+    color: #28a745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+.ge-content {
+    flex: 1;
+}
+.ge-title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 0.2rem;
+    line-height: 1.4;
+}
+.ge-journal {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 0.4rem;
+    font-style: italic;
+}
+.ge-link {
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #5dd67a;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+}
+.ge-link i {
+    font-size: 0.7rem;
+    margin-left: 4px;
+    transition: transform 0.2s;
+}
+.ge-link:hover {
+    text-decoration: none;
+    color: #87eeb3;
+}
+.ge-link:hover i {
+    transform: translateX(3px);
 }
 
-/* === Mobile Responsiveness === */
+/* Hide Reviewer Grid (Legacy) */
+.reviewer-grid { display: none; }
+
+/* Mobile Responsiveness */
 @media (max-width: 576px) {
     .service-card { flex-direction: column; align-items: flex-start; }
     .service-year {
-        text-align: left; border-right: none; border-bottom: 2px solid #f1f1f1;
+        text-align: left; border-right: none; border-bottom: 2px solid #333;
         padding-right: 0; padding-bottom: 0.5rem; margin-bottom: 0.8rem; width: 100%;
     }
-    @media (prefers-color-scheme: dark) { .service-year { border-bottom-color: #444; } }
     .service-content { padding-left: 0; }
     .service-icon { margin-bottom: 1rem; }
 }
+
+/* Impact Section Dark Theme Override */
+.impact-card {
+    background: #1e1e1e !important;
+    border-color: #333 !important;
+}
+.impact-number { color: #fff !important; }
+.impact-label { color: #aaa !important; }
 </style>
 
 <hr class="my-5">

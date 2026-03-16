@@ -1,0 +1,34 @@
+{% comment %}
+  About Page — Selected Highlight Publications
+  Data source: _data/about.yml (highlights)
+{% endcomment %}
+
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h3 class="font-weight-bold">Selected Highlights</h3>
+        <p class="text-muted">Key publications and contributions.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        {% for pub in site.data.about.highlights %}
+        <div class="pub-card-full">
+            <a href="https://scholar.google.com/scholar?q={{ pub.title | url_encode }}" target="_blank" style="position:absolute; top:0; left:0; width:100%; height:100%; z-index:1;"></a>
+            <div class="pub-card-content">
+                <div class="pub-info">
+                    <div class="pub-card-title">{{ pub.title }}</div>
+                    <div class="pub-card-meta">
+                        <div class="pub-author-list">{{ pub.authors }}</div>
+                        <span class="pub-journal-badge">{{ pub.journal }}</span>
+                    </div>
+                </div>
+                <div class="pub-actions">
+                    <div class="pub-year">{{ pub.year }}</div>
+                    <span class="btn-read">Read Paper <i class="fas fa-search ml-1"></i></span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

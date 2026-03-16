@@ -1,0 +1,149 @@
+{% comment %}
+  Accomplishments Page — Full template
+  Data source: _data/service.yml
+{% endcomment %}
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/pages/service.css' | relative_url }}">
+
+<div class="row mb-4">
+    <div class="col-sm-12">
+        <p class="lead">{{ site.data.service.intro }}</p>
+    </div>
+</div>
+
+<hr>
+
+<!-- EDITORIAL & REVIEWING -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h3 class="mb-4"><i class="fas fa-book-reader mr-2"></i> Editorial & Reviewing</h3>
+        
+        {% for item in site.data.service.editorial %}
+        <div class="service-card featured-service">
+            <div class="service-icon">
+                <i class="{{ item.icon }} fa-2x"></i>
+            </div>
+            <div class="service-content">
+                <h5 class="service-title">{{ item.role }}</h5>
+
+                {% if item.organization %}
+                <p class="service-subtitle">{{ item.organization }}</p>
+                {% endif %}
+
+                {% if item.link %}
+                <a href="{{ item.link.url }}" target="_blank" class="btn btn-sm btn-outline-primary mt-2">
+                    {{ item.link.label }} <i class="fas fa-external-link-alt ml-1"></i>
+                </a>
+                {% endif %}
+
+                {% if item.description %}
+                <p class="service-text">{{ item.description }}</p>
+                {% endif %}
+
+                {% if item.issues %}
+                <div class="guest-editor-list">
+                    {% for issue in item.issues %}
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="{{ issue.icon }}"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">{{ issue.title }}</h6>
+                            <p class="ge-journal">{{ issue.journal }}</p>
+                            {% if issue.link %}
+                            <a href="{{ issue.link }}" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+
+                {% if item.journals %}
+                <div class="guest-editor-list">
+                    {% for journal in item.journals %}
+                    <div class="guest-editor-item">
+                        <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
+                        <div class="ge-content">
+                            <h6 class="ge-title">{{ journal }}</h6>
+                            <p class="ge-journal">Reviewer</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div>
+
+<!-- AWARDS -->
+<div class="row mb-5">
+    <div class="col-12">
+        <h3 class="mb-4"><i class="fas fa-trophy mr-2"></i> Awards, Grants & Honors</h3>
+        <div class="service-list">
+            {% for award in site.data.service.awards %}
+            <div class="service-card {% if award.featured %}featured-award{% else %}award-card{% endif %}">
+                <div class="service-year">{{ award.year }}</div>
+                <div class="service-content">
+                    <h5 class="service-title">{{ award.title }}</h5>
+                    <p class="service-text">{{ award.text }}</p>
+                    {% if award.meta %}
+                    <p class="service-meta"><i class="{{ award.meta_icon }} mr-1"></i> {{ award.meta }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!-- ORGANIZING COMMITTEES -->
+<div class="row">
+    <div class="col-12">
+        <h3 class="mb-4"><i class="fas fa-users-cog mr-2"></i> Organizing Committees</h3>
+        <div class="service-list">
+            {% for committee in site.data.service.committees %}
+            <div class="service-card">
+                <div class="service-year">{{ committee.year }}</div>
+                <div class="service-content">
+                    <h5 class="service-title">{{ committee.role }}</h5>
+                    <p class="service-text">{{ committee.event }}</p>
+                    {% if committee.link %}
+                    <p class="service-meta"><a href="{{ committee.link }}" target="_blank"><i class="fas fa-link mr-1"></i> View Event</a></p>
+                    {% elsif committee.location %}
+                    <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> {{ committee.location }}</p>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<hr class="my-5">
+
+<!-- IMPACT STATS -->
+<div class="row">
+    <div class="col-12 text-center mb-4">
+        <h3 class="mb-2 font-weight-bold" style="font-family: 'Orbitron', sans-serif;">Impact at a Glance</h3>
+        <p class="text-muted small">Quantifying contributions to the field.</p>
+    </div>
+</div>
+
+<div class="impact-container" id="impact-section">
+    <div class="row">
+        {% for stat in site.data.service.impact %}
+        <div class="col-md-3 col-6 mb-4">
+            <div class="impact-card">
+                <div class="impact-icon {{ stat.color }}"><i class="{{ stat.icon }}"></i></div>
+                <div class="impact-number" data-target="{{ stat.value }}">0</div>
+                <div class="impact-label">{{ stat.label }}</div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script src="{{ '/assets/js/pages/service.js' | relative_url }}"></script>

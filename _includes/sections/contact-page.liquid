@@ -1,0 +1,118 @@
+{% comment %}
+  Contact Page — Full template
+  Data source: _data/contact.yml
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/contact.css' | relative_url }}">
+
+<!-- INTRO -->
+<div class="row mb-4">
+    <div class="col-12">
+        <p class="lead">{{ site.data.contact.intro }}</p>
+    </div>
+</div>
+
+<!-- CONTACT CARD + MAP -->
+<div class="row mb-5">
+    <div class="col-md-5 mb-4 mb-md-0">
+        <div class="contact-card h-100">
+            <h3 class="card-title mb-4">Get in Touch</h3>
+            
+            {% for item in site.data.contact.contact %}
+            <div class="contact-item">
+                <div class="icon-box">
+                    <i class="{{ item.icon }}"></i>
+                </div>
+                <div class="contact-text">
+                    <span class="label">{{ item.label }}</span>
+                    {% if item.link %}
+                    <a href="{{ item.link }}" class="value">{{ item.value }}</a>
+                    {% else %}
+                    <span class="value">{{ item.value }}</span>
+                    {% endif %}
+                    {% if item.extra %}
+                    {% for line in item.extra %}
+                    <span class="value text-muted small">{{ line }}</span>
+                    {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+
+    <div class="col-md-7">
+        <div class="map-container h-100">
+            <iframe
+                src="{{ site.data.contact.map_url }}"
+                width="100%"
+                height="100%"
+                style="border:0; min-height: 350px; border-radius: 8px;"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- SOCIAL LINKS -->
+<h3 class="mb-4 mt-4 text-center">Connect Online</h3>
+
+<div class="row justify-content-center">
+    {% for social in site.data.contact.socials %}
+    <div class="col-6 col-md-3 mb-3">
+        <a href="{{ social.url }}" target="_blank" class="social-card-link">
+            <div class="social-card">
+                <i class="{{ social.icon }} social-icon {{ social.icon_class }}"></i>
+                <span class="social-name">{{ social.name }}</span>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<hr class="my-5">
+
+<!-- PUZZLE SECTION -->
+<div class="row">
+    <div class="col-12 text-center">
+        <h3 class="mb-2 font-weight-bold" style="font-family: 'Courier New', monospace;">{{ site.data.contact.puzzle.title }}</h3>
+        <p class="text-muted small">
+            <i class="fas fa-terminal"></i> {{ site.data.contact.puzzle.subtitle }}
+        </p>
+    </div>
+</div>
+
+<div class="terminal-wrapper mt-3">
+    <div class="scan-line"></div>
+    
+    <div class="terminal-screen" id="puzzle-screen">
+        <div class="status-bar">
+            <span>SYSTEM: OFFLINE</span>
+            <span>ERROR: PATH_BLOCKED</span>
+        </div>
+        
+        <div class="puzzle-grid" id="grid">
+            </div>
+
+        <div class="instruction">CLICK TILES TO ROTATE & CONNECT THE GREEN TO RED</div>
+    </div>
+
+    <div class="terminal-screen" id="success-screen" style="display: none;">
+        <div class="matrix-bg"></div>
+        <div class="success-content">
+            <h2 class="access-granted">ACCESS GRANTED</h2>
+            <p>Connection established securely.</p>
+            <div class="revealed-email">
+                <span id="typewriter-email"></span><span class="cursor">_</span>
+            </div>
+            <button class="btn btn-outline-success btn-sm mt-3" onclick="resetPuzzle()">RESET LINK</button>
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ '/assets/js/pages/contact.js' | relative_url }}"></script>

@@ -1,0 +1,56 @@
+# =============================================================
+# CONTACT PAGE DATA
+# Edit this file to update contact info and social links.
+# =============================================================
+
+intro: >
+  I am always open to discussing research, potential collaborations, or
+  opportunities for student supervision. The best way to reach me is via email.
+
+# --- CONTACT INFO ---
+contact:
+  - label: Email
+    icon: fas fa-envelope
+    value: sushil.sharma@uj.edu.pl
+    link: "mailto:sushil.sharma@uj.edu.pl"
+
+  - label: Office Location
+    icon: fas fa-map-marker-alt
+    value: "Room: B-2-23"
+    extra:
+      - "Dept. of Experimental Particle Physics"
+      - "Jagiellonian University"
+
+  - label: Office Hours
+    icon: fas fa-clock
+    value: "By appointment (please email)"
+
+# --- MAP ---
+map_url: "https://maps.google.com/maps?q=Faculty+of+Physics,+Astronomy+and+Applied+Computer+Science+Jagiellonian+University&t=&z=13&ie=UTF8&iwloc=&output=embed"
+
+# --- SOCIAL LINKS ---
+socials:
+  - name: Google Scholar
+    icon: ai ai-google-scholar ai-3x
+    icon_class: scholar
+    url: "https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en"
+
+  - name: LinkedIn
+    icon: fab fa-linkedin fa-3x
+    icon_class: linkedin
+    url: "https://www.linkedin.com/in/sushil-sharma-b68472b1/"
+
+  - name: GitHub
+    icon: fab fa-github fa-3x
+    icon_class: github
+    url: "https://github.com/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io"
+
+  - name: Facebook
+    icon: fab fa-facebook fa-3x
+    icon_class: facebook
+    url: "https://www.facebook.com/sushil.sharma.uj"
+
+# --- PUZZLE SECTION ---
+puzzle:
+  title: SECURE CHANNEL
+  subtitle: "Direct line encrypted. Align the quantum pathways to establish connection."

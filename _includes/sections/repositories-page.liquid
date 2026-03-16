@@ -1,0 +1,45 @@
+{% comment %}
+  Personal Page — Full template
+  Data source: _data/repositories.yml
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/repositories.css' | relative_url }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Dancing+Script:wght@700&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+<div class="row mb-5 intro-text">
+    <div class="col-12 text-center">
+        <h2>{{ site.data.repositories.heading }}</h2>
+        <div class="mt-3 mb-4">
+            <i class="fas fa-heart animated-heart fa-2x"></i>
+        </div>
+        <p class="lead text-muted">{{ site.data.repositories.quote }}</p>
+        <p class="mt-3" style="font-size: 1.2rem;">{{ site.data.repositories.dedication }}</p>
+    </div>
+</div>
+
+<hr class="mb-5">
+
+<div id="drag-container">
+  <div id="spin-container">
+    {% for i in (1..site.data.repositories.photos.count) %}
+    <img src="{{ site.data.repositories.photos.folder | append: i | append: '.jpg' | relative_url }}" onclick="openFocus(this.src)" alt="">
+    {% endfor %}
+    <p>{{ site.data.repositories.photos.caption }}</p>
+  </div>
+  <div id="ground"></div>
+  
+  <div class="overlay-info">
+      <h2 style="color: #fff; font-family: 'Playfair Display'; margin:0;">{{ site.data.repositories.overlay.title }}</h2>
+      <small><i class="fas fa-hand-rock"></i> {{ site.data.repositories.overlay.instructions }}</small>
+  </div>
+</div>
+
+<div class="focus-modal" id="focusModal">
+    <img src="" id="focusImg">
+    <div class="close-btn" onclick="closeFocus()">Close Memory</div>
+</div>
+
+<script src="{{ '/assets/js/pages/repositories.js' | relative_url }}"></script>

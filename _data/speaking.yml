@@ -1,0 +1,299 @@
+# =============================================================
+# SPEAKING/TALKS PAGE DATA
+# Edit this file to add or update talks, visits, and posters.
+# =============================================================
+
+intro: >
+  A selection of my recent and upcoming speaking engagements,
+  ranging from international conferences to invited seminars.
+
+# --- CAROUSEL (photo numbers 1-22, skip 8) ---
+carousel:
+  images: [1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+  caption: "Engaging with the scientific community"
+
+# --- TAB DEFINITIONS ---
+tabs:
+  - id: keynote
+    label: "Plenary & Keynotes"
+    icon: fas fa-microphone-alt
+    active: true
+  - id: invited
+    label: "Talks & Seminars"
+    icon: fas fa-user-tie
+  - id: conference
+    label: "Posters"
+    icon: fas fa-users
+  - id: visits
+    label: "Scientific Visits"
+    icon: fas fa-plane-departure
+
+# --- PLENARY & KEYNOTES ---
+keynotes:
+  - title: "Novel detection technologies for application in medicine and fundamental physics"
+    year: 2025
+    event: "Plenary: Int. Conf. on Advances in Nanomaterial and Nanotechnology (ICANN-2025)"
+    location: "Rajdhani College, Delhi, India"
+    featured: true
+
+  - title: "State-of-the-art modular J-PET detectors for the study of positronium decays"
+    year: 2023
+    event: "Plenary: 11th Int. Conf. on Radiation, Natural Sciences, Medicine (RAD 11)"
+    location: "Herceg Novi, Montenegro"
+    date: "June 19−23"
+    featured: true
+
+  - title: "Studies of the decay of positronium atoms with the J-PET detector"
+    year: 2018
+    event: "Plenary: DAE International Symposium on Nuclear Physics"
+    location: "BARC, Mumbai, India"
+    date: "Dec 10−14"
+    featured: true
+
+# --- TALKS & SEMINARS ---
+talks:
+  - title: "Recent advances in fundamental physics with the multiphoton J-PET detector"
+    year: 2025
+    event: "Invited Lecture: The 16th Asia Pacific Physics Conference (APPC16)"
+    location: "Haikou, China"
+    date: "Oct 19-24"
+
+  - title: "From Bench to Bedside: Positron and Positronium imaging with J-PET"
+    year: 2025
+    event: "Invited Talk: Production and Quality Control of Actinium-225 Radiopharmaceuticals"
+    location: "Ichtj, Warsaw, Poland"
+    date: "June 2-6"
+
+  - title: "Unlocking the potential of positronium physics through precision studies with J-PET"
+    year: 2025
+    event: "Invited Talk: Frontiers in Gamma Ray Spectroscopy (FIG2025)"
+    location: "TIFR, Mumbai, India"
+    date: "March 09-12"
+
+  - title: "New Frontiers in fundamental physics and medical imaging with J-PET"
+    year: 2025
+    event: "Invited Seminar: M. Smoluchowski Institute of Physics"
+    location: "Jagiellonian University, Krakow"
+
+  - title: "Precision studies on positronium decays utilizing J-PET"
+    year: 2024
+    event: "Invited Talk: 13th Int. Workshop on Positron and Positronium Chemistry (PPC13)"
+    location: "Kanazawa, Japan"
+    date: "Oct 27 – Nov 1"
+
+  - title: "Leveraging Multi-photon Detection with J-PET"
+    year: 2024
+    event: "Invited Talk: Int. Conf. on Nuclear Physics and Applications (ICNPA-2024)"
+    location: "University of Delhi, India"
+    date: "Oct 21-25"
+
+  - title: "Exploring quantum entanglement and decay rates in Positronium atoms"
+    year: 2024
+    event: "Invited Talk: KAMPAI (Exotic Atoms Workshop)"
+    location: "ECT*, Trento, Italy"
+    date: "Sep 30 - Oct 4"
+
+  - title: "Precision studies of ortho-positronium decay rate with J-PET"
+    year: 2024
+    event: "Invited Talk: EXA/LEAP 2024"
+    location: "Vienna, Austria"
+    date: "Aug 26-30"
+
+  - title: "Studies of ortho-positronium decay rate with the J-PET tomograph"
+    year: 2024
+    event: "Invited Talk: 5th Jagiellonian Symposium (JS2024)"
+    location: "Krakow, Poland"
+    date: "June 29 – July 7"
+
+  - title: "J-PET for the studies of positronium decays: A gateway to new insights"
+    year: 2024
+    event: "Invited Seminar"
+    location: "Stanford University, CA, USA"
+
+  - title: "Multi-photon detection with Jagiellonian Positron Emission Tomograph"
+    year: 2024
+    event: "Invited Seminar: Institute of Physics, UJK"
+    location: "Kielce, Poland"
+
+  - title: "Improving the experimental precision of ortho-positronium decay rate"
+    year: 2023
+    event: "Hot Topic Talk: POSMOL 2023"
+    location: "Univ. Notre Dame, USA"
+    date: "Aug 3-6"
+
+  - title: "Test for Non-Relativistic QED in decays of positronium atoms"
+    year: 2023
+    event: "Oral Presentation: 17th Int. Workshop on Meson Physics"
+    location: "Krakow, Poland"
+    date: "June 22-27"
+
+  - title: "Feasibility studies for Imaging e+e- annihilations"
+    year: 2023
+    event: "Oral Presentation: SORMA 2023"
+    location: "Univ. Michigan, Ann Arbor, USA"
+    date: "May 22-25"
+
+  - title: "Inertial sensing measurements on the positronium beam"
+    year: 2023
+    event: "Oral Presentation: Applications of radiation detection techniques"
+    location: "INFN Frascati, Italy"
+    date: "May 8-12"
+
+  - title: "J-PET detection modules based on plastic scintillators"
+    year: 2022
+    event: "Oral Presentation: Int. Workshops on Radiation Imaging Detectors"
+    location: "Riva del Garda, Italy"
+    date: "June 26-30"
+
+  - title: "J-PET tomograph for discrete symmetries studies"
+    year: 2022
+    event: "Oral Presentation: BEACH 2022"
+    location: "Krakow, Poland"
+    date: "June 5-11"
+
+  - title: "Modular J-PET applications in medical and particle physics"
+    year: 2021
+    event: "Oral Presentation: Conf. on Technology and Instrumentation in Particle Physics"
+    location: "Triumf, Canada (Online)"
+    date: "May 24−28"
+
+  - title: "Decay rate of o-Ps atoms in J-PET"
+    year: 2020
+    event: "Oral Presentation: Workshop on Exotic atomic and nuclear matter"
+    location: "INFN Frascati, Italy"
+    date: "Sep 29−30"
+
+  - title: "Recent trends in Nuclear and Medical physics"
+    year: 2020
+    event: "Invited Seminar at Maitreyi College, University of Delhi"
+    location: "Delhi, India"
+    date: "Jan 23"
+
+  - title: "J-PET: From fundamental symmetries to medical imaging"
+    year: 2020
+    event: "Invited Talk at IIT Bombay"
+    location: "Mumbai, India"
+    date: "Jan 13−17"
+
+  - title: "Status and advancement in positronium decays with J-PET"
+    year: 2019
+    event: "Invited Talk: Int. Conf. on New Frontiers of Nuclear Physics"
+    location: "BHU, Varanasi, India"
+    date: "Oct 14−17"
+
+  - title: "Efficiency determination of JPET detector"
+    year: 2019
+    event: "Oral Presentation: Is Quantum Theory exact?"
+    location: "INFN Frascati, Italy"
+    date: "Sep 23−27"
+
+  - title: "TOT method for disentanglement of photons"
+    year: 2019
+    event: "Oral Presentation: 15th Intl. Workshop on Slow Positron Beam Techniques"
+    location: "Prague, Czech Republic"
+    date: "Sep 02−06"
+
+  - title: "Positronium atom: tests on discrete symmetries"
+    year: 2019
+    event: "Invited Seminar at IIT Ropar"
+    location: "Punjab, India"
+    date: "Jan 11"
+
+  - title: "Tests of discrete symmetries using polarization"
+    year: 2018
+    event: "Invited Talk: Workshop on Discrete Symmetries"
+    location: "ECT*, Trento, Italy"
+    date: "Oct 08−12"
+
+  - title: "Polarization of gamma photons from positronium"
+    year: 2018
+    event: "Oral Presentation: 18th Int. Conf. on Positron Annihilation"
+    location: "Orlando, USA"
+    date: "Aug 19-24"
+
+  - title: "Tests of discrete symmetries in positronium decays"
+    year: 2018
+    event: 'Invited Talk: Workshop "Is Quantum Theory Exact?"'
+    location: "LNF-INFN, Frascati, Italy"
+    date: "July 02−05"
+
+  - title: "J-PET potentialities in medical imaging"
+    year: 2018
+    event: "Invited Seminar"
+    location: "IIT Roorkee, India"
+    date: "Jan 02−05"
+
+  - title: "Validation of spallation models"
+    year: 2015
+    event: "Oral Presentation: Jagiellonian Symposium on Fundamental Physics"
+    location: "Krakow, Poland"
+    date: "June 07−13"
+
+  - title: "Proton induced spallation reaction"
+    year: 2014
+    event: "Oral Presentation: II Symposium on Applied Nuclear Physics"
+    location: "Krakow, Poland"
+    date: "Sep 24−27"
+
+# --- POSTERS ---
+posters:
+  - title: "Total-body modular PET for positronium imaging"
+    year: 2019
+    event: "Poster: FNP IIIrd Interdisciplinary Congress meeting"
+    location: "Warsaw, Poland"
+
+  - title: "Pilot studies towards positronium imaging"
+    year: 2018
+    event: "Poster: IEEE Nuclear Science Symposium"
+    location: "Sydney, Australia"
+    date: "Nov 10-17"
+
+  - title: "Time Over Threshold as a measure of energy loss"
+    year: 2018
+    event: "Poster: Total Body Pet - From mice to men"
+    location: "Ghent, Belgium"
+    date: "June 30 - July 2"
+
+  - title: "Beta-delayed charged-particle emission from 23Si"
+    year: 2018
+    event: "Poster: XXII Int. Sci. Conf. of Young Scientists"
+    location: "Dubna, Russia"
+
+  - title: "TOT as a measure of Energy deposition"
+    year: 2017
+    event: "Poster: Int. workshop on Positron and positronium chemistry"
+    location: "Lublin, Poland"
+    date: "Aug 28 - Sep 1"
+
+  - title: "Influence of projectile energy and target mass"
+    year: 2013
+    event: "Poster: Nuclear Data for Science and Technology"
+    location: "New York, USA"
+    date: "March 4-8"
+
+  - title: "Fusion of 7Li with 124Sn at around coulomb barrier energies"
+    year: 2010
+    event: "Poster: DAE Symposium on Nuclear Physics"
+    location: "Pilani, India"
+    date: "Dec 20-24"
+
+# --- SCIENTIFIC VISITS ---
+visits:
+  - title: "Short Research Visit: Department of Radiology"
+    year: 2024
+    event: "Collaboration at School of Medicine, Stanford University"
+    location: "California, USA"
+    date: "June 19-27"
+    featured: true
+
+  - title: "Short Research Visit: IIT Roorkee"
+    year: 2018
+    event: "Indian Institute of Technology Roorkee"
+    location: "Roorkee, India"
+    date: "Jan 2-5"
+    featured: true
+
+# --- GLOBE SECTION ---
+globe:
+  title: Global Scientific Footprint
+  instructions: "Drag to rotate. Travel paths from my home base in Krakow."

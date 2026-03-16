@@ -1,0 +1,133 @@
+/* --- CSS AUTOMATED NUMBERING --- */
+/* Reset counters for each section */
+.group-articles, .group-proceedings, .group-posters {
+    counter-reset: pub-counter;
+}
+
+/* Increment counter for each card within the group */
+.publication-card {
+    counter-increment: pub-counter;
+}
+
+/* Inject the number into the badge */
+.pub-badge::before {
+    content: counter(pub-counter);
+}
+
+/* Clear the hardcoded numbers in HTML if any remain */
+.pub-badge {
+    font-size: 1.5rem; 
+    font-weight: 900; 
+    color: #e0e0e0;
+    margin-right: 1.5rem; 
+    min-width: 30px; 
+    text-align: right; 
+    line-height: 1;
+}
+
+/* --- SEARCH & CARD STYLING --- */
+.search-wrapper {
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 50px;
+    overflow: hidden;
+}
+.search-input {
+    border: none;
+    padding: 1.2rem 1rem 1.2rem 3rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    width: 100%;
+    background: #2b2b2b;
+    color: #fff;
+}
+.search-input:focus { box-shadow: none; background: #333; outline: none; }
+.search-icon {
+    position: absolute; left: 1.2rem; top: 50%; transform: translateY(-50%); color: #aaa; z-index: 10;
+}
+
+/* Base Publication Card */
+.publication-card {
+    display: flex; flex-direction: row; background: #2b2b2b;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 1.5rem;
+    border-radius: 8px; padding: 1.5rem; transition: all 0.2s ease-in-out;
+}
+.publication-card:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.2); }
+
+/* Card Colors by Type */
+.publication-card.article { border-left: 5px solid var(--global-theme-color, #007bff); }
+.publication-card.proceeding { border-left: 5px solid #ffc107; } 
+.publication-card.poster { border-left: 5px solid #17a2b8; } 
+
+.pub-content { flex: 1; }
+.pub-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #f0f0f0; }
+.pub-title a { color: #f0f0f0; text-decoration: none; transition: color 0.2s; }
+.pub-title a:hover { color: #66b0ff; }
+.pub-authors { font-size: 0.95rem; color: #b0b0b0; margin-bottom: 0.5rem; font-style: italic; }
+.pub-meta {
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-top: 0.5rem;
+}
+.journal-name {
+    font-size: 0.85rem; font-weight: 600; color: #ccc;
+    background: rgba(255, 255, 255, 0.05); padding: 4px 10px; border-radius: 4px;
+}
+
+/* Section Titles */
+.section-title { font-weight: 700; margin-top: 2rem; color: #f0f0f0; }
+
+.pub-badge { color: #444; }
+
+@media (max-width: 576px) {
+    .publication-card { flex-direction: column; }
+    .pub-badge { text-align: left; margin-bottom: 0.5rem; }
+    .pub-meta { flex-direction: column; align-items: flex-start; }
+}
+
+    /* --- CSS FOR ADVANCED FEATURES --- */
+    
+    /* 1. First Author Badge */
+    .badge-first-author {
+        background-color: #28a745; /* Green */
+        color: white;
+        font-size: 0.75rem;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 10px;
+        vertical-align: middle;
+        font-weight: normal;
+        display: none; /* Hidden by default, shown by script */
+    }
+
+    /* 2. Collaboration Stats Section */
+    .stats-container {
+        margin-top: 3rem;
+        padding: 2rem;
+        background: #2b2b2b;
+        border-radius: 12px;
+        border: 1px solid #444;
+    }
+    .stats-title { font-weight: 700; color: #f0f0f0; margin-bottom: 1.5rem; }
+    
+    .collaborator-tag {
+        display: inline-block;
+        background: #333;
+        border: 1px solid #555;
+        padding: 5px 12px;
+        border-radius: 20px;
+        margin: 0 8px 8px 0;
+        font-size: 0.9rem;
+        color: #ccc;
+        transition: all 0.2s;
+    }
+    .collaborator-tag:hover {
+        background: #444;
+        transform: translateY(-2px);
+    }
+    .collab-count {
+        background: #007bff;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 0.75rem;
+        margin-left: 6px;
+    }

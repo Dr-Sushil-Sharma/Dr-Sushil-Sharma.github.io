@@ -1,0 +1,118 @@
+# =============================================================
+# TEACHING PAGE DATA
+# Edit this file to update courses, students, and philosophy.
+# =============================================================
+
+intro: >
+  My goal is to equip students with the critical thinking and technical
+  skills necessary to excel in experimental physics, fostering an
+  environment where theory meets practice.
+
+# --- TEACHING PHILOSOPHY ---
+philosophy:
+  - title: Conceptual Understanding
+    text: "Moving beyond rote memorization to deep, intuitive grasp of physics."
+    icon: fas fa-lightbulb
+    color: text-warning
+
+  - title: Active Learning
+    text: "Applying theory to practical problems through coding and simulation."
+    icon: fas fa-laptop-code
+    color: text-info
+
+  - title: Inclusive Environment
+    text: "A classroom where every voice is heard and inquiry is encouraged."
+    icon: fas fa-users
+    color: text-success
+
+# --- COURSES ---
+courses:
+  - title: Python for Beginners
+    icon: fab fa-python
+    icon_color: text-primary
+    description: >
+      From first scripts to confident programming. Emphasizes hands-on
+      experience using Jupyter Notebooks and real-world physics examples.
+    course_link: /teaching/python/
+    github: https://github.com/Official-Satyam-Tiwari/PythonCourseForBeginners
+
+  - title: Geant4 Simulations
+    icon: fas fa-project-diagram
+    icon_color: text-danger
+    description: "A tutorial series modeling particle physics scenarios. Key topics:"
+    topics:
+      - Geometry Setup & Primary Particles
+      - Physics Lists & Scoring
+      - Particle Transport Modeling
+
+# --- PHD STUDENTS ---
+mentorship:
+  title: PhD Mentorship
+  subtitle: "The growing family of researchers I have the privilege to co-supervise as an auxiliary supervisor."
+
+  students:
+    - name: Atharva Dalvi
+      image: /assets/img/Atharva.jpg
+      period: "2025 - Present"
+      status: PhD Candidate
+      badge_color: badge-primary
+      branch: left
+
+    - name: Bhavnesh
+      image: /assets/img/Bhavnesh.jpg
+      period: "2025 - Present"
+      status: PhD Candidate
+      badge_color: badge-primary
+      branch: right
+
+    - name: Satyam Tiwari
+      image: /assets/img/Satyam.jpg
+      period: "2024 - Present"
+      status: PhD Candidate
+      badge_color: badge-info
+      branch: left
+
+    - name: Piyush Pandey
+      image: /assets/img/Piyush.jpg
+      period: "2024 - Present"
+      status: PhD Candidate
+      badge_color: badge-info
+      branch: right
+
+    - name: Manish Das
+      image: /assets/img/Manish.jpg
+      period: "2023 - Present"
+      status: PhD Candidate
+      badge_color: badge-success
+      branch: left
+
+    - name: Deepak Kumar
+      image: /assets/img/Deepak.jpg
+      period: "2022 - Present"
+      status: PhD Candidate
+      badge_color: badge-success
+      branch: right
+
+    - name: Udai Singh
+      image: /assets/img/Sahil.jpg
+      period: "2017 - 2021"
+      status: PhD Completed
+      badge_color: badge-secondary
+      branch: center
+      alumni: true
+
+# --- RECRUITMENT ---
+recruitment:
+  title: Join the Group
+  text: >
+    I am looking for motivated students interested in
+    **particle detection, medical imaging, or fundamental physics**.
+    If you have a background in physics and programming, please email me your
+    **CV** and a brief **statement of interest**.
+
+# --- CANVAS ---
+canvas:
+  title: The Gravity of Knowledge
+  instructions: "**Click** anywhere to onboard a new student. Watch them enter orbit and gain momentum!"
+  overlay_title: Mentorship Dynamics
+  overlay_text: Simulating the academic trajectory.

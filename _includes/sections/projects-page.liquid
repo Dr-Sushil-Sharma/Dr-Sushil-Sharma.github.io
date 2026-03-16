@@ -1,0 +1,244 @@
+{% comment %}
+  Projects Page
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/projects.css' | relative_url }}">
+
+
+<div class="container">
+  
+    <div class="row mb-4">
+        <div class="col-12 text-center">
+            <h1 class="display-4 font-weight-bold">Research Projects</h1>
+            <p class="lead text-muted">Current investigations and future directions.</p>
+        </div>
+    </div>
+
+    <h2 class="category-header"><i class="fas fa-atom mr-2 text-primary"></i> Antimatter Physics</h2>
+
+    <span class="sub-category-label"><i class="fas fa-angle-right"></i> Positronium Physics</span>
+
+    <div class="project-container mb-5 p-3" style="border-left: 3px solid var(--global-theme-color, #007bff);">
+
+        <div class="row mb-5 align-items-center">
+            <div class="col-md-12">
+            <h2 class="font-weight-bold gradient-text">Gravitational Behavior of Positronium</h2>
+            <p class="lead mt-2">Probing the fundamental interaction between matter and antimatter.</p>
+
+            <div class="mt-3">
+                <span class="badge badge-pill badge-light border p-2 mr-2">
+                <i class="fas fa-fingerprint text-muted mr-1"></i> 2023/50/E/ST2/00574
+                </span>
+                <span class="badge badge-pill badge-light border p-2">
+                <i class="fas fa-user-circle text-muted mr-1"></i> PI: Dr. Sushil Sharma
+                </span>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center p-4">
+                <div class="mb-3">
+                    <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-primary opacity-25" style="opacity: 0.2;"></i>
+                    <i class="fas fa-bullseye fa-stack-1x text-primary"></i>
+                    </span>
+                </div>
+                <h4 class="card-title font-weight-bold">Project Aim</h4>
+                <p class="card-text text-muted">To measure the effect of Earth's gravitational force on the positronium atom (Ps) by extending its lifetime via Rydberg excitation and observing its fall.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center p-4">
+                <div class="mb-3">
+                    <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-success opacity-25" style="opacity: 0.2;"></i>
+                    <i class="fas fa-question fa-stack-1x text-success"></i>
+                    </span>
+                </div>
+                <h4 class="card-title font-weight-bold">Motivation</h4>
+                <p class="card-text text-muted">Addressing the century-old mystery: Does antimatter fall like matter? This project pioneers Ps as an alternative to antihydrogen for testing the Weak Equivalence Principle.</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+            <div class="card h-100 shadow-sm feature-card">
+                <div class="card-body text-center p-4">
+                <div class="mb-3">
+                    <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-info opacity-25" style="opacity: 0.2;"></i>
+                    <i class="fas fa-cogs fa-stack-1x text-info"></i>
+                    </span>
+                </div>
+                <h4 class="card-title font-weight-bold">Methodology</h4>
+                <p class="card-text text-muted">A dual approach using laser manipulation for long-lived Ps atoms and a J-PET based detection system to reconstruct annihilation vertices with high precision.</p>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12 mb-4">
+            <h3>Experimental Approach</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+            <div class="phase-block">
+                <div class="phase-icon"><i class="fas fa-wave-square fa-2x text-primary"></i></div>
+                <h4 class="text-primary">Phase I: Interferometry</h4>
+                <p class="text-justify">
+                In the first phase, Ps atoms will be created in the <strong>PsICO positron beam</strong> at AML. We employ laser cooling and excitation to a metastable Rydberg state, extending the lifetime significantly.
+                </p>
+                <p class="text-justify">
+                A deflectometer/interferometer system consisting of <strong>three equally spaced gratings</strong> will measure the inertial forces. The first two gratings create a fringe pattern on the third. This pattern is scanned with sub-nanometer accuracy using a piezo nanopositioning system. By comparing annihilation probabilities on the stopper versus the grating, we determine the strength of the gravitational force.
+                </p>
+            </div>
+            </div>
+
+            <div class="col-md-6">
+            <div class="phase-block">
+                <div class="phase-icon"><i class="fas fa-microchip fa-2x text-info"></i></div>
+                <h4 class="text-info">Phase II: Detection</h4>
+                <p class="text-justify">
+                The second phase involves a sophisticated detection system to reconstruct the vertices of Ps atoms annihilating at the grating or stopper.
+                </p>
+                <p class="text-justify">
+                We will construct <strong>four modular detection units</strong> leveraging the expertise of the <a href="http://koza.if.uj.edu.pl/" target="_blank">J-PET collaboration</a>. Each unit consists of multiple plastic scintillators read out by Silicon Photomultipliers (SiPMs). Signal acquisition is entirely <strong>FPGA-based</strong>, capable of handling high count rates, allowing us to separately register annihilation photons from the grating and the stopper.
+                </p>
+            </div>
+            </div>
+
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+            <div class="bg-body shadow-sm rounded p-5">
+                <div class="row align-items-center">
+                <div class="col-md-2 text-center">
+                    <i class="fas fa-rocket fa-4x text-warning mb-3 mb-md-0"></i>
+                </div>
+                <div class="col-md-10">
+                    <h4 class="fw-bold">Expected Impact</h4>
+                    <p class="mb-0">
+                    This project aims to provide the <strong>first direct measurement</strong>
+                    of the gravitational effect on positronium. By combining laser physics,
+                    particle detection, and digital signal processing, this facility will pave
+                    the way for new tests of fundamental physics in the pure leptonic sector,
+                    offering insights into the nature of gravity and the matter–antimatter balance.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row mt-5 justify-content-center">
+            <div class="col-12 text-center mb-3">
+                <h4 class="font-weight-bold">Project Team</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="card border-0 shadow-sm feature-card">
+                    <div class="card-body p-3">
+                        <div class="d-flex align-items-center">
+                            <img src="{{ '/assets/img/Piyush.jpg' | relative_url }}"
+                                alt="Piyush Pandey"
+                                class="rounded-circle mr-3"
+                                style="width: 80px; height: 80px; object-fit: cover; border: 2px solid var(--global-theme-color, #007bff);">
+                            <div>
+                                <h5 class="mb-0 font-weight-bold">Piyush Pandey</h5>
+                                <span class="badge badge-light border mt-1">PhD Student (2024)</span>
+                                <p class="small text-muted mt-2 mb-0">
+                                    Focus: Simulation & detector construction.<br>
+                                    Co-supervised by Dr. S. Sharma.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="mb-2 font-weight-bold gradient-text">The Virtual Laboratory</h3>
+                <p class="text-muted">
+                    Simulate the experiment. Control the <strong>Laser Excitation</strong> and the unknown <strong>Antimatter Gravity ($\bar{g}$)</strong> to see how Positronium behaves in the beamline.
+                </p>
+            </div>
+        </div>
+
+        <div class="sim-wrapper mt-3">
+            <canvas id="simCanvas"></canvas>
+
+            <div class="sim-hud">
+                <div class="hud-item">
+                    <span class="hud-label">Beam Status</span>
+                    <span class="hud-value" id="hudStatus">STANDBY</span>
+                </div>
+                <div class="hud-item">
+                    <span class="hud-label">Deflection ($\Delta y$)</span>
+                    <span class="hud-value" id="hudDeflection">0.00 nm</span>
+                </div>
+            </div>
+
+            <div class="sim-controls">
+
+                <div class="control-group">
+                    <label><i class="fas fa-bolt text-warning"></i> Rydberg Laser</label>
+                    <div class="btn-group btn-group-sm w-100">
+                        <button class="btn btn-outline-light active" onclick="setLaser(false)" id="btnLaserOff">OFF</button>
+                        <button class="btn btn-outline-warning" onclick="setLaser(true)" id="btnLaserOn">ON</button>
+                    </div>
+                    <small class="text-muted mt-1 d-block" style="font-size: 0.7rem;">Extends Ps lifetime</small>
+                </div>
+
+                <div class="control-group">
+                    <label><i class="fas fa-globe-americas text-info"></i> Antimatter Gravity ($\bar{g}$)</label>
+                    <input type="range" class="custom-range" id="gravityRange" min="-1" max="1" step="0.1" value="1" oninput="updateGravity(this.value)">
+                    <div class="d-flex justify-content-between text-white small">
+                        <span>-1g (Up)</span>
+                        <span id="gValue">1.0g</span>
+                        <span>1g (Down)</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <button class="btn btn-primary w-100 py-2" onclick="firePulse()">
+                        <i class="fas fa-play"></i> Fire Pulse
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <span class="sub-category-label"><i class="fas fa-angle-right"></i> Antiproton / Antihydrogen Physics</span>
+    <div class="coming-soon-card mb-5">
+        <i class="fas fa-tools fa-2x mb-3"></i>
+        <h5>Content in Preparation</h5>
+        <p class="mb-0">Details regarding Antiproton and Antihydrogen experiments will be updated soon.</p>
+    </div>
+
+
+    <h2 class="category-header"><i class="fas fa-microchip mr-2 text-info"></i> J-PET</h2>
+
+    <div class="coming-soon-card mb-5">
+        <i class="fas fa-pencil-ruler fa-2x mb-3"></i>
+        <h5>Content in Preparation</h5>
+        <p class="mb-0">Details regarding J-PET related projects will be updated soon.</p>
+    </div>
+
+</div>
+
+
+<script src="{{ '/assets/js/pages/projects.js' | relative_url }}"></script>

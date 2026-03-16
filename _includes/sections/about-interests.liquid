@@ -1,0 +1,30 @@
+{% comment %}
+  About Page — Research Interests Grid
+  Data source: _data/about.yml (interests)
+{% endcomment %}
+
+<div class="row">
+    <div class="col-12">
+        <h3 class="mb-4 text-center font-weight-bold">Research Focus</h3>
+    </div>
+</div>
+
+<div class="row">
+    {% for item in site.data.about.interests %}
+    {% if item.link %}
+    <a href="{{ item.link | relative_url }}" target="_blank" class="col-md-4 mb-4 text-decoration-none">
+    {% else %}
+    <div class="col-md-4 mb-4">
+    {% endif %}
+        <div class="interest-card h-100">
+            <div class="icon-wrapper"><i class="{{ item.icon }} fa-2x"></i></div>
+            <h5 class="interest-title">{{ item.title }}</h5>
+            <p class="interest-text">{{ item.text }}</p>
+        </div>
+    {% if item.link %}
+    </a>
+    {% else %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

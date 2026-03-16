@@ -1,0 +1,128 @@
+# =============================================================
+# ABOUT PAGE DATA
+# Edit this file to update the content on the home/about page.
+# No HTML knowledge required — just edit the text values below.
+# =============================================================
+
+# --- PROFILE CARD (left column) ---
+profile:
+  name: Sushil Sharma
+  role: Assistant Professor
+  subtitle: "(Research and Academics)"
+  department: |
+    Institute of Physics
+    Faculty of Physics, Astronomy and Applied Computer Science
+  university: Jagiellonian University
+  location: Kraków, Poland
+  image: /assets/img/prof_pic.jpg
+
+# --- INTRODUCTION (right column) ---
+greeting: "Hello, I'm *Sushil Sharma*."
+
+bio:
+  - >
+    I am an experimental nuclear physicist at Jagiellonian University in Krakow,
+    working on detector instrumentation and data analysis for precision studies
+    at the interface of fundamental physics and medical imaging.
+  - >
+    My research focuses on **positronium physics** and **plastic-scintillator
+    PET technology (J-PET)**, including photon-polarization measurements for
+    discrete symmetry tests and quantum-correlation studies, as well as the
+    application of modular detection concepts for new experiments in antimatter physics.
+
+# --- CONTACT BAR ---
+contact:
+  email: sushil.sharma@uj.edu.pl
+  scholar: https://scholar.google.com/citations?user=1lsvWAcAAAAJ&hl=en
+  linkedin: https://www.linkedin.com/in/sushil-sharma-b68472b1/
+  university_profile:
+    label: View University Profile
+    url: https://if.uj.edu.pl/en_GB/pracownicy/wizytowka-pracownika?id=86
+
+# --- RESEARCH INTERESTS (card grid) ---
+interests:
+  - title: Antimatter Physics
+    text: Positronium, antiproton, antihydrogen
+    icon: fas fa-atom
+    link: https://koza.if.uj.edu.pl/aegis/
+
+  - title: Medical Physics
+    text: Positron Emission Tomography (PET) & Medical Imaging
+    icon: fas fa-heartbeat
+    link: https://koza.if.uj.edu.pl/publications/pet
+
+  - title: Fundamental Physics
+    text: Test on discrete symmetries, Quantum entanglement, decay rates
+    icon: fas fa-project-diagram
+
+  - title: Instrumentation
+    text: New hardware/software techniques in particle detection
+    icon: fas fa-microchip
+    link: https://koza.if.uj.edu.pl/publications/pet
+
+  - title: Spallation Physics
+    text: Reaction dynamics and model validation
+    icon: fas fa-bomb
+    link: https://koza.if.uj.edu.pl/spallation/
+
+  - title: Nuclear Structure & Reactions
+    text: Fusion, fission, high-spin states and reaction mechanisms
+    icon: fas fa-layer-group
+    link: /publications/
+
+# --- SELECTED HIGHLIGHT PUBLICATIONS ---
+highlights:
+  - title: "Discrete symmetries tested at 10⁻⁴ precision using linear polarization of photons from positronium annihilations"
+    authors: "P. Moskal,.., S. Sharma et al."
+    journal: "Nature Communications 15, 78 (2024)"
+    year: 2024
+
+  - title: "Efficiency determination of J-PET: first plastic scintillators-based PET scanner"
+    authors: "S. Sharma et al."
+    journal: "EJNMMI Physics 10, 28 (2023)"
+    year: 2023
+
+  - title: "Forward emission of positronium from nanochanneled silicon membranes"
+    authors: "S. Mariazzi,..,S. Sharma et al."
+    journal: "Phys. Rev. B (2022)"
+    year: 2022
+
+  - title: "Positronium imaging with the novel multiphoton PET scanner"
+    authors: "P. Moskal,..,S. Sharma et al."
+    journal: "Science Advances 7(42) (2021)"
+    year: 2021
+
+  - title: "Testing CPT symmetry in ortho-positronium decays with positronium annihilation tomography"
+    authors: "P. Moskal,..,S. Sharma et al."
+    journal: "Nature Communications 12(1) (2021)"
+    year: 2021
+
+  - title: "Estimating relationship between the Time Over Threshold and energy loss by photons in plastic scintillators used in the J-PET scanner"
+    authors: "S. Sharma et al."
+    journal: "EJNMMI Phys 7, 39 (2020)"
+    year: 2020
+
+  - title: "Monte Carlo N-Particle simulations of an underwater chemical threats detection system using neutron activation analysis"
+    authors: "P. Sibczynski,.., S. Sharma et al."
+    journal: "Journal of Instrumentation 14 (2019)"
+    year: 2019
+
+  - title: "Feasibility studies of the polarization of photons beyond the optical wavelength regime with the J-PET detector"
+    authors: "P. Moskal,..,S. Sharma et al."
+    journal: "Eur. Phys. J. C 78, 970 (2018)"
+    year: 2018
+
+  - title: "Ranking and validation of spallation models for isotopic production cross sections of heavy residua"
+    authors: "Sushil K. Sharma, B. Kamys, et al."
+    journal: "Eur. Phys. J. A 53, 150 (2017)"
+    year: 2017
+
+  - title: "Ranking and validation of the spallation models for description of intermediate mass fragment emission from p+Ag collisions"
+    authors: "Sushil K. Sharma, B. Kamys, et al."
+    journal: "Eur. Phys. J. A 52, 171 (2016)"
+    year: 2016
+
+# --- CANVAS SECTION (bottom) ---
+canvas:
+  title: The Positronium Field
+  subtitle: Simulating particle dynamics in real-time.

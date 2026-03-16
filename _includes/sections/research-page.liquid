@@ -1,0 +1,73 @@
+{% comment %}
+  Research Page — Full template
+  Data source: _data/research.yml
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/research.css' | relative_url }}">
+
+<!-- INTRO -->
+<div class="row fade-in-up">
+    <div class="col-sm-12">
+        {% for paragraph in site.data.research.intro %}
+        <p class="{% if forloop.first %}lead {% endif %}text-justify">{{ paragraph }}</p>
+        {% endfor %}
+        <div class="text-center mt-4 mb-5">
+            <a href="{{ site.data.research.cv_link | relative_url }}" class="btn btn-outline-primary rounded-pill z-depth-0" role="button" target="_blank">
+                <i class="fas fa-file-pdf mr-2"></i> Download Curriculum Vitae
+            </a>
+        </div>
+    </div>
+</div>
+
+<hr>
+
+<!-- RESEARCH AREAS -->
+<h3 class="mb-4 mt-4">Core Research Areas</h3>
+
+<div class="row">
+    {% for area in site.data.research.areas %}
+    <div class="col-md-6 mb-4">
+        <div class="research-card p-4">
+            <div class="d-flex align-items-center mb-3">
+                <div class="icon-container mr-3 {{ area.color }}">
+                    <i class="{{ area.icon }} fa-3x"></i>
+                </div>
+                <div>
+                    <span class="topic-badge {{ area.color }}">{{ area.badge }}</span>
+                    <h5 class="font-weight-bold card-title mb-0">{{ area.title }}</h5>
+                </div>
+            </div>
+            <p class="card-text">{{ area.text }}</p>
+            <div class="mt-3 text-center"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<!-- TIMELINE -->
+<h3 class="mb-4 mt-4">{{ site.data.research.timeline.title }}</h3>
+{{ site.data.research.timeline.subtitle }}
+<br>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
+
+<div id="universe-container">
+    <div id="loading-text">SCANNING ARCHIVES...</div>
+    <canvas id="galaxyCanvas"></canvas>
+    
+    <div class="controls">
+        <div class="control-btn" onclick="resetZoom()" title="Reset View"><i class="fas fa-compress-arrows-alt"></i></div>
+        <a href="/publications/" class="control-btn" title="Back to List"><i class="fas fa-list"></i></a>
+    </div>
+
+    <div id="hud-panel">
+        <div class="hud-year" id="hudYear">2024</div>
+        <div class="hud-title" id="hudTitle">Select a Node</div>
+        <div class="hud-author" id="hudAuthor">...</div>
+        <a href="#" id="hudLink" class="hud-btn" target="_blank">Open Paper</a>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/pages/research.js' | relative_url }}"></script>

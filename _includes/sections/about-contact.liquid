@@ -1,0 +1,27 @@
+{% comment %}
+  About Page — Contact Bar
+  Data source: _data/about.yml (contact)
+{% endcomment %}
+
+<div class="row mb-5">
+    <div class="col-12 text-center">
+        <div class="d-flex justify-content-center align-items-center flex-wrap">
+            
+            <div class="mx-4 my-2">
+                <a href="mailto:{{ site.data.about.contact.email }}" class="contact-bar-icon mx-3" title="Email"><i class="fas fa-envelope fa-2x"></i></a>
+                <a href="{{ site.data.about.contact.scholar }}" target="_blank" class="contact-bar-icon mx-3" title="Google Scholar"><i class="ai ai-google-scholar ai-2x"></i></a>
+                <a href="{{ site.data.about.contact.linkedin }}" target="_blank" class="contact-bar-icon mx-3" title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+
+            <div class="d-none d-md-block border-left mx-3" style="height: 40px; border-color: #ddd;"></div>
+
+            <div class="mx-4 my-2">
+                <a href="{{ site.data.about.contact.university_profile.url }}" target="_blank" class="btn btn-outline-primary rounded-pill px-4">
+                    {{ site.data.about.contact.university_profile.label }}
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>

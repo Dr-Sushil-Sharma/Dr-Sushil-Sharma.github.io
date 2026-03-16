@@ -1,0 +1,127 @@
+{% comment %}
+  Teaching Page — Full template
+  Data source: _data/teaching.yml
+{% endcomment %}
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/teaching.css' | relative_url }}">
+
+<!-- INTRO -->
+<div class="row mb-5">
+    <div class="col-12">
+        <p class="lead">{{ site.data.teaching.intro }}</p>
+    </div>
+</div>
+
+<!-- PHILOSOPHY -->
+<div class="row mb-5 text-center">
+    {% for item in site.data.teaching.philosophy %}
+    <div class="col-md-4 mb-4">
+        <i class="{{ item.icon }} fa-3x {{ item.color }} mb-3"></i>
+        <h5 class="font-weight-bold">{{ item.title }}</h5>
+        <p class="text-muted small">{{ item.text }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<!-- COURSES -->
+<h3 class="mb-4">Resources & Courses</h3>
+<div class="row mb-5">
+    {% for course in site.data.teaching.courses %}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100 border-0 shadow-sm hover-card">
+            <div class="card-body">
+                <h5 class="card-title"><i class="{{ course.icon }} {{ course.icon_color }} mr-2"></i> {{ course.title }}</h5>
+                <p class="card-text text-muted{% unless course.topics %} {% endunless %}{% if course.topics %} mb-2{% endif %}">
+                    {{ course.description }}
+                </p>
+                {% if course.topics %}
+                <ul class="text-muted small pl-3">
+                    {% for topic in course.topics %}
+                    <li>{{ topic }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+                {% if course.course_link or course.github %}
+                <div class="d-flex mt-3">
+                    {% if course.course_link %}
+                    <a href="{{ course.course_link | relative_url }}" class="btn btn-sm btn-primary mr-2">
+                        <i class="fas fa-graduation-cap"></i> Enter Course
+                    </a>
+                    {% endif %}
+                    {% if course.github %}
+                    <a href="{{ course.github }}" target="_blank" class="btn btn-sm btn-outline-secondary">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- MENTORSHIP -->
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h3 class="font-weight-bold">{{ site.data.teaching.mentorship.title }}</h3>
+        <p class="text-muted">{{ site.data.teaching.mentorship.subtitle }}</p>
+    </div>
+</div>
+
+<div class="mentorship-tree">
+    <div class="tree-trunk"></div>
+
+    {% for student in site.data.teaching.mentorship.students %}
+    <div class="tree-branch {{ student.branch }}">
+        <div class="student-card{% if student.alumni %} alumni{% endif %}">
+            <div class="pin"></div>
+            <div class="student-img-wrapper">
+                <img src="{{ student.image | relative_url }}" alt="{{ student.name }}" onerror="this.src='https://ui-avatars.com/api/?name={{ student.name | url_encode }}&background=random'">
+            </div>
+            <div class="student-info">
+                <h5>{{ student.name }}</h5>
+                <span class="badge {{ student.badge_color }}">{{ student.period }}</span>
+                <p>{{ student.status }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<!-- RECRUITMENT -->
+<div class="row">
+  <div class="col-12">
+    <div class="alert border shadow-sm p-4 bg-body" role="alert">
+      <h4 class="alert-heading">
+        <i class="fas fa-user-graduate me-2 text-primary"></i>
+        {{ site.data.teaching.recruitment.title }}
+      </h4>
+      <p class="mb-0">{{ site.data.teaching.recruitment.text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- ORBIT CANVAS -->
+<div class="row">
+    <div class="col-12 text-center">
+        <h3 class="mb-2 font-weight-bold">{{ site.data.teaching.canvas.title }}</h3>
+        <p class="text-muted small">
+            <i class="fas fa-mouse-pointer"></i> {{ site.data.teaching.canvas.instructions | markdownify | remove: '<p>' | remove: '</p>' }}
+        </p>
+    </div>
+</div>
+
+<div class="orbit-container mt-3">
+    <canvas id="orbitCanvas"></canvas>
+    <div class="orbit-overlay">
+        <h2>{{ site.data.teaching.canvas.overlay_title }}</h2>
+        <p>{{ site.data.teaching.canvas.overlay_text }}</p>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/pages/teaching.js' | relative_url }}"></script>

@@ -1,0 +1,54 @@
+# =============================================================
+# RESEARCH PAGE DATA
+# Edit this file to update research areas and timeline settings.
+# =============================================================
+
+intro:
+  - >
+    My research program explores fundamental questions in physics through
+    a combination of experimental work and the development of novel
+    detection techniques.
+  - >
+    From 2009-2021, my activities have centered on instrumentation, data
+    acquisition, the realization of nuclear physics experiments,
+    computer-based raw data analysis, and the model description of
+    observables.
+
+cv_link: /assets/pdf/cv.pdf
+
+# --- RESEARCH AREAS ---
+areas:
+  - badge: Medical Physics
+    title: Positron Emission Tomography
+    icon: fas fa-heartbeat
+    color: text-danger
+    text: "Developing new hardware, software, and instrumentation for medical imaging and fundamental physics research."
+
+  - badge: Fundamental Physics
+    title: Particle Physics
+    icon: fas fa-atom
+    color: text-primary
+    text: "Investigating the properties and interactions of elementary particles, with a focus on positronium and discrete symmetries."
+
+  - badge: Nuclear Dynamics
+    title: Spallation Physics
+    icon: fas fa-bomb
+    color: text-warning
+    text: "Studying the processes and products of spallation reactions, including the validation of theoretical models against experimental data."
+
+  - badge: Reaction Mechanisms
+    title: Nuclear Fusion & Fission
+    icon: fas fa-radiation
+    color: text-success
+    text: "Exploring the dynamics of nuclear reactions, including complete and incomplete fusion processes at energies near the Coulomb barrier."
+
+  - badge: Atomic Nuclei
+    title: Nuclear Structure
+    icon: fas fa-project-diagram
+    color: text-info
+    text: "Investigating the structure of atomic nuclei and the properties of high-spin states."
+
+# --- TIMELINE SECTION ---
+timeline:
+  title: Discovery Timeline
+  subtitle: "Visualizing the trajectory of my research."

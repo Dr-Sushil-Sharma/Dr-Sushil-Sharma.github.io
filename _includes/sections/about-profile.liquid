@@ -1,0 +1,50 @@
+{% comment %}
+  About Page — Profile Card + Bio Section
+  Data source: _data/about.yml (profile, greeting, bio)
+{% endcomment %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ '/assets/css/pages/about.css' | relative_url }}">
+
+<div class="row mt-5 mb-4 align-items-stretch">
+    
+    <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="profile-card mx-auto text-center">
+            
+            <div class="profile-img-container mb-4">
+                <img src="{{ site.data.about.profile.image | relative_url }}" alt="{{ site.data.about.profile.name }}" class="img-fluid rounded-circle" style="max-width: 190px;">
+            </div>
+
+            <div>
+                <div class="profile-role">{{ site.data.about.profile.role }}</div>
+                <div class="small text-uppercase tracking-wider mb-3" style="letter-spacing: 1px; font-size: 0.75rem; opacity: 0.7;">{{ site.data.about.profile.subtitle }}</div>
+
+                <div class="profile-dept">
+                    {{ site.data.about.profile.department | newline_to_br }}
+                </div>
+
+                <div class="mt-2 font-weight-bold" style="color: #fff;">{{ site.data.about.profile.university }}</div>
+                <div class="small" style="color: rgba(255,255,255,0.6);">{{ site.data.about.profile.location }}</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-lg-8">
+        <div class="d-flex flex-column h-100 justify-content-center">
+            <h1 class="hello-title pl-3">{{ site.data.about.greeting | markdownify | remove: '<p>' | remove: '</p>' }}</h1>
+
+            <div class="bio-container mt-3">
+                <div class="bio-text text-justify">
+                    {% for paragraph in site.data.about.bio %}
+                    <p{% if forloop.last %} class="mb-0"{% endif %}>{{ paragraph | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

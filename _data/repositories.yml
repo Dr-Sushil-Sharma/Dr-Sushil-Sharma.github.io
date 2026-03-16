@@ -1,14 +1,21 @@
-github_users:
-  - torvalds
-  - alshedivat
+# =============================================================
+# PERSONAL PAGE DATA
+# Edit this file to update personal info and photos.
+# =============================================================
 
-repo_description_lines_max: 2
+heading: My World
+quote: '"Physics explains the universe, but my family gives it meaning."'
+dedication: >
+  Dedicated to my beloved wife <span class="highlight-name">Neha</span>
+  and our wonderful daughter <span class="highlight-name">Ananya (Alicia)</span>.
 
-github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+# --- PHOTO CAROUSEL ---
+photos:
+  count: 10
+  folder: /assets/img/Personal/
+  caption: "Neha & Mikkad"
+
+# --- OVERLAY ---
+overlay:
+  title: My Universe
+  instructions: "Drag to Rotate | Click to Focus"

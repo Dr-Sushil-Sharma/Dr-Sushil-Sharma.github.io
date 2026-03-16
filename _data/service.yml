@@ -1,0 +1,171 @@
+# =============================================================
+# ACCOMPLISHMENTS PAGE DATA
+# Edit this file to update awards, editorial roles, committees.
+# =============================================================
+
+intro: >
+  I am committed to contributing to the academic community and broader
+  society through various professional service activities, ensuring the
+  growth of scientific exchange and peer review.
+
+# --- EDITORIAL & REVIEWING ---
+editorial:
+  - role: Associate Editor
+    icon: fas fa-pen-nib
+    organization: EJNMMI Physics Journal (Springer)
+    link:
+      label: View Editorial Board
+      url: https://link.springer.com/journal/40658/editorial-board
+
+  - role: Guest Editor
+    icon: fas fa-edit
+    issues:
+      - title: "Proceedings of the 4th Jagiellonian Symposium on Advances in Particle Physics and Medicine"
+        journal: "Acta Physica Polonica A 142 (2022)"
+        icon: fas fa-book-open
+        link: "http://przyrbwn.icm.edu.pl/APP/SPIS/a142-3.html"
+
+      - title: "4th Jagiellonian Symposium on Advances in Particle Physics and Medicine"
+        journal: "Acta Physica Polonica B 15 (2022)"
+        icon: fas fa-atom
+        link: "https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=15&N=4"
+
+      - title: "Symposium on New Trends in Nuclear and Medical Physics"
+        journal: "Acta Physica Polonica B 17 (2024)"
+        icon: fas fa-capsules
+        link: "https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=17&N=1"
+
+      - title: "5th Jagiellonian Symposium on Advances in Particle Physics and Medicine"
+        journal: "Acta Physica Polonica B 17 (2024)"
+        icon: fas fa-microscope
+        link: "https://www.actaphys.uj.edu.pl/index_n.php?I=S&V=17&N=7"
+
+      - title: "Proceedings of the 5th Jagiellonian Symposium on Advances in Particle Physics and Medicine"
+        journal: "Acta Physica Polonica A 146, 5 (2024)"
+        icon: fas fa-file-alt
+        link: "http://przyrbwn.icm.edu.pl/APP/SPIS/a146-5.html"
+
+      - title: "Proceedings of the 2nd Symposium on New Trends in Nuclear and Medical Physics"
+        journal: "Acta Physica Polonica A 148, 6 (2025)"
+        icon: fas fa-radiation
+        link: "https://appol.ifpan.edu.pl/index.php/appa/issue/view/39"
+
+  - role: Peer Reviewer / Referee
+    icon: fas fa-glasses
+    description: "Regular reviewer for high-impact scientific journals including:"
+    journals:
+      - Physica Medica
+      - Nuclear Instruments & Methods in Physics Research
+      - Nuclear Engineering and Technology
+      - EJNMMI Physics
+      - Scientific Reports
+      - Physics Letters B
+
+# --- AWARDS, GRANTS & HONORS ---
+awards:
+  - title: "Principal Investigator (SONATA BIS 13)"
+    year: 2024
+    text: "Awarded by the National Science Center (NCN), Poland."
+    meta: "2024 - 2028"
+    meta_icon: fas fa-clock
+    featured: true
+
+  - title: "Individual Award of the Rector (2nd Degree)"
+    year: 2024
+    text: "Jagiellonian University award for scientific achievements in research on positronium atoms."
+    meta: "Scientific Achievement"
+    meta_icon: fas fa-award
+
+  - title: "Team Award of the Rector (3rd Degree)"
+    year: 2023
+    text: "Jagiellonian University award for organizational achievements."
+    meta: "Organizational Achievement"
+    meta_icon: fas fa-users
+
+  - title: "Team Award of the Rector (1st Degree)"
+    year: 2022
+    text: "Jagiellonian University award for outstanding scientific achievements by the team."
+    meta: "Scientific Achievement"
+    meta_icon: fas fa-star
+    featured: true
+
+  - title: "Winner of Miniatura 6 Grant"
+    year: 2022
+    text: "Research grant awarded by the National Science Center (NCN), Poland."
+
+  - title: "INFN Fellowship"
+    year: 2019
+    text: "Prestigious fellowship for non-Italian citizens at INFN-TIFPA, Italy."
+    meta: "Trento, Italy"
+    meta_icon: fas fa-map-marker-alt
+
+  - title: "PhD Thesis Distinction"
+    year: 2015
+    text: 'Awarded for the thesis titled "Validation of spallation models".'
+    meta: "Academic Excellence"
+    meta_icon: fas fa-graduation-cap
+
+  - title: "International PhD Scholarship (MPD)"
+    year: 2011
+    text: "Foundation for Polish Science (FNP) program co-financed by the EU European Regional Development Fund."
+    meta: "2011 - 2015"
+    meta_icon: fas fa-clock
+
+# --- ORGANIZING COMMITTEES ---
+committees:
+  - role: Co-chair
+    year: 2025
+    event: "2nd Symposium on New Trends in Nuclear and Medical Physics"
+    link: "https://indico.koza.if.uj.edu.pl/event/18/"
+
+  - role: Scientific Secretary
+    year: 2024
+    event: "5th Jagiellonian Symposium on Advances in Particle Physics and Medicine (JS:2024)"
+    location: "Collegium Novodvorscianum, Krakow (June 29 – July 7)"
+
+  - role: Co-chair
+    year: 2023
+    event: "Symposium on New Trends in Nuclear and Medical Physics"
+    link: "https://indico.koza.if.uj.edu.pl/event/12/"
+
+  - role: Co-organizer
+    year: 2022
+    event: "4th Jagiellonian Symposium on Advances in Particle Physics and Medicine"
+    location: "Collegium Maius & Novodvorscianum, Krakow"
+
+  - role: Scientific Secretary
+    year: 2019
+    event: "3rd Jagiellonian Symposium on Fundamental and Applied Subatomic Physics & DAE International Symposium on Nuclear Physics"
+    location: "Jagiellonian University, Krakow, Poland"
+
+  - role: Co-organizer
+    year: 2014
+    event: "II Symposium on Applied Nuclear Physics and Innovative Technologies"
+    location: "Krakow, Poland"
+
+  - role: Co-organizer
+    year: 2013
+    event: "Symposium on Applied Nuclear Physics and Innovative Technologies"
+    location: "Krakow, Poland"
+
+# --- IMPACT STATS ---
+impact:
+  - label: "Years of Service"
+    value: 14
+    icon: fas fa-hourglass-half
+    color: text-primary
+
+  - label: "Awards & Grants"
+    value: 8
+    icon: fas fa-trophy
+    color: text-warning
+
+  - label: "Org. Committees"
+    value: 9
+    icon: fas fa-users
+    color: text-info
+
+  - label: "Reviews & Edits +%"
+    value: 100
+    icon: fas fa-check-circle
+    color: text-success

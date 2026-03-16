@@ -1,0 +1,226 @@
+/* --- GLOBAL PAGE STYLES --- */
+.post-header, .page-header, .page-title { display: none !important; }
+
+/* Custom Title Style */
+.hello-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--global-theme-color);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
+/* --- PROFILE CARD STYLES (Dark Theme) --- */
+.profile-card {
+    background: linear-gradient(135deg, #2b323c 0%, #1a1c20 100%);
+    border-radius: 16px;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.05);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Subtle decorative circle in background */
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: -50px; left: -50px;
+    width: 150px; height: 150px;
+    background: rgba(255,255,255,0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.profile-img-container img {
+    border: 4px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+.profile-img-container img:hover {
+    transform: scale(1.03);
+    border-color: var(--global-theme-color, #007bff);
+}
+
+.profile-role {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.profile-dept {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.6;
+}
+
+/* --- BIO SECTION STYLES --- */
+.bio-container {
+    background: #252525;
+    border-left: 5px solid #66b0ff;
+    padding: 2rem;
+    border-radius: 0 8px 8px 0;
+    box-shadow: none;
+    height: 100%;
+}
+
+.bio-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: #d0d0d0;
+}
+
+/* --- CONTACT BAR (Bottom) --- */
+.contact-bar-icon {
+    color: #aaa;
+    transition: all 0.2s ease;
+}
+.contact-bar-icon:hover {
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.interest-card {
+    background: #2b2b2b;
+    border: 1px solid #444;
+    border-radius: 12px;
+    padding: 2rem 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    color: #f0f0f0;
+}
+.interest-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    border-color: var(--global-theme-color, #007bff);
+    background: #323232;
+}
+.icon-wrapper {
+    margin-bottom: 1rem;
+    color: #888;
+    transition: color 0.3s ease;
+}
+.interest-card:hover .icon-wrapper { color: var(--global-theme-color, #66b0ff); }
+.interest-title { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #f0f0f0; }
+.interest-text { font-size: 0.9rem; color: #aaa; }
+
+/* --- FULL WIDTH CARD STYLING --- */
+.pub-card-full {
+    display: block;
+    width: 100%;
+    background: #2b2b2b;
+    border: 1px solid #444;
+    border-left: 5px solid var(--global-theme-color, #66b0ff);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.25s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pub-card-full:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    border-color: #666;
+}
+
+.pub-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pub-info { flex: 1; padding-right: 20px; }
+
+.pub-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+}
+.pub-card-title a { color: inherit; text-decoration: none; }
+.pub-card-title a:hover { color: var(--global-theme-color, #007bff); }
+
+.pub-card-meta { font-size: 0.95rem; color: #b0b0b0; line-height: 1.5; }
+.pub-author-list { font-style: italic; margin-bottom: 0.2rem; }
+
+.pub-journal-badge {
+    display: inline-block;
+    background: #333;
+    border: 1px solid #555;
+    color: #ccc;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+/* Right Side Actions */
+.pub-actions {
+    text-align: right;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.pub-year {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #444;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.btn-read {
+    font-size: 0.8rem;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+.pub-card-full:hover .btn-read {
+    background: #fff;
+    color: #000;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background: radial-gradient(circle at center, #1a1a2e 0%, #000000 100%);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #333;
+}
+canvas { display: block; width: 100%; height: 100%; }
+.canvas-overlay {
+    position: absolute; bottom: 20px; left: 20px;
+    color: rgba(255, 255, 255, 0.5); pointer-events: none;
+    font-family: 'Roboto', sans-serif;
+}
+.canvas-overlay h2 { font-size: 1.5rem; margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; }
+.canvas-overlay p { font-size: 0.9rem; margin: 0; }

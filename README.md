@@ -4,6 +4,70 @@ Welcome to the definitive manual for your customized academic portfolio website!
 
 ---
 
+## 🚀 0. Getting Started (From Scratch)
+
+If you have a completely fresh laptop and want to run this website locally on your computer to preview changes, follow these setup instructions. 
+
+### Step A: Install the Prerequisites
+Jekyll requires **Ruby**. Because Jekyll doesn't natively support Windows, we highly recommend using **WSL** (Windows Subsystem for Linux) if you are on a Windows machine.
+
+**For Windows (Using WSL):**
+1. Open PowerShell as Administrator and install WSL by running: `wsl --install`
+2. Restart your computer.
+3. Open the "Ubuntu" app from your Start Menu.
+4. Update Linux and install Ruby:
+   ```bash
+   sudo apt update && sudo apt upgrade -y
+   sudo apt install ruby-full build-essential zlib1g-dev -y
+   ```
+5. Configure Ruby to install packages (gems) in your user folder instead of requiring root access:
+   ```bash
+   echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
+   echo 'export GEM_HOME="$HOME/gems"' >> ~/.bashrc
+   echo 'export PATH="$HOME/gems/bin:$PATH"' >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+**For macOS:**
+1. Open Terminal and install Homebrew (if you don't have it): `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. Install Ruby: `brew install ruby`
+
+**For Linux (Ubuntu/Debian):**
+1. Open Terminal and run: `sudo apt install ruby-full build-essential zlib1g-dev -y`
+
+### Step B: Install Jekyll and Bundler
+Once Ruby is installed, run this command in your terminal/WSL:
+```bash
+gem install jekyll bundler
+```
+
+### Step C: Download (Clone) Your Website
+We need to download the source code from GitHub onto your computer.
+1. In your terminal, navigate to where you want the folder (e.g., your Desktop): `cd ~/Desktop`
+2. Clone the repository (replace the URL with your actual repository link):
+   ```bash
+   git clone https://github.com/Dr-Sushil-Sharma/Dr-Sushil-Sharma.github.io.git
+   ```
+3. Move into the website folder:
+   ```bash
+   cd Dr-Sushil-Sharma.github.io
+   ```
+
+### Step D: Install Project Dependencies
+Run this command inside the website folder to install all the specific libraries this website needs:
+```bash
+bundle install
+```
+
+### Step E: Run the Website Locally
+To launch a local server and preview your site, run:
+```bash
+bundle exec jekyll serve
+```
+Open your web browser and go to: `http://localhost:4000/`. You can now edit files in the repository, and the website will automatically refresh in your browser!
+
+---
+
 ## 🏗️ 1. Static vs Dynamic Websites
 
 This is a **Static Website** built with [Jekyll](https://jekyllrb.com/). 

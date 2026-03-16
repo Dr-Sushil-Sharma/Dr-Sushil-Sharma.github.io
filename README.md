@@ -1,57 +1,74 @@
-# Sushil Sharma Portfolio Template
+# 🌟 Dr. Sushil Sharma Portfolio: The Ultimate Guide
 
-Welcome to the customized academic portfolio website! This project is a tailored, stripped-down, and data-driven version of a Jekyll template, designed specifically for rapid updates without needing deep technical knowledge. 
+Welcome to the definitive manual for your customized academic portfolio website! This project is a streamlined, data-driven Jekyll template engineered for fast, painless updates without requiring deep technical knowledge. 
+
+---
 
 ## 🏗️ 1. Static vs Dynamic Websites
 
 This is a **Static Website** built with [Jekyll](https://jekyllrb.com/). 
-- **Dynamic Websites** (like WordPress or Facebook) use a database to store content and build pages on the fly every time a user visits.
-- **Static Websites** (like this one) use flat files (Markdown, YAML, HTML). The site is entirely pre-built into HTML files by Jekyll *before* it is served to the user. 
-  - **Pros:** They are incredibly fast, highly secure (no databases to hack), and can be hosted for free on platforms like GitHub Pages.
-  - **Cons:** You have to "rebuild" the site to see changes, rather than just clicking "Save" in an admin dashboard.
-
-Because it is static, you will update the content by modifying text files locally or directly in the GitHub interface. When you push your changes, GitHub Pages will automatically rebuild the site.
+- **Dynamic Websites** (WordPress, Facebook) use databases to construct pages on-the-fly when a user clicks a link.
+- **Static Websites** (like this) pre-build all pages into flat HTML files. 
+  - **Pros:** Blazing fast, ultra-secure (no database to hack), and hosted for free on GitHub Pages.
+  - **Cons:** You don't have a "login dashboard." You edit text files, and GitHub rebuilds the website automatically in the background.
 
 ---
 
-## 📂 2. Project Structure Overview
+## 📂 2. Project Directory Map
 
-Here is the core structure of the repository that you need to know about:
+Where does everything live?
 
 ```text
-├── _data/                 <-- 🚨 THIS IS WHERE YOU EDIT CONTENT 🚨
-│   ├── about.yml          # Bio, profile info, and publications
-│   ├── contact.yml        # Contact details, office hours, social links
-│   ├── research.yml       # Research areas and past projects
-│   ├── service.yml        # Editorial roles, awards, committees
-│   ├── speaking.yml       # Talks, seminars, and visits
-│   └── teaching.yml       # Philosophy, courses, and mentored students
+├── _data/                 <-- 🚨 EDIT CONTENT HERE (YAML Text Files) 🚨
+│   ├── about.yml          # Homepage: Bio, profile, highlights
+│   ├── contact.yml        # Contact: Email, office, social links
+│   ├── research.yml       # Research: Focus areas
+│   ├── service.yml        # Accomplishments: Awards, committees, editorial
+│   ├── speaking.yml       # Talks: Seminars and posters
+│   ├── teaching.yml       # Teaching: Students, philosophy, courses
+│   └── repositories.yml   # Personal: Photo carousel config
 │
-├── _pages/                # The actual "pages" of the site. You RARELY need to edit these.
-│   ├── about.md, contact.md, etc.
-│
-├── _includes/sections/    # The HTML templates that render the data from _data/
-│
+├── _pages/                # The route files connecting URLs to templates
+├── _includes/sections/    # The HTML templates that render the data 
 ├── assets/
-│   ├── css/pages/         # Custom styling for specific pages (Dark mode, layout)
-│   ├── js/pages/          # Custom interactions or animations for pages
-│   └── img/               # Your photos, logos, and images go here
-│
-└── _config.yml            # Global site settings (URL, title, navigation)
+│   ├── css/pages/         # Custom dark-theme styling per page
+│   └── img/               # 📷 ALL PHOTOS GO HERE
+└── _config.yml            # Global site settings (URL, title, nav menu)
 ```
 
 ---
 
-## 📝 3. How to Edit the Website (For Non-Technical Users)
+## 📝 3. Page-by-Page Update Guide
 
-We have converted all the complex, messy HTML code into simple, organized **YAML (`.yml`) data files**. 
+Here is exactly how to update every single page on the website.
 
-If you want to add a new talk, a new student, or update your bio, you **only** need to edit the files inside the `_data/` folder. You do not need to touch HTML or CSS.
+### 🏠 Home / About Page
+- **File to Edit**: `_data/about.yml`
+- **What you can change**: Your Bio, Profile Photo, Contact Bar, Research Interests (the grid of cards), and the "Selected Highlight Publications."
+- **How to update Profile Photo**: Replace `assets/img/prof_pic.jpg` with a new photo of the same name, or upload a new photo to `assets/img/` and change the `image:` path in `about.yml`.
+- **How to update Bio**: Find the `bio:` section. Each bullet point (`- >`) is a new paragraph.
 
-### Example 1: Adding a New Talk
-1. Open `_data/speaking.yml`
-2. Scroll to the `talks:` section.
-3. Copy an existing block and paste it at the top of the list, then change the details:
+### 📚 Publications Page
+*Note: Because publications are highly formatted with special links, they are the **only** page that still uses HTML directly.*
+- **File to Edit**: `_includes/sections/publications-page.liquid`
+- **What you can change**: The total stats at the top (Citations, h-index) and the lists of Articles/Proceedings.
+- **How to add a Publication**: Scroll down to the `<div class="group-articles">` section. Copy an existing block and paste it at the top. 
+```html
+<div class="publication-card article" data-year="2026">
+    <div class="pub-badge"></div>
+    <div class="pub-content">
+        <h5 class="pub-title">
+            <a href="URL_HERE" target="_blank">Title of Your New Paper</a>
+        </h5>
+        <p class="pub-authors">S. Sharma, et al.</p>
+        <div class="pub-meta"><span class="journal-name">Journal Name 10 (2026)</span></div>
+    </div>
+</div>
+```
+
+### 🎤 Talks (Speaking) Page
+- **File to Edit**: `_data/speaking.yml`
+- **How to add a Talk**: Scroll to the `talks:` section, copy an existing block, and paste it at the top of the list:
 ```yaml
   - title: "My Amazing New Discovery"
     year: 2026
@@ -60,10 +77,12 @@ If you want to add a new talk, a new student, or update your bio, you **only** n
     date: "August 10-14"
 ```
 
-### Example 2: Adding a New PhD Student
-1. Place their photo in the `assets/img/` folder.
-2. Open `_data/teaching.yml`
-3. Scroll to the `students:` list and add them:
+### 🎓 Teaching & Mentorship Page
+- **File to Edit**: `_data/teaching.yml`
+- **How to add a PhD Student**:
+   1. Upload their photo to `assets/img/`.
+   2. Open `_data/teaching.yml`.
+   3. Scroll to the `students:` list and add them:
 ```yaml
     - name: Jane Doe
       image: /assets/img/jane_doe.jpg
@@ -73,35 +92,63 @@ If you want to add a new talk, a new student, or update your bio, you **only** n
       branch: left
 ```
 
-### Example 3: Updating Your Bio
-1. Open `_data/about.yml`
-2. Find the `bio:` section. Each line starting with `-` is a new paragraph.
+### 🏆 Accomplishments (Service) Page
+- **File to Edit**: `_data/service.yml`
+- **What you can change**: Editorial Roles, Awards & Grants, Organizing Committees, and the floating Impact Stats at the bottom.
+- **How to add an Award**: Find the `awards:` array and insert:
 ```yaml
-bio:
-  - "This is my first paragraph containing **bold text**."
-  - "This is my second paragraph."
+  - title: "Nobel Prize in Physics"
+    year: 2030
+    text: "Awarded for groundbreaking work in positronium."
+    featured: true
 ```
 
-*Note: Make sure to keep the indentation (spaces at the start of the line) exact, as YAML relies on spacing to structure data!*
+### 🌍 Personal (My World) Page
+- **File to Edit**: `_data/repositories.yml` *(Note: this file powers the Personal page)*
+- **How to manage Photos**: 
+  1. This page displays a dynamic 3D carousel. To add photos, drop them into the `assets/img/Personal/` folder.
+  2. The photos **must** be named sequentially starting from 1 (e.g., `1.jpg`, `2.jpg`, ... `10.jpg`). 
+  3. If you add `11.jpg` and `12.jpg`, open `_data/repositories.yml` and change `count: 10` to `count: 12`.
+
+### 🔬 Research Page
+- **File to Edit**: `_data/research.yml`
+- **What you can change**: The intro paragraphs and the specific research "badges" (Medical Physics, Reaction Mechanisms, etc.). 
+
+### ✉️ Contact Page
+- **File to Edit**: `_data/contact.yml`
+- **What you can change**: Office hours, location, and social media links.
+- **How to update Socials**: Find the `socials:` array. You can update your Google Scholar, LinkedIn, GitHub, or Facebook URLs here.
+
+### ⚙️ Global Settings & Navigation
+- **File to Edit**: `_config.yml`
+- **What you can change**: The website's title, base domain, Google Analytics tracking IDs, and the top header navigation menu.
 
 ---
 
-## 🤖 4. Advanced Changes Using AI (Antigravity/LLMs)
+## 🖼️ 4. Managing Images effectively
+1. **Always use `/assets/img/`**: Do not put images in random folders. Put them in `assets/img/`.
+2. **Path referencing**: When typing an image path in YAML, always start with a slash: `/assets/img/my_photo.jpg`.
+3. **Compression**: To keep the site loading fast, try to compress huge photos (like 5MB DSLR shots) to under 500kb before uploading.
 
-If you ever want to make larger structural changes—like completely redesigning a page, adding a new page, or fixing a visual bug—you can efficiently guide an AI assistant like **Antigravity**, ChatGPT, or Claude to do it for you.
+---
+
+## 🤖 5. Advanced Development with AI (Antigravity/LLMs)
+
+If you ever want to make larger structural changes—like creating an entirely new page or redesigning a feature—you don't need to learn coding. You can guide an AI assistant like **Antigravity**, ChatGPT, or Claude.
 
 **Tips for Prompting the AI:**
-1. **Be specific about the architecture**: Tell the AI, *"This is a Jekyll site where data is stored in `_data/` and rendered via Liquid templates in `_includes/sections/`. The base theme is dark-mode only."*
-2. **Adding a New Page**: Ask the AI: *"I want to create a new page for 'Grants'. Please create a `_data/grants.yml` file for the schema, an `_includes/sections/grants-page.liquid` template to render it, and a `_pages/grants.md` file to route it. Then update `_config.yml` to add it to the header navigation."*
-3. **Changing Styles**: Say, *"I want to change the color of the buttons on the Teaching page. Please check `assets/css/pages/teaching.css` and update the hover effects to use `#ff0000`."*
-4. **Fixing Data Errors**: If the site fails to build on GitHub, copy the error logs from GitHub Actions and paste it to the AI: *"My Jekyll site failed to build with this error. I just edited `_data/speaking.yml`. What line is the YAML syntax error on?"*
+1. **Provide Context**: Tell the AI, *"This is a Jekyll static site. Page logic is in `_includes/sections/[page].liquid`, driven by data in `_data/[page].yml`. All CSS is in `assets/css/pages/`. The theme is permanently Dark Mode."*
+2. **Adding a New Page**: Ask the AI: *"I want to create a 'Grants' page. Create `_data/grants.yml` for the data, `_includes/sections/grants-page.liquid` for the HTML, and `_pages/grants.md` to route it. Finally, tell me how to add it to `_config.yml`'s header."*
+3. **Changing CSS Colors**: Say, *"I want the 'Teaching' page titles to be bright green instead of white. Please edit `assets/css/pages/teaching.css`."*
+4. **Fixing Build Errors**: If GitHub Action fails to build the site, copy the error logs from GitHub and paste them to the AI: *"My Jekyll site failed with a YAML Parsing Error. I just edited `contact.yml`. Can you find the missing quote?"*
 
 ---
 
-## 🚀 5. Deploying Changes
+## 🚀 6. Deploying Changes (Going Live)
 
-Because this site is hosted via GitHub Pages, deploying is fully automatic.
-1. Make your changes locally or directly on github.com.
-2. **Commit** and **Push** your changes to the `master` or `main` branch.
-3. GitHub Actions will automatically start a workflow to rebuild the Jekyll site.
-4. After ~1-2 minutes, refresh your live website URL and your updates will be live!
+Because this site is hosted on GitHub Pages, deployment is entirely automated.
+1. Make your changes locally or directly via the web editor on github.com.
+2. **Commit** and **Push** your changes to the repository (`main` or `master` branch).
+3. GitHub Actions will automatically start a `pages-build-deployment` workflow.
+4. Wait about 1 to 2 minutes. 
+5. Refresh your website (`https://dr-sushil-sharma.github.io/`) and your updates will be live!

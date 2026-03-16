@@ -49,21 +49,15 @@ Here is exactly how to update every single page on the website.
 - **How to update Bio**: Find the `bio:` section. Each bullet point (`- >`) is a new paragraph.
 
 ### 📚 Publications Page
-*Note: Because publications are highly formatted with special links, they are the **only** page that still uses HTML directly.*
-- **File to Edit**: `_includes/sections/publications-page.liquid`
-- **What you can change**: The total stats at the top (Citations, h-index) and the lists of Articles/Proceedings.
-- **How to add a Publication**: Scroll down to the `<div class="group-articles">` section. Copy an existing block and paste it at the top. 
-```html
-<div class="publication-card article" data-year="2026">
-    <div class="pub-badge"></div>
-    <div class="pub-content">
-        <h5 class="pub-title">
-            <a href="URL_HERE" target="_blank">Title of Your New Paper</a>
-        </h5>
-        <p class="pub-authors">S. Sharma, et al.</p>
-        <div class="pub-meta"><span class="journal-name">Journal Name 10 (2026)</span></div>
-    </div>
-</div>
+- **File to Edit**: `_data/publications.yml`
+- **What you can change**: Your overall stats (citations, h-index, i10-index) and your full list of articles, proceedings, and posters.
+- **How to add a Publication**: Scroll to the relevant array (e.g., `articles:`). Copy an existing block and paste it at the top.
+```yaml
+- title: "Groundbreaking new research in Physics"
+  authors: "S. Sharma, et al."
+  journal: "Nature Physics 20 (2026)"
+  year: 2026
+  url: "https://doi.org/10.1038/s41567-026"
 ```
 
 ### 🎤 Talks (Speaking) Page

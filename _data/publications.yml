@@ -1,0 +1,548 @@
+stats:
+  citations: '2,758'
+  h_index: '24'
+  i10_index: '41'
+articles:
+- title: 'Exploring Maximum Likelihood and Bayesian Approaches for Two-Dimensional
+    Image Restoration: A Machine Learning Perspective'
+  authors: K. Topolnicki, S. Sharma, Yu. Volkotrub, M. Das
+  journal: Computer Physics Communications 319 (2026) 109913
+  year: 2026
+- title: Feasibility Study of Using Detector-Scattered Photons for Attenuation Correction
+    in CT-less PET Imaging
+  authors: Satyam Tiwari... Sushil Sharma, et al.
+  journal: Bio-Algorithms and Med-Systems 21 (2025)
+  year: 2025
+  url: https://doi.org/10.5604/01.3001.0055.4655
+- title: 'First Positronium Imaging Using 44Sc With the J-PET Scanner: a Case Study
+    on the NEMA-Image Quality Phantom'
+  authors: Manish Das, Sushil Sharma, et al.
+  journal: IEEE TRPMS 2025
+  year: 2025
+- title: Studies of CPT symmetry in positronium decays with 192 plastic strip J-PET
+    detector
+  authors: N. Chug, S. D. Bass... S. Sharma, et al.
+  journal: Accepted in Phys. Rev. D.
+  year: 2025
+- title: 'Positronium Imaging: History, Current Status, and Future Perspectives'
+  authors: Paweł Moskal... Sushil Sharma, et al.
+  journal: IEEE Trans. Radiat. Plasma Med. Sci. 9(8) (2025)
+  year: 2025
+- title: Quality control of plastic scintillators for the total-body J-PET scanner
+  authors: Ł. Kapłon... S. Sharma, et al.
+  journal: JINST 20 (2025) P09019
+  year: 2025
+- title: 'muPPET: Investigating the Muon Puzzle with J-PET Detectors'
+  authors: A. Porcelli... S. Sharma, et al.
+  journal: Universe 11 (2025) 180
+  year: 2025
+- title: Nonmaximal entanglement of photons from positron-electron annihilation demonstrated
+    using a novel plastic PET scanner
+  authors: P. Moskal, D. Kumar, S. Sharma, et al.
+  journal: Science Advances 11 (2025)
+  year: 2025
+- title: Real-time antiproton annihilation vertexing with submicrometer resolution
+  authors: Michael Berghold... Sushil Sharma... AEgIS Collaboration
+  journal: Science Advances 11 (2025)
+  year: 2025
+- title: 'Realistic total-body J-PET geometry optimization: Monte Carlo study'
+  authors: J. Baran... S. Sharma, et al.
+  journal: Medical Physics 52 (2025)
+  year: 2025
+- title: Development of correction techniques for a J-PET scanner
+  authors: M. Das... S. Sharma, et al.
+  journal: Bio-Algorithms and Med-Systems 20 (2024)
+  year: 2024
+- title: Positronium image of the human brain in vivo
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Science Advances 10 (2024)
+  year: 2024
+- title: Feasibility of the J-PET to monitor range of therapeutic proton beams
+  authors: J. Baran... S. Sharma, et al.
+  journal: Physica Medica 118 (2024)
+  year: 2024
+- title: Feasibility studies for imaging e+e- annihilation with modular multi-strip
+    detectors
+  authors: S. Sharma, et al.
+  journal: Nucl. Instrum. Meth. A 1062 (2024)
+  year: 2024
+- title: Discrete symmetries tested at 10^-4 precision using linear polarization of
+    photons from positronium annihilations
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Nature Communications 15 (2024)
+  year: 2024
+- title: Estimating the efficiency and purity for detecting annihilation and prompt
+    photons for positronium imaging
+  authors: M. Das... S. Sharma, et al.
+  journal: Bio-Algorithms and Med-Systems 19 (2023)
+  year: 2023
+- title: Comparative studies of the sensitivities of sparse and full geometries of
+    Total-Body PET scanners
+  authors: M. Dadgar... S. Sharma, et al.
+  journal: EJNMMI Physics 10 (2023)
+  year: 2023
+- title: Monte Carlo simulations of the underwater detection of illicit war remnants
+    with neutron-based sensors
+  authors: M. Silarski... S. Sharma, et al.
+  journal: Eur. Phys. J. Plus 138 (2023)
+  year: 2023
+- title: Transformation of PET raw data into images for event classification using
+    convolutional neural networks
+  authors: P. Konieczka... S. Sharma, et al.
+  journal: Math. Biosci. Eng. 20 (2023)
+  year: 2023
+- title: 'Detection of range shifts in proton beam therapy using the J-PET scanner:
+    a patient simulation study'
+  authors: K. Brzeziński... S. Sharma, et al.
+  journal: Phys. Med. Biol. 68 (2023)
+  year: 2023
+- title: Comparative studies of plastic scintillator strips with high technical attenuation
+    length
+  authors: Ł. Kapłon... S. Sharma, et al.
+  journal: Nucl. Instrum. Meth. A 1051 (2023)
+  year: 2023
+- title: 'Efficiency determination of J-PET: first plastic scintillators-based PET
+    scanner'
+  authors: S. Sharma, et al.
+  journal: EJNMMI Phys. 10 (2023)
+  year: 2023
+- title: Systematic Study of Gamma Decay Hindrance Factors
+  authors: Y.P. Singh... S. Sharma, et al.
+  journal: Phys. Part. Nuclei Lett. 20 (2023) 577–582
+  year: 2023
+  url: https://doi.org/10.1134/S1547477123040635
+- title: Influence of Collectivity on Reduced Hindrance Factor of isomers in Tantalum
+    and Hafnium Isotopes
+  authors: Y.P. Singh... S. Sharma, et al.
+  journal: Acta Phys. Pol. B 54 (2023)
+  year: 2023
+- title: J-PET detection modules based on plastic scintillators for performing studies
+    with positron and positronium beams
+  authors: S. Sharma, et al.
+  journal: JINST 18 (2023)
+  year: 2023
+- title: TOF MLEM Adaptation for the Total-Body J-PET with a Realistic Analytical
+    System Response Matrix
+  authors: R.Y. Shopa... S. Sharma, et al.
+  journal: IEEE TRPMS 7 (2023)
+  year: 2023
+- title: Investigation of novel preclinical Total Body PET designed with J-PET technology
+  authors: M. Dadgar... S. Sharma, et al.
+  journal: IEEE TRPMS 7 (2023)
+  year: 2023
+- title: ProTheRaMon - a GATE simulation framework for proton therapy range monitoring
+  authors: D. Borys... S. Sharma, et al.
+  journal: Phys. Med. Biol. 67 (2022)
+  year: 2022
+- title: Decoherence Puzzle in Measurements of Photons Originating from Electron-Positron
+    Annihilation
+  authors: S. Sharma, D. Kumar, P. Moskal
+  journal: Acta Phys. Polon. A 142 (2022)
+  year: 2022
+- title: Positronium imaging with the novel multiphoton PET scanner
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Science Advances 7 (2021)
+  year: 2021
+- title: Optimisation of the event-based TOF filtered back-projection for online imaging
+    in total-body J-PET
+  authors: R.Y. Shopa... S. Sharma, et al.
+  journal: Medical Image Analysis 73 (2021)
+  year: 2021
+- title: Testing CPT symmetry in ortho-positronium decays with positronium annihilation
+    tomography
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Nature Communications 12 (2021)
+  year: 2021
+- title: Simulating NEMA characteristics of the modular total-body J-PET scanner
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Phys. Med. Biol. 66 (2021)
+  year: 2021
+- title: The J-PET detector - a tool for precision studies of ortho-positronium decays
+  authors: K. Dulski... S. Sharma, et al.
+  journal: Nucl. Instrum. Meth. A 1008 (2021)
+  year: 2021
+- title: 3D TOF-PET image reconstruction using total variation regularization
+  authors: L. Raczyński... S. Sharma, et al.
+  journal: Physica Medica 80 (2020)
+  year: 2020
+- title: Synchronisation and calibration of the 24-modules J-PET prototype
+  authors: P. Moskal... S. Sharma, et al.
+  journal: IEEE Trans. Instrum. Meas. 70 (2020)
+  year: 2020
+- title: Performance assessment of the 2gamma positronium imaging with the total-body
+    PET scanners
+  authors: P. Moskal... S. Sharma, et al.
+  journal: EJNMMI Phys. 7 (2020)
+  year: 2020
+- title: Estimating relationship between the Time Over Threshold and energy loss by
+    photons
+  authors: S. Sharma, et al.
+  journal: EJNMMI Phys. 7 (2020)
+  year: 2020
+- title: Hit-time and hit-position reconstruction in strips of plastic scintillators
+  authors: N. G. Sharma... S. Sharma, et al.
+  journal: IEEE TRPMS 4 (2020)
+  year: 2020
+- title: TOT Method for the Disentanglement of Photons in Positron Annihilation Lifetime
+    Spectroscopy
+  authors: S. Sharma on behalf of J-PET
+  journal: Acta. Phys. Polon. A 137 (2020)
+  year: 2020
+- title: Odd-even staggering in the yields of intermediate mass fragments from p+Ag
+    collisions
+  authors: U. Singh... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 50 (2019)
+  year: 2019
+- title: Feasibility study of the positronium imaging with the J-PET tomograph
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Phys. Med. Biol. 64 (2019)
+  year: 2019
+- title: Monte Carlo N-Particle simulations of an underwater chemical threats detection
+    system
+  authors: P. Sibczyński... S. Sharma, et al.
+  journal: JINST 14 (2019)
+  year: 2019
+- title: Simulation studies of annihilation-photon's polarisation via Compton scattering
+  authors: N. Krawczyk... S. Sharma, et al.
+  journal: Hyperfine Interact. 240 (2019)
+  year: 2019
+- title: Feasibility studies of the polarization of photons beyond the optical wavelength
+    regime
+  authors: P. Moskal... S. Sharma, et al.
+  journal: Eur. Phys. J. C 78 (2018)
+  year: 2018
+- title: Evaluation of Single-Chip, Real-Time Tomographic Data Processing on FPGA
+  authors: G. Korcyl... S. Sharma, et al.
+  journal: IEEE TMI 37 (2018)
+  year: 2018
+- title: A feasibility study of the time reversal violation test based on polarization
+  authors: J. Raj... S. Sharma, et al.
+  journal: Hyperfine Interact 239 (2018)
+  year: 2018
+- title: Commissioning of the J-PET detector in view of the positron annihilation
+    lifetime spectroscopy
+  authors: K. Dulski... S. Sharma, et al.
+  journal: Hyperfine Interact 239 (2018)
+  year: 2018
+- title: Feasibility study of the time reversal symmetry tests in decay of metastable
+    positronium atoms
+  authors: A. Gajos... S. Sharma, et al.
+  journal: Adv. High Energy Phys. 2018
+  year: 2018
+- title: Estimating the NEMA characteristics of the J-PET tomograph using the GATE
+    package
+  authors: P. Kowalski... S. Sharma, et al.
+  journal: Phys. Med. Biol. 63 (2018)
+  year: 2018
+- title: The predictive power of spallation models for isotopic cross sections
+  authors: U. Singh... S. Sharma, et al.
+  journal: Eur. Phys. J. A 54 (2018)
+  year: 2018
+- title: Investigation of complete and incomplete fusion in the Li 7 + Sn 124 reaction
+  authors: V.V.Parkar, S. Sharma, et al.
+  journal: Phys. Rev. C 97 (2018)
+  year: 2018
+- title: Non-equilibrium processes in p+Ag collisions at GeV energies
+  authors: M. Fidelus... S. Sharma et al.
+  journal: Phys. Rev. C 96 (2017)
+  year: 2017
+- title: A Method to Produce Linearly Polarized Positrons and Positronium Atoms
+  authors: M. Mohammed... S. Sharma, et al.
+  journal: Acta Phys. Polon. A 132 (2017)
+  year: 2017
+- title: Human Tissue Investigations Using PALS Technique - Free Radicals Influence
+  authors: B. Jasińska... S. Sharma, et al.
+  journal: Acta Phys. Polon. A 132 (2017)
+  year: 2017
+- title: Preliminary Studies of J-PET Detector Spatial Resolution
+  authors: M. Pawlik-Niedźwiecka... S. Sharma, et al.
+  journal: Acta Phys. Polon. A 132 (2017)
+  year: 2017
+- title: 'Underwater detection of dangerous substances: status of the SABAT project'
+  authors: M. Silarski... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 48 (2017)
+  year: 2017
+- title: Analysis procedure of the positronium lifetime spectra for the J-PET detector
+  authors: K. Dulski... S. Sharma, et al.
+  journal: Acta Phys. Polon. A 132 (2017)
+  year: 2017
+- title: Introduction of total variation regularization into filtered backprojection
+    algorithm
+  authors: L. Raczyński... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 48 (2017)
+  year: 2017
+- title: Time calibration of the J-PET detector
+  authors: M. Skurzok... S. Sharma, et al.
+  journal: Acta Phys. Polon. A 132 (2017)
+  year: 2017
+- title: Commissioning of the J-PET Detector for Studies of Decays of Positronium
+    Atoms
+  authors: E. Czerwiński... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 48 (2017)
+  year: 2017
+- title: 'J-PET: A New Technology for the Whole-body PET Imaging'
+  authors: S. Niedźwiecki... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 48 (2017)
+  year: 2017
+- title: Three-dimensional Image Reconstruction in J-PET Using Filtered Back-projection
+  authors: R.Y. Shopa... S. Sharma, et al.
+  journal: Acta Phys. Polon. B 48 (2017)
+  year: 2017
+- title: Ranking and validation of spallation models for isotopic production cross
+    sections
+  authors: S. Sharma, et al.
+  journal: Eur. Phys. J. A 53 (2017)
+  year: 2017
+- title: Ranking and validation of the spallation models for description of intermediate
+    mass fragment emission
+  authors: S. Sharma, et al.
+  journal: Eur. Phys. J. A 52 (2016)
+  year: 2016
+- title: Angular Asymmetry in the Production of Light and Heavy Recoil Nuclides
+  authors: S. Sharma, B. Kamys
+  journal: Acta Phys. Polon. A 127 (2015)
+  year: 2015
+- title: Validation of Spallation Models for p+Al Reactions at 180 MeV
+  authors: S. Sharma, et al.
+  journal: Acta Phys. Polon. B 45 (2014)
+  year: 2014
+- title: Sequential and simultaneous emission of particles from p+Al collisions at
+    GeV energies
+  authors: M. Fidelus... S. Sharma et al.
+  journal: Phys. Rev. C 89 (2014)
+  year: 2014
+- title: Dependence and Influence of Projectile Energy and Target Mass on Production
+    of Light Charged Particles
+  authors: S. Sharma, et al.
+  journal: Nuclear Data Sheets 119 (2014)
+  year: 2014
+- title: Complete Fusion in <sup>7</sup>Li + <sup>144,152</sup>Sm Reactions
+  authors: P. K. Rath, Sushil K. Sharma, et al.
+  journal: Phys. Rev. C 88 (2013) 044617
+  year: 2013
+- title: High Spin States in <sup>135</sup>La
+  authors: Ritika Garg, Sushil K. Sharma, et al.
+  journal: Phys. Rev. C 87 (2013) 034317
+  year: 2013
+- title: A High Speed Digital Data Acquisition System for the Indian National Gamma
+    Array at Tata Institute of Fundamental Research
+  authors: R. Palit, S. Sharma, et al.
+  journal: Nucl. Instrum. Methods Phys. Res. A 680 (2012) 90
+  year: 2012
+- title: Fusion Reaction Studies for the <sup>6</sup>Li + <sup>90</sup>Zr System at
+    Near-Barrier Energies
+  authors: H. Kumawat, Sushil K. Sharma, et al.
+  journal: Phys. Rev. C 86 (2012) 024607
+  year: 2012
+- title: Complete and Incomplete Fusion in <sup>9</sup>Be + <sup>124</sup>Sn System
+  authors: V. V. Parkar, Sushil K. Sharma, et al.
+  journal: Proc. Radiochim. Acta 1 (2011) 131
+  year: 2011
+- title: Structural Change of the Unique-Parity Π h<sub>11/2</sub> ⊗ h<sub>11/2</sub>
+    Configuration in <sup>134</sup>Cs
+  authors: H. Pai, Sushil K. Sharma, et al.
+  journal: Phys. Rev. C 84 (2011) 041301(R)
+  year: 2011
+- title: Fusion Cross Sections for the <sup>9</sup>Be + <sup>124</sup>Sn Reaction
+    at Energies Near the Coulomb Barrier
+  authors: V. V. Parkar, Sushil K. Sharma, et al.
+  journal: Phys. Rev. C 82 (2010) 054601
+  year: 2010
+proceedings:
+- title: Investigating quantum entanglement of high-energy photons from positron annihilation
+    in a porous medium
+  authors: Deepak Kumar, Sushil Sharma and Paweł Moskal
+  journal: 'Journal of Physics: Conference Series (2025)'
+  year: 2025
+- title: 'The AEGIS Experiment: Progress and Future Outlook'
+  authors: R. Caravita... S. Sharma... et al.
+  journal: POS EXA-LEAP2024, 024 (2024)
+  year: 2024
+- title: Performance evaluation of the modular J-PET detector in conventional PET
+    imaging
+  authors: M. Das... S. Sharma, et al.
+  journal: IEEE NSS MIC RTSD (2024)
+  year: 2024
+- title: Test for non-relativistic QED in decays of positronium atoms
+  authors: S. Sharma, K. Dulski, P. Moskal
+  journal: EPJ Web of Conferences 291 (2024)
+  year: 2024
+- title: Measuring the correlation between polarization of two photons originating
+    from e+e- annihilations
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: DAE Symposium on Nuclear Physics 67 (2023)
+  year: 2023
+- title: Experimental observation of polarization correlation of entangled photons
+    from positronium atom
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: PoS (EPS-HEP2023)
+  year: 2023
+- title: Feasibility study of positronium imaging with Biograph Vision Quadra and
+    Modular J-PET
+  authors: S. Parzych... S. Sharma, et al.
+  journal: IEEE NSS MIC (2023)
+  year: 2023
+- title: Performance of NEMA characteristics of Modular J-PET
+  authors: F. Tayefi Ardebili... S. Sharma, et al.
+  journal: IEEE NSS MIC (2023)
+  year: 2023
+- title: Normalization and scatter corrections for the J-PET scanner
+  authors: A. Coussat... S. Sharma, et al.
+  journal: IEEE NSS MIC (2023)
+  year: 2023
+- title: Potential of modular J-PET for applications in the field of particle and
+    medical physics
+  authors: S. Sharma, et al.
+  journal: J. Phys. Conf. Ser. 2374 (2022)
+  year: 2022
+- title: From tests of discrete symmetries to medical imaging with J-PET detector
+  authors: P. Moskal... S. Sharma, et al.
+  journal: POS PANIC2021 (2022)
+  year: 2022
+- title: Studies of the polarization of gamma photons originating from the decay of
+    positronium atoms
+  authors: S. Sharma, N. Krawczyk and J. Raj
+  journal: AIP Conf. Proc. 2182 (2019)
+  year: 2019
+- title: Investigation of the Mechanism of Proton Induced Spallation Reactions
+  authors: U. Singh... S.K. Sharma, et al.
+  journal: Springer Proc. Phys. 225 (2019)
+  year: 2019
+- title: Time Over Threshold as a measure of energy response of plastic scintillators
+    used in the J-PET detector
+  authors: S. Sharma
+  journal: EPJ Web Conf. 199 (2019)
+  year: 2019
+- title: Studies of discrete symmetries in decays of positronium atoms
+  authors: E. Czerwiński... S. Sharma, et al.
+  journal: EPJ Web Conf. 181 (2018)
+  year: 2018
+- title: 'Validation of spallation models: An Approach'
+  authors: S. Sharma
+  journal: Acta Phys. Polon. Supp. 6 (2013)
+  year: 2013
+posters:
+- title: Simulation studies of a brain PET insert for the total body J-PET tomograph
+  authors: M. Rädler... S. Sharma... et al.
+  journal: IEEE NSS MIC RTSD Yokohama (2024)
+  year: 2024
+- title: Ex-Vivo Positronium Lifetime Imaging with 44Sc using J-PET Scanner
+  authors: K. Kubat, M. Das, S. Sharma, et al.
+  journal: 2nd Symposium on New Trends in Nuclear and Medical Physics
+  year: 2024
+- title: Determination of annihilation vertex of antihydrogen using modular J-PET
+    detector
+  authors: P. Pandey, S. Sharma, P. Moskal
+  journal: 2nd Symposium on New Trends in Nuclear and Medical Physics
+  year: 2024
+- title: Towards the Development of an Iterative Algorithm for Positronium Lifetime
+    Imaging
+  authors: A. Pandey, S. Sharma, M. Das, et al.
+  journal: 2nd Symposium on New Trends in Nuclear and Medical Physics
+  year: 2024
+- title: A Feasibility Study of Attenuation Correction in the J-PET Scanner Using
+    Detector-Scattered Photons
+  authors: S. Tiwari, S. Sharma, P. Moskal
+  journal: 2nd Symposium on New Trends in Nuclear and Medical Physics
+  year: 2024
+- title: Evaluation of normalization and random coincidences corrections of clinical
+    images
+  authors: S. Parzych... S. Sharma, et al.
+  journal: EANM24 Annual Congress
+  year: 2024
+- title: Developing positronium imaging technique for the liver phantom using modular
+    J-PET
+  authors: Manish Das, Sushil Sharma, Pawel Moskal
+  journal: 19th EMIM 2024
+  year: 2024
+- title: Measuring the correlation between polarization of two photons originating
+    from e+e- annihilations
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: 67th DAE-BRNS Symposium on Nuclear Physics
+  year: 2023
+- title: Exploring the polarization of high-energy photons in fundamental studies
+    with J-PET detector
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: MSMICFP-2023
+  year: 2023
+- title: Feasibility study of positronium imaging with Biograph Vision Quadra and
+    Modular J-PET
+  authors: S. Parzych... S. Sharma, et al.
+  journal: IEEE NSS MIC 2023
+  year: 2023
+- title: Study of polarization correlation in positron annihilation with J-PET
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: Symposium on New Trends in Nuclear and Medical Physics
+  year: 2023
+- title: Experimental observation of polarization correlation of entangled photons
+    from positronium atom using J-PET detector
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: EPS-HEP 2023
+  year: 2023
+- title: Improving the experimental precision of ortho-positronium decay rate in vacuum
+    with the J-PET detector
+  authors: S. Sharma, K. Dulski, P. Moskal
+  journal: POSMOL 2023, Notre Dame
+  year: 2023
+- title: Test for non-relativistic QED in decays of Positronium atoms
+  authors: S. Sharma, K. Dulski, P. Moskal
+  journal: MESON 2023, Krakow
+  year: 2023
+- title: State-of-the-art modular J-PET detector for the study of positronium decays
+  authors: S. Sharma
+  journal: RAD Eleven Conference
+  year: 2023
+- title: Feasibility studies for imaging e+e- annihilations with modular multi-strip
+    detectors
+  authors: S. Sharma
+  journal: SORMA XIX
+  year: 2023
+- title: Experimental Measurement of the polarization correlation of annihilation
+    photons with J-PET scanner
+  authors: D. Kumar, S. Sharma and P. Moskal
+  journal: Applications of Radiation Detection Techniques
+  year: 2023
+- title: Challenges and scheme in performing inertial sensing measurements on the
+    positronium beam
+  authors: S. Sharma
+  journal: Frascati 2023
+  year: 2023
+- title: Measurement of correlation between polarization of annihilation photons emitted
+    in e+e- system
+  authors: D. Kumar, N. Krawczyk, S. Sharma
+  journal: 4th Jagiellonian Symposium
+  year: 2023
+- title: Precision test of discrete symmetries in the decays of positronium atoms
+    using the J-PET detector
+  authors: S. Sharma
+  journal: PSI 2019, Switzerland
+  year: 2019
+- title: Towards molecular in-vivo cancer imaging by means of positronium and the
+    J-PET tomograph
+  authors: P. Moskal... S. Sharma, et al.
+  journal: FNP IIIrd Interdisciplinary Congress
+  year: 2019
+- title: Pilot studies towards positronium imaging with the total-body PET scanners
+  authors: P. Moskal... S. Sharma, et al.
+  journal: IEEE NSS MIC 2018
+  year: 2018
+- title: Towards total-body modular PET for positronium and quantum entanglement imaging
+  authors: P. Moskal... S. Sharma, et al.
+  journal: IEEE NSS MIC 2018
+  year: 2018
+- title: Charge conjugation symmetry test in the decay of para-positronium atoms
+  authors: J. Chhokar, S. Sharma
+  journal: Discrete Symmetries, Trento
+  year: 2018
+- title: Time Over Threshold as a measure of energy loss in the J-PET scanner
+  authors: S. Sharma, S. Niedzwiecki
+  journal: Total Body PET - Ghent
+  year: 2018
+- title: Time Over Threshold as a measure of energy response of plastic scintillators
+  authors: S. Sharma
+  journal: MESON 2018, Krakow
+  year: 2018
+- title: Time over Threshold (TOT) as a measure of Energy deposition by gamma quanta
+  authors: S. Sharma, J. Raj, et al.
+  journal: 12th Workshop on PPC, Lublin
+  year: 2017

@@ -30,6 +30,13 @@ tabs:
 
 # --- PLENARY & KEYNOTES ---
 keynotes:
+  - title: "Jagiellonian Positron Emission Tomograph : A versatile detection system for multidisciplinary research in Physics and Medicine"
+    year: 2026
+    event: "Plenary: National Conference on Advanced Instrumentation for Nuclear Physics, High-Energy Physics, and Medical Imaging"
+    location: "CUSB, Bihar, India"
+    date: "Feb 23-26"
+    featured: true
+
   - title: "Novel detection technologies for application in medicine and fundamental physics"
     year: 2025
     event: "Plenary: Int. Conf. on Advances in Nanomaterial and Nanotechnology (ICANN-2025)"
@@ -52,6 +59,12 @@ keynotes:
 
 # --- TALKS & SEMINARS ---
 talks:
+  - title: "Positronium beam for Antimatter gravity test: From leptonic probe to Antihydrogen formation"
+    year: 2026
+    event: "Invited Talk: Exploring the positronium frontier: Precision Tests, New Physics, and Entanglement"
+    location: "TIFR, Mumbai, India"
+    date: "Feb 12-14"
+
   - title: "Recent advances in fundamental physics with the multiphoton J-PET detector"
     year: 2025
     event: "Invited Lecture: The 16th Asia Pacific Physics Conference (APPC16)"

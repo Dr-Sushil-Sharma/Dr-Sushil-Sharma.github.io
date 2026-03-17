@@ -546,3 +546,20 @@ posters:
   authors: S. Sharma, J. Raj, et al.
   journal: 12th Workshop on PPC, Lublin
   year: 2017
+
+# --- UI LABELS & STRINGS ---
+labels:
+  stats:
+    citations: "Total Citations"
+    h_index: "h-index"
+    i10_index: "i10-index"
+  search:
+    placeholder: "Search by title, author, or year (e.g., 'Positronium', '2025')..."
+    showing_all: "Showing all publications"
+  tabs:
+    articles: "Journal Articles"
+    proceedings: "Conference Proceedings"
+    posters: "Posters"
+  network:
+    title: "Top Collaborators Network"
+    note: "* Generated automatically from publication list."

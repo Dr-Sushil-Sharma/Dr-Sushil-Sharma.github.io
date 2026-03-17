@@ -404,3 +404,71 @@ tips:
   col2:
     - "Read error messages carefully"
     - "Don't skip the fundamentals"
+
+labels:
+  login:
+    title: "Restricted Access"
+    subtitle: "Please enter the course password."
+    placeholder: "Password"
+    button: "Unlock Course Materials"
+    error_msg: "Incorrect Password."
+    contact_text: "Please contact:"
+    contact_email: "sushil.sharma@uj.edu.pl"
+  terminal:
+    title: "python3 — interactive shell"
+    output_lines:
+      - "# Interactive Python Shell v3.10"
+      - "# Type 'help' for commands"
+  buttons:
+    view_lectures: "View Lectures"
+    tutorials: "Tutorials"
+    view: "View"
+    download: "Download"
+    open_colab: "Open in Colab"
+    watch: "Watch"
+    go_to_materials: "Go to Materials"
+    back_to_teaching: "Back to Teaching"
+  sections:
+    lectures:
+      title: "Lecture Materials"
+      subtitle: "Click on any lecture to expand details. All materials available as PDF downloads."
+      key_concepts: "Key Concepts:"
+      practice: "Practice:"
+    tutorials:
+      title: "Tutorial Materials"
+      badge: "Solutions Included"
+      subtitle: "Hands-on practice with solved examples. Run notebooks in Google Colab or Jupyter."
+    how_to_use:
+      title: "Quick Access Buttons"
+      subtitle: "Each tutorial has two action buttons:"
+      colab_desc: "Opens the notebook in Google Colab. <strong>Important:</strong> Click <em>File → Save a copy in Drive</em> to save your work!"
+      download_desc: "Download the <code>.ipynb</code> file to run locally in Jupyter Notebook."
+      remember: "<strong>Remember:</strong> When using Colab, always save a copy to your Google Drive to keep your progress!"
+    learning_path:
+      title: "Learning Path"
+      subtitle: "Follow this journey from beginner to advanced Python programming"
+    youtube:
+      title: "Recommended YouTube Courses"
+      subtitle: "Sleep through the lectures? No worries. Binge-watch these top-rated courses and become a pro overnight. (Popcorn not included)."
+    resources:
+      prereq_title: "Prerequisites"
+      rec_title: "Recommended Resources"
+    tips:
+      title: "Tips for Success"
+  game:
+    title: "🐍 Python Output Challenge"
+    subtitle: "Can you predict the output of these code snippets?"
+    prompt: "user@python-course:~/challenges$ python3 quiz.py"
+    choose: "Choose Your Challenge"
+    level1: "Level 1: Predict Output"
+    level2: "Level 2: Code Master"
+    level3: "Level 3: Problem Solving"
+    game_over: "Game Over!"
+    play_again: "Play Again"
+    share: "Share Result"
+  stats:
+    lectures: "Lectures"
+    tutorials: "Tutorials"
+    weeks: "Weeks"
+    solutions: "Solutions"
+    learners: "Learners"

@@ -13,7 +13,7 @@
         {% endfor %}
         <div class="text-center mt-4 mb-5">
             <a href="{{ site.data.research.cv_link | relative_url }}" class="btn btn-outline-primary rounded-pill z-depth-0" role="button" target="_blank">
-                <i class="fas fa-file-pdf mr-2"></i> Download Curriculum Vitae
+                <i class="fas fa-file-pdf mr-2"></i> {{ site.data.research.labels.download_cv }}
             </a>
         </div>
     </div>
@@ -22,7 +22,7 @@
 <hr>
 
 <!-- RESEARCH AREAS -->
-<h3 class="mb-4 mt-4">Core Research Areas</h3>
+<h3 class="mb-4 mt-4">{{ site.data.research.labels.core_areas }}</h3>
 
 <div class="row">
     {% for area in site.data.research.areas %}
@@ -54,7 +54,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;900&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
 
 <div id="universe-container">
-    <div id="loading-text">SCANNING ARCHIVES...</div>
+    <div id="loading-text">{{ site.data.research.labels.timeline.scanning }}</div>
     <canvas id="galaxyCanvas"></canvas>
     
     <div class="controls">
@@ -64,9 +64,9 @@
 
     <div id="hud-panel">
         <div class="hud-year" id="hudYear">2024</div>
-        <div class="hud-title" id="hudTitle">Select a Node</div>
+        <div class="hud-title" id="hudTitle">{{ site.data.research.labels.timeline.select_node }}</div>
         <div class="hud-author" id="hudAuthor">...</div>
-        <a href="#" id="hudLink" class="hud-btn" target="_blank">Open Paper</a>
+        <a href="#" id="hudLink" class="hud-btn" target="_blank">{{ site.data.research.labels.timeline.open_paper }}</a>
     </div>
 </div>
 

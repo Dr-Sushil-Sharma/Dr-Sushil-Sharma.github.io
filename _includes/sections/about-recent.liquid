@@ -5,8 +5,8 @@
 
 <div class="row mb-4">
     <div class="col-12 text-center">
-        <h3 class="font-weight-bold">Recent Articles</h3>
-        <p class="text-muted">Latest publications fetched from the database.</p>
+        <h3 class="font-weight-bold">{{ site.data.about.labels.recent_articles.title }}</h3>
+        <p class="text-muted">{{ site.data.about.labels.recent_articles.subtitle }}</p>
     </div>
 </div>
 
@@ -19,7 +19,7 @@
 <div class="row mt-2 mb-5">
     <div class="col-12 text-center">
         <a href="{{ '/publications/' | relative_url }}" class="btn btn-outline-light rounded-pill px-4">
-            View All Publications <i class="fas fa-arrow-right ml-1"></i>
+            {{ site.data.about.labels.buttons.view_all }} <i class="fas fa-arrow-right ml-1"></i>
         </a>
     </div>
 </div>

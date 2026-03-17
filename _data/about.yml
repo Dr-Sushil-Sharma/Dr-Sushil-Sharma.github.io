@@ -126,3 +126,11 @@ highlights:
 canvas:
   title: The Positronium Field
   subtitle: Simulating particle dynamics in real-time.
+
+# --- UI LABELS & STRINGS ---
+labels:
+  recent_articles:
+    title: "Recent Articles"
+    subtitle: "Latest publications fetched from the database."
+  buttons:
+    view_all: "View All Publications"

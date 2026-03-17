@@ -54,3 +54,15 @@ socials:
 puzzle:
   title: SECURE CHANNEL
   subtitle: "Direct line encrypted. Align the quantum pathways to establish connection."
+
+# --- UI LABELS & STRINGS ---
+labels:
+  get_in_touch: "Get in Touch"
+  connect_online: "Connect Online"
+  puzzle:
+    system_offline: "SYSTEM: OFFLINE"
+    error: "ERROR: PATH_BLOCKED"
+    instruction: "CLICK TILES TO ROTATE & CONNECT THE GREEN TO RED"
+    access_granted: "ACCESS GRANTED"
+    connection_established: "Connection established securely."
+    reset: "RESET LINK"

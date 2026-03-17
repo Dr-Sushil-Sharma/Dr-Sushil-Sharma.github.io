@@ -7,25 +7,25 @@
 
 <div id="login-overlay">
     <div class="login-box">
-        <h2 style="color: #fff; margin-bottom: 0.5rem; font-weight: 700;">Restricted Access</h2>
+        <h2 style="color: #fff; margin-bottom: 0.5rem; font-weight: 700;">{{ site.data.python_course.labels.login.title }}</h2>
         <p style="color: #aaa; font-size: 0.95rem; margin-bottom: 1.5rem;">
             <i class="fas fa-lock text-primary mr-1"></i> 
-            Please enter the course password.
+            {{ site.data.python_course.labels.login.subtitle }}
         </p>
         
         <div class="login-input-group">
-            <input type="password" id="passwordInput" class="login-input" placeholder="Password" onkeyup="if(event.key==='Enter') verifyPassword()">
+            <input type="password" id="passwordInput" class="login-input" placeholder="{{ site.data.python_course.labels.login.placeholder }}" onkeyup="if(event.key==='Enter') verifyPassword()">
             <span class="toggle-password" onclick="togglePasswordVisibility()">
                 <i class="fas fa-eye" id="eyeIcon"></i>
             </span>
         </div>
 
-        <button class="login-btn" onclick="verifyPassword()">Unlock Course Materials</button>
+        <button class="login-btn" onclick="verifyPassword()">{{ site.data.python_course.labels.login.button }}</button>
 
         <div id="errorMsg" class="error-msg">
-            <strong>Incorrect Password.</strong><br>
-            Please contact:<br>
-            <a href="mailto:sushil.sharma@uj.edu.pl" class="contact-link">sushil.sharma@uj.edu.pl</a>
+            <strong>{{ site.data.python_course.labels.login.error_msg }}</strong><br>
+            {{ site.data.python_course.labels.login.contact_text }}<br>
+            <a href="mailto:{{ site.data.python_course.labels.login.contact_email }}" class="contact-link">{{ site.data.python_course.labels.login.contact_email }}</a>
         </div>
     </div>
 
@@ -64,8 +64,8 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#lectures" class="btn btn-primary px-4 mr-2 rounded-pill shadow-sm">View Lectures</a>
-                    <a href="#tutorials" class="btn btn-outline-success px-4 rounded-pill">Tutorials</a>
+                    <a href="#lectures" class="btn btn-primary px-4 mr-2 rounded-pill shadow-sm">{{ site.data.python_course.labels.buttons.view_lectures }}</a>
+                    <a href="#tutorials" class="btn btn-outline-success px-4 rounded-pill">{{ site.data.python_course.labels.buttons.tutorials }}</a>
                 </div>
             </div>
             
@@ -76,12 +76,13 @@
                         <div class="dot red"></div>
                         <div class="dot yellow"></div>
                         <div class="dot green"></div>
-                        <span class="terminal-title">python3 — interactive shell</span>
+                        <span class="terminal-title">{{ site.data.python_course.labels.terminal.title }}</span>
                     </div>
                     <div class="terminal-body" id="terminal-body">
                         <div class="terminal-output" id="terminal-output">
-                            <span class="text-muted"># Interactive Python Shell v3.10</span><br>
-                            <span class="text-muted"># Type 'help' for commands</span><br>
+                            {% for line in site.data.python_course.labels.terminal.output_lines %}
+                            <span class="text-muted">{{ line }}</span><br>
+                            {% endfor %}
                             <!-- Auto-type will happen here -->
                         </div>
                         <div class="terminal-input-line">
@@ -101,32 +102,32 @@
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-primary">{{ site.data.python_course.stats.lectures }}</div>
-                <div class="stat-label">Lectures</div>
+                <div class="stat-label">{{ site.data.python_course.labels.stats.lectures }}</div>
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-success">{{ site.data.python_course.stats.tutorials }}</div>
-                <div class="stat-label">Tutorials</div>
+                <div class="stat-label">{{ site.data.python_course.labels.stats.tutorials }}</div>
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-warning">{{ site.data.python_course.stats.weeks }}</div>
-                <div class="stat-label">Weeks</div>
+                <div class="stat-label">{{ site.data.python_course.labels.stats.weeks }}</div>
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
                 <div class="stat-number text-info">✓</div>
-                <div class="stat-label">Solutions</div>
+                <div class="stat-label">{{ site.data.python_course.labels.stats.solutions }}</div>
             </div>
         </div>
         <!-- Visitor Counter -->
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card visitor">
                 <div class="stat-number visitor-count" id="visitor-count">...</div>
-                <div class="stat-label">Learners</div>
+                <div class="stat-label">{{ site.data.python_course.labels.stats.learners }}</div>
             </div>
         </div>
     </div>
@@ -140,8 +141,8 @@
 
     <!-- LECTURES SECTION -->
     <div id="lectures" class="mb-5">
-        <h3 class="font-weight-bold mb-4"><i class="fas fa-chalkboard-teacher mr-2 text-primary"></i>Lecture Materials</h3>
-        <p class="text-muted mb-4">Click on any lecture to expand details. All materials available as PDF downloads.</p>
+        <h3 class="font-weight-bold mb-4"><i class="fas fa-chalkboard-teacher mr-2 text-primary"></i>{{ site.data.python_course.labels.sections.lectures.title }}</h3>
+        <p class="text-muted mb-4">{{ site.data.python_course.labels.sections.lectures.subtitle }}</p>
 
         <div class="accordion" id="lecturesAccordion">
 
@@ -157,7 +158,7 @@
                             <span class="badge badge-light border mr-2">{{ lec.week }}</span>
                             <div class="btn-group-viewer">
                                 <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('{{ lec.pdf_url }}', 'Lecture {{ lec.number }}: {{ lec.title }}');">
-                                    <i class="fas fa-eye"></i> View
+                                    <i class="fas fa-eye"></i> {{ site.data.python_course.labels.buttons.view }}
                                 </button>
                                 <a href="{{ lec.pdf_url }}" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
                                     <i class="fas fa-download"></i>
@@ -195,10 +196,10 @@
                             {% endif %}
                         </div>
                         {% if lec.key_concepts %}
-                        <p class="text-muted small mt-2"><strong>Key Concepts:</strong> {{ lec.key_concepts }}</p>
+                        <p class="text-muted small mt-2"><strong>{{ site.data.python_course.labels.sections.lectures.key_concepts }}</strong> {{ lec.key_concepts }}</p>
                         {% endif %}
                         <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
+                            <i class="fas fa-link text-muted mr-1"></i> <strong>{{ site.data.python_course.labels.sections.lectures.practice }}</strong>
                             {% for link in lec.practice_links %}
                             <a href="{{ link.url }}" target="_blank" class="mr-2">{{ link.title }}</a>
                             {% endfor %}
@@ -215,8 +216,8 @@
 
     <!-- TUTORIALS SECTION -->
     <div id="tutorials" class="mb-5">
-        <h3 class="font-weight-bold mb-4"><i class="fas fa-laptop-code mr-2 text-success"></i>Tutorial Materials <span class="badge badge-success ml-2">Solutions Included</span></h3>
-        <p class="text-muted mb-4">Hands-on practice with solved examples. Run notebooks in Google Colab or Jupyter.</p>
+        <h3 class="font-weight-bold mb-4"><i class="fas fa-laptop-code mr-2 text-success"></i>{{ site.data.python_course.labels.sections.tutorials.title }} <span class="badge badge-success ml-2">{{ site.data.python_course.labels.sections.tutorials.badge }}</span></h3>
+        <p class="text-muted mb-4">{{ site.data.python_course.labels.sections.tutorials.subtitle }}</p>
 
         <div class="row">
 
@@ -248,7 +249,7 @@
                         <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
                         <div class="btn-group-viewer">
                             <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('{{ tut.notebook_url }}');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
+                                <i class="fab fa-google"></i> {{ site.data.python_course.labels.buttons.open_colab }}
                             </button>
                             <a href="{{ tut.notebook_url }}" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
                                 <i class="fas fa-download"></i>
@@ -257,10 +258,10 @@
                         {% elsif tut.has_pdf %}
                         <div class="btn-group-viewer">
                             <button class="btn btn-sm btn-info btn-viewer" onclick="openPdfViewer('{{ tut.pdf_url }}', 'Tutorial {{ tut.number }}: {{ tut.title }}');">
-                                <i class="fas fa-eye"></i> View
+                                <i class="fas fa-eye"></i> {{ site.data.python_course.labels.buttons.view }}
                             </button>
                             <a href="{{ tut.pdf_url }}" class="btn btn-sm btn-outline-primary btn-viewer">
-                                <i class="fas fa-download"></i> Download
+                                <i class="fas fa-download"></i> {{ site.data.python_course.labels.buttons.download }}
                             </a>
                         </div>
                         {% endif %}
@@ -273,30 +274,30 @@
 
         <!-- HOW TO USE SECTION -->
         <div class="how-to-use-box mt-5">
-            <h5 class="font-weight-bold mb-4"><i class="fab fa-google mr-2"></i>Quick Access Buttons</h5>
-            <p class="text-muted mb-4">Each tutorial has two action buttons:</p>
+            <h5 class="font-weight-bold mb-4"><i class="fab fa-google mr-2"></i>{{ site.data.python_course.labels.sections.how_to_use.title }}</h5>
+            <p class="text-muted mb-4">{{ site.data.python_course.labels.sections.how_to_use.subtitle }}</p>
 
             <div class="colab-steps">
                 <div class="colab-step">
                     <div class="colab-step-number" style="background: linear-gradient(135deg, #F9AB00, #E37400);"><i class="fab fa-google"></i></div>
                     <div class="colab-step-content">
-                        <h6><i class="fab fa-google mr-2" style="color: #F9AB00;"></i>Open in Colab</h6>
-                        <p>Opens the notebook in Google Colab. <strong>Important:</strong> Click <em>File → Save a copy in Drive</em> to save your work!</p>
+                        <h6><i class="fab fa-google mr-2" style="color: #F9AB00;"></i>{{ site.data.python_course.labels.buttons.open_colab }}</h6>
+                        <p>{{ site.data.python_course.labels.sections.how_to_use.colab_desc }}</p>
                     </div>
                 </div>
 
                 <div class="colab-step">
                     <div class="colab-step-number" style="background: linear-gradient(135deg, #28a745, #20c997);"><i class="fas fa-download"></i></div>
                     <div class="colab-step-content">
-                        <h6><i class="fas fa-download mr-2 text-success"></i>Download</h6>
-                        <p>Download the <code>.ipynb</code> file to run locally in Jupyter Notebook.</p>
+                        <h6><i class="fas fa-download mr-2 text-success"></i>{{ site.data.python_course.labels.buttons.download }}</h6>
+                        <p>{{ site.data.python_course.labels.sections.how_to_use.download_desc }}</p>
                     </div>
                 </div>
             </div>
 
             <div class="colab-tip mt-4">
                 <i class="fas fa-exclamation-triangle mr-2" style="color: #F9AB00;"></i>
-                <strong>Remember:</strong> When using Colab, always save a copy to your Google Drive to keep your progress!
+                {{ site.data.python_course.labels.sections.how_to_use.remember }}
             </div>
         </div>
 
@@ -306,8 +307,8 @@
 
     <!-- LEARNING PATH -->
     <div class="mb-5">
-        <h3 class="font-weight-bold mb-4"><i class="fas fa-road mr-2 text-info"></i>Learning Path</h3>
-        <p class="text-muted mb-4">Follow this journey from beginner to advanced Python programming</p>
+        <h3 class="font-weight-bold mb-4"><i class="fas fa-road mr-2 text-info"></i>{{ site.data.python_course.labels.sections.learning_path.title }}</h3>
+        <p class="text-muted mb-4">{{ site.data.python_course.labels.sections.learning_path.subtitle }}</p>
 
         <div class="learning-journey">
 
@@ -328,8 +329,8 @@
                             {% endfor %}
                         </ul>
                         <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('{{ step.video }}')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm {% if step.is_final %}btn-outline-success{% else %}btn-outline-primary{% endif %} rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('{{ step.section }}')">Go to Materials</button>
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('{{ step.video }}')"><i class="fab fa-youtube"></i> {{ site.data.python_course.labels.buttons.watch }}</button>
+                            <button class="btn btn-sm {% if step.is_final %}btn-outline-success{% else %}btn-outline-primary{% endif %} rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('{{ step.section }}')">{{ site.data.python_course.labels.buttons.go_to_materials }}</button>
                         </div>
                     </div>
                 </div>
@@ -344,8 +345,8 @@
 
     <!-- RECOMMENDED YOUTUBE COURSES -->
     <div class="mb-5">
-        <h3 class="font-weight-bold mb-4 text-center"><i class="fab fa-youtube mr-2 text-danger"></i>Recommended YouTube Courses</h3>
-        <p class="text-muted text-center mb-5">Sleep through the lectures? No worries. Binge-watch these top-rated courses and become a pro overnight. (Popcorn not included).</p>
+        <h3 class="font-weight-bold mb-4 text-center"><i class="fab fa-youtube mr-2 text-danger"></i>{{ site.data.python_course.labels.sections.youtube.title }}</h3>
+        <p class="text-muted text-center mb-5">{{ site.data.python_course.labels.sections.youtube.subtitle }}</p>
         
         <div class="row">
             {% for course in site.data.python_course.youtube_courses %}
@@ -375,7 +376,7 @@
     <!-- RESOURCES -->
     <div class="row mb-5">
         <div class="col-md-6 mb-4">
-            <h5 class="font-weight-bold mb-3"><i class="fas fa-tools mr-2 text-warning"></i>Prerequisites</h5>
+            <h5 class="font-weight-bold mb-3"><i class="fas fa-tools mr-2 text-warning"></i>{{ site.data.python_course.labels.sections.resources.prereq_title }}</h5>
             <ul class="resource-list">
                 {% for pre in site.data.python_course.resources.prerequisites %}
                 <li><i class="fas fa-check-circle text-success mr-2"></i>{{ pre }}</li>
@@ -383,7 +384,7 @@
             </ul>
         </div>
         <div class="col-md-6 mb-4">
-            <h5 class="font-weight-bold mb-3"><i class="fas fa-book-open mr-2 text-info"></i>Recommended Resources</h5>
+            <h5 class="font-weight-bold mb-3"><i class="fas fa-book-open mr-2 text-info"></i>{{ site.data.python_course.labels.sections.resources.rec_title }}</h5>
             <ul class="resource-list">
                 {% for res in site.data.python_course.resources.recommended %}
                 <li><a href="{{ res.url }}" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>{{ res.name }}</a></li>
@@ -394,7 +395,7 @@
 
     <!-- TIPS -->
     <div class="tips-box mb-5">
-        <h5 class="font-weight-bold mb-3"><i class="fas fa-lightbulb mr-2"></i>Tips for Success</h5>
+        <h5 class="font-weight-bold mb-3"><i class="fas fa-lightbulb mr-2"></i>{{ site.data.python_course.labels.sections.tips.title }}</h5>
         <div class="row">
             <div class="col-md-6">
                 <ul class="mb-0">
@@ -415,7 +416,7 @@
 
     <div class="row mt-5">
         <div class="col-12 text-center">
-            <a href="/teaching/" class="btn btn-link text-muted"><i class="fas fa-arrow-left"></i> Back to Teaching</a>
+            <a href="/teaching/" class="btn btn-link text-muted"><i class="fas fa-arrow-left"></i> {{ site.data.python_course.labels.buttons.back_to_teaching }}</a>
         </div>
     </div>
 
@@ -426,8 +427,8 @@
     <!-- PYTHON OUTPUT CHALLENGE GAME -->
     <div class="game-section">
         <div class="text-center mb-4">
-            <h4 class="font-weight-bold" style="color: #333;">🐍 Python Output Challenge</h4>
-            <p class="text-muted">Can you predict the output of these code snippets?</p>
+            <h4 class="font-weight-bold" style="color: #333;">{{ site.data.python_course.labels.game.title }}</h4>
+            <p class="text-muted">{{ site.data.python_course.labels.game.subtitle }}</p>
         </div>
 
         <div class="game-terminal">
@@ -435,21 +436,21 @@
                 <div class="game-dot dot-red"></div>
                 <div class="game-dot dot-yellow"></div>
                 <div class="game-dot dot-green"></div>
-                <div class="game-title">user@python-course:~/challenges$ python3 quiz.py</div>
+                <div class="game-title">{{ site.data.python_course.labels.game.prompt }}</div>
             </div>
 
             <div class="game-content" id="game-ui">
                 <div class="text-center py-5">
-                    <h5 class="text-white mb-4">Choose Your Challenge</h5>
+                    <h5 class="text-white mb-4">{{ site.data.python_course.labels.game.choose }}</h5>
                     <div class="d-flex flex-column align-items-center">
                         <button class="btn btn-primary px-4 py-2 m-2" style="width: 280px;" onclick="startGame(1)">
-                            <i class="fas fa-terminal mr-2"></i> Level 1: Predict Output
+                            <i class="fas fa-terminal mr-2"></i> {{ site.data.python_course.labels.game.level1 }}
                         </button>
                         <button class="btn btn-outline-info px-4 py-2 m-2" style="width: 280px;" onclick="startGame(2)">
-                            <i class="fas fa-code mr-2"></i> Level 2: Code Master
+                            <i class="fas fa-code mr-2"></i> {{ site.data.python_course.labels.game.level2 }}
                         </button>
                         <button class="btn btn-outline-danger px-4 py-2 m-2" style="width: 280px;" onclick="startGame(3)">
-                            <i class="fas fa-skull mr-2"></i> Level 3: Problem Solving
+                            <i class="fas fa-skull mr-2"></i> {{ site.data.python_course.labels.game.level3 }}
                         </button>
                     </div>
                 </div>
@@ -457,11 +458,11 @@
 
             <!-- Hidden Result Overlay -->
             <div id="game-overlay" class="game-overlay hidden">
-                <h3 class="text-white mb-3" id="final-message">Game Over!</h3>
+                <h3 class="text-white mb-3" id="final-message">{{ site.data.python_course.labels.game.game_over }}</h3>
                 <div class="score-display display-4 mb-4" id="final-score">0/5</div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-outline-light mr-3" onclick="startGame()"><i class="fas fa-redo mr-2"></i>Play Again</button>
-                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()"><i class="fas fa-share-alt mr-2"></i>Share Result</button>
+                    <button class="btn btn-outline-light mr-3" onclick="startGame()"><i class="fas fa-redo mr-2"></i>{{ site.data.python_course.labels.game.play_again }}</button>
+                    <button id="share-btn" class="btn btn-primary" onclick="shareResult()"><i class="fas fa-share-alt mr-2"></i>{{ site.data.python_course.labels.game.share }}</button>
                 </div>
             </div>
         </div>

@@ -17,7 +17,7 @@
 <!-- EDITORIAL & REVIEWING -->
 <div class="row mb-5">
     <div class="col-12">
-        <h3 class="mb-4"><i class="fas fa-book-reader mr-2"></i> Editorial & Reviewing</h3>
+        <h3 class="mb-4"><i class="fas fa-book-reader mr-2"></i> {{ site.data.service.labels.editorial }}</h3>
         
         {% for item in site.data.service.editorial %}
         <div class="service-card featured-service">
@@ -50,7 +50,7 @@
                             <h6 class="ge-title">{{ issue.title }}</h6>
                             <p class="ge-journal">{{ issue.journal }}</p>
                             {% if issue.link %}
-                            <a href="{{ issue.link }}" target="_blank" class="ge-link">View Issue <i class="fas fa-chevron-right"></i></a>
+                            <a href="{{ issue.link }}" target="_blank" class="ge-link">{{ site.data.service.labels.view_issue }} <i class="fas fa-chevron-right"></i></a>
                             {% endif %}
                         </div>
                     </div>
@@ -65,7 +65,7 @@
                         <div class="ge-icon"><i class="fas fa-check-circle"></i></div>
                         <div class="ge-content">
                             <h6 class="ge-title">{{ journal }}</h6>
-                            <p class="ge-journal">Reviewer</p>
+                            <p class="ge-journal">{{ site.data.service.labels.reviewer }}</p>
                         </div>
                     </div>
                     {% endfor %}
@@ -81,7 +81,7 @@
 <!-- AWARDS -->
 <div class="row mb-5">
     <div class="col-12">
-        <h3 class="mb-4"><i class="fas fa-trophy mr-2"></i> Awards, Grants & Honors</h3>
+        <h3 class="mb-4"><i class="fas fa-trophy mr-2"></i> {{ site.data.service.labels.awards }}</h3>
         <div class="service-list">
             {% for award in site.data.service.awards %}
             <div class="service-card {% if award.featured %}featured-award{% else %}award-card{% endif %}">
@@ -102,7 +102,7 @@
 <!-- ORGANIZING COMMITTEES -->
 <div class="row">
     <div class="col-12">
-        <h3 class="mb-4"><i class="fas fa-users-cog mr-2"></i> Organizing Committees</h3>
+        <h3 class="mb-4"><i class="fas fa-users-cog mr-2"></i> {{ site.data.service.labels.committees }}</h3>
         <div class="service-list">
             {% for committee in site.data.service.committees %}
             <div class="service-card">
@@ -111,7 +111,7 @@
                     <h5 class="service-title">{{ committee.role }}</h5>
                     <p class="service-text">{{ committee.event }}</p>
                     {% if committee.link %}
-                    <p class="service-meta"><a href="{{ committee.link }}" target="_blank"><i class="fas fa-link mr-1"></i> View Event</a></p>
+                    <p class="service-meta"><a href="{{ committee.link }}" target="_blank"><i class="fas fa-link mr-1"></i> {{ site.data.service.labels.view_event }}</a></p>
                     {% elsif committee.location %}
                     <p class="service-meta"><i class="fas fa-map-marker-alt mr-1"></i> {{ committee.location }}</p>
                     {% endif %}
@@ -127,8 +127,8 @@
 <!-- IMPACT STATS -->
 <div class="row">
     <div class="col-12 text-center mb-4">
-        <h3 class="mb-2 font-weight-bold" style="font-family: 'Orbitron', sans-serif;">Impact at a Glance</h3>
-        <p class="text-muted small">Quantifying contributions to the field.</p>
+        <h3 class="mb-2 font-weight-bold" style="font-family: 'Orbitron', sans-serif;">{{ site.data.service.labels.impact.title }}</h3>
+        <p class="text-muted small">{{ site.data.service.labels.impact.subtitle }}</p>
     </div>
 </div>
 

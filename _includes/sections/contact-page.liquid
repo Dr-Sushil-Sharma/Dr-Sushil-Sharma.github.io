@@ -16,7 +16,7 @@
 <div class="row mb-5">
     <div class="col-md-5 mb-4 mb-md-0">
         <div class="contact-card h-100">
-            <h3 class="card-title mb-4">Get in Touch</h3>
+            <h3 class="card-title mb-4">{{ site.data.contact.labels.get_in_touch }}</h3>
             
             {% for item in site.data.contact.contact %}
             <div class="contact-item">
@@ -59,7 +59,7 @@
 <hr>
 
 <!-- SOCIAL LINKS -->
-<h3 class="mb-4 mt-4 text-center">Connect Online</h3>
+<h3 class="mb-4 mt-4 text-center">{{ site.data.contact.labels.connect_online }}</h3>
 
 <div class="row justify-content-center">
     {% for social in site.data.contact.socials %}
@@ -91,25 +91,25 @@
     
     <div class="terminal-screen" id="puzzle-screen">
         <div class="status-bar">
-            <span>SYSTEM: OFFLINE</span>
-            <span>ERROR: PATH_BLOCKED</span>
+            <span>{{ site.data.contact.labels.puzzle.system_offline }}</span>
+            <span>{{ site.data.contact.labels.puzzle.error }}</span>
         </div>
         
         <div class="puzzle-grid" id="grid">
             </div>
 
-        <div class="instruction">CLICK TILES TO ROTATE & CONNECT THE GREEN TO RED</div>
+        <div class="instruction">{{ site.data.contact.labels.puzzle.instruction }}</div>
     </div>
 
     <div class="terminal-screen" id="success-screen" style="display: none;">
         <div class="matrix-bg"></div>
         <div class="success-content">
-            <h2 class="access-granted">ACCESS GRANTED</h2>
-            <p>Connection established securely.</p>
+            <h2 class="access-granted">{{ site.data.contact.labels.puzzle.access_granted }}</h2>
+            <p>{{ site.data.contact.labels.puzzle.connection_established }}</p>
             <div class="revealed-email">
                 <span id="typewriter-email"></span><span class="cursor">_</span>
             </div>
-            <button class="btn btn-outline-success btn-sm mt-3" onclick="resetPuzzle()">RESET LINK</button>
+            <button class="btn btn-outline-success btn-sm mt-3" onclick="resetPuzzle()">{{ site.data.contact.labels.puzzle.reset }}</button>
         </div>
     </div>
 

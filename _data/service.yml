@@ -169,3 +169,15 @@ impact:
     value: 100
     icon: fas fa-check-circle
     color: text-success
+
+# --- UI LABELS & STRINGS ---
+labels:
+  editorial: "Editorial & Reviewing"
+  view_issue: "View Issue"
+  reviewer: "Reviewer"
+  awards: "Awards, Grants & Honors"
+  committees: "Organizing Committees"
+  view_event: "View Event"
+  impact:
+    title: "Impact at a Glance"
+    subtitle: "Quantifying contributions to the field."

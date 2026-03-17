@@ -9,19 +9,19 @@
 <div class="row mb-3">
     <div class="col-md-4 mb-2">
         <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
-            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">Total Citations</h6>
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">{{ site.data.publications.labels.stats.citations }}</h6>
             <div class="h2 font-weight-bold mb-0" style="color: #ffc107;">{{ site.data.publications.stats.citations }}</div>
         </div>
     </div>
     <div class="col-md-4 mb-2">
         <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
-            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">h-index</h6>
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">{{ site.data.publications.labels.stats.h_index }}</h6>
             <div class="h2 font-weight-bold mb-0" style="color: #28a745;">{{ site.data.publications.stats.h_index }}</div>
         </div>
     </div>
     <div class="col-md-4 mb-2">
         <div class="p-3 shadow-sm rounded border text-center" style="background-color: #1e1e1e; border-color: #333 !important;">
-            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">i10-index</h6>
+            <h6 class="text-uppercase mb-1" style="font-size: 0.8rem; letter-spacing: 1px; color: #aaa;">{{ site.data.publications.labels.stats.i10_index }}</h6>
             <div class="h2 font-weight-bold mb-0" style="color: #17a2b8;">{{ site.data.publications.stats.i10_index }}</div>
         </div>
     </div>
@@ -39,22 +39,22 @@
     <div class="col-md-12">
         <div class="search-wrapper">
             <i class="fas fa-search search-icon"></i>
-            <input type="text" id="pub-search" class="form-control search-input" placeholder="Search by title, author, or year (e.g., 'Positronium', '2025')..." onkeyup="filterPublications()">
+            <input type="text" id="pub-search" class="form-control search-input" placeholder="{{ site.data.publications.labels.search.placeholder }}" onkeyup="filterPublications()">
         </div>
         
         <div class="text-center mt-3">
-            <a href="#articles" class="badge badge-pill badge-primary p-2 mr-2">Journal Articles</a>
-            <a href="#proceedings" class="badge badge-pill badge-warning p-2 mr-2 text-white">Proceedings</a>
-            <a href="#posters" class="badge badge-pill badge-info p-2 text-white">Posters</a>
+            <a href="#articles" class="badge badge-pill badge-primary p-2 mr-2">{{ site.data.publications.labels.tabs.articles }}</a>
+            <a href="#proceedings" class="badge badge-pill badge-warning p-2 mr-2 text-white">{{ site.data.publications.labels.tabs.proceedings }}</a>
+            <a href="#posters" class="badge badge-pill badge-info p-2 text-white">{{ site.data.publications.labels.tabs.posters }}</a>
         </div>
         
-        <p class="text-muted text-right mt-2 small" id="count-label">Showing all publications</p>
+        <p class="text-muted text-right mt-2 small" id="count-label">{{ site.data.publications.labels.search.showing_all }}</p>
     </div>
 </div>
 
 <div class="publications-container" id="pub-list">
 
-    <h3 class="section-title" id="articles"><i class="fas fa-book-open text-primary mr-2"></i> Journal Articles</h3>
+    <h3 class="section-title" id="articles"><i class="fas fa-book-open text-primary mr-2"></i> {{ site.data.publications.labels.tabs.articles }}</h3>
     <hr class="mb-4">
 
     <div class="group-articles">
@@ -76,7 +76,7 @@
         {% endfor %}
     </div>
 
-    <h3 class="section-title mt-5" id="proceedings"><i class="fas fa-users text-warning mr-2"></i> Conference Proceedings</h3>
+    <h3 class="section-title mt-5" id="proceedings"><i class="fas fa-users text-warning mr-2"></i> {{ site.data.publications.labels.tabs.proceedings }}</h3>
     <hr class="mb-4">
 
     <div class="group-proceedings">
@@ -98,7 +98,7 @@
         {% endfor %}
     </div>
 
-    <h3 class="section-title mt-5" id="posters"><i class="fas fa-image text-info mr-2"></i> Posters</h3>
+    <h3 class="section-title mt-5" id="posters"><i class="fas fa-image text-info mr-2"></i> {{ site.data.publications.labels.tabs.posters }}</h3>
     <hr class="mb-4">
 
     <div class="group-posters">
@@ -123,9 +123,9 @@
 </div>
 
 <div id="stats-section" class="stats-container" style="display:none;">
-    <h4 class="stats-title"><i class="fas fa-chart-network text-primary mr-2"></i> Top Collaborators Network</h4>
+    <h4 class="stats-title"><i class="fas fa-chart-network text-primary mr-2"></i> {{ site.data.publications.labels.network.title }}</h4>
     <div id="collaborator-cloud"></div>
-    <p class="text-muted small mt-3"> * Generated automatically from publication list.</p>
+    <p class="text-muted small mt-3"> {{ site.data.publications.labels.network.note }}</p>
 </div>
 
 <script src="{{ '/assets/js/pages/publications.js' | relative_url }}"></script>

@@ -52,3 +52,12 @@ areas:
 timeline:
   title: Discovery Timeline
   subtitle: "Visualizing the trajectory of my research."
+
+# --- UI LABELS & STRINGS ---
+labels:
+  download_cv: "Download Curriculum Vitae"
+  core_areas: "Core Research Areas"
+  timeline:
+    scanning: "SCANNING ARCHIVES..."
+    select_node: "Select a Node"
+    open_paper: "Open Paper"

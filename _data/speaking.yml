@@ -30,6 +30,8 @@ tabs:
 
 # --- PLENARY & KEYNOTES ---
 keynotes:
+
+  
   - title: "Jagiellonian Positron Emission Tomograph : A versatile detection system for multidisciplinary research in Physics and Medicine"
     year: 2026
     event: "Plenary: National Conference on Advanced Instrumentation for Nuclear Physics, High-Energy Physics, and Medical Imaging"
@@ -59,6 +61,12 @@ keynotes:
 
 # --- TALKS & SEMINARS ---
 talks:
+  - title: "J-PET: A mutliphoton PET scanner for positornium and quantum entanglement imaging"
+    year: 2026
+    event: "Invited Seminar: Joint Bay Area Medical Physics Journal Club (UCSF-LBNL-UC Davis-UC Santa Cruz), USA"
+    location: "online-mode"
+    date: "March 10"
+
   - title: "Positronium beam for Antimatter gravity test: From leptonic probe to Antihydrogen formation"
     year: 2026
     event: "Invited Talk: Exploring the positronium frontier: Precision Tests, New Physics, and Entanglement"

@@ -8,3 +8,4 @@ nav_order: 6
 ---
 
 {% include sections/teaching-page.liquid %}
+<!-- Rebuild trigger -->

@@ -1,8 +1,4 @@
 {
-  "devDependencies": {
-    "@shopify/prettier-plugin-liquid": "1.4.0",
-    "prettier": "^3.1.1"
-  },
   "name": "dr-sushil-sharma.github.io",
   "version": "1.0.0",
   "description": "<div align=\"center\">",

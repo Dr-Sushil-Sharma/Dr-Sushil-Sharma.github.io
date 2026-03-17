@@ -50,16 +50,17 @@
             <!-- Left Column: Compact Text (Col-5) -->
             <div class="col-md-5 mb-4 mb-md-0 text-center text-md-left" style="position: relative;">
                 
-                <h1 class="display-4 font-weight-bold gradient-text mb-2" id="hacker-title" data-value="Python for Beginners">Python for Beginners</h1>
+                <h1 class="display-4 font-weight-bold gradient-text mb-2" id="hacker-title" data-value="{{ site.data.python_course.page_info.title }}">{{ site.data.python_course.page_info.title }}</h1>
                 <p class="lead text-muted mb-3" style="font-size: 1.1rem;">
-                    From "Hello World" to Data Science. A structured journey into the world of Python.
+                    {{ site.data.python_course.page_info.description }}
                 </p>
                 <div class="course-meta mb-4">
-                    <div class="mb-2"><i class="fas fa-user-tie mr-2 text-primary" style="width:20px;"></i><strong class="premium-gold">Dr. Sushil Sharma</strong></div>
-                    <div class="mb-2"><i class="fas fa-user-graduate mr-2 text-success" style="width:20px;"></i><strong>Satyam Tiwari</strong></div>
+                    {% for instr in site.data.python_course.page_info.instructors %}
+                    <div class="mb-2"><i class="{{ instr.icon }} mr-2" style="width:20px;"></i><strong class="{{ instr.class }}">{{ instr.name }}</strong></div>
+                    {% endfor %}
                     <div class="mb-0 d-flex align-items-center justify-content-center justify-content-md-start">
-                        <i class="fas fa-university mr-2 text-info"></i>
-                        <strong>Jagiellonian University, Krakow</strong>
+                        <i class="{{ site.data.python_course.page_info.institution.icon }} mr-2"></i>
+                        <strong>{{ site.data.python_course.page_info.institution.name }}</strong>
                     </div>
                 </div>
                 <div>
@@ -99,19 +100,19 @@
     <div class="row mb-5 text-center justify-content-center">
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
-                <div class="stat-number text-primary">8</div>
+                <div class="stat-number text-primary">{{ site.data.python_course.stats.lectures }}</div>
                 <div class="stat-label">Lectures</div>
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
-                <div class="stat-number text-success">8</div>
+                <div class="stat-number text-success">{{ site.data.python_course.stats.tutorials }}</div>
                 <div class="stat-label">Tutorials</div>
             </div>
         </div>
         <div class="col-lg-2 col-md-4 col-6 mb-3">
             <div class="stat-card">
-                <div class="stat-number text-warning">8</div>
+                <div class="stat-number text-warning">{{ site.data.python_course.stats.weeks }}</div>
                 <div class="stat-label">Weeks</div>
             </div>
         </div>
@@ -144,386 +145,68 @@
 
         <div class="accordion" id="lecturesAccordion">
 
-            <!-- Lecture 01 -->
+            {% for lec in site.data.python_course.lectures %}
             <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec01">
+                <div class="lecture-header" data-toggle="collapse" data-target="#{{ lec.id }}">
                     <div class="d-flex justify-content-between align-items-center">
                         <div>
-                            <span class="lecture-number">01</span>
-                            <span class="lecture-title">Introduction to Python</span>
+                            <span class="lecture-number">{{ lec.number }}</span>
+                            <span class="lecture-title">{{ lec.title }}</span>
                         </div>
                         <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 1</span>
+                            <span class="badge badge-light border mr-2">{{ lec.week }}</span>
                             <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-01.pdf', 'Lecture 01: Introduction to Python');">
+                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('{{ lec.pdf_url }}', 'Lecture {{ lec.number }}: {{ lec.title }}');">
                                     <i class="fas fa-eye"></i> View
                                 </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-01.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
+                                <a href="{{ lec.pdf_url }}" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
                                     <i class="fas fa-download"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="lec01" class="collapse" data-parent="#lecturesAccordion">
+                <div id="{{ lec.id }}" class="collapse" data-parent="#lecturesAccordion">
                     <div class="lecture-body">
-                        <p><strong>Getting Started with Python Programming</strong></p>
+                        <p><strong>{{ lec.description }}</strong></p>
                         <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Programming Languages Overview</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Why Python? Key Features</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Python Environment Setup</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Hello World Program</li>
-                                </ul>
-                            </div>
+                            {% if lec.custom_layout %}
+                                {% for block in lec.blocks %}
+                                <div class="col-md-4">
+                                    <h6 class="text-{{ block.color }}"><i class="{{ block.icon }} mr-1"></i> {{ block.title }}</h6>
+                                    <p class="small">{{ block.desc }}</p>
+                                </div>
+                                {% endfor %}
+                            {% else %}
+                                <div class="col-md-6">
+                                    <ul class="topic-list-detailed">
+                                        {% for topic in lec.topics_col1 %}
+                                        <li><i class="fas fa-check text-success mr-2"></i>{{ topic }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="topic-list-detailed">
+                                        {% for topic in lec.topics_col2 %}
+                                        <li><i class="fas fa-check text-success mr-2"></i>{{ topic }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            {% endif %}
                         </div>
-                        <p class="text-muted small mt-2"><strong>Key Concepts:</strong> Interpreted vs Compiled languages, Interactive programming, OOP fundamentals</p>
+                        {% if lec.key_concepts %}
+                        <p class="text-muted small mt-2"><strong>Key Concepts:</strong> {{ lec.key_concepts }}</p>
+                        {% endif %}
                         <div class="mt-3 small pt-2">
                             <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://www.w3schools.com/python/python_intro.asp" target="_blank" class="mr-2">W3Schools Intro</a>
-                            <a href="https://realpython.com/installing-python/" target="_blank" class="mr-2">Real Python Installation</a>
+                            {% for link in lec.practice_links %}
+                            <a href="{{ link.url }}" target="_blank" class="mr-2">{{ link.title }}</a>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Lecture 02 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec02">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">02</span>
-                            <span class="lecture-title">Data Types and Strings</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 2</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-02.pdf', 'Lecture 02: Data Types and Strings');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-02.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec02" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Understanding Python's Core Data Structures</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Variables & Naming Rules</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Dynamic Typing</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Strings: Indexing & Slicing</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Numbers (int, float, complex)</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Lists, Tuples, Dictionaries</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Sets & Booleans</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://www.w3schools.com/python/python_strings.asp" target="_blank" class="mr-2">W3Schools Strings</a>
-                            <a href="https://realpython.com/python-data-types/" target="_blank" class="mr-2">Real Python Data Types</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 03 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec03">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">03</span>
-                            <span class="lecture-title">Flow Control</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 3</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-03.pdf', 'Lecture 03: Flow Control');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-03.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec03" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Program Logic and Decision Making</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>If / Elif / Else Statements</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>For Loops</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>While Loops</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>range(), enumerate(), zip()</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://www.hackerrank.com/challenges/py-if-else/problem" target="_blank" class="mr-2">HackerRank If-Else</a>
-                            <a href="https://realpython.com/python-conditional-statements/" target="_blank" class="mr-2">Real Python Flow Control</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 04 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec04">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">04</span>
-                            <span class="lecture-title">Functions</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 4</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-04.pdf', 'Lecture 04: Functions');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-04.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec04" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Modular Programming and Code Reusability</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Defining Functions (def)</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Parameters & Arguments</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Return Values</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>*args and **kwargs</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://www.hackerrank.com/challenges/write-a-function/problem" target="_blank" class="mr-2">HackerRank Functions</a>
-                            <a href="https://www.w3schools.com/python/python_functions.asp" target="_blank" class="mr-2">W3Schools Functions</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 05 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec05">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">05</span>
-                            <span class="lecture-title">File Handling and Modules</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 5</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-05.pdf', 'Lecture 05: File Handling and Modules');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-05.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec05" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Working with Files and External Libraries</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>File Operations (r, w, a)</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Context Managers (with)</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Importing Modules</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>PIP Package Manager</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://realpython.com/read-write-files-python/" target="_blank" class="mr-2">Real Python File I/O</a>
-                            <a href="https://www.w3schools.com/python/python_modules.asp" target="_blank" class="mr-2">W3Schools Modules</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 06 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec06">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">06</span>
-                            <span class="lecture-title">Error Handling and Debugging</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 6</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-06.pdf', 'Lecture 06: Error Handling and Debugging');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-06.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec06" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Writing Robust Python Code</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Try / Except Blocks</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Finally Clause</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Raising Exceptions</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Debugging Techniques</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://www.w3schools.com/python/python_try_except.asp" target="_blank" class="mr-2">W3Schools Try/Except</a>
-                            <a href="https://realpython.com/python-exceptions/" target="_blank" class="mr-2">Real Python Exceptions</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 07 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec07">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">07</span>
-                            <span class="lecture-title">NumPy, Pandas, and Matplotlib</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 7</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-07.pdf', 'Lecture 07: NumPy, Pandas, and Matplotlib');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-07.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec07" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Introduction to Scientific Python</strong></p>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <h6 class="text-primary"><i class="fas fa-cube mr-1"></i> NumPy</h6>
-                                <p class="small">Numerical computing with arrays</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h6 class="text-success"><i class="fas fa-table mr-1"></i> Pandas</h6>
-                                <p class="small">Data manipulation and analysis</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h6 class="text-warning"><i class="fas fa-chart-line mr-1"></i> Matplotlib</h6>
-                                <p class="small">Data visualization</p>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://realpython.com/numpy-tutorial/" target="_blank" class="mr-2">Real Python NumPy</a>
-                            <a href="https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html" target="_blank" class="mr-2">Pandas Documentation</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lecture 08 -->
-            <div class="lecture-card mb-3">
-                <div class="lecture-header" data-toggle="collapse" data-target="#lec08">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <span class="lecture-number">08</span>
-                            <span class="lecture-title">Object-Oriented Programming & Statistics</span>
-                        </div>
-                        <div class="lecture-meta">
-                            <span class="badge badge-light border mr-2">Week 8</span>
-                            <div class="btn-group-viewer">
-                                <button class="btn btn-sm btn-info btn-viewer" onclick="event.stopPropagation(); openPdfViewer('/assets/Python_Page/Lectures/Lec-08.pdf', 'Lecture 08: OOP and Statistics');">
-                                    <i class="fas fa-eye"></i> View
-                                </button>
-                                <a href="/assets/Python_Page/Lectures/Lec-08.pdf" class="btn btn-sm btn-primary btn-viewer" onclick="event.stopPropagation();">
-                                    <i class="fas fa-download"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="lec08" class="collapse" data-parent="#lecturesAccordion">
-                    <div class="lecture-body">
-                        <p><strong>Advanced Python Concepts</strong></p>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Classes and Objects</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Encapsulation</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Inheritance</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <ul class="topic-list-detailed">
-                                    <li><i class="fas fa-check text-success mr-2"></i>Polymorphism</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Mean, Median, Mode</li>
-                                    <li><i class="fas fa-check text-success mr-2"></i>Variance & Std Dev</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-3 small pt-2">
-                            <i class="fas fa-link text-muted mr-1"></i> <strong>Practice:</strong>
-                            <a href="https://realpython.com/python3-object-oriented-programming/" target="_blank" class="mr-2">Real Python OOP</a>
-                            <a href="https://realpython.com/python-statistics/" target="_blank" class="mr-2">Real Python Statistics</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
     </div>
@@ -537,264 +220,54 @@
 
         <div class="row">
 
-            <!-- Tutorial 01 -->
+            {% for tut in site.data.python_course.tutorials %}
             <div class="col-12 mb-4">
-                <div class="tutorial-card">
+                <div class="tutorial-card {% if tut.featured %}featured{% endif %}">
                     <div class="tutorial-header">
-                        <span class="tutorial-number">01</span>
-                        <span class="difficulty-badge">Beginner</span>
+                        <span class="tutorial-number">{{ tut.number }}</span>
+                        <span class="difficulty-badge">{{ tut.difficulty }}</span>
                     </div>
                     <div class="tutorial-content">
-                        <h5 class="tutorial-title">Getting Started</h5>
-                        <p class="tutorial-desc">IDE Setup, Google Colab, Markdown Basics</p>
+                        <h5 class="tutorial-title">{{ tut.title }}</h5>
+                        <p class="tutorial-desc">{{ tut.desc }}</p>
+                        {% if tut.problems %}
+                        <div class="practice-problems">
+                            <small><i class="fas fa-puzzle-piece mr-1"></i> {{ tut.problems }}</small>
+                        </div>
+                        {% else %}
                         <span class="format-badge pdf"><i class="fas fa-file-pdf"></i> PDF</span>
+                        {% endif %}
                         <div class="practice-links mt-2 small">
-                             <a href="https://www.markdownguide.org/basic-syntax/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Markdown Guide</a>
-                             <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> VS Code Setup</a>
+                            {% for link in tut.practice_links %}
+                             <a href="{{ link.url }}" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> {{ link.title }}</a>
+                            {% endfor %}
                         </div>
                     </div>
                     <div class="tutorial-footer">
+                        {% if tut.has_jupyter %}
+                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
                         <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-info btn-viewer" onclick="openPdfViewer('/assets/Python_Page/Tutorials/Tut-01.pdf', 'Tutorial 01: Getting Started');">
+                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('{{ tut.notebook_url }}');" title="Open in Colab">
+                                <i class="fab fa-google"></i> Colab
+                            </button>
+                            <a href="{{ tut.notebook_url }}" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
+                        {% elsif tut.has_pdf %}
+                        <div class="btn-group-viewer">
+                            <button class="btn btn-sm btn-info btn-viewer" onclick="openPdfViewer('{{ tut.pdf_url }}', 'Tutorial {{ tut.number }}: {{ tut.title }}');">
                                 <i class="fas fa-eye"></i> View
                             </button>
-                            <a href="/assets/Python_Page/Tutorials/Tut-01.pdf" class="btn btn-sm btn-outline-primary btn-viewer">
+                            <a href="{{ tut.pdf_url }}" class="btn btn-sm btn-outline-primary btn-viewer">
                                 <i class="fas fa-download"></i> Download
                             </a>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
-
-            <!-- Tutorial 02 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">02</span>
-                        <span class="difficulty-badge">Beginner</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Variables, Data Types & Strings</h5>
-                        <p class="tutorial-desc">Keywords, Dynamic Typing, String Methods, Lists, Dictionaries</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> Secret Agent Generator, Palindrome Detector</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://codingbat.com/python/String-1" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> CodingBat Strings</a>
-                             <a href="https://www.hackerrank.com/challenges/string-validators/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Strings</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-02.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-02.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 03 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">03</span>
-                        <span class="difficulty-badge">Beginner</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Data Structures Deep Dive</h5>
-                        <p class="tutorial-desc">Advanced Lists, Tuples, Dictionaries, Sets</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> split(), find(), union(), intersection()</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://www.geeksforgeeks.org/python-lists/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG Lists</a>
-                             <a href="https://www.hackerrank.com/challenges/py-introduction-to-sets/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Sets</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-03.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-03.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 04 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">04</span>
-                        <span class="difficulty-badge">Intermediate</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Loops and Functions</h5>
-                        <p class="tutorial-desc">Pattern Questions, While Loops, Continue/Break</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> Vowel Counter, Find Largest, Common Elements</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://codingbat.com/python/Logic-2" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> CodingBat Logic</a>
-                             <a href="https://www.hackerrank.com/challenges/python-loops/problem" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> HackerRank Loops</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-04.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-04.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 05 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">05</span>
-                        <span class="difficulty-badge">Intermediate</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Functions Deep Dive</h5>
-                        <p class="tutorial-desc">*args, List Operations, Palindrome, Prime Numbers</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> Max of Three, Sum, Multiply, Reverse</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://realpython.com/python-kwargs-and-args/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python *args</a>
-                             <a href="https://www.geeksforgeeks.org/recursion-in-python/" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG Recursion</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-05.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-05.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 06 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">06</span>
-                        <span class="difficulty-badge">Intermediate</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Files, Modules & Data Science</h5>
-                        <p class="tutorial-desc">Log Analyzer, Custom Modules, NumPy Arrays, Matplotlib</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> File Handling, Slicing, Subplots</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://realpython.com/python-modules-packages/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python Modules</a>
-                             <a href="https://matplotlib.org/stable/tutorials/pyplot.html" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> Matplotlib Guide</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-06.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-06.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 07 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card featured">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">07</span>
-                        <span class="difficulty-badge">Advanced</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">NumPy, Pandas & Matplotlib</h5>
-                        <p class="tutorial-desc">2D Arrays, DataFrames, Publication-Quality Plots</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> Broadcasting, Data Filtering, Figure Customization</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://www.kaggle.com/learn/pandas" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Kaggle Pandas</a>
-                             <a href="https://numpy.org/doc/stable/user/quickstart.html" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> NumPy Quickstart</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-07.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-
-                            <a href="/assets/Python_Page/Tutorials/Tut-07.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tutorial 08 -->
-            <div class="col-12 mb-4">
-                <div class="tutorial-card featured">
-                    <div class="tutorial-header">
-                        <span class="tutorial-number">08</span>
-                        <span class="difficulty-badge">Advanced</span>
-                    </div>
-                    <div class="tutorial-content">
-                        <h5 class="tutorial-title">Object-Oriented Programming</h5>
-                        <p class="tutorial-desc">Classes, __init__, self, Inheritance, super()</p>
-                        <div class="practice-problems">
-                            <small><i class="fas fa-puzzle-piece mr-1"></i> Blueprints, Methods, Object Behavior</small>
-                        </div>
-                        <div class="practice-links mt-2 small">
-                             <a href="https://realpython.com/inheritance-composition-python/" target="_blank" class="mr-2"><i class="fas fa-external-link-alt text-muted mr-1"></i> Real Python Inheritance</a>
-                             <a href="https://www.geeksforgeeks.org/python-oops-concepts/" target="_blank"><i class="fas fa-external-link-alt text-muted mr-1"></i> GFG OOP Concepts</a>
-                        </div>
-                    </div>
-                    <div class="tutorial-footer">
-                        <span class="format-badge jupyter"><i class="fas fa-book"></i> Jupyter</span>
-                        <div class="btn-group-viewer">
-                            <button class="btn btn-sm btn-colab btn-viewer" onclick="openInColab('/assets/Python_Page/Tutorials/Tut-08.ipynb');" title="Open in Colab">
-                                <i class="fab fa-google"></i> Colab
-                            </button>
-                            <a href="/assets/Python_Page/Tutorials/Tut-08.ipynb" class="btn btn-sm btn-outline-success btn-viewer" title="Download">
-                                <i class="fas fa-download"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
 
@@ -838,198 +311,31 @@
 
         <div class="learning-journey">
 
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">1</div>
+            {% for step in site.data.python_course.learning_path %}
+            <div class="journey-step {% if step.is_final %}final{% endif %}" onclick="toggleStep(this)">
+                <div class="step-icon-wrapper" {% if step.is_final %}style="border-color: #28a745; color: #28a745;"{% endif %}>{{ step.step }}</div>
                 <div class="step-content">
-                    <h5 class="step-title">Introduction to Python</h5>
+                    <h5 class="step-title">{{ step.title }}</h5>
                     <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-01</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-01</span>
+                         <span class="material-tag lecture" {% if step.is_final %}style="background: rgba(40,167,69,0.1); color:#28a745;"{% endif %}><i class="fas fa-chalkboard-teacher"></i> {{ step.lecture }}</span>
+                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> {{ step.tutorial }}</span>
                     </div>
-                    <p class="step-topics">Programming basics, Environment setup, Hello World</p>
+                    <p class="step-topics">{{ step.topics }}</p>
                     <div class="step-details">
                          <ul class="small mb-2 ml-3">
-                            <li>Python Syntax & Comments</li>
-                            <li>Variables & Assignment</li>
-                            <li>Input & Output</li>
+                            {% for bullet in step.bullets %}
+                            <li>{{ bullet }}</li>
+                            {% endfor %}
                         </ul>
                         <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('_uQrJ0TkZlc')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec01')">Go to Materials</button>
+                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('{{ step.video }}')"><i class="fab fa-youtube"></i> Watch</button>
+                            <button class="btn btn-sm {% if step.is_final %}btn-outline-success{% else %}btn-outline-primary{% endif %} rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('{{ step.section }}')">Go to Materials</button>
                         </div>
                     </div>
                 </div>
                 <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">2</div>
-                <div class="step-content">
-                    <h5 class="step-title">Data Types & Strings</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-02</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-02</span>
-                    </div>
-                    <p class="step-topics">Variables, Numbers, Strings, Lists, Dictionaries</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>String Slicing & Methods</li>
-                            <li>List operations (append, pop)</li>
-                            <li>Dictionary keys & values</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('k9TUPpGqYTo')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec02')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">3</div>
-                <div class="step-content">
-                    <h5 class="step-title">Flow Control</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-03</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-03</span>
-                    </div>
-                    <p class="step-topics">If/Else, For Loops, While Loops</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>Conditional Logic</li>
-                            <li>Iterating with Loops</li>
-                            <li>Break & Continue</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('6iF8Xb7Z3wQ')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec03')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">4</div>
-                <div class="step-content">
-                    <h5 class="step-title">Functions</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-04</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-04</span>
-                    </div>
-                    <p class="step-topics">Defining functions, Parameters, Return values</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>Defining Functions (def)</li>
-                            <li>Arguments & Return Values</li>
-                            <li>Scope & Lifetime</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('9Os0o3wzS_I')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec04')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">5</div>
-                <div class="step-content">
-                    <h5 class="step-title">File Handling & Modules</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-05</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-05</span>
-                    </div>
-                    <p class="step-topics">Read/Write files, Context managers, PIP</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>Reading & Writing Files</li>
-                            <li>Context Managers (with)</li>
-                            <li>Importing Modules</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('Uh2ebFW8OYM')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec05')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">6</div>
-                <div class="step-content">
-                    <h5 class="step-title">Error Handling</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-06</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-06</span>
-                    </div>
-                    <p class="step-topics">Try/Except, Debugging, Custom exceptions</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>Try, Except, Finally</li>
-                            <li>Debugging Strategies</li>
-                            <li>Raising Exceptions</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('NIWwJbo-9_8')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec06')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper">7</div>
-                <div class="step-content">
-                    <h5 class="step-title">Data Science Libraries</h5>
-                    <div class="step-materials">
-                        <span class="material-tag lecture"><i class="fas fa-chalkboard-teacher"></i> Lec-07</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-07</span>
-                    </div>
-                    <p class="step-topics">NumPy, Pandas, Matplotlib</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>NumPy Arrays</li>
-                            <li>Pandas DataFrames</li>
-                            <li>Matplotlib Plotting</li>
-                        </ul>
-                        <div class="text-right">
-                             <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('LHBE6Q9XlzI')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec07')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
-            <div class="journey-step final" onclick="toggleStep(this)">
-                <div class="step-icon-wrapper" style="border-color: #28a745; color: #28a745;">8</div>
-                <div class="step-content">
-                    <h5 class="step-title">OOP & Statistics</h5>
-                    <div class="step-materials">
-                         <span class="material-tag lecture" style="background: rgba(40,167,69,0.1); color:#28a745;"><i class="fas fa-chalkboard-teacher"></i> Lec-08</span>
-                        <span class="material-tag tutorial"><i class="fas fa-laptop-code"></i> Tut-08</span>
-                    </div>
-                    <p class="step-topics">Classes, Inheritance, Statistics</p>
-                    <div class="step-details">
-                         <ul class="small mb-2 ml-3">
-                            <li>Classes & Objects</li>
-                            <li>Inheritance & Polymorphism</li>
-                            <li>Basic Statistics</li>
-                        </ul>
-                        <div class="text-right">
-                            <button class="btn btn-sm btn-outline-danger rounded-pill py-0 mr-1" onclick="event.stopPropagation(); openVideo('ZDa-Z5JzLYM')"><i class="fab fa-youtube"></i> Watch</button>
-                            <button class="btn btn-sm btn-outline-success rounded-pill py-0" onclick="event.stopPropagation(); scrollToSection('lec08')">Go to Materials</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="step-arrow"><i class="fas fa-chevron-right"></i></div>
-            </div>
-
+            {% endfor %}
 
         </div>
     </div>
@@ -1042,49 +348,25 @@
         <p class="text-muted text-center mb-5">Sleep through the lectures? No worries. Binge-watch these top-rated courses and become a pro overnight. (Popcorn not included).</p>
         
         <div class="row">
+            {% for course in site.data.python_course.youtube_courses %}
             <div class="col-md-4 mb-4">
-                <div class="card course-card h-100" onclick="window.open('https://www.youtube.com/watch?v=kqtD5dpn9C8', '_blank')" style="cursor: pointer;">
+                <div class="card course-card h-100" {% if course.is_series != true %}onclick="window.open('{{ course.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
                     <div class="course-thumb-wrapper">
-                        <img src="https://img.youtube.com/vi/kqtD5dpn9C8/maxresdefault.jpg" class="course-thumb" alt="Mosh Python">
+                        <img src="{{ course.thumbnail }}" class="course-thumb" alt="{{ course.author }}">
                         <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
-                        <div class="duration-badge">1h 00m</div>
+                        <div class="duration-badge">{{ course.duration }}</div>
+                        {% if course.is_series %}
+                         <a href="{{ course.url }}" target="_blank" class="stretched-link"></a>
+                        {% endif %}
                     </div>
                     <div class="card-body">
-                        <h5 class="font-weight-bold text-white mb-2">Python for Beginners</h5>
-                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> Programming with Mosh</p>
-                        <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> 1h 00m</p>
+                        <h5 class="font-weight-bold text-white mb-2">{{ course.title }}</h5>
+                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> {{ course.author }}</p>
+                        <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> {{ course.duration }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
-                <div class="card course-card h-100" onclick="window.open('https://www.youtube.com/watch?v=rfscVS0vtbw', '_blank')" style="cursor: pointer;">
-                    <div class="course-thumb-wrapper">
-                        <img src="https://img.youtube.com/vi/rfscVS0vtbw/maxresdefault.jpg" class="course-thumb" alt="FreeCodeCamp">
-                        <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
-                        <div class="duration-badge">4h 26m</div>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="font-weight-bold text-white mb-2">Learn Python - Full Course</h5>
-                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> freeCodeCamp.org</p>
-                         <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> 4h 26m</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4">
-                <div class="card course-card h-100">
-                    <div class="course-thumb-wrapper">
-                        <img src="https://img.youtube.com/vi/YYXdXT2l-Gg/maxresdefault.jpg" class="course-thumb" alt="Corey Schafer">
-                        <div class="play-overlay"><i class="fas fa-play-circle play-icon-lg"></i></div>
-                        <div class="duration-badge">Series</div>
-                         <a href="https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiFrjAZpH" target="_blank" class="stretched-link"></a>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="font-weight-bold text-white mb-2">Python Beginner Series</h5>
-                        <p class="text-muted small mb-0"><i class="fas fa-user-circle mr-1"></i> Corey Schafer</p>
-                         <p class="text-warning small font-weight-bold mb-0 mt-2"><i class="far fa-clock mr-1"></i> Multi-Part Series</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     
@@ -1095,18 +377,17 @@
         <div class="col-md-6 mb-4">
             <h5 class="font-weight-bold mb-3"><i class="fas fa-tools mr-2 text-warning"></i>Prerequisites</h5>
             <ul class="resource-list">
-                <li><i class="fas fa-check-circle text-success mr-2"></i>Python 3.x installed</li>
-                <li><i class="fas fa-check-circle text-success mr-2"></i>Google Colab account (recommended)</li>
-                <li><i class="fas fa-check-circle text-success mr-2"></i>Text editor (VSCode, PyCharm)</li>
+                {% for pre in site.data.python_course.resources.prerequisites %}
+                <li><i class="fas fa-check-circle text-success mr-2"></i>{{ pre }}</li>
+                {% endfor %}
             </ul>
         </div>
         <div class="col-md-6 mb-4">
             <h5 class="font-weight-bold mb-3"><i class="fas fa-book-open mr-2 text-info"></i>Recommended Resources</h5>
             <ul class="resource-list">
-                <li><a href="https://docs.python.org/3/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>Python Documentation</a></li>
-                <li><a href="https://greenteapress.com/wp/think-python-2e/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>Think Python (Free Book)</a></li>
-                <li><a href="https://colab.research.google.com/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>Google Colab</a></li>
-                <li><a href="http://pythontutor.com/" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>Python Tutor (Visualize Code)</a></li>
+                {% for res in site.data.python_course.resources.recommended %}
+                <li><a href="{{ res.url }}" target="_blank"><i class="fas fa-external-link-alt mr-2"></i>{{ res.name }}</a></li>
+                {% endfor %}
             </ul>
         </div>
     </div>
@@ -1117,14 +398,16 @@
         <div class="row">
             <div class="col-md-6">
                 <ul class="mb-0">
-                    <li>Try problems yourself before looking at solutions</li>
-                    <li>Experiment with code modifications</li>
+                    {% for tip in site.data.python_course.tips.col1 %}
+                    <li>{{ tip }}</li>
+                    {% endfor %}
                 </ul>
             </div>
             <div class="col-md-6">
                 <ul class="mb-0">
-                    <li>Read error messages carefully</li>
-                    <li>Don't skip the fundamentals</li>
+                    {% for tip in site.data.python_course.tips.col2 %}
+                    <li>{{ tip }}</li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>

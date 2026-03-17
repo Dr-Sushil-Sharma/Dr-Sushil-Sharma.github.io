@@ -1,0 +1,406 @@
+page_info:
+  title: "Python for Beginners"
+  description: "From \"Hello World\" to Data Science. A structured journey into the world of Python."
+  instructors:
+    - name: "Dr. Sushil Sharma"
+      icon: "fas fa-user-tie text-primary"
+      class: "premium-gold"
+    - name: "Satyam Tiwari"
+      icon: "fas fa-user-graduate text-success"
+  institution:
+    name: "Jagiellonian University, Krakow"
+    icon: "fas fa-university text-info"
+
+stats:
+  lectures: 8
+  tutorials: 8
+  weeks: 8
+
+lectures:
+  - id: "lec01"
+    number: "01"
+    title: "Introduction to Python"
+    week: "Week 1"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-01.pdf"
+    description: "Getting Started with Python Programming"
+    topics_col1:
+      - "Programming Languages Overview"
+      - "Why Python? Key Features"
+    topics_col2:
+      - "Python Environment Setup"
+      - "Hello World Program"
+    key_concepts: "Interpreted vs Compiled languages, Interactive programming, OOP fundamentals"
+    practice_links:
+      - title: "W3Schools Intro"
+        url: "https://www.w3schools.com/python/python_intro.asp"
+      - title: "Real Python Installation"
+        url: "https://realpython.com/installing-python/"
+
+  - id: "lec02"
+    number: "02"
+    title: "Data Types and Strings"
+    week: "Week 2"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-02.pdf"
+    description: "Understanding Python's Core Data Structures"
+    topics_col1:
+      - "Variables & Naming Rules"
+      - "Dynamic Typing"
+      - "Strings: Indexing & Slicing"
+    topics_col2:
+      - "Numbers (int, float, complex)"
+      - "Lists, Tuples, Dictionaries"
+      - "Sets & Booleans"
+    practice_links:
+      - title: "W3Schools Strings"
+        url: "https://www.w3schools.com/python/python_strings.asp"
+      - title: "Real Python Data Types"
+        url: "https://realpython.com/python-data-types/"
+
+  - id: "lec03"
+    number: "03"
+    title: "Flow Control"
+    week: "Week 3"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-03.pdf"
+    description: "Program Logic and Decision Making"
+    topics_col1:
+      - "If / Elif / Else Statements"
+      - "For Loops"
+    topics_col2:
+      - "While Loops"
+      - "range(), enumerate(), zip()"
+    practice_links:
+      - title: "HackerRank If-Else"
+        url: "https://www.hackerrank.com/challenges/py-if-else/problem"
+      - title: "Real Python Flow Control"
+        url: "https://realpython.com/python-conditional-statements/"
+
+  - id: "lec04"
+    number: "04"
+    title: "Functions"
+    week: "Week 4"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-04.pdf"
+    description: "Modular Programming and Code Reusability"
+    topics_col1:
+      - "Defining Functions (def)"
+      - "Parameters & Arguments"
+    topics_col2:
+      - "Return Values"
+      - "*args and **kwargs"
+    practice_links:
+      - title: "HackerRank Functions"
+        url: "https://www.hackerrank.com/challenges/write-a-function/problem"
+      - title: "W3Schools Functions"
+        url: "https://www.w3schools.com/python/python_functions.asp"
+
+  - id: "lec05"
+    number: "05"
+    title: "File Handling and Modules"
+    week: "Week 5"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-05.pdf"
+    description: "Working with Files and External Libraries"
+    topics_col1:
+      - "File Operations (r, w, a)"
+      - "Context Managers (with)"
+    topics_col2:
+      - "Importing Modules"
+      - "PIP Package Manager"
+    practice_links:
+      - title: "Real Python File I/O"
+        url: "https://realpython.com/read-write-files-python/"
+      - title: "W3Schools Modules"
+        url: "https://www.w3schools.com/python/python_modules.asp"
+
+  - id: "lec06"
+    number: "06"
+    title: "Error Handling and Debugging"
+    week: "Week 6"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-06.pdf"
+    description: "Writing Robust Python Code"
+    topics_col1:
+      - "Try / Except Blocks"
+      - "Finally Clause"
+    topics_col2:
+      - "Raising Exceptions"
+      - "Debugging Techniques"
+    practice_links:
+      - title: "W3Schools Try/Except"
+        url: "https://www.w3schools.com/python/python_try_except.asp"
+      - title: "Real Python Exceptions"
+        url: "https://realpython.com/python-exceptions/"
+
+  - id: "lec07"
+    number: "07"
+    title: "NumPy, Pandas, and Matplotlib"
+    week: "Week 7"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-07.pdf"
+    description: "Introduction to Scientific Python"
+    custom_layout: true
+    blocks:
+      - icon: "fas fa-cube"
+        title: "NumPy"
+        color: "primary"
+        desc: "Numerical computing with arrays"
+      - icon: "fas fa-table"
+        title: "Pandas"
+        color: "success"
+        desc: "Data manipulation and analysis"
+      - icon: "fas fa-chart-line"
+        title: "Matplotlib"
+        color: "warning"
+        desc: "Data visualization"
+    practice_links:
+      - title: "Real Python NumPy"
+        url: "https://realpython.com/numpy-tutorial/"
+      - title: "Pandas Documentation"
+        url: "https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html"
+
+  - id: "lec08"
+    number: "08"
+    title: "Object-Oriented Programming & Statistics"
+    week: "Week 8"
+    pdf_url: "/assets/Python_Page/Lectures/Lec-08.pdf"
+    description: "Advanced Python Concepts"
+    topics_col1:
+      - "Classes and Objects"
+      - "Encapsulation"
+      - "Inheritance"
+    topics_col2:
+      - "Polymorphism"
+      - "Mean, Median, Mode"
+      - "Variance & Std Dev"
+    practice_links:
+      - title: "Real Python OOP"
+        url: "https://realpython.com/python3-object-oriented-programming/"
+      - title: "Real Python Statistics"
+        url: "https://realpython.com/python-statistics/"
+
+tutorials:
+  - number: "01"
+    difficulty: "Beginner"
+    title: "Getting Started"
+    desc: "IDE Setup, Google Colab, Markdown Basics"
+    has_pdf: true
+    pdf_url: "/assets/Python_Page/Tutorials/Tut-01.pdf"
+    practice_links:
+      - title: "Markdown Guide"
+        url: "https://www.markdownguide.org/basic-syntax/"
+      - title: "VS Code Setup"
+        url: "https://code.visualstudio.com/docs/python/python-tutorial"
+  - number: "02"
+    difficulty: "Beginner"
+    title: "Variables, Data Types & Strings"
+    desc: "Keywords, Dynamic Typing, String Methods, Lists, Dictionaries"
+    problems: "Secret Agent Generator, Palindrome Detector"
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-02.ipynb"
+    practice_links:
+      - title: "CodingBat Strings"
+        url: "https://codingbat.com/python/String-1"
+      - title: "HackerRank Strings"
+        url: "https://www.hackerrank.com/challenges/string-validators/problem"
+  - number: "03"
+    difficulty: "Beginner"
+    title: "Data Structures Deep Dive"
+    desc: "Advanced Lists, Tuples, Dictionaries, Sets"
+    problems: "split(), find(), union(), intersection()"
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-03.ipynb"
+    practice_links:
+      - title: "GFG Lists"
+        url: "https://www.geeksforgeeks.org/python-lists/"
+      - title: "HackerRank Sets"
+        url: "https://www.hackerrank.com/challenges/py-introduction-to-sets/problem"
+  - number: "04"
+    difficulty: "Intermediate"
+    title: "Loops and Functions"
+    desc: "Pattern Questions, While Loops, Continue/Break"
+    problems: "Vowel Counter, Find Largest, Common Elements"
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-04.ipynb"
+    practice_links:
+      - title: "CodingBat Logic"
+        url: "https://codingbat.com/python/Logic-2"
+      - title: "HackerRank Loops"
+        url: "https://www.hackerrank.com/challenges/python-loops/problem"
+  - number: "05"
+    difficulty: "Intermediate"
+    title: "Functions Deep Dive"
+    desc: "*args, List Operations, Palindrome, Prime Numbers"
+    problems: "Max of Three, Sum, Multiply, Reverse"
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-05.ipynb"
+    practice_links:
+      - title: "Real Python *args"
+        url: "https://realpython.com/python-kwargs-and-args/"
+      - title: "GFG Recursion"
+        url: "https://www.geeksforgeeks.org/recursion-in-python/"
+  - number: "06"
+    difficulty: "Intermediate"
+    title: "Files, Modules & Data Science"
+    desc: "Log Analyzer, Custom Modules, NumPy Arrays, Matplotlib"
+    problems: "File Handling, Slicing, Subplots"
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-06.ipynb"
+    practice_links:
+      - title: "Real Python Modules"
+        url: "https://realpython.com/python-modules-packages/"
+      - title: "Matplotlib Guide"
+        url: "https://matplotlib.org/stable/tutorials/pyplot.html"
+  - number: "07"
+    difficulty: "Advanced"
+    title: "NumPy, Pandas & Matplotlib"
+    desc: "2D Arrays, DataFrames, Publication-Quality Plots"
+    problems: "Broadcasting, Data Filtering, Figure Customization"
+    featured: true
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-07.ipynb"
+    practice_links:
+      - title: "Kaggle Pandas"
+        url: "https://www.kaggle.com/learn/pandas"
+      - title: "NumPy Quickstart"
+        url: "https://numpy.org/doc/stable/user/quickstart.html"
+  - number: "08"
+    difficulty: "Advanced"
+    title: "Object-Oriented Programming"
+    desc: "Classes, __init__, self, Inheritance, super()"
+    problems: "Blueprints, Methods, Object Behavior"
+    featured: true
+    has_jupyter: true
+    notebook_url: "/assets/Python_Page/Tutorials/Tut-08.ipynb"
+    practice_links:
+      - title: "Real Python Inheritance"
+        url: "https://realpython.com/inheritance-composition-python/"
+      - title: "GFG OOP Concepts"
+        url: "https://www.geeksforgeeks.org/python-oops-concepts/"
+
+learning_path:
+  - step: 1
+    title: "Introduction to Python"
+    lecture: "Lec-01"
+    tutorial: "Tut-01"
+    topics: "Programming basics, Environment setup, Hello World"
+    bullets:
+      - "Python Syntax & Comments"
+      - "Variables & Assignment"
+      - "Input & Output"
+    video: "_uQrJ0TkZlc"
+    section: "lec01"
+  - step: 2
+    title: "Data Types & Strings"
+    lecture: "Lec-02"
+    tutorial: "Tut-02"
+    topics: "Variables, Numbers, Strings, Lists, Dictionaries"
+    bullets:
+      - "String Slicing & Methods"
+      - "List operations (append, pop)"
+      - "Dictionary keys & values"
+    video: "k9TUPpGqYTo"
+    section: "lec02"
+  - step: 3
+    title: "Flow Control"
+    lecture: "Lec-03"
+    tutorial: "Tut-03"
+    topics: "If/Else, For Loops, While Loops"
+    bullets:
+      - "Conditional Logic"
+      - "Iterating with Loops"
+      - "Break & Continue"
+    video: "6iF8Xb7Z3wQ"
+    section: "lec03"
+  - step: 4
+    title: "Functions"
+    lecture: "Lec-04"
+    tutorial: "Tut-04"
+    topics: "Defining functions, Parameters, Return values"
+    bullets:
+      - "Defining Functions (def)"
+      - "Arguments & Return Values"
+      - "Scope & Lifetime"
+    video: "9Os0o3wzS_I"
+    section: "lec04"
+  - step: 5
+    title: "File Handling & Modules"
+    lecture: "Lec-05"
+    tutorial: "Tut-05"
+    topics: "Read/Write files, Context managers, PIP"
+    bullets:
+      - "Reading & Writing Files"
+      - "Context Managers (with)"
+      - "Importing Modules"
+    video: "Uh2ebFW8OYM"
+    section: "lec05"
+  - step: 6
+    title: "Error Handling"
+    lecture: "Lec-06"
+    tutorial: "Tut-06"
+    topics: "Try/Except, Debugging, Custom exceptions"
+    bullets:
+      - "Try, Except, Finally"
+      - "Debugging Strategies"
+      - "Raising Exceptions"
+    video: "NIWwJbo-9_8"
+    section: "lec06"
+  - step: 7
+    title: "Data Science Libraries"
+    lecture: "Lec-07"
+    tutorial: "Tut-07"
+    topics: "NumPy, Pandas, Matplotlib"
+    bullets:
+      - "NumPy Arrays"
+      - "Pandas DataFrames"
+      - "Matplotlib Plotting"
+    video: "LHBE6Q9XlzI"
+    section: "lec07"
+  - step: 8
+    title: "OOP & Statistics"
+    lecture: "Lec-08"
+    tutorial: "Tut-08"
+    topics: "Classes, Inheritance, Statistics"
+    bullets:
+      - "Classes & Objects"
+      - "Inheritance & Polymorphism"
+      - "Basic Statistics"
+    video: "ZDa-Z5JzLYM"
+    section: "lec08"
+    is_final: true
+
+youtube_courses:
+  - title: "Python for Beginners"
+    author: "Programming with Mosh"
+    duration: "1h 00m"
+    url: "https://www.youtube.com/watch?v=kqtD5dpn9C8"
+    thumbnail: "https://img.youtube.com/vi/kqtD5dpn9C8/maxresdefault.jpg"
+  - title: "Learn Python - Full Course"
+    author: "freeCodeCamp.org"
+    duration: "4h 26m"
+    url: "https://www.youtube.com/watch?v=rfscVS0vtbw"
+    thumbnail: "https://img.youtube.com/vi/rfscVS0vtbw/maxresdefault.jpg"
+  - title: "Python Beginner Series"
+    author: "Corey Schafer"
+    duration: "Series"
+    url: "https://www.youtube.com/playlist?list=PL-osiE80TeTskrapNbzXhwoFUiFrjAZpH"
+    thumbnail: "https://img.youtube.com/vi/YYXdXT2l-Gg/maxresdefault.jpg"
+    is_series: true
+
+resources:
+  prerequisites:
+    - "Python 3.x installed"
+    - "Google Colab account (recommended)"
+    - "Text editor (VSCode, PyCharm)"
+  recommended:
+    - name: "Python Documentation"
+      url: "https://docs.python.org/3/"
+    - name: "Think Python (Free Book)"
+      url: "https://greenteapress.com/wp/think-python-2e/"
+    - name: "Google Colab"
+      url: "https://colab.research.google.com/"
+    - name: "Python Tutor (Visualize Code)"
+      url: "http://pythontutor.com/"
+
+tips:
+  col1:
+    - "Try problems yourself before looking at solutions"
+    - "Experiment with code modifications"
+  col2:
+    - "Read error messages carefully"
+    - "Don't skip the fundamentals"

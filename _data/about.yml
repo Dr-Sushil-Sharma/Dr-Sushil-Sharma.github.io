@@ -17,18 +17,32 @@ profile:
   image: /assets/img/prof_pic.jpg
 
 # --- INTRODUCTION (right column) ---
-greeting: "Hello, I'm *Sushil Sharma*."
+greeting: "Short biography"
 
 bio:
   - >
-    I am an experimental nuclear physicist at Jagiellonian University in Krakow,
-    working on detector instrumentation and data analysis for precision studies
-    at the interface of fundamental physics and medical imaging.
-  - >
-    My research focuses on **positronium physics** and **plastic-scintillator
-    PET technology (J-PET)**, including photon-polarization measurements for
-    discrete symmetry tests and quantum-correlation studies, as well as the
-    application of modular detection concepts for new experiments in antimatter physics.
+    Sushil Sharma is an assistant professor at the Marian Smoluchowski 
+    Institute of Physics, Jagiellonian University, Kraków, Poland. He 
+    obtained his PhD with distinction in 2016 from Jagiellonian University, 
+    with a thesis on validation of spallation models. His research spans 
+    medical imaging, fundamental physics, antimatter studies, and detector 
+    development. He is a senior member of the J-PET collaboration, contributing 
+    to the development of the world's first PET scanner based on plastic 
+    scintillators, and a member of the AEgIS collaboration at CERN, where he participates 
+    in the experiments on antiproton/antihydrogen annihilation vertex reconstruction. He serves as 
+    Associate Editor of EJNMMI Physics (Springer, IF: 3.2) and is the principal 
+    investigator of an NCN SONATA BIS grant on Inertial sensing of positronium atoms 
+    for gravitational studies of matter-antimatter systems. He has co-authored over 
+    70 peer-reviewed journal articles in journals including Science Advances, Nature 
+    Communications, and Medical Physics, with over 2,700 citations (h-index: 24). He is
+    currently an auxilliary supervisor of six PhD students. His work has been recognised 
+    with multiple awards, including a Rector's Individual Award for scientific achievements, 
+    an INFN fellowship, and grant from the National Science Centre (NCN). 
+  #- >
+    #My research focuses on **positronium physics** and **plastic-scintillator
+    #PET technology (J-PET)**, including photon-polarization measurements for
+    #discrete symmetry tests and quantum-correlation studies, as well as the
+    #application of modular detection concepts for new experiments in antimatter physics.
 
 # --- CONTACT BAR ---
 contact:

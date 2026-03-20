@@ -4,10 +4,10 @@
 # =============================================================
 
 heading: My World
-quote: '"Physics explains the universe, but my family gives it meaning."'
-dedication: >
-  Dedicated to my beloved wife <span class="highlight-name">Neha</span>
-  and our wonderful daughter <span class="highlight-name">Ananya (Alicia)</span>.
+quote: '"Physics explains the universe, but the family gives it a meaning."'
+#dedication: >
+ # Dedicated to my beloved wife <span class="highlight-name">Neha</span>
+ #and our wonderful daughter <span class="highlight-name">Ananya (Alicia)</span>.
 
 # --- PHOTO CAROUSEL ---
 photos:

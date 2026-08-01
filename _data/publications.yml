@@ -18,6 +18,21 @@ articles:
   journal: Scientific Reports 16 (2026)
   year: 2026
   url: https://doi.org/10.1038/s41598-026-43965-z
+- title: 'Monte Carlo-based scatter correction for the plastic-based modular PET scanner J-PET'
+  authors: R. Bayerlein... S. Sharma, et al.
+  journal: Phys. Med. Biol. 71 (2026)
+  year: 2026
+  url: https://doi.org/10.1088/1361-6560/ae54fb
+- title: 'Methodology for time and TOT calibration of a modular J-PET scanner with prompt gamma emitters 22Na and 44Sc'
+  authors: K. Kacprzak... S. Sharma, et al.
+  journal: Bio-Algorithms and Med-Systems 22 (2026)
+  year: 2026
+  url: https://bamsjournal.com/article/556703/en
+- title: 'Nanoporosity imaging by positronium lifetime tomography'
+  authors: K. Dulski... S. Sharma, et al.
+  journal: Nucl. Instrum. Meth. A 1086 (2026) 171311
+  year: 2026
+  url: https://doi.org/10.1016/j.nima.2026.171311
 - title: Feasibility Study of Using Detector-Scattered Photons for Attenuation Correction
     in CT-less PET Imaging
   authors: Satyam Tiwari... Sushil Sharma, et al.

@@ -13,6 +13,11 @@ articles:
   authors: K. Topolnicki, S. Sharma, Yu. Volkotrub, M. Das
   journal: Computer Physics Communications 319 (2026) 109913
   year: 2026
+- title: 'First positronium lifetime imaging using 52Mn and 55Co with a plastic-scintillator-based PET scanner'
+  authors: M. Das, S. Sharma, et al.
+  journal: Scientific Reports 16 (2026)
+  year: 2026
+  url: https://doi.org/10.1038/s41598-026-43965-z
 - title: Feasibility Study of Using Detector-Scattered Photons for Attenuation Correction
     in CT-less PET Imaging
   authors: Satyam Tiwari... Sushil Sharma, et al.

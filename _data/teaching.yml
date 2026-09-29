@@ -53,7 +53,7 @@ mentorship:
   students:
     - name: Mateusz Winiarski
       image: /assets/img/Mateusz.jpg
-      period: "2026 - Present"
+      period: "2026"
       status: Master Student
       substatus: Completed
       badge_color: badge-warning

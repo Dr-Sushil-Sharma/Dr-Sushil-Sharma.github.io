@@ -10,6 +10,13 @@ intro: >
 
 # --- EDITORIAL & REVIEWING ---
 editorial:
+  - role: Editor
+    icon: fas fa-pen-nib
+    organization: Scientific Reports (Nature Portfolio)
+    link:
+      label: View Editorial Board
+      url: https://www.nature.com/srep/about/editors
+
   - role: Associate Editor
     icon: fas fa-pen-nib
     organization: EJNMMI Physics Journal (Springer)

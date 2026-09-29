@@ -45,53 +45,60 @@ courses:
       - Physics Lists & Scoring
       - Particle Transport Modeling
 
-# --- PHD STUDENTS ---
+# --- MENTORSHIP ---
 mentorship:
-  title: PhD Mentorship
+  title: Mentorship
   subtitle: "The growing family of researchers I have the privilege to co-supervise as an auxiliary supervisor."
 
   students:
+    - name: Mateusz Winiarski
+      image: /assets/img/Mateusz.jpg
+      period: "2026 - Present"
+      status: Master Student
+      badge_color: badge-warning
+      branch: left
+
     - name: Atharva Dalvi
       image: /assets/img/Atharva.jpg
       period: "2025 - Present"
       status: PhD Candidate
       badge_color: badge-primary
-      branch: left
+      branch: right
 
     - name: Bhavnesh
       image: /assets/img/Bhavnesh.jpg
       period: "2025 - Present"
       status: PhD Candidate
       badge_color: badge-primary
-      branch: right
+      branch: left
 
     - name: Satyam Tiwari
       image: /assets/img/Satyam.jpg
       period: "2024 - Present"
       status: PhD Candidate
       badge_color: badge-info
-      branch: left
+      branch: right
 
     - name: Piyush Pandey
       image: /assets/img/Piyush.jpg
       period: "2024 - Present"
       status: PhD Candidate
       badge_color: badge-info
-      branch: right
+      branch: left
 
     - name: Manish Das
       image: /assets/img/Manish.jpg
       period: "2023 - Present"
       status: PhD Candidate
       badge_color: badge-success
-      branch: left
+      branch: right
 
     - name: Deepak Kumar
       image: /assets/img/Deepak.jpg
       period: "2022 - Present"
       status: PhD Candidate
       badge_color: badge-success
-      branch: right
+      branch: left
 
     - name: Udai Singh
       image: /assets/img/UdaiSingh.jpg

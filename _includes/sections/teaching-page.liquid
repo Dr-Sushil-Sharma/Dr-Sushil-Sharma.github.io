@@ -85,6 +85,9 @@
                 <h5>{{ student.name }}</h5>
                 <span class="badge {{ student.badge_color }}">{{ student.period }}</span>
                 <p>{{ student.status }}</p>
+                {% if student.substatus %}
+                <p>{{ student.substatus }}</p>
+                {% endif %}
             </div>
         </div>
     </div>
